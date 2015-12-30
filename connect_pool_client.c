@@ -434,6 +434,7 @@ static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_t
     add_assoc_string(pass_data, "password", Z_STRVAL_PP(pwd), 1);
     zval_add_ref(&z_args);
     add_assoc_zval(pass_data, "args", z_args);
+
     if (zend_hash_find(Z_ARRVAL_PP(real_data_srouce_arr), ZEND_STRS("options"), (void **) &options) != SUCCESS)
     {
         zval *new_option = NULL;
@@ -446,7 +447,9 @@ static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_t
     else
     {
         zval_add_ref(options);
-        add_index_long(*options, PDO_ATTR_ERRMODE, PDO_ERRMODE_EXCEPTION); //set exception mode for delete pdo object from pool when gone away
+
+        //set exception mode for delete pdo object from pool when gone away
+        add_index_long(*options, PDO_ATTR_ERRMODE, PDO_ERRMODE_EXCEPTION);
         add_index_string(*options, PDO_ATTR_DRIVER_SPECIFIC + 2, "SET SESSION wait_timeout=2147483", 1);
         add_assoc_zval(pass_data, "options", *options);
     }
@@ -623,6 +626,7 @@ PHP_METHOD(pdo_connect_pool, __construct)
             add_assoc_string(master, "pwd", password, 1);
             if (options != NULL)
             {
+                zval_add_ref(&options);
                 add_assoc_zval(master, "options", options);
             }
             add_assoc_zval(zval_conf, "master", master);

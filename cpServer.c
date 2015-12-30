@@ -686,7 +686,7 @@ int static cpReactor_start(int sock)
     handles[EPOLLIN] = cpServer_master_onAccept;
 
     usleep(50000);
-    cpLog("start %s success");
+    cpLog("start success");
     return cpEpoll_wait(handles, &timeo, accept_epfd);
 }
 
