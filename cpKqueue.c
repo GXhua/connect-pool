@@ -90,10 +90,107 @@ int cpKqueue_set(int fd, int fdtype) {
     return SUCCESS;
 }
 
-int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
-    return SUCCESS;
-}
 void cpKqueue_free() {
     return ;
 }
+
+int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
+    int i, n, ret, usec;
+    if (timeo == NULL)
+    {
+        usec = CP_MAX_UINT;
+    }
+    else
+    {
+        usec = timeo->tv_sec * 1000 + timeo->tv_usec / 1000;
+    }
+
+    struct kevent events[CP_REACTOR_MAXEVENTS];
+    while(CPGS->running)
+    {
+        n = kevent(epfd, NULL, 0, events, CP_REACTOR_MAXEVENTS, usec);
+
+        if (n < 0) {
+            if (cpReactor_error() < 0)
+            {
+                printf("kevent error \n");
+                cpLog("Epoll[#%d] Error: %s[%d]", events[i].data.fd, strerror(errno), errno);
+                return FAILURE;
+            }
+            //continue;
+        } else if(ret == 0){
+            printf("kenvent timeout !\n");
+            continue;
+        }else{
+            for (i =0; i < n; n++) {
+                // 包含读事件
+                if (events[i].events & EVFILT_READ) {
+                    ret = handles[EVFILT_READ](events[i].data.fd);
+                    if (ret < 0)
+                    {
+                        cpLog("kqueue [EVFILT_READ] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
+                                strerror(errno), errno);
+                    }
+                }
+                else if (events[i].events & EVFILT_WRITE)
+                {
+                    ret = handles[EVFILT_WRITE](events[i].data.fd);
+                    if (ret < 0)
+                    {
+                        cpLog("kqueue [EPOLLOUT] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
+                                strerror(errno), errno);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    return 0;
+}
 #endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
