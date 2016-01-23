@@ -530,7 +530,9 @@ again_fixed_trail_if_zero	./msgpack/unpack_template.h	408;"	d
 backlog	./include/cpServer.h	/^        uint16_t backlog;$/;"	m	struct:_cpConfig
 buffer	./msgpack/msgpack_class.c	/^    smart_str buffer;$/;"	m	struct:__anon4	file:
 bufpid	./cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
+bufpid	cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
 bufr	./cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
+bufr	cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
 check_need_exchange	./connect_pool_client.c	/^static void check_need_exchange(zval * object, char *cur_type)$/;"	f	file:
 cli_real_recv	./connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *info)$/;"	f	file:
 cli_real_send	./connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
@@ -563,6 +565,7 @@ cpClient_send	./cpClientNet.c	/^int cpClient_send(int sock, char *data, int leng
 cpConfig	./include/cpServer.h	/^    } cpConfig;$/;"	t	typeref:struct:_cpConfig
 cpConnection	./include/cpServer.h	/^    } cpConnection;$/;"	t	typeref:struct:_cpConnection
 cpCreateFifo	./cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
+cpCreateFifo	cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
 cpCreate_ping_worker_mem	./cpPingWorker.c	/^CPINLINE int cpCreate_ping_worker_mem()$/;"	f
 cpCreate_worker_mem	./cpWorker.c	/^CPINLINE int cpCreate_worker_mem(int worker_id, int group_id)$/;"	f
 cpEpoll_add	./cpNetWork.c	/^int cpEpoll_add(int epfd, int fd, int fdtype) {$/;"	f
@@ -572,10 +575,12 @@ cpEpoll_del	cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
 cpEpoll_wait	./cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
 cpEpoll_wait	cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
 cpFifoRead	./cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
+cpFifoRead	cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
 cpFind_restart_worker	./cpWorker.c	/^static void cpFind_restart_worker(int pid, sigset_t *block_alarm, int worker_exit_code)$/;"	f	file:
 cpFork_one_worker	./cpWorker.c	/^int cpFork_one_worker(int worker_id, int group_id)$/;"	f
 cpFork_ping_worker	./cpPingWorker.c	/^int cpFork_ping_worker()$/;"	f
 cpGetConfig	./cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
+cpGetConfig	cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
 cpGroup	./include/cpServer.h	/^    } cpGroup;$/;"	t	typeref:struct:_cpGroup
 cpIdelList	./include/cpServer.h	/^    } cpIdelList;$/;"	t	typeref:struct:_cpIdelList
 cpKqueue_add	cpKqueue.c	/^int cpKqueue_add(int epfd, int fd, int fdtype) {$/;"	f
@@ -587,12 +592,15 @@ cpListen	./cpServer.c	/^int static cpListen()$/;"	f	file:
 cpListen	cpServer.c	/^int static cpListen()$/;"	f	file:
 cpLog	./include/cpFunction.h	39;"	d
 cpLog_init	./cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
+cpLog_init	cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
 cpMD5	./cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
+cpMD5	cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
 cpManagerAdd	./cpWorker.c	/^static void cpManagerAdd(int sig)$/;"	f	file:
 cpManagerRecycle	./cpWorker.c	/^static void cpManagerRecycle(int sig)$/;"	f	file:
 cpManagerReload	./cpWorker.c	/^static void cpManagerReload(int sig)$/;"	f	file:
 cpMasterInfo	./include/cpMemory.h	/^    } cpMasterInfo;$/;"	t	typeref:struct:_cpMasterInfo
 cpNetRead	./cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
+cpNetRead	cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
 cpPid	./connect_pool_client.c	/^static int cpPid = 0;$/;"	v	file:
 cpPingClear	./cpPingWorker.c	/^static void cpPingClear(int sig)$/;"	f	file:
 cpPing_add_dislist	./cpPingWorker.c	/^static void cpPing_add_dislist(zval *dis_arr, zval **args, char *data_source)$/;"	f	file:
@@ -600,6 +608,7 @@ cpPing_del_prolist	./cpPingWorker.c	/^static void cpPing_del_prolist(zval *pro_a
 cpPing_worker_loop	./cpPingWorker.c	/^static int cpPing_worker_loop()$/;"	f	file:
 cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, siginfo_t *, void *);$/;"	t
 cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
+cpQueueSignalSet	cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
 cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
@@ -626,7 +635,9 @@ cpServer_master_onAccept	cpServer.c	/^static int cpServer_master_onAccept(int fd
 cpServer_start	./cpServer.c	/^int cpServer_start()$/;"	f
 cpServer_start	cpServer.c	/^int cpServer_start()$/;"	f
 cpSetTimeout	./cpFunction.c	/^CPINLINE int cpSetTimeout(int sock, double timeout) {$/;"	f
+cpSetTimeout	cpFunction.c	/^CPINLINE int cpSetTimeout(int sock, double timeout) {$/;"	f
 cpSettitle	./cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
+cpSettitle	cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
 cpShareMemory	./include/cpMemory.h	/^    } cpShareMemory;$/;"	t	typeref:struct:_cpShareMemory
 cpSignalFunc	./include/cpFunction.h	/^    typedef void (*cpSignalFunc)(int);$/;"	t
 cpSignalHanlde	./cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
@@ -634,6 +645,7 @@ cpSignalHanlde	cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
 cpSignalInit	./cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
 cpSignalInit	cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
 cpSignalSet	./cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
+cpSignalSet	cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
 cpTcpEvent	./include/cpMemory.h	/^    } cpTcpEvent;$/;"	t	typeref:struct:_cpTcpEvent
 cpThread	./include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
 cpTryGetWorkerId	./cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
@@ -647,21 +659,28 @@ cpWorker_do_ping	./cpWorker.c	/^void cpWorker_do_ping()$/;"	f
 cpWorker_loop	./cpWorker.c	/^static int cpWorker_loop(int worker_id, int group_id)$/;"	f	file:
 cpWorker_manager_loop	./cpWorker.c	/^int cpWorker_manager_loop()$/;"	f
 cpWrite	./cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
+cpWrite	cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
 cp_add_fail_into_mem	./connect_pool.c	/^static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)$/;"	f	file:
 cp_call_user_function	./connect_pool.c	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f	file:
 cp_create_mmap_file	./cpMemory.c	/^int cp_create_mmap_file(cpShareMemory *object){$/;"	f
 cp_destory_client	./connect_pool.c	/^static void cp_destory_client(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f	file:
 cp_error	./cpFunction.c	/^int cp_error;$/;"	v
+cp_error	cpFunction.c	/^int cp_error;$/;"	v
 cp_functions	./connect_pool.c	/^const zend_function_entry cp_functions[] = {$/;"	v
 cp_log_fn	./cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
+cp_log_fn	cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
 cp_mmap_calloc	./cpMemory.c	/^void *cp_mmap_calloc(int size)$/;"	f
 cp_mmap_calloc_with_file	./cpMemory.c	/^void* cp_mmap_calloc_with_file(cpShareMemory *object)$/;"	f
 cp_redis_select	./connect_pool.c	/^static int cp_redis_select(zval *new_obj, zval **db)$/;"	f	file:
 cp_ser_and_setdis	./cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
+cp_ser_and_setdis	cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
 cp_ser_and_setpro	./cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;"	f
+cp_ser_and_setpro	cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;"	f
 cp_serialize	./cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
+cp_serialize	cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
 cp_system_random	./connect_pool_client.c	/^int cp_system_random(int min, int max)$/;"	f
 cp_unserialize	./cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
+cp_unserialize	cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
 create_pass_data	./connect_pool_client.c	/^static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_type, zval **ret_data_source)$/;"	f	file:
 daemonize	./include/cpServer.h	/^        uint8_t daemonize;$/;"	m	struct:_cpConfig
 data	./include/cpServer.h	/^        char data[0];$/;"	m	struct:_cpWaitList
@@ -905,7 +924,9 @@ phpext_msgpack_ptr	./msgpack/php_msgpack.h	14;"	d
 pid	./include/cpMemory.h	/^        int pid;$/;"	m	struct:_cpWorkerInfo
 pid	./include/cpWorker.h	/^        pid_t pid;$/;"	m	struct:_cpWorker
 pid_fn	./cpFunction.c	/^FILE *pid_fn = NULL;$/;"	v
+pid_fn	cpFunction.c	/^FILE *pid_fn = NULL;$/;"	v
 pid_init	./cpFunction.c	/^int pid_init() {$/;"	f
+pid_init	cpFunction.c	/^int pid_init() {$/;"	f
 ping_addr	./connect_pool_client.c	/^static HashTable ping_addr;$/;"	v	file:
 ping_mem_addr	./include/cpServer.h	/^        void *ping_mem_addr;$/;"	m	struct:_cpServerG
 ping_pid	./include/cpMemory.h	/^        int ping_pid;$/;"	m	struct:_cpMasterInfo
@@ -968,6 +989,7 @@ ser_fail_hits	./include/cpServer.h	/^        uint16_t ser_fail_hits;$/;"	m	struc
 serialize	./msgpack/php_msgpack.h	/^    } serialize;$/;"	v	typeref:struct:__anon8
 serv_addr	./include/cpClientNet.h	/^        struct sockaddr_in serv_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
 set_pid	./cpFunction.c	/^int set_pid(int pid) {$/;"	f
+set_pid	cpFunction.c	/^int set_pid(int pid) {$/;"	f
 size	./include/cpMemory.h	/^        int size;$/;"	m	struct:_cpShareMemory
 sm_obj	./include/cpWorker.h	/^        cpShareMemory sm_obj;$/;"	m	struct:_cpWorker
 sock	./include/cpClientNet.h	/^	int sock;$/;"	m	struct:_cpClient
@@ -979,9 +1001,13 @@ start_container	./msgpack/unpack_template.h	143;"	d
 start_container	./msgpack/unpack_template.h	409;"	d
 swClient_inet_addr	./cpClientNet.c	/^static int swClient_inet_addr(struct sockaddr_in *sin, char *string)$/;"	f	file:
 swLog_free	./cpFunction.c	/^void swLog_free(void) {$/;"	f
+swLog_free	cpFunction.c	/^void swLog_free(void) {$/;"	f
 swSetBlock	./cpFunction.c	/^CPINLINE void swSetBlock(int sock) {$/;"	f
+swSetBlock	cpFunction.c	/^CPINLINE void swSetBlock(int sock) {$/;"	f
 swSetNonBlock	./cpFunction.c	/^CPINLINE void swSetNonBlock(int sock) {$/;"	f
+swSetNonBlock	cpFunction.c	/^CPINLINE void swSetNonBlock(int sock) {$/;"	f
 swSingalNone	./cpFunction.c	/^void swSingalNone() {$/;"	f
+swSingalNone	cpFunction.c	/^void swSingalNone() {$/;"	f
 template_callback_array	./msgpack/msgpack_unpack.h	121;"	d
 template_callback_array_item	./msgpack/msgpack_unpack.h	123;"	d
 template_callback_double	./msgpack/msgpack_unpack.h	111;"	d

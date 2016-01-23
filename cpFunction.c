@@ -398,7 +398,7 @@ int cpQueueSignalSet(int sig, cpQueueFunc func) {
 
 #ifndef HAVE_CLOCK_GETTIME
 #ifdef __MACH__
-
+/*
 int clock_gettime(clock_id_t which_clock, struct timespec *t) {
     // be more careful in a multithreaded environement
     if (!orwl_timestart)
@@ -414,5 +414,6 @@ int clock_gettime(clock_id_t which_clock, struct timespec *t) {
     t->tv_nsec = diff - (t->tv_sec * ORWL_GIGA);
     return 0;
 }
+*/
 #endif
 #endif
