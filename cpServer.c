@@ -663,7 +663,7 @@ int static cpReactor_thread_loop(int *id)
 #else
 #ifdef HAVE_KQUEUE
     int epfd = kqueue();
-    handles[EV_READ] = cpReactor_client_receive;
+    handles[EVFILT_READ] = cpReactor_client_receive;
     // EPOLLPRI 有紧急数据可读 kqueue 貌似没有这样的事件类型啊
     //handles[EPOLLPRI] = cpReactor_client_release;
     handles[EPOLL_CLOSE] = cpReactor_client_close;
