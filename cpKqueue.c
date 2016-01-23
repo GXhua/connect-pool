@@ -1,4 +1,6 @@
 
+#include "php_connect_pool.h"
+
 int cpKqueue_add(int epfd, int fd, int fdtype) {
     struct kevent e; // event
     int ret;  // 返回值
