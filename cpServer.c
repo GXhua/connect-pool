@@ -691,7 +691,7 @@ int static cpReactor_start(int sock)
 #else
 #ifdef HAVE_KQUEUE
     int accept_epfd = kqueue(); //这个参数没用
-    if (cpKqueue_add(accept_epfd, sock, EV_READ) < 0)
+    if (cpKqueue_add(accept_epfd, sock, EVFILT_READ) < 0)
     {
         return FAILURE;
     };
@@ -724,7 +724,7 @@ int static cpReactor_start(int sock)
     return cpEpoll_wait(handles, &timeo, accept_epfd);
 #else
 #ifdef HAVE_KQUEUE
-    handles[EV_READ] = cpServer_master_onAccept;
+    handles[EVFILT_READ] = cpServer_master_onAccept;
     return cpKqueue_wait(handles, &timeo, accept_epfd);
 #endif
 #endif
