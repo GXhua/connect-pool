@@ -66,8 +66,8 @@ int cpKqueue_del(int epfd, int fd) {
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
 
         if (ret < 0) {
-            printf(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
-            cpLog(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
+            printf(" delete event [epfd=%d, fd=%d, events=read] failed.\n", epfd, fd);
+            cpLog(" delete event [epfd=%d, fd=%d, events=read] failed.\n", epfd, fd);
             return FAILURE;
         }
    // }
@@ -76,8 +76,8 @@ int cpKqueue_del(int epfd, int fd) {
         EV_SET(&e, fd, EVFILT_WRITE, EV_DELETE, fflags, 0, NULL);
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
         if (ret < 0) {
-            printf(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
-            cpLog(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
+            printf(" delete event [epfd=%d, fd=%d, events=write] failed.\n", epfd, fd);
+            cpLog(" delete event [epfd=%d, fd=%d, events=write] failed.\n", epfd, fd);
             return FAILURE;
         }
     //}
@@ -90,6 +90,7 @@ int cpKqueue_set(int fd, int fdtype) {
     return SUCCESS;
 }
 
+typedef int (*epoll_wait_handle)(int fd);
 int cpKqueue_wait(epoll_wait_handle*, struct timeval *timeo, int epfd) {
     return SUCCESS;
 }

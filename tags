@@ -693,6 +693,7 @@ dev_random_fd	./connect_pool_client.c	/^static int dev_random_fd = -1;$/;"	v	fil
 epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpServerG
 epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpThread
 epoll_wait_handle	./include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
+epoll_wait_handle	cpKqueue.c	/^typedef int (*epoll_wait_handle)(int fd);$/;"	t	file:
 epoll_wait_handle	include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
 error	./msgpack/msgpack_class.c	/^    int error;$/;"	m	struct:__anon4	file:
 error_display	./msgpack/php_msgpack.h	/^    zend_bool error_display;$/;"	v
