@@ -668,7 +668,7 @@ int static cpReactor_thread_loop(int *id)
     //handles[EPOLLPRI] = cpReactor_client_release;
     handles[EPOLL_CLOSE] = cpReactor_client_close;
     CPGS->reactor_threads[*id].epfd = epfd;
-    cpKqueu_wait(handles, &timeo, epfd);
+    cpKqueue_wait(handles, &timeo, epfd);
 #endif
 #endif
 
