@@ -356,7 +356,12 @@ static int cpServer_master_onAccept(int fd)
         {//不能在add后做,线程安全,防止添加到reactor后马上就读到数据,这时候下面new_connect还没执行。
             conn->release = CP_FD_RELEASED;
         }
+#ifdef HAVE_EPOLL
         if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EPOLLIN | EPOLLRDHUP | EPOLLHUP | EPOLLERR | EPOLLPRI) < 0)
+#else
+#ifdef HAVE_KQUEUE
+        if (cpKqueue_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EVFILT_READ | EVFILT_WRITE) < 0)
+#end
         {
             cpLog("[Master]add event fail Errno=%d|FD=%d", errno, conn_fd);
             close(conn_fd);

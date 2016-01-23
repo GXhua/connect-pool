@@ -1,0 +1,998 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACS_RAW_VALUE	./msgpack/msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon1
+ACS_RAW_VALUE	./msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon9
+CONPFUNCTION_H	./include/cpFunction.h	9;"	d
+CON_FAIL_MESSAGE	./connect_pool_client.c	27;"	d	file:
+CON_FORMART_KEY	./connect_pool_client.c	26;"	d	file:
+CPGC	./include/cpServer.h	43;"	d
+CPGL	./include/cpServer.h	44;"	d
+CPGS	./include/cpServer.h	45;"	d
+CPINLINE	./include/cpFunction.h	15;"	d
+CPINLINE	./include/cpFunction.h	17;"	d
+CPINLINE	./include/cpFunction.h	19;"	d
+CPINLINE	./include/cpFunction.h	23;"	d
+CPINLINE	./include/cpFunction.h	24;"	d
+CPPINGWORKER_H	./include/cpPingWorker.h	9;"	d
+CPWG	./include/cpServer.h	46;"	d
+CP_ACCEPT_AGAIN	./include/cpServer.h	56;"	d
+CP_ACCEPT_MAX_COUNT	./include/cpServer.h	57;"	d
+CP_BACKLOG	./include/cpServer.h	16;"	d
+CP_BUFFER_SIZE	./include/cpNetWork.h	16;"	d
+CP_BUFFER_SIZE	include/cpNetWork.h	16;"	d
+CP_CHECK_RETURN	./php_connect_pool.h	112;"	d
+CP_CLIENTNET_H	./include/cpClientNet.h	9;"	d
+CP_CLIENT_EOF_LEN	./include/cpNetWork.h	25;"	d
+CP_CLIENT_EOF_LEN	include/cpNetWork.h	25;"	d
+CP_CLIENT_EOF_STR	./include/cpNetWork.h	21;"	d
+CP_CLIENT_EOF_STR	include/cpNetWork.h	21;"	d
+CP_CLIENT_SERIALIZE_SEND_MEM	./connect_pool_client.c	/^CPINLINE int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, int worker_id, int max, char *mm_name)$/;"	f
+CP_CONNECT_NORMAL	./include/cpServer.h	39;"	d
+CP_CONNECT_PING	./include/cpServer.h	41;"	d
+CP_CONNECT_RECONNECT	./include/cpServer.h	40;"	d
+CP_CPU_NUM	./include/cpServer.h	15;"	d
+CP_DEF_MAX_READ_LEN	./include/cpServer.h	29;"	d
+CP_EVENTLEN_ADD_TYPE	./php_connect_pool.h	121;"	d
+CP_EVENTLEN_GET_LEN	./php_connect_pool.h	125;"	d
+CP_EVENTLEN_GET_TYPE	./php_connect_pool.h	124;"	d
+CP_EXCEPTION_ARGS	./connect_pool.c	65;"	d	file:
+CP_FALSE	./include/cpServer.h	68;"	d
+CP_FD_NCON	./include/cpServer.h	62;"	d
+CP_FD_NRELEASED	./include/cpServer.h	64;"	d
+CP_FD_RELEASED	./include/cpServer.h	63;"	d
+CP_FD_WAITING	./include/cpServer.h	65;"	d
+CP_FIFO_NAME_LEN	./include/cpFunction.h	26;"	d
+CP_FIFO_NAME_PRE	./include/cpFunction.h	27;"	d
+CP_GET_PID	./connect_pool_client.c	43;"	d	file:
+CP_GROUP_LEN	./php_connect_pool.h	137;"	d
+CP_GROUP_NUM	./php_connect_pool.h	138;"	d
+CP_HEADER_CON_SUCCESS	./include/cpNetWork.h	26;"	d
+CP_HEADER_CON_SUCCESS	include/cpNetWork.h	26;"	d
+CP_HEADER_ERROR	./include/cpNetWork.h	27;"	d
+CP_HEADER_ERROR	include/cpNetWork.h	27;"	d
+CP_HOST_SIZE	./php_connect_pool.h	98;"	d
+CP_IDEL_TIME	./include/cpServer.h	27;"	d
+CP_INTERNAL_ERROR_SEND	./connect_pool.c	43;"	d	file:
+CP_INTERNAL_ERROR_SEND_RETURN	./connect_pool.c	83;"	d	file:
+CP_INTERNAL_NORMAL_SEND	./connect_pool.c	50;"	d	file:
+CP_INTERNAL_NORMAL_SEND_RETURN	./connect_pool.c	82;"	d	file:
+CP_INTERNAL_SERIALIZE_SEND_MEM	./connect_pool.c	/^CPINLINE int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type)$/;"	f
+CP_LOG_FORMAT	./include/cpFunction.h	33;"	d
+CP_MAX_EVENT	./include/cpNetWork.h	15;"	d
+CP_MAX_EVENT	include/cpNetWork.h	15;"	d
+CP_MAX_FDS	./include/cpServer.h	22;"	d
+CP_MAX_READ_LEN	./include/cpServer.h	30;"	d
+CP_MAX_REQUEST	./include/cpServer.h	24;"	d
+CP_MAX_UINT	./include/cpNetWork.h	17;"	d
+CP_MAX_UINT	include/cpNetWork.h	17;"	d
+CP_MAX_WORKER	./include/cpServer.h	25;"	d
+CP_MEMORY_H	./include/cpMemory.h	9;"	d
+CP_MIN_WORKER	./include/cpServer.h	26;"	d
+CP_MMAP_NAME_LEN	./include/cpFunction.h	29;"	d
+CP_MMAP_NAME_PRE	./include/cpFunction.h	28;"	d
+CP_MULTI_PROCESS_ERR	./include/cpNetWork.h	24;"	d
+CP_MULTI_PROCESS_ERR	include/cpNetWork.h	24;"	d
+CP_NETWORK_H	./include/cpNetWork.h	9;"	d
+CP_NETWORK_H	include/cpNetWork.h	9;"	d
+CP_PDO_HEADER_STATE	./include/cpNetWork.h	28;"	d
+CP_PDO_HEADER_STATE	include/cpNetWork.h	28;"	d
+CP_PING_DIS_LEN	./include/cpServer.h	33;"	d
+CP_PING_GET_DIS	./include/cpServer.h	37;"	d
+CP_PING_GET_PRO	./include/cpServer.h	38;"	d
+CP_PING_MD5_LEN	./include/cpServer.h	35;"	d
+CP_PING_MEM_LEN	./include/cpServer.h	32;"	d
+CP_PING_PID_LEN	./include/cpServer.h	36;"	d
+CP_PING_PRO_LEN	./include/cpServer.h	34;"	d
+CP_PING_SLEEP	./include/cpServer.h	71;"	d
+CP_PIPES_NUM	./include/cpServer.h	17;"	d
+CP_PIPE_MOD	./php_connect_pool.h	134;"	d
+CP_PORT_PDO	./include/cpServer.h	18;"	d
+CP_PORT_REDIS	./include/cpServer.h	19;"	d
+CP_PROCESS_MANAGER	./php_connect_pool.h	131;"	d
+CP_PROCESS_MASTER	./php_connect_pool.h	129;"	d
+CP_PROCESS_PING	./php_connect_pool.h	132;"	d
+CP_PROCESS_WORKER	./php_connect_pool.h	130;"	d
+CP_REACTOR_MAXEVENTS	./include/cpNetWork.h	14;"	d
+CP_REACTOR_MAXEVENTS	include/cpNetWork.h	14;"	d
+CP_REACTOR_TIMEO_SEC	./include/cpServer.h	20;"	d
+CP_REACTOR_TIMEO_USEC	./include/cpServer.h	21;"	d
+CP_RECYCLE_NUM	./include/cpServer.h	28;"	d
+CP_RELEASE_HEADER	./include/cpNetWork.h	29;"	d
+CP_RELEASE_HEADER	include/cpNetWork.h	29;"	d
+CP_RELEASE_HEADER_LEN	./include/cpNetWork.h	30;"	d
+CP_RELEASE_HEADER_LEN	include/cpNetWork.h	30;"	d
+CP_RES_CLIENT_NAME	./php_connect_pool.h	128;"	d
+CP_RES_SERVER_NAME	./php_connect_pool.h	127;"	d
+CP_SEND_EXCEPTION	./connect_pool.c	81;"	d	file:
+CP_SEND_EXCEPTION_ARGS	./connect_pool.c	57;"	d	file:
+CP_SEND_EXCEPTION_RETURN	./connect_pool.c	84;"	d	file:
+CP_SERVER_H	./include/cpServer.h	9;"	d
+CP_SIGEVENT_EXCEPTION	./php_connect_pool.h	119;"	d
+CP_SIGEVENT_PDO	./php_connect_pool.h	120;"	d
+CP_SIGEVENT_TURE	./php_connect_pool.h	118;"	d
+CP_SIG_EVENT	./php_connect_pool.h	113;"	d
+CP_START_SLEEP	./include/cpServer.h	70;"	d
+CP_TCPEVENT_GET	./php_connect_pool.h	115;"	d
+CP_TCPEVENT_RELEASE	./php_connect_pool.h	116;"	d
+CP_TCP_KEEPCOUNT	./include/cpServer.h	58;"	d
+CP_TCP_KEEPIDLE	./include/cpServer.h	59;"	d
+CP_TCP_KEEPINTERVAL	./include/cpServer.h	60;"	d
+CP_TEST_RETURN_FALSE	./connect_pool.c	72;"	d	file:
+CP_TEST_RETURN_TRUE	./connect_pool.c	85;"	d	file:
+CP_TOO_MANY_CON	./include/cpNetWork.h	22;"	d
+CP_TOO_MANY_CON	include/cpNetWork.h	22;"	d
+CP_TOO_MANY_CON_ERR	./include/cpNetWork.h	23;"	d
+CP_TOO_MANY_CON_ERR	include/cpNetWork.h	23;"	d
+CP_TRUE	./include/cpServer.h	67;"	d
+CP_TYPE_SIZE	./php_connect_pool.h	135;"	d
+CP_UNSOCK_BUFSIZE	./include/cpServer.h	48;"	d
+CP_VERSION	./connect_pool.c	41;"	d	file:
+CP_WORKER_BUSY	./include/cpServer.h	52;"	d
+CP_WORKER_DEL	./include/cpServer.h	54;"	d
+CP_WORKER_DELING	./include/cpServer.h	51;"	d
+CP_WORKER_H	./include/cpWorker.h	9;"	d
+CP_WORKER_IDLE	./include/cpServer.h	53;"	d
+CP_WORKER_RESTART	./include/cpServer.h	50;"	d
+CP_WORKER_SENDTO_YIELD	./include/cpWorker.h	14;"	d
+CPid	./include/cpWorker.h	/^        int CPid;\/\/当前worker服务于哪个pid$/;"	m	struct:_cpWorker
+CS_ARRAY_16	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon1
+CS_ARRAY_16	./msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon9
+CS_ARRAY_32	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_32          = 0x1d,$/;"	e	enum:__anon1
+CS_ARRAY_32	./msgpack/unpack_define.h	/^	CS_ARRAY_32          = 0x1d,$/;"	e	enum:__anon9
+CS_DOUBLE	./msgpack/msgpack/unpack_define.h	/^	CS_DOUBLE            = 0x0b,$/;"	e	enum:__anon1
+CS_DOUBLE	./msgpack/unpack_define.h	/^	CS_DOUBLE            = 0x0b,$/;"	e	enum:__anon9
+CS_FLOAT	./msgpack/msgpack/unpack_define.h	/^	CS_FLOAT             = 0x0a,$/;"	e	enum:__anon1
+CS_FLOAT	./msgpack/unpack_define.h	/^	CS_FLOAT             = 0x0a,$/;"	e	enum:__anon9
+CS_HEADER	./msgpack/msgpack/unpack_define.h	/^	CS_HEADER            = 0x00,  \/\/ nil$/;"	e	enum:__anon1
+CS_HEADER	./msgpack/unpack_define.h	/^	CS_HEADER            = 0x00,  \/\/ nil$/;"	e	enum:__anon9
+CS_INT_16	./msgpack/msgpack/unpack_define.h	/^	CS_INT_16            = 0x11,$/;"	e	enum:__anon1
+CS_INT_16	./msgpack/unpack_define.h	/^	CS_INT_16            = 0x11,$/;"	e	enum:__anon9
+CS_INT_32	./msgpack/msgpack/unpack_define.h	/^	CS_INT_32            = 0x12,$/;"	e	enum:__anon1
+CS_INT_32	./msgpack/unpack_define.h	/^	CS_INT_32            = 0x12,$/;"	e	enum:__anon9
+CS_INT_64	./msgpack/msgpack/unpack_define.h	/^	CS_INT_64            = 0x13,$/;"	e	enum:__anon1
+CS_INT_64	./msgpack/unpack_define.h	/^	CS_INT_64            = 0x13,$/;"	e	enum:__anon9
+CS_INT_8	./msgpack/msgpack/unpack_define.h	/^	CS_INT_8             = 0x10,$/;"	e	enum:__anon1
+CS_INT_8	./msgpack/unpack_define.h	/^	CS_INT_8             = 0x10,$/;"	e	enum:__anon9
+CS_MAP_16	./msgpack/msgpack/unpack_define.h	/^	CS_MAP_16            = 0x1e,$/;"	e	enum:__anon1
+CS_MAP_16	./msgpack/unpack_define.h	/^	CS_MAP_16            = 0x1e,$/;"	e	enum:__anon9
+CS_MAP_32	./msgpack/msgpack/unpack_define.h	/^	CS_MAP_32            = 0x1f,$/;"	e	enum:__anon1
+CS_MAP_32	./msgpack/unpack_define.h	/^	CS_MAP_32            = 0x1f,$/;"	e	enum:__anon9
+CS_RAW_16	./msgpack/msgpack/unpack_define.h	/^	CS_RAW_16            = 0x1a,$/;"	e	enum:__anon1
+CS_RAW_16	./msgpack/unpack_define.h	/^	CS_RAW_16            = 0x1a,$/;"	e	enum:__anon9
+CS_RAW_32	./msgpack/msgpack/unpack_define.h	/^	CS_RAW_32            = 0x1b,$/;"	e	enum:__anon1
+CS_RAW_32	./msgpack/unpack_define.h	/^	CS_RAW_32            = 0x1b,$/;"	e	enum:__anon9
+CS_UINT_16	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_16           = 0x0d,$/;"	e	enum:__anon1
+CS_UINT_16	./msgpack/unpack_define.h	/^	CS_UINT_16           = 0x0d,$/;"	e	enum:__anon9
+CS_UINT_32	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_32           = 0x0e,$/;"	e	enum:__anon1
+CS_UINT_32	./msgpack/unpack_define.h	/^	CS_UINT_32           = 0x0e,$/;"	e	enum:__anon9
+CS_UINT_64	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_64           = 0x0f,$/;"	e	enum:__anon1
+CS_UINT_64	./msgpack/unpack_define.h	/^	CS_UINT_64           = 0x0f,$/;"	e	enum:__anon9
+CS_UINT_8	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_8            = 0x0c,$/;"	e	enum:__anon1
+CS_UINT_8	./msgpack/unpack_define.h	/^	CS_UINT_8            = 0x0c,$/;"	e	enum:__anon9
+CT_ARRAY_ITEM	./msgpack/msgpack/unpack_define.h	/^	CT_ARRAY_ITEM,$/;"	e	enum:__anon2
+CT_ARRAY_ITEM	./msgpack/unpack_define.h	/^	CT_ARRAY_ITEM,$/;"	e	enum:__anon10
+CT_MAP_KEY	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_KEY,$/;"	e	enum:__anon2
+CT_MAP_KEY	./msgpack/unpack_define.h	/^	CT_MAP_KEY,$/;"	e	enum:__anon10
+CT_MAP_VALUE	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon2
+CT_MAP_VALUE	./msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon10
+ClientPid	./include/cpMemory.h	/^        int ClientPid;$/;"	m	struct:_cpTcpEvent
+ConProxyG	./connect_pool.c	/^cpServerG ConProxyG;$/;"	v
+ConProxyGS	./connect_pool.c	/^cpServerGS *ConProxyGS;$/;"	v
+ConProxyWG	./connect_pool.c	/^cpWorkerG ConProxyWG;$/;"	v
+EPOLLRDHUP	./php_connect_pool.h	34;"	d
+EPOLL_CLOSE	./include/cpNetWork.h	19;"	d
+EPOLL_CLOSE	include/cpNetWork.h	19;"	d
+FAILUREOR_MSG_SIZE	./include/cpFunction.h	34;"	d
+G	./include/cpServer.h	/^        cpGroup G[100]; \/\/group TODO extend$/;"	m	struct:_cpServerGS
+MAP_ANONYMOUS	./php_connect_pool.h	44;"	d
+MAX_INI_LENGTH	./include/cpFunction.h	36;"	d
+MAX_TITLE_LENGTH	./include/cpFunction.h	35;"	d
+MSGPACK_BASE_OBJECT	./msgpack/msgpack_class.c	68;"	d	file:
+MSGPACK_CLASS_H	./msgpack/msgpack_class.h	3;"	d
+MSGPACK_CLASS_OPT_PHPONLY	./msgpack/msgpack_class.h	5;"	d
+MSGPACK_CONVERT_COPY_ZVAL	./msgpack/msgpack_convert.c	14;"	d	file:
+MSGPACK_CONVERT_H	./msgpack/msgpack_convert.h	3;"	d
+MSGPACK_CONVERT_UPDATE_PROPERTY	./msgpack/msgpack_convert.c	30;"	d	file:
+MSGPACK_EMBED_STACK_SIZE	./msgpack/msgpack/unpack_define.h	33;"	d
+MSGPACK_EMBED_STACK_SIZE	./msgpack/msgpack_unpack.h	7;"	d
+MSGPACK_EMBED_STACK_SIZE	./msgpack/unpack_define.h	33;"	d
+MSGPACK_ERROR	./msgpack/msgpack_errors.h	17;"	d
+MSGPACK_ERRORS_H	./msgpack/msgpack_errors.h	3;"	d
+MSGPACK_EXTENSION_VERSION	./msgpack/php_msgpack.h	11;"	d
+MSGPACK_G	./msgpack/php_msgpack.h	41;"	d
+MSGPACK_METHOD	./msgpack/msgpack_class.c	52;"	d	file:
+MSGPACK_METHOD	./msgpack/msgpack_class.c	61;"	d	file:
+MSGPACK_METHOD1	./msgpack/msgpack_class.c	65;"	d	file:
+MSGPACK_METHOD_BASE	./msgpack/msgpack_class.c	28;"	d	file:
+MSGPACK_METHOD_BASE	./msgpack/msgpack_class.c	30;"	d	file:
+MSGPACK_METHOD_HELPER	./msgpack/msgpack_class.c	46;"	d	file:
+MSGPACK_METHOD_HELPER	./msgpack/msgpack_class.c	55;"	d	file:
+MSGPACK_NOTICE	./msgpack/msgpack_errors.h	5;"	d
+MSGPACK_PACK_DEFINE_H__	./msgpack/msgpack/pack_define.h	19;"	d
+MSGPACK_PACK_DEFINE_H__	./msgpack/pack_define.h	19;"	d
+MSGPACK_PACK_H	./msgpack/msgpack_pack.h	3;"	d
+MSGPACK_SERIALIZE_TYPE_CUSTOM_OBJECT	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZE_TYPE_CUSTOM_OBJECT,$/;"	e	enum:msgpack_serialize_type
+MSGPACK_SERIALIZE_TYPE_NONE	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZE_TYPE_NONE =  0,$/;"	e	enum:msgpack_serialize_type
+MSGPACK_SERIALIZE_TYPE_OBJECT	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZE_TYPE_OBJECT,$/;"	e	enum:msgpack_serialize_type
+MSGPACK_SERIALIZE_TYPE_OBJECT_REFERENCE	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZE_TYPE_OBJECT_REFERENCE,$/;"	e	enum:msgpack_serialize_type
+MSGPACK_SERIALIZE_TYPE_RECURSIVE	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZE_TYPE_RECURSIVE,$/;"	e	enum:msgpack_serialize_type
+MSGPACK_SERIALIZE_TYPE_REFERENCE	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZE_TYPE_REFERENCE =  1,$/;"	e	enum:msgpack_serialize_type
+MSGPACK_SYSDEP_H__	./msgpack/msgpack/sysdep.h	19;"	d
+MSGPACK_SYSDEP_H__	./msgpack/sysdep.h	19;"	d
+MSGPACK_UNPACKER_OBJECT	./msgpack/msgpack_class.c	72;"	d	file:
+MSGPACK_UNPACK_CONTINUE	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_CONTINUE    =  0,$/;"	e	enum:__anon6
+MSGPACK_UNPACK_DEFINE_H__	./msgpack/msgpack/unpack_define.h	19;"	d
+MSGPACK_UNPACK_DEFINE_H__	./msgpack/unpack_define.h	19;"	d
+MSGPACK_UNPACK_EXTRA_BYTES	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_EXTRA_BYTES =  1,$/;"	e	enum:__anon6
+MSGPACK_UNPACK_H	./msgpack/msgpack_unpack.h	3;"	d
+MSGPACK_UNPACK_PARSE_ERROR	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_PARSE_ERROR = -1,$/;"	e	enum:__anon6
+MSGPACK_UNPACK_SUCCESS	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_SUCCESS     =  2,$/;"	e	enum:__anon6
+MSGPACK_UNSERIALIZE_ALLOC_STACK	./msgpack/msgpack_unpack.c	26;"	d	file:
+MSGPACK_UNSERIALIZE_ALLOC_VALUE	./msgpack/msgpack_unpack.c	35;"	d	file:
+MSGPACK_UNSERIALIZE_FINISH_ITEM	./msgpack/msgpack_unpack.c	44;"	d	file:
+MSGPACK_UNSERIALIZE_FINISH_MAP_ITEM	./msgpack/msgpack_unpack.c	51;"	d	file:
+MSGPACK_VERSION	./msgpack/msgpack/version.h	30;"	d
+MSGPACK_VERSION	./msgpack/version.h	30;"	d
+MSGPACK_VERSION_H__	./msgpack/msgpack/version.h	19;"	d
+MSGPACK_VERSION_H__	./msgpack/version.h	19;"	d
+MSGPACK_VERSION_MAJOR	./msgpack/msgpack/version.h	31;"	d
+MSGPACK_VERSION_MAJOR	./msgpack/version.h	31;"	d
+MSGPACK_VERSION_MINOR	./msgpack/msgpack/version.h	32;"	d
+MSGPACK_VERSION_MINOR	./msgpack/version.h	32;"	d
+MSGPACK_WARNING	./msgpack/msgpack_errors.h	10;"	d
+MasterSend2Client	./cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
+MasterSend2Client	cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
+NEXT_CS	./msgpack/msgpack/unpack_template.h	173;"	d
+NEXT_CS	./msgpack/msgpack/unpack_template.h	411;"	d
+NEXT_CS	./msgpack/unpack_template.h	173;"	d
+NEXT_CS	./msgpack/unpack_template.h	411;"	d
+NO_EPOLLRDHUP	./php_connect_pool.h	35;"	d
+PHP_CONNECT_POOL_API	./php_connect_pool.h	105;"	d
+PHP_CONNECT_POOL_API	./php_connect_pool.h	107;"	d
+PHP_CONNECT_POOL_API	./php_connect_pool.h	109;"	d
+PHP_CON_PROXY_H	./php_connect_pool.h	20;"	d
+PHP_FE_END	./php_connect_pool.h	91;"	d
+PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_create)$/;"	f
+PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_reload)$/;"	f
+PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_shutdown)$/;"	f
+PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_version)$/;"	f
+PHP_FUNCTION	./connect_pool_client.c	/^PHP_FUNCTION(client_close)$/;"	f
+PHP_FUNCTION	./connect_pool_client.c	/^PHP_FUNCTION(get_disable_list)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __call)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __construct)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __destruct)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, release)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool_PDOStatement, __call)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __call)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __construct)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __destruct)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, connect)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, release)$/;"	f
+PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, select)$/;"	f
+PHP_MINFO_FUNCTION	./connect_pool.c	/^PHP_MINFO_FUNCTION(connect_pool)$/;"	f
+PHP_MSGPACK_API	./msgpack/php_msgpack.h	17;"	d
+PHP_MSGPACK_API	./msgpack/php_msgpack.h	19;"	d
+PHP_MSGPACK_API	./msgpack/php_msgpack.h	21;"	d
+PHP_MSGPACK_H	./msgpack/php_msgpack.h	2;"	d
+PHP_MSHUTDOWN_FUNCTION	./connect_pool.c	/^PHP_MSHUTDOWN_FUNCTION(connect_pool)$/;"	f
+PHP_RINIT_FUNCTION	./connect_pool.c	/^PHP_RINIT_FUNCTION(connect_pool)$/;"	f
+PHP_RSHUTDOWN_FUNCTION	./connect_pool.c	/^PHP_RSHUTDOWN_FUNCTION(connect_pool)$/;"	f
+PID_FILE_PATH	./include/cpFunction.h	38;"	d
+POP_EO_PARAM	./msgpack/msgpack_class.c	37;"	d	file:
+POP_EO_PARAM	./msgpack/msgpack_class.c	42;"	d	file:
+POP_PARAM	./msgpack/msgpack_class.c	35;"	d	file:
+POP_PARAM	./msgpack/msgpack_class.c	40;"	d	file:
+PUSH_EO_PARAM	./msgpack/msgpack_class.c	36;"	d	file:
+PUSH_EO_PARAM	./msgpack/msgpack_class.c	41;"	d	file:
+PUSH_PARAM	./msgpack/msgpack_class.c	34;"	d	file:
+PUSH_PARAM	./msgpack/msgpack_class.c	39;"	d	file:
+RecvData	./connect_pool_client.c	/^cpRecvEvent RecvData;$/;"	v
+SOCK_NONBLOCK	./php_connect_pool.h	48;"	d
+SWITCH_RANGE	./msgpack/msgpack/unpack_template.h	178;"	d
+SWITCH_RANGE	./msgpack/unpack_template.h	178;"	d
+SWITCH_RANGE_BEGIN	./msgpack/msgpack/unpack_template.h	177;"	d
+SWITCH_RANGE_BEGIN	./msgpack/unpack_template.h	177;"	d
+SWITCH_RANGE_DEFAULT	./msgpack/msgpack/unpack_template.h	179;"	d
+SWITCH_RANGE_DEFAULT	./msgpack/unpack_template.h	179;"	d
+SWITCH_RANGE_END	./msgpack/msgpack/unpack_template.h	180;"	d
+SWITCH_RANGE_END	./msgpack/unpack_template.h	180;"	d
+SW_LOG_BUFFER_SIZE	./include/cpFunction.h	30;"	d
+SW_LOG_DATE_STRLEN	./include/cpFunction.h	32;"	d
+SW_PID_BUFFER_SIZE	./include/cpFunction.h	31;"	d
+TAKE8_16	./msgpack/msgpack/pack_template.h	21;"	d
+TAKE8_16	./msgpack/msgpack/pack_template.h	26;"	d
+TAKE8_16	./msgpack/msgpack/pack_template.h	754;"	d
+TAKE8_16	./msgpack/pack_template.h	21;"	d
+TAKE8_16	./msgpack/pack_template.h	26;"	d
+TAKE8_16	./msgpack/pack_template.h	754;"	d
+TAKE8_32	./msgpack/msgpack/pack_template.h	22;"	d
+TAKE8_32	./msgpack/msgpack/pack_template.h	27;"	d
+TAKE8_32	./msgpack/msgpack/pack_template.h	755;"	d
+TAKE8_32	./msgpack/pack_template.h	22;"	d
+TAKE8_32	./msgpack/pack_template.h	27;"	d
+TAKE8_32	./msgpack/pack_template.h	755;"	d
+TAKE8_64	./msgpack/msgpack/pack_template.h	23;"	d
+TAKE8_64	./msgpack/msgpack/pack_template.h	28;"	d
+TAKE8_64	./msgpack/msgpack/pack_template.h	756;"	d
+TAKE8_64	./msgpack/pack_template.h	23;"	d
+TAKE8_64	./msgpack/pack_template.h	28;"	d
+TAKE8_64	./msgpack/pack_template.h	756;"	d
+TAKE8_8	./msgpack/msgpack/pack_template.h	20;"	d
+TAKE8_8	./msgpack/msgpack/pack_template.h	25;"	d
+TAKE8_8	./msgpack/msgpack/pack_template.h	753;"	d
+TAKE8_8	./msgpack/pack_template.h	20;"	d
+TAKE8_8	./msgpack/pack_template.h	25;"	d
+TAKE8_8	./msgpack/pack_template.h	753;"	d
+USE_CASE_RANGE	./msgpack/msgpack/unpack_template.h	45;"	d
+USE_CASE_RANGE	./msgpack/unpack_template.h	45;"	d
+VAR_ENTRIES_MAX	./msgpack/msgpack_unpack.c	17;"	d	file:
+WaitList	./include/cpServer.h	/^        cpWaitList *WaitList; \/\/获得失败的wait队列$/;"	m	struct:_cpGroup
+WaitTail	./include/cpServer.h	/^        cpWaitList *WaitTail; \/\/获得失败的wait队列队尾$/;"	m	struct:_cpGroup
+ZEND_GET_MODULE	./connect_pool.c	/^ZEND_GET_MODULE(connect_pool)$/;"	f
+ZEND_GET_MODULE	./msgpack/msgpack.c	/^ZEND_GET_MODULE(msgpack)$/;"	f
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, __construct)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, pack)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, setOption)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, unpack)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, unpacker)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, __construct)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, __destruct)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, data)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, execute)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, feed)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, reset)$/;"	f	file:
+ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, setOption)$/;"	f	file:
+ZEND_MINFO_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MINFO_FUNCTION(msgpack)$/;"	f	file:
+ZEND_MINIT_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MINIT_FUNCTION(msgpack)$/;"	f	file:
+ZEND_MOD_END	./php_connect_pool.h	95;"	d
+ZEND_MSHUTDOWN_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MSHUTDOWN_FUNCTION(msgpack)$/;"	f	file:
+Z_ADDREF_PP	./msgpack/msgpack_unpack.c	12;"	d	file:
+Z_ISREF_P	./msgpack/msgpack_pack.c	34;"	d	file:
+Z_REFCOUNT_P	./msgpack/msgpack_convert.c	9;"	d	file:
+Z_SET_ISREF_P	./msgpack/msgpack_convert.c	10;"	d	file:
+Z_SET_ISREF_PP	./msgpack/msgpack_unpack.c	13;"	d	file:
+Z_UNSET_ISREF_P	./msgpack/msgpack_convert.c	11;"	d	file:
+Z_UNSET_ISREF_PP	./msgpack/msgpack_unpack.c	14;"	d	file:
+__BIG_ENDIAN__	./msgpack/msgpack/sysdep.h	72;"	d
+__BIG_ENDIAN__	./msgpack/sysdep.h	72;"	d
+__LITTLE_ENDIAN__	./msgpack/msgpack/sysdep.h	70;"	d
+__LITTLE_ENDIAN__	./msgpack/sysdep.h	70;"	d
+_array	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgpack_pack_user x, unsigned int n)$/;"	f
+_array	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgpack_pack_user x, unsigned int n)$/;"	f
+_cpClient	./include/cpClientNet.h	/^typedef struct _cpClient$/;"	s
+_cpConfig	./include/cpServer.h	/^    typedef struct _cpConfig {$/;"	s
+_cpConnection	./include/cpServer.h	/^    typedef struct _cpConnection {$/;"	s
+_cpGroup	./include/cpServer.h	/^    typedef struct _cpGroup {$/;"	s
+_cpIdelList	./include/cpServer.h	/^    typedef struct _cpIdelList {$/;"	s
+_cpMasterInfo	./include/cpMemory.h	/^    typedef struct _cpMasterInfo {\/\/获取连接,master进程返回的信息$/;"	s
+_cpRecvEvent	./connect_pool_client.c	/^typedef struct _cpRecvEvent$/;"	s	file:
+_cpServerG	./include/cpServer.h	/^    typedef struct _cpServerG {$/;"	s
+_cpServerGS	./include/cpServer.h	/^    typedef struct _cpServerGS {$/;"	s
+_cpShareMemory	./include/cpMemory.h	/^    typedef struct _cpShareMemory {$/;"	s
+_cpTcpEvent	./include/cpMemory.h	/^    typedef struct _cpTcpEvent {$/;"	s
+_cpThread	./include/cpServer.h	/^    typedef struct _cpThread {$/;"	s
+_cpWaitList	./include/cpServer.h	/^    typedef struct _cpWaitList {$/;"	s
+_cpWorker	./include/cpWorker.h	/^    typedef struct _cpWorker {$/;"	s
+_cpWorkerG	./include/cpServer.h	/^    typedef struct _cpWorkerG {$/;"	s
+_cpWorkerInfo	./include/cpMemory.h	/^    typedef struct _cpWorkerInfo {$/;"	s
+_double	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_double)(msgpack_pack_user x, double d)$/;"	f
+_double	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_double)(msgpack_pack_user x, double d)$/;"	f
+_false	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_false)(msgpack_pack_user x)$/;"	f
+_false	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_false)(msgpack_pack_user x)$/;"	f
+_float	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_float)(msgpack_pack_user x, float d)$/;"	f
+_float	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_float)(msgpack_pack_user x, float d)$/;"	f
+_instead_smart	./msgpack/php_msgpack.h	/^typedef struct _instead_smart{$/;"	s
+_int	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_int)(msgpack_pack_user x, int d)$/;"	f
+_int	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_int)(msgpack_pack_user x, int d)$/;"	f
+_int16	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_int16)(msgpack_pack_user x, int16_t d)$/;"	f
+_int16	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int16)(msgpack_pack_user x, int16_t d)$/;"	f
+_int16	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_int16)(msgpack_pack_user x, int16_t d)$/;"	f
+_int16	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int16)(msgpack_pack_user x, int16_t d)$/;"	f
+_int32	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_int32)(msgpack_pack_user x, int32_t d)$/;"	f
+_int32	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int32)(msgpack_pack_user x, int32_t d)$/;"	f
+_int32	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_int32)(msgpack_pack_user x, int32_t d)$/;"	f
+_int32	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int32)(msgpack_pack_user x, int32_t d)$/;"	f
+_int64	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_int64)(msgpack_pack_user x, int64_t d)$/;"	f
+_int64	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int64)(msgpack_pack_user x, int64_t d)$/;"	f
+_int64	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_int64)(msgpack_pack_user x, int64_t d)$/;"	f
+_int64	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int64)(msgpack_pack_user x, int64_t d)$/;"	f
+_int8	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_int8)(msgpack_pack_user x, int8_t d)$/;"	f
+_int8	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int8)(msgpack_pack_user x, int8_t d)$/;"	f
+_int8	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_int8)(msgpack_pack_user x, int8_t d)$/;"	f
+_int8	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_int8)(msgpack_pack_user x, int8_t d)$/;"	f
+_long	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_long)(msgpack_pack_user x, long d)$/;"	f
+_long	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_long)(msgpack_pack_user x, long d)$/;"	f
+_long_long	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_long_long)(msgpack_pack_user x, long long d)$/;"	f
+_long_long	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_long_long)(msgpack_pack_user x, long long d)$/;"	f
+_map	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_map)(msgpack_pack_user x, unsigned int n)$/;"	f
+_map	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_map)(msgpack_pack_user x, unsigned int n)$/;"	f
+_msgpack_atomic_counter_t	./msgpack/msgpack/sysdep.h	/^typedef long _msgpack_atomic_counter_t;$/;"	t
+_msgpack_atomic_counter_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned int _msgpack_atomic_counter_t;$/;"	t
+_msgpack_atomic_counter_t	./msgpack/sysdep.h	/^typedef long _msgpack_atomic_counter_t;$/;"	t
+_msgpack_atomic_counter_t	./msgpack/sysdep.h	/^typedef unsigned int _msgpack_atomic_counter_t;$/;"	t
+_msgpack_be16	./msgpack/msgpack/sysdep.h	100;"	d
+_msgpack_be16	./msgpack/msgpack/sysdep.h	78;"	d
+_msgpack_be16	./msgpack/sysdep.h	100;"	d
+_msgpack_be16	./msgpack/sysdep.h	78;"	d
+_msgpack_be32	./msgpack/msgpack/sysdep.h	101;"	d
+_msgpack_be32	./msgpack/msgpack/sysdep.h	79;"	d
+_msgpack_be32	./msgpack/sysdep.h	101;"	d
+_msgpack_be32	./msgpack/sysdep.h	79;"	d
+_msgpack_be64	./msgpack/msgpack/sysdep.h	102;"	d
+_msgpack_be64	./msgpack/msgpack/sysdep.h	82;"	d
+_msgpack_be64	./msgpack/msgpack/sysdep.h	84;"	d
+_msgpack_be64	./msgpack/msgpack/sysdep.h	86;"	d
+_msgpack_be64	./msgpack/msgpack/sysdep.h	88;"	d
+_msgpack_be64	./msgpack/sysdep.h	102;"	d
+_msgpack_be64	./msgpack/sysdep.h	82;"	d
+_msgpack_be64	./msgpack/sysdep.h	84;"	d
+_msgpack_be64	./msgpack/sysdep.h	86;"	d
+_msgpack_be64	./msgpack/sysdep.h	88;"	d
+_msgpack_load16	./msgpack/msgpack/sysdep.h	114;"	d
+_msgpack_load16	./msgpack/sysdep.h	114;"	d
+_msgpack_load32	./msgpack/msgpack/sysdep.h	115;"	d
+_msgpack_load32	./msgpack/sysdep.h	115;"	d
+_msgpack_load64	./msgpack/msgpack/sysdep.h	116;"	d
+_msgpack_load64	./msgpack/sysdep.h	116;"	d
+_msgpack_store16	./msgpack/msgpack/sysdep.h	106;"	d
+_msgpack_store16	./msgpack/sysdep.h	106;"	d
+_msgpack_store32	./msgpack/msgpack/sysdep.h	108;"	d
+_msgpack_store32	./msgpack/sysdep.h	108;"	d
+_msgpack_store64	./msgpack/msgpack/sysdep.h	110;"	d
+_msgpack_store64	./msgpack/sysdep.h	110;"	d
+_msgpack_sync_decr_and_fetch	./msgpack/msgpack/sysdep.h	42;"	d
+_msgpack_sync_decr_and_fetch	./msgpack/msgpack/sysdep.h	46;"	d
+_msgpack_sync_decr_and_fetch	./msgpack/sysdep.h	42;"	d
+_msgpack_sync_decr_and_fetch	./msgpack/sysdep.h	46;"	d
+_msgpack_sync_incr_and_fetch	./msgpack/msgpack/sysdep.h	43;"	d
+_msgpack_sync_incr_and_fetch	./msgpack/msgpack/sysdep.h	47;"	d
+_msgpack_sync_incr_and_fetch	./msgpack/sysdep.h	43;"	d
+_msgpack_sync_incr_and_fetch	./msgpack/sysdep.h	47;"	d
+_nil	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_nil)(msgpack_pack_user x)$/;"	f
+_nil	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_nil)(msgpack_pack_user x)$/;"	f
+_raw	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_raw)(msgpack_pack_user x, size_t l)$/;"	f
+_raw	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_raw)(msgpack_pack_user x, size_t l)$/;"	f
+_raw_body	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_raw_body)(msgpack_pack_user x, const void* b, size_t l)$/;"	f
+_raw_body	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_raw_body)(msgpack_pack_user x, const void* b, size_t l)$/;"	f
+_short	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_short)(msgpack_pack_user x, short d)$/;"	f
+_short	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_short)(msgpack_pack_user x, short d)$/;"	f
+_true	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_true)(msgpack_pack_user x)$/;"	f
+_true	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_true)(msgpack_pack_user x)$/;"	f
+_uint16	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint16)(msgpack_pack_user x, uint16_t d)$/;"	f
+_uint16	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint16)(msgpack_pack_user x, uint16_t d)$/;"	f
+_uint16	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint16)(msgpack_pack_user x, uint16_t d)$/;"	f
+_uint16	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint16)(msgpack_pack_user x, uint16_t d)$/;"	f
+_uint32	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint32)(msgpack_pack_user x, uint32_t d)$/;"	f
+_uint32	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint32)(msgpack_pack_user x, uint32_t d)$/;"	f
+_uint32	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint32)(msgpack_pack_user x, uint32_t d)$/;"	f
+_uint32	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint32)(msgpack_pack_user x, uint32_t d)$/;"	f
+_uint64	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint64)(msgpack_pack_user x, uint64_t d)$/;"	f
+_uint64	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint64)(msgpack_pack_user x, uint64_t d)$/;"	f
+_uint64	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint64)(msgpack_pack_user x, uint64_t d)$/;"	f
+_uint64	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint64)(msgpack_pack_user x, uint64_t d)$/;"	f
+_uint8	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint8)(msgpack_pack_user x, uint8_t d)$/;"	f
+_uint8	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint8)(msgpack_pack_user x, uint8_t d)$/;"	f
+_uint8	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_uint8)(msgpack_pack_user x, uint8_t d)$/;"	f
+_uint8	./msgpack/pack_template.h	/^msgpack_pack_inline_func_fixint(_uint8)(msgpack_pack_user x, uint8_t d)$/;"	f
+_unsigned_int	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_int)(msgpack_pack_user x, unsigned int d)$/;"	f
+_unsigned_int	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_int)(msgpack_pack_user x, unsigned int d)$/;"	f
+_unsigned_long	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_long)(msgpack_pack_user x, unsigned long d)$/;"	f
+_unsigned_long	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_long)(msgpack_pack_user x, unsigned long d)$/;"	f
+_unsigned_long_long	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_long_long)(msgpack_pack_user x, unsigned long long d)$/;"	f
+_unsigned_long_long	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_long_long)(msgpack_pack_user x, unsigned long long d)$/;"	f
+_unsigned_short	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_short)(msgpack_pack_user x, unsigned short d)$/;"	f
+_unsigned_short	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_short)(msgpack_pack_user x, unsigned short d)$/;"	f
+addr	./msgpack/php_msgpack.h	/^    void *addr;$/;"	m	struct:_instead_smart
+again_fixed_trail	./msgpack/msgpack/unpack_template.h	133;"	d
+again_fixed_trail	./msgpack/msgpack/unpack_template.h	407;"	d
+again_fixed_trail	./msgpack/unpack_template.h	133;"	d
+again_fixed_trail	./msgpack/unpack_template.h	407;"	d
+again_fixed_trail_if_zero	./msgpack/msgpack/unpack_template.h	137;"	d
+again_fixed_trail_if_zero	./msgpack/msgpack/unpack_template.h	408;"	d
+again_fixed_trail_if_zero	./msgpack/unpack_template.h	137;"	d
+again_fixed_trail_if_zero	./msgpack/unpack_template.h	408;"	d
+backlog	./include/cpServer.h	/^        uint16_t backlog;$/;"	m	struct:_cpConfig
+buffer	./msgpack/msgpack_class.c	/^    smart_str buffer;$/;"	m	struct:__anon4	file:
+bufpid	./cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
+bufr	./cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
+check_need_exchange	./connect_pool_client.c	/^static void check_need_exchange(zval * object, char *cur_type)$/;"	f	file:
+cli_real_recv	./connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *info)$/;"	f	file:
+cli_real_send	./connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
+clientPid	./include/cpServer.h	/^        int clientPid;$/;"	m	struct:_cpWorkerG
+client_close	./php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
+clock_gettime	./cpFunction.c	/^int clock_gettime(clock_id_t which_clock, struct timespec *t) {$/;"	f
+conf	./include/cpServer.h	/^        cpConfig conf;$/;"	m	struct:_cpServerG
+config	./demon.php	/^$config = array($/;"	v
+conlist	./include/cpServer.h	/^        cpConnection *conlist;$/;"	m	struct:_cpServerGS
+connect_count	./include/cpServer.h	/^        uint32_t connect_count;$/;"	m	struct:_cpServerGS
+connect_pool	./php_connect_pool.h	/^PHP_MINFO_FUNCTION(connect_pool);$/;"	v
+connect_pool	./php_connect_pool.h	/^PHP_MINIT_FUNCTION(connect_pool);$/;"	v
+connect_pool	./php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
+connect_pool	./php_connect_pool.h	/^PHP_RINIT_FUNCTION(connect_pool);$/;"	v
+connect_pool	./php_connect_pool.h	/^PHP_RSHUTDOWN_FUNCTION(connect_pool);$/;"	v
+connect_pool_module_entry	./connect_pool.c	/^zend_module_entry connect_pool_module_entry = {$/;"	v
+connect_pool_perisent	./connect_pool_client.c	/^void* connect_pool_perisent(zval* zres, int port)$/;"	f
+cpClient	./include/cpClientNet.h	/^} cpClient;$/;"	t	typeref:struct:_cpClient
+cpClient_close	./cpClientNet.c	/^int cpClient_close(cpClient *cli)$/;"	f
+cpClient_connect	./cpClientNet.c	/^int cpClient_connect(cpClient *cli, char *host, int port, double timeout, int nonblock)$/;"	f
+cpClient_create	./cpClientNet.c	/^int cpClient_create(cpClient *cli)$/;"	f
+cpClient_recv	./cpClientNet.c	/^int cpClient_recv(cpClient *cli, void *data, int len, int waitall)$/;"	f
+cpClient_send	./cpClientNet.c	/^int cpClient_send(int sock, char *data, int length, int flag)$/;"	f
+cpConfig	./include/cpServer.h	/^    } cpConfig;$/;"	t	typeref:struct:_cpConfig
+cpConnection	./include/cpServer.h	/^    } cpConnection;$/;"	t	typeref:struct:_cpConnection
+cpCreateFifo	./cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
+cpCreate_ping_worker_mem	./cpPingWorker.c	/^CPINLINE int cpCreate_ping_worker_mem()$/;"	f
+cpCreate_worker_mem	./cpWorker.c	/^CPINLINE int cpCreate_worker_mem(int worker_id, int group_id)$/;"	f
+cpEpoll_add	./cpNetWork.c	/^int cpEpoll_add(int epfd, int fd, int fdtype) {$/;"	f
+cpEpoll_add	cpNetWork.c	/^int cpEpoll_add(int epfd, int fd, int fdtype) {$/;"	f
+cpEpoll_del	./cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
+cpEpoll_del	cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
+cpEpoll_wait	./cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
+cpEpoll_wait	cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
+cpFifoRead	./cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
+cpFind_restart_worker	./cpWorker.c	/^static void cpFind_restart_worker(int pid, sigset_t *block_alarm, int worker_exit_code)$/;"	f	file:
+cpFork_one_worker	./cpWorker.c	/^int cpFork_one_worker(int worker_id, int group_id)$/;"	f
+cpFork_ping_worker	./cpPingWorker.c	/^int cpFork_ping_worker()$/;"	f
+cpGetConfig	./cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
+cpGroup	./include/cpServer.h	/^    } cpGroup;$/;"	t	typeref:struct:_cpGroup
+cpIdelList	./include/cpServer.h	/^    } cpIdelList;$/;"	t	typeref:struct:_cpIdelList
+cpKqueue_add	cpKqueue.c	/^int cpKqueue_add(int epfd, int fd, int fdtype) {$/;"	f
+cpKqueue_del	cpKqueue.c	/^int cpKqueue_del(int epfd, int fd) {$/;"	f
+cpKqueue_free	cpKqueue.c	/^void cpKqueue_free() {$/;"	f
+cpKqueue_set	cpKqueue.c	/^int cpKqueue_set(int fd, int fdtype) {$/;"	f
+cpKqueue_wait	cpKqueue.c	/^int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd) {$/;"	f
+cpListen	./cpServer.c	/^int static cpListen()$/;"	f	file:
+cpListen	cpServer.c	/^int static cpListen()$/;"	f	file:
+cpLog	./include/cpFunction.h	39;"	d
+cpLog_init	./cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
+cpMD5	./cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
+cpManagerAdd	./cpWorker.c	/^static void cpManagerAdd(int sig)$/;"	f	file:
+cpManagerRecycle	./cpWorker.c	/^static void cpManagerRecycle(int sig)$/;"	f	file:
+cpManagerReload	./cpWorker.c	/^static void cpManagerReload(int sig)$/;"	f	file:
+cpMasterInfo	./include/cpMemory.h	/^    } cpMasterInfo;$/;"	t	typeref:struct:_cpMasterInfo
+cpNetRead	./cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
+cpPid	./connect_pool_client.c	/^static int cpPid = 0;$/;"	v	file:
+cpPingClear	./cpPingWorker.c	/^static void cpPingClear(int sig)$/;"	f	file:
+cpPing_add_dislist	./cpPingWorker.c	/^static void cpPing_add_dislist(zval *dis_arr, zval **args, char *data_source)$/;"	f	file:
+cpPing_del_prolist	./cpPingWorker.c	/^static void cpPing_del_prolist(zval *pro_arr, char *data_source)$/;"	f	file:
+cpPing_worker_loop	./cpPingWorker.c	/^static int cpPing_worker_loop()$/;"	f	file:
+cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, siginfo_t *, void *);$/;"	t
+cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
+cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
+cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
+cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
+cpReactor_client_receive	cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
+cpReactor_client_release	./cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
+cpReactor_client_release	cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
+cpReactor_error	./cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
+cpReactor_error	cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
+cpReactor_start	./cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
+cpReactor_start	cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
+cpReactor_thread_loop	./cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
+cpReactor_thread_loop	cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
+cpRecvEvent	./connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
+cpServerG	./include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
+cpServerGS	./include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
+cpServer_create	./cpServer.c	/^int cpServer_create()$/;"	f
+cpServer_create	cpServer.c	/^int cpServer_create()$/;"	f
+cpServer_init	./cpServer.c	/^void cpServer_init(zval *conf, char *ini_file)$/;"	f
+cpServer_init	cpServer.c	/^void cpServer_init(zval *conf, char *ini_file)$/;"	f
+cpServer_init_common	./cpServer.c	/^void cpServer_init_common(zval *conf)$/;"	f
+cpServer_init_common	cpServer.c	/^void cpServer_init_common(zval *conf)$/;"	f
+cpServer_master_onAccept	./cpServer.c	/^static int cpServer_master_onAccept(int fd)$/;"	f	file:
+cpServer_master_onAccept	cpServer.c	/^static int cpServer_master_onAccept(int fd)$/;"	f	file:
+cpServer_start	./cpServer.c	/^int cpServer_start()$/;"	f
+cpServer_start	cpServer.c	/^int cpServer_start()$/;"	f
+cpSetTimeout	./cpFunction.c	/^CPINLINE int cpSetTimeout(int sock, double timeout) {$/;"	f
+cpSettitle	./cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
+cpShareMemory	./include/cpMemory.h	/^    } cpShareMemory;$/;"	t	typeref:struct:_cpShareMemory
+cpSignalFunc	./include/cpFunction.h	/^    typedef void (*cpSignalFunc)(int);$/;"	t
+cpSignalHanlde	./cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
+cpSignalHanlde	cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
+cpSignalInit	./cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
+cpSignalInit	cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
+cpSignalSet	./cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
+cpTcpEvent	./include/cpMemory.h	/^    } cpTcpEvent;$/;"	t	typeref:struct:_cpTcpEvent
+cpThread	./include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
+cpTryGetWorkerId	./cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
+cpTryGetWorkerId	cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
+cpWaitList	./include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
+cpWorker	./include/cpWorker.h	/^    } cpWorker;$/;"	t	typeref:struct:_cpWorker
+cpWorkerG	./include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
+cpWorkerInfo	./include/cpMemory.h	/^    } cpWorkerInfo;$/;"	t	typeref:struct:_cpWorkerInfo
+cpWorker_attach_mem	./cpWorker.c	/^CPINLINE int cpWorker_attach_mem(int worker_id, int group_id)$/;"	f
+cpWorker_do_ping	./cpWorker.c	/^void cpWorker_do_ping()$/;"	f
+cpWorker_loop	./cpWorker.c	/^static int cpWorker_loop(int worker_id, int group_id)$/;"	f	file:
+cpWorker_manager_loop	./cpWorker.c	/^int cpWorker_manager_loop()$/;"	f
+cpWrite	./cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
+cp_add_fail_into_mem	./connect_pool.c	/^static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)$/;"	f	file:
+cp_call_user_function	./connect_pool.c	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f	file:
+cp_create_mmap_file	./cpMemory.c	/^int cp_create_mmap_file(cpShareMemory *object){$/;"	f
+cp_destory_client	./connect_pool.c	/^static void cp_destory_client(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f	file:
+cp_error	./cpFunction.c	/^int cp_error;$/;"	v
+cp_functions	./connect_pool.c	/^const zend_function_entry cp_functions[] = {$/;"	v
+cp_log_fn	./cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
+cp_mmap_calloc	./cpMemory.c	/^void *cp_mmap_calloc(int size)$/;"	f
+cp_mmap_calloc_with_file	./cpMemory.c	/^void* cp_mmap_calloc_with_file(cpShareMemory *object)$/;"	f
+cp_redis_select	./connect_pool.c	/^static int cp_redis_select(zval *new_obj, zval **db)$/;"	f	file:
+cp_ser_and_setdis	./cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
+cp_ser_and_setpro	./cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;"	f
+cp_serialize	./cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
+cp_system_random	./connect_pool_client.c	/^int cp_system_random(int min, int max)$/;"	f
+cp_unserialize	./cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
+create_pass_data	./connect_pool_client.c	/^static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_type, zval **ret_data_source)$/;"	f	file:
+daemonize	./include/cpServer.h	/^        uint8_t daemonize;$/;"	m	struct:_cpConfig
+data	./include/cpServer.h	/^        char data[0];$/;"	m	struct:_cpWaitList
+data	./msgpack/msgpack_unpack.c	/^    zval *data[VAR_ENTRIES_MAX];$/;"	m	struct:__anon5	file:
+data_source	./include/cpMemory.h	/^        char data_source[100];$/;"	m	struct:_cpTcpEvent
+deps	./msgpack/msgpack_unpack.h	/^    long deps;$/;"	m	struct:__anon7
+dev_random_fd	./connect_pool_client.c	/^static int dev_random_fd = -1;$/;"	v	file:
+epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpServerG
+epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpThread
+epoll_wait_handle	./include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
+epoll_wait_handle	include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
+error	./msgpack/msgpack_class.c	/^    int error;$/;"	m	struct:__anon4	file:
+error_display	./msgpack/php_msgpack.h	/^    zend_bool error_display;$/;"	v
+event_num	./include/cpServer.h	/^        uint16_t event_num;$/;"	m	struct:_cpThread
+exceed	./msgpack/php_msgpack.h	/^    int exceed;$/;"	m	struct:_instead_smart
+fd	./include/cpServer.h	/^        int fd; \/\/文件描述符$/;"	m	struct:_cpConnection
+fd	./include/cpServer.h	/^        int fd;$/;"	m	struct:_cpWaitList
+fd	./include/cpWorker.h	/^        int fd;\/\/当前worker服务于哪个fd$/;"	m	struct:_cpWorker
+finished	./msgpack/msgpack_class.c	/^    zend_bool finished;$/;"	m	struct:__anon4	file:
+get_attach_buf	./connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
+get_disable_list	./php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
+get_readfd	./connect_pool_client.c	/^static int get_readfd(int worker_id)$/;"	f	file:
+get_writefd	./connect_pool_client.c	/^static int get_writefd(int worker_id)$/;"	f	file:
+gid	./include/cpServer.h	/^        int gid; \/\/current worker's group id$/;"	m	struct:_cpWorkerG
+group	./include/cpServer.h	/^        zval* group;$/;"	m	struct:_cpServerGS
+group_id	./include/cpServer.h	/^        uint16_t group_id; \/\/指定当前连接在用哪个group$/;"	m	struct:_cpConnection
+group_num	./include/cpServer.h	/^        int group_num;$/;"	m	struct:_cpServerGS
+id	./include/cpServer.h	/^        int id; \/\/0.1.2.3$/;"	m	struct:_cpThread
+id	./include/cpServer.h	/^        int id; \/\/Current Proccess Worker's id 0,1,2,3...n$/;"	m	struct:_cpWorkerG
+id	./include/cpServer.h	/^        int id; \/\/Current worker group  id 0,1,2,3...n$/;"	m	struct:_cpGroup
+idel_time	./include/cpServer.h	/^        uint8_t idel_time;$/;"	m	struct:_cpConfig
+illegal_key_insert	./msgpack/php_msgpack.h	/^    zend_bool illegal_key_insert;$/;"	v
+info	./include/cpClientNet.h	/^        cpMasterInfo info;$/;"	m	struct:_cpClient
+ini_file	./include/cpServer.h	/^        char ini_file[MAX_INI_LENGTH];$/;"	m	struct:_cpConfig
+instead_smart	./msgpack/php_msgpack.h	/^}instead_smart;$/;"	t	typeref:struct:_instead_smart
+int16_t	./msgpack/msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
+int16_t	./msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
+int32_t	./msgpack/msgpack/sysdep.h	/^typedef __int32 int32_t;$/;"	t
+int32_t	./msgpack/sysdep.h	/^typedef __int32 int32_t;$/;"	t
+int64_t	./msgpack/msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
+int64_t	./msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
+int8_t	./msgpack/msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
+int8_t	./msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
+last_from_id	./include/cpWorker.h	/^        int last_from_id;$/;"	m	struct:_cpWorker
+le_cli_connect_pool	./connect_pool.c	/^int le_cli_connect_pool;$/;"	v
+le_cp_server	./connect_pool.c	/^int le_cp_server;$/;"	v
+len	./include/cpMemory.h	/^        int len;$/;"	m	struct:_cpWorkerInfo
+len	./include/cpServer.h	/^        int len;$/;"	m	struct:_cpWaitList
+len	./msgpack/php_msgpack.h	/^    int len;$/;"	m	struct:_instead_smart
+level	./msgpack/php_msgpack.h	/^        unsigned level;$/;"	m	struct:__anon8
+log_file	./include/cpServer.h	/^        char log_file[128]; \/\/日志文件$/;"	m	struct:_cpConfig
+manager_pid	./include/cpServer.h	/^        pid_t manager_pid;$/;"	m	struct:_cpServerGS
+master_pid	./include/cpServer.h	/^        pid_t master_pid;$/;"	m	struct:_cpServerGS
+max	./include/cpMemory.h	/^        int max;\/\/数据包max$/;"	m	struct:_cpMasterInfo
+max	./msgpack/msgpack/sysdep.h	57;"	d
+max	./msgpack/php_msgpack.h	/^    int max;$/;"	m	struct:_instead_smart
+max	./msgpack/sysdep.h	57;"	d
+max_conn	./include/cpServer.h	/^        int max_conn;$/;"	m	struct:_cpConfig
+max_fail_num	./include/cpServer.h	/^        uint16_t max_fail_num;$/;"	m	struct:_cpConfig
+max_read_len	./include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpConfig
+max_read_len	./include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpWorkerG
+max_request	./include/cpServer.h	/^        int max_request;$/;"	m	struct:_cpConfig
+mem	./include/cpMemory.h	/^        void *mem;$/;"	m	struct:_cpShareMemory
+min	./msgpack/msgpack/sysdep.h	60;"	d
+min	./msgpack/sysdep.h	60;"	d
+mmap_name	./include/cpMemory.h	/^        char mmap_name[CP_MMAP_NAME_LEN];$/;"	m	struct:_cpMasterInfo
+mmap_name	./include/cpMemory.h	/^        char mmap_name[CP_MMAP_NAME_LEN];$/;"	m	struct:_cpShareMemory
+mp	./msgpack/msgpack_class.c	/^    msgpack_unpack_t mp;$/;"	m	struct:__anon4	file:
+msgpack_base_methods	./msgpack/msgpack_class.c	/^static zend_function_entry msgpack_base_methods[] = {$/;"	v	file:
+msgpack_ce	./msgpack/msgpack_class.c	/^static zend_class_entry *msgpack_ce = NULL;$/;"	v	file:
+msgpack_check_ht_is_map	./msgpack/msgpack_pack.c	/^inline static int msgpack_check_ht_is_map(zval *array) $/;"	f	file:
+msgpack_container_type	./msgpack/msgpack/unpack_define.h	/^} msgpack_container_type;$/;"	t	typeref:enum:__anon2
+msgpack_container_type	./msgpack/unpack_define.h	/^} msgpack_container_type;$/;"	t	typeref:enum:__anon10
+msgpack_convert_array	./msgpack/msgpack_convert.c	/^int msgpack_convert_array(zval *return_value, zval *tpl, zval **value)$/;"	f
+msgpack_convert_long_to_properties	./msgpack/msgpack_convert.c	/^inline int msgpack_convert_long_to_properties($/;"	f
+msgpack_convert_object	./msgpack/msgpack_convert.c	/^int msgpack_convert_object(zval *return_value, zval *tpl, zval **value)$/;"	f
+msgpack_convert_string_to_properties	./msgpack/msgpack_convert.c	/^inline int msgpack_convert_string_to_properties($/;"	f
+msgpack_convert_template	./msgpack/msgpack_convert.c	/^int msgpack_convert_template(zval *return_value, zval *tpl, zval **value)$/;"	f
+msgpack_functions	./msgpack/msgpack.c	/^static zend_function_entry msgpack_functions[] = {$/;"	v	file:
+msgpack_init_globals	./msgpack/msgpack.c	/^static void msgpack_init_globals(zend_msgpack_globals *msgpack_globals)$/;"	f	file:
+msgpack_module_entry	./msgpack/msgpack.c	/^zend_module_entry msgpack_module_entry = {$/;"	v
+msgpack_pack_append_buffer	./msgpack/msgpack/pack_template.h	751;"	d
+msgpack_pack_append_buffer	./msgpack/msgpack_pack.c	19;"	d	file:
+msgpack_pack_append_buffer	./msgpack/pack_template.h	751;"	d
+msgpack_pack_inline_func	./msgpack/msgpack/pack_template.h	749;"	d
+msgpack_pack_inline_func	./msgpack/msgpack_pack.c	15;"	d	file:
+msgpack_pack_inline_func	./msgpack/pack_template.h	749;"	d
+msgpack_pack_inline_func_cint	./msgpack/msgpack/pack_template.h	626;"	d
+msgpack_pack_inline_func_cint	./msgpack/msgpack_pack.c	17;"	d	file:
+msgpack_pack_inline_func_cint	./msgpack/pack_template.h	626;"	d
+msgpack_pack_inline_func_fixint	./msgpack/msgpack/pack_template.h	331;"	d
+msgpack_pack_inline_func_fixint	./msgpack/pack_template.h	331;"	d
+msgpack_pack_real_int16	./msgpack/msgpack/pack_template.h	146;"	d
+msgpack_pack_real_int16	./msgpack/msgpack/pack_template.h	763;"	d
+msgpack_pack_real_int16	./msgpack/pack_template.h	146;"	d
+msgpack_pack_real_int16	./msgpack/pack_template.h	763;"	d
+msgpack_pack_real_int32	./msgpack/msgpack/pack_template.h	176;"	d
+msgpack_pack_real_int32	./msgpack/msgpack/pack_template.h	764;"	d
+msgpack_pack_real_int32	./msgpack/pack_template.h	176;"	d
+msgpack_pack_real_int32	./msgpack/pack_template.h	764;"	d
+msgpack_pack_real_int64	./msgpack/msgpack/pack_template.h	216;"	d
+msgpack_pack_real_int64	./msgpack/msgpack/pack_template.h	765;"	d
+msgpack_pack_real_int64	./msgpack/pack_template.h	216;"	d
+msgpack_pack_real_int64	./msgpack/pack_template.h	765;"	d
+msgpack_pack_real_int8	./msgpack/msgpack/pack_template.h	134;"	d
+msgpack_pack_real_int8	./msgpack/msgpack/pack_template.h	762;"	d
+msgpack_pack_real_int8	./msgpack/pack_template.h	134;"	d
+msgpack_pack_real_int8	./msgpack/pack_template.h	762;"	d
+msgpack_pack_real_uint16	./msgpack/msgpack/pack_template.h	60;"	d
+msgpack_pack_real_uint16	./msgpack/msgpack/pack_template.h	759;"	d
+msgpack_pack_real_uint16	./msgpack/pack_template.h	60;"	d
+msgpack_pack_real_uint16	./msgpack/pack_template.h	759;"	d
+msgpack_pack_real_uint32	./msgpack/msgpack/pack_template.h	760;"	d
+msgpack_pack_real_uint32	./msgpack/msgpack/pack_template.h	77;"	d
+msgpack_pack_real_uint32	./msgpack/pack_template.h	760;"	d
+msgpack_pack_real_uint32	./msgpack/pack_template.h	77;"	d
+msgpack_pack_real_uint64	./msgpack/msgpack/pack_template.h	103;"	d
+msgpack_pack_real_uint64	./msgpack/msgpack/pack_template.h	761;"	d
+msgpack_pack_real_uint64	./msgpack/pack_template.h	103;"	d
+msgpack_pack_real_uint64	./msgpack/pack_template.h	761;"	d
+msgpack_pack_real_uint8	./msgpack/msgpack/pack_template.h	48;"	d
+msgpack_pack_real_uint8	./msgpack/msgpack/pack_template.h	758;"	d
+msgpack_pack_real_uint8	./msgpack/pack_template.h	48;"	d
+msgpack_pack_real_uint8	./msgpack/pack_template.h	758;"	d
+msgpack_pack_user	./msgpack/msgpack/pack_template.h	750;"	d
+msgpack_pack_user	./msgpack/msgpack_pack.c	13;"	d	file:
+msgpack_pack_user	./msgpack/pack_template.h	750;"	d
+msgpack_serialize_array	./msgpack/msgpack_pack.c	/^inline static void msgpack_serialize_array($/;"	f	file:
+msgpack_serialize_class	./msgpack/msgpack_pack.c	/^inline static void msgpack_serialize_class($/;"	f	file:
+msgpack_serialize_data_t	./msgpack/msgpack_pack.h	/^typedef HashTable* msgpack_serialize_data_t;$/;"	t
+msgpack_serialize_object	./msgpack/msgpack_pack.c	/^inline static void msgpack_serialize_object($/;"	f	file:
+msgpack_serialize_string	./msgpack/msgpack_pack.c	/^inline static void msgpack_serialize_string($/;"	f	file:
+msgpack_serialize_type	./msgpack/msgpack_pack.h	/^enum msgpack_serialize_type$/;"	g
+msgpack_serialize_var_destroy	./msgpack/msgpack_unpack.c	/^void msgpack_serialize_var_destroy(msgpack_serialize_data_t *var_hash)$/;"	f
+msgpack_serialize_var_init	./msgpack/msgpack_unpack.c	/^void msgpack_serialize_var_init(msgpack_serialize_data_t *var_hash)$/;"	f
+msgpack_serialize_zval	./msgpack/msgpack_pack.c	/^void msgpack_serialize_zval($/;"	f
+msgpack_stack_pop	./msgpack/msgpack_unpack.c	/^inline static void msgpack_stack_pop($/;"	f	file:
+msgpack_stack_push	./msgpack/msgpack_unpack.c	/^inline static void msgpack_stack_push($/;"	f	file:
+msgpack_unpack_callback	./msgpack/msgpack/unpack_template.h	399;"	d
+msgpack_unpack_callback	./msgpack/msgpack_unpack.h	73;"	d
+msgpack_unpack_callback	./msgpack/unpack_template.h	399;"	d
+msgpack_unpack_func	./msgpack/msgpack/unpack_template.h	/^msgpack_unpack_func(int, _execute)(msgpack_unpack_struct(_context)* ctx, const char* data, size_t len, size_t* off)$/;"	f
+msgpack_unpack_func	./msgpack/msgpack/unpack_template.h	/^msgpack_unpack_func(msgpack_unpack_object, _data)(msgpack_unpack_struct(_context)* ctx)$/;"	f
+msgpack_unpack_func	./msgpack/msgpack/unpack_template.h	/^msgpack_unpack_func(void, _init)(msgpack_unpack_struct(_context)* ctx)$/;"	f
+msgpack_unpack_func	./msgpack/msgpack/unpack_template.h	398;"	d
+msgpack_unpack_func	./msgpack/msgpack_unpack.h	72;"	d
+msgpack_unpack_func	./msgpack/unpack_template.h	/^msgpack_unpack_func(int, _execute)(msgpack_unpack_struct(_context)* ctx, const char* data, size_t len, size_t* off)$/;"	f
+msgpack_unpack_func	./msgpack/unpack_template.h	/^msgpack_unpack_func(msgpack_unpack_object, _data)(msgpack_unpack_struct(_context)* ctx)$/;"	f
+msgpack_unpack_func	./msgpack/unpack_template.h	/^msgpack_unpack_func(void, _init)(msgpack_unpack_struct(_context)* ctx)$/;"	f
+msgpack_unpack_func	./msgpack/unpack_template.h	398;"	d
+msgpack_unpack_object	./msgpack/msgpack/unpack_template.h	401;"	d
+msgpack_unpack_object	./msgpack/msgpack_unpack.h	75;"	d
+msgpack_unpack_object	./msgpack/unpack_template.h	401;"	d
+msgpack_unpack_return	./msgpack/msgpack_unpack.h	/^} msgpack_unpack_return;$/;"	t	typeref:enum:__anon6
+msgpack_unpack_state	./msgpack/msgpack/unpack_define.h	/^} msgpack_unpack_state;$/;"	t	typeref:enum:__anon1
+msgpack_unpack_state	./msgpack/unpack_define.h	/^} msgpack_unpack_state;$/;"	t	typeref:enum:__anon9
+msgpack_unpack_struct	./msgpack/msgpack/unpack_template.h	400;"	d
+msgpack_unpack_struct	./msgpack/msgpack_unpack.h	71;"	d
+msgpack_unpack_struct	./msgpack/unpack_template.h	400;"	d
+msgpack_unpack_struct_decl	./msgpack/msgpack/unpack_template.h	/^msgpack_unpack_struct_decl(_context) {$/;"	f
+msgpack_unpack_struct_decl	./msgpack/msgpack/unpack_template.h	/^msgpack_unpack_struct_decl(_stack) {$/;"	f
+msgpack_unpack_struct_decl	./msgpack/msgpack/unpack_template.h	32;"	d
+msgpack_unpack_struct_decl	./msgpack/unpack_template.h	/^msgpack_unpack_struct_decl(_context) {$/;"	f
+msgpack_unpack_struct_decl	./msgpack/unpack_template.h	/^msgpack_unpack_struct_decl(_stack) {$/;"	f
+msgpack_unpack_struct_decl	./msgpack/unpack_template.h	32;"	d
+msgpack_unpack_t	./msgpack/msgpack_unpack.h	/^typedef struct template_context msgpack_unpack_t;$/;"	t	typeref:struct:template_context
+msgpack_unpack_user	./msgpack/msgpack/unpack_template.h	402;"	d
+msgpack_unpack_user	./msgpack/msgpack_unpack.h	77;"	d
+msgpack_unpack_user	./msgpack/unpack_template.h	402;"	d
+msgpack_unpacker_ce	./msgpack/msgpack_class.c	/^static zend_class_entry *msgpack_unpacker_ce = NULL;$/;"	v	file:
+msgpack_unpacker_methods	./msgpack/msgpack_class.c	/^static zend_function_entry msgpack_unpacker_methods[] = {$/;"	v	file:
+msgpack_unserialize_array	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_array($/;"	f
+msgpack_unserialize_array_item	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_array_item($/;"	f
+msgpack_unserialize_class	./msgpack/msgpack_unpack.c	/^inline static zend_class_entry* msgpack_unserialize_class($/;"	f	file:
+msgpack_unserialize_data	./msgpack/msgpack_unpack.h	/^} msgpack_unserialize_data;$/;"	t	typeref:struct:__anon7
+msgpack_unserialize_data_t	./msgpack/msgpack_unpack.h	/^typedef struct php_unserialize_data msgpack_unserialize_data_t;$/;"	t	typeref:struct:php_unserialize_data
+msgpack_unserialize_double	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_double($/;"	f
+msgpack_unserialize_false	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_false(msgpack_unserialize_data *unpack, zval **obj)$/;"	f
+msgpack_unserialize_float	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_float($/;"	f
+msgpack_unserialize_init	./msgpack/msgpack_unpack.c	/^void msgpack_unserialize_init(msgpack_unserialize_data *unpack)$/;"	f
+msgpack_unserialize_int16	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_int16($/;"	f
+msgpack_unserialize_int32	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_int32($/;"	f
+msgpack_unserialize_int64	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_int64($/;"	f
+msgpack_unserialize_int8	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_int8($/;"	f
+msgpack_unserialize_map	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_map($/;"	f
+msgpack_unserialize_map_item	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_map_item($/;"	f
+msgpack_unserialize_nil	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_nil(msgpack_unserialize_data *unpack, zval **obj)$/;"	f
+msgpack_unserialize_raw	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_raw($/;"	f
+msgpack_unserialize_true	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_true(msgpack_unserialize_data *unpack, zval **obj)$/;"	f
+msgpack_unserialize_uint16	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_uint16($/;"	f
+msgpack_unserialize_uint32	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_uint32($/;"	f
+msgpack_unserialize_uint64	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_uint64($/;"	f
+msgpack_unserialize_uint8	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_uint8($/;"	f
+msgpack_unserialize_var_destroy	./msgpack/msgpack_unpack.c	/^void msgpack_unserialize_var_destroy($/;"	f
+msgpack_unserialize_var_init	./msgpack/msgpack_unpack.c	/^void msgpack_unserialize_var_init(msgpack_unserialize_data_t *var_hashx)$/;"	f
+msgpack_var_access	./msgpack/msgpack_unpack.c	/^inline static int msgpack_var_access($/;"	f	file:
+msgpack_var_add	./msgpack/msgpack_pack.c	/^inline static int msgpack_var_add($/;"	f	file:
+msgpack_var_push	./msgpack/msgpack_unpack.c	/^inline static void msgpack_var_push($/;"	f	file:
+mutex_lock	./include/cpServer.h	/^        pthread_mutex_t *mutex_lock;$/;"	m	struct:_cpGroup
+name	./include/cpServer.h	/^        char name[100]; \/\/group name$/;"	m	struct:_cpGroup
+next	./include/cpServer.h	/^        struct _cpIdelList *next;$/;"	m	struct:_cpIdelList	typeref:struct:_cpIdelList::_cpIdelList
+next	./include/cpServer.h	/^        struct _cpWaitList *next;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
+next	./msgpack/msgpack_unpack.c	/^    void *next;$/;"	m	struct:__anon5	file:
+obj	./demon.php	/^$obj = new PDO('mysql:host=192.168.20.130;dbname=test1', "admin", "admin");$/;"	v
+obj	./demon.php	/^$obj = new Redis();$/;"	v
+obj	./demon.php	/^$obj = new redis_connect_pool();$/;"	v
+obj1	./demon.php	/^$obj1 = new pdo_connect_pool($config);$/;"	v
+obj1	./demon.php	/^$obj1 = new pdo_connect_pool('mysql:host=192.168.20.131;dbname=db1', "admin", "admin");$/;"	v
+object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon3	file:
+object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon4	file:
+offset	./msgpack/msgpack_class.c	/^    long offset;$/;"	m	struct:__anon4	file:
+pdo_connect_pool_PDOStatement_ce	./connect_pool.c	/^zend_class_entry pdo_connect_pool_PDOStatement_ce;$/;"	v
+pdo_connect_pool_PDOStatement_class_entry_ptr	./connect_pool.c	/^zend_class_entry *pdo_connect_pool_PDOStatement_class_entry_ptr;$/;"	v
+pdo_connect_pool_PDOStatement_methods	./connect_pool.c	/^const zend_function_entry pdo_connect_pool_PDOStatement_methods[] = {$/;"	v
+pdo_connect_pool_ce	./connect_pool.c	/^zend_class_entry pdo_connect_pool_ce;$/;"	v
+pdo_connect_pool_class_entry_ptr	./connect_pool.c	/^zend_class_entry *pdo_connect_pool_class_entry_ptr;$/;"	v
+pdo_connect_pool_methods	./connect_pool.c	/^const zend_function_entry pdo_connect_pool_methods[] = {$/;"	v
+pdo_dispatch	./connect_pool.c	/^static void pdo_dispatch(zval * args)$/;"	f	file:
+pdo_object	./cpWorker.c	/^zval *pdo_object = NULL;$/;"	v
+pdo_object_table	./connect_pool.c	/^static HashTable pdo_object_table;$/;"	v	file:
+pdo_proxy_connect	./connect_pool.c	/^int pdo_proxy_connect(zval *args, int flag)$/;"	f
+pdo_proxy_pdo	./connect_pool.c	/^static void pdo_proxy_pdo(zval * args)$/;"	f	file:
+pdo_proxy_stmt	./connect_pool.c	/^static void pdo_proxy_stmt(zval * args)$/;"	f	file:
+pdo_stmt	./connect_pool.c	/^static zval* pdo_stmt = NULL;$/;"	v	file:
+php_check_ms	./connect_pool_client.c	/^static char* php_check_ms(char *cmd, zval *z_args, zval* object)$/;"	f	file:
+php_msgpack_base_free	./msgpack/msgpack_class.c	/^static void php_msgpack_base_free(php_msgpack_base_t *base TSRMLS_DC)$/;"	f	file:
+php_msgpack_base_new	./msgpack/msgpack_class.c	/^static zend_object_value php_msgpack_base_new(zend_class_entry *ce TSRMLS_DC)$/;"	f	file:
+php_msgpack_base_t	./msgpack/msgpack_class.c	/^} php_msgpack_base_t;$/;"	t	typeref:struct:__anon3	file:
+php_msgpack_unpacker_free	./msgpack/msgpack_class.c	/^static void php_msgpack_unpacker_free($/;"	f	file:
+php_msgpack_unpacker_new	./msgpack/msgpack_class.c	/^static zend_object_value php_msgpack_unpacker_new($/;"	f	file:
+php_msgpack_unpacker_t	./msgpack/msgpack_class.c	/^} php_msgpack_unpacker_t;$/;"	t	typeref:struct:__anon4	file:
+php_msgpack_unserialize	./msgpack/msgpack.c	/^PHP_MSGPACK_API void php_msgpack_unserialize($/;"	f
+php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon3	file:
+php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon4	file:
+php_only	./msgpack/php_msgpack.h	/^    zend_bool php_only;$/;"	v
+php_pdo_connect_pool_close	./connect_pool_client.c	/^static int php_pdo_connect_pool_close(cpClient *cli)$/;"	f	file:
+phpext_connect_pool_ptr	./php_connect_pool.h	102;"	d
+phpext_msgpack_ptr	./msgpack/php_msgpack.h	14;"	d
+pid	./include/cpMemory.h	/^        int pid;$/;"	m	struct:_cpWorkerInfo
+pid	./include/cpWorker.h	/^        pid_t pid;$/;"	m	struct:_cpWorker
+pid_fn	./cpFunction.c	/^FILE *pid_fn = NULL;$/;"	v
+pid_init	./cpFunction.c	/^int pid_init() {$/;"	f
+ping_addr	./connect_pool_client.c	/^static HashTable ping_addr;$/;"	v	file:
+ping_mem_addr	./include/cpServer.h	/^        void *ping_mem_addr;$/;"	m	struct:_cpServerG
+ping_pid	./include/cpMemory.h	/^        int ping_pid;$/;"	m	struct:_cpMasterInfo
+ping_workers	./include/cpServer.h	/^        cpWorker *ping_workers;$/;"	m	struct:_cpServerGS
+pipe_fd_write	./include/cpWorker.h	/^        int pipe_fd_write;$/;"	m	struct:_cpWorker
+pool_server_create	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
+pool_server_reload	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_reload);$/;"	v
+pool_server_shutdown	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_shutdown);$/;"	v
+pool_server_version	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;"	v
+port	./include/cpClientNet.h	/^        int port;$/;"	m	struct:_cpClient
+port	./include/cpServer.h	/^        uint16_t port;$/;"	m	struct:_cpConfig
+pre	./include/cpServer.h	/^        struct _cpWaitList *pre;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
+process_type	./include/cpServer.h	/^        uint8_t process_type;$/;"	m	struct:_cpServerG
+pth_id	./include/cpServer.h	/^        uint16_t pth_id; \/\/thread id$/;"	m	struct:_cpConnection
+ptr_ping_addr	./connect_pool_client.c	/^static HashTable *ptr_ping_addr = NULL;$/;"	v	file:
+push_fixed_value	./msgpack/msgpack/unpack_template.h	125;"	d
+push_fixed_value	./msgpack/msgpack/unpack_template.h	405;"	d
+push_fixed_value	./msgpack/unpack_template.h	125;"	d
+push_fixed_value	./msgpack/unpack_template.h	405;"	d
+push_simple_value	./msgpack/msgpack/unpack_template.h	122;"	d
+push_simple_value	./msgpack/msgpack/unpack_template.h	404;"	d
+push_simple_value	./msgpack/unpack_template.h	122;"	d
+push_simple_value	./msgpack/unpack_template.h	404;"	d
+push_variable_value	./msgpack/msgpack/unpack_template.h	128;"	d
+push_variable_value	./msgpack/msgpack/unpack_template.h	406;"	d
+push_variable_value	./msgpack/unpack_template.h	128;"	d
+push_variable_value	./msgpack/unpack_template.h	406;"	d
+reactor_next_i	./include/cpServer.h	/^        uint16_t reactor_next_i;$/;"	m	struct:_cpServerGS
+reactor_num	./include/cpServer.h	/^        uint16_t reactor_num;$/;"	m	struct:_cpConfig
+reactor_threads	./include/cpServer.h	/^        cpThread *reactor_threads;$/;"	m	struct:_cpServerGS
+recycle_num	./include/cpServer.h	/^        uint16_t recycle_num;$/;"	m	struct:_cpConfig
+redis_connect_pool_ce	./connect_pool.c	/^zend_class_entry redis_connect_pool_ce;$/;"	v
+redis_connect_pool_class_entry_ptr	./connect_pool.c	/^zend_class_entry *redis_connect_pool_class_entry_ptr;$/;"	v
+redis_connect_pool_methods	./connect_pool.c	/^const zend_function_entry redis_connect_pool_methods[] = {$/;"	v
+redis_dispatch	./connect_pool.c	/^static void redis_dispatch(zval * args)$/;"	f	file:
+redis_object_table	./connect_pool.c	/^static HashTable redis_object_table;$/;"	v	file:
+redis_proxy_connect	./connect_pool.c	/^int redis_proxy_connect(zval *data_source, zval *args, int flag)$/;"	f
+release	./include/cpServer.h	/^        uint8_t release; \/\/方式重复release$/;"	m	struct:_cpConnection
+release_worker	./connect_pool_client.c	/^static void release_worker(zval *object)$/;"	f	file:
+released	./include/cpClientNet.h	/^        int released;$/;"	m	struct:_cpClient
+remote_addr	./include/cpClientNet.h	/^	struct sockaddr_in remote_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
+request	./include/cpWorker.h	/^        int request; \/\/worker request NUM$/;"	m	struct:_cpWorker
+ret_value	./connect_pool_client.c	/^    zval *ret_value;$/;"	m	struct:_cpRecvEvent	file:
+retval	./msgpack/msgpack_class.c	/^    zval *retval;$/;"	m	struct:__anon4	file:
+retval	./msgpack/msgpack_unpack.h	/^    zval *retval;$/;"	m	struct:__anon7
+rs	./demon.php	/^$rs = $obj->connect("192.168.20.130");$/;"	v
+rs	./demon.php	/^$rs = $obj->query("show tables");$/;"	v
+rs	./demon.php	/^$rs = $obj1->exec($sql);\/\/走主库$/;"	v
+rs	./demon.php	/^$rs = $obj1->query("select * from test limit 1");$/;"	v
+rs	./demon.php	/^$rs = $obj1->query("show tables");$/;"	v
+running	./include/cpServer.h	/^        int running;$/;"	m	struct:_cpServerGS
+running	./include/cpServer.h	/^        uint8_t running;$/;"	m	struct:_cpServerG
+semid2attbuf	./connect_pool_client.c	/^static void **semid2attbuf = NULL;$/;"	v	file:
+send_oob2proxy	./connect_pool.c	/^void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f
+ser_fail_hits	./include/cpServer.h	/^        uint16_t ser_fail_hits;$/;"	m	struct:_cpConfig
+serialize	./msgpack/php_msgpack.h	/^    } serialize;$/;"	v	typeref:struct:__anon8
+serv_addr	./include/cpClientNet.h	/^        struct sockaddr_in serv_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
+set_pid	./cpFunction.c	/^int set_pid(int pid) {$/;"	f
+size	./include/cpMemory.h	/^        int size;$/;"	m	struct:_cpShareMemory
+sm_obj	./include/cpWorker.h	/^        cpShareMemory sm_obj;$/;"	m	struct:_cpWorker
+sock	./include/cpClientNet.h	/^	int sock;$/;"	m	struct:_cpClient
+sql	./demon.php	/^$sql = "insert into `test` (tid) values (5)";$/;"	v
+stack	./msgpack/msgpack_unpack.h	/^    long stack[MSGPACK_EMBED_STACK_SIZE];$/;"	m	struct:__anon7
+start_container	./msgpack/msgpack/unpack_template.h	143;"	d
+start_container	./msgpack/msgpack/unpack_template.h	409;"	d
+start_container	./msgpack/unpack_template.h	143;"	d
+start_container	./msgpack/unpack_template.h	409;"	d
+swClient_inet_addr	./cpClientNet.c	/^static int swClient_inet_addr(struct sockaddr_in *sin, char *string)$/;"	f	file:
+swLog_free	./cpFunction.c	/^void swLog_free(void) {$/;"	f
+swSetBlock	./cpFunction.c	/^CPINLINE void swSetBlock(int sock) {$/;"	f
+swSetNonBlock	./cpFunction.c	/^CPINLINE void swSetNonBlock(int sock) {$/;"	f
+swSingalNone	./cpFunction.c	/^void swSingalNone() {$/;"	f
+template_callback_array	./msgpack/msgpack_unpack.h	121;"	d
+template_callback_array_item	./msgpack/msgpack_unpack.h	123;"	d
+template_callback_double	./msgpack/msgpack_unpack.h	111;"	d
+template_callback_false	./msgpack/msgpack_unpack.h	117;"	d
+template_callback_float	./msgpack/msgpack_unpack.h	109;"	d
+template_callback_int16	./msgpack/msgpack_unpack.h	103;"	d
+template_callback_int32	./msgpack/msgpack_unpack.h	105;"	d
+template_callback_int64	./msgpack/msgpack_unpack.h	107;"	d
+template_callback_int8	./msgpack/msgpack_unpack.h	101;"	d
+template_callback_map	./msgpack/msgpack_unpack.h	125;"	d
+template_callback_map_item	./msgpack/msgpack_unpack.h	127;"	d
+template_callback_nil	./msgpack/msgpack_unpack.h	113;"	d
+template_callback_raw	./msgpack/msgpack_unpack.h	119;"	d
+template_callback_root	./msgpack/msgpack_unpack.h	/^static inline msgpack_unpack_object template_callback_root(unpack_user* user)$/;"	f
+template_callback_true	./msgpack/msgpack_unpack.h	115;"	d
+template_callback_uint16	./msgpack/msgpack_unpack.h	95;"	d
+template_callback_uint32	./msgpack/msgpack_unpack.h	97;"	d
+template_callback_uint64	./msgpack/msgpack_unpack.h	99;"	d
+template_callback_uint8	./msgpack/msgpack_unpack.h	93;"	d
+thread_id	./include/cpServer.h	/^        pthread_t thread_id;$/;"	m	struct:_cpThread
+timeout	./include/cpClientNet.h	/^	double timeout;$/;"	m	struct:_cpClient
+timeout_sec	./include/cpServer.h	/^        int timeout_sec;$/;"	m	struct:_cpConfig
+timeout_usec	./include/cpServer.h	/^        int timeout_usec;$/;"	m	struct:_cpConfig
+type	./connect_pool_client.c	/^    uint8_t type;$/;"	m	struct:_cpRecvEvent	file:
+type	./include/cpMemory.h	/^        int type;$/;"	m	struct:_cpTcpEvent
+type	./include/cpMemory.h	/^        int type;$/;"	m	struct:_cpWorkerInfo
+type	./msgpack/msgpack_unpack.h	/^    int type;$/;"	m	struct:__anon7
+uint16_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int16 uint16_t;$/;"	t
+uint16_t	./msgpack/sysdep.h	/^typedef unsigned __int16 uint16_t;$/;"	t
+uint32_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int32 uint32_t;$/;"	t
+uint32_t	./msgpack/sysdep.h	/^typedef unsigned __int32 uint32_t;$/;"	t
+uint64_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	./msgpack/sysdep.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint8_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int8 uint8_t;$/;"	t
+uint8_t	./msgpack/sysdep.h	/^typedef unsigned __int8 uint8_t;$/;"	t
+unpack_user	./msgpack/msgpack_unpack.h	76;"	d
+use_wait_queue	./include/cpServer.h	/^        uint8_t use_wait_queue;$/;"	m	struct:_cpConfig
+used_slots	./msgpack/msgpack_unpack.c	/^    long used_slots;$/;"	m	struct:__anon5	file:
+var_entries	./msgpack/msgpack_unpack.c	/^} var_entries;$/;"	t	typeref:struct:__anon5	file:
+var_hash	./msgpack/msgpack_class.c	/^    msgpack_unserialize_data_t var_hash;$/;"	m	struct:__anon4	file:
+var_hash	./msgpack/msgpack_unpack.h	/^    msgpack_unserialize_data_t *var_hash;$/;"	m	struct:__anon7
+var_hash	./msgpack/php_msgpack.h	/^        void *var_hash;$/;"	m	struct:__anon8
+volatile_int8	./include/cpServer.h	/^    typedef volatile int8_t volatile_int8;$/;"	t
+wait_in_num	./include/cpServer.h	/^        uint64_t wait_in_num;$/;"	m	struct:_cpServerG
+wait_out_num	./include/cpServer.h	/^        uint64_t wait_out_num;$/;"	m	struct:_cpServerG
+worker_id	./include/cpMemory.h	/^        int worker_id;$/;"	m	struct:_cpMasterInfo
+worker_id	./include/cpServer.h	/^        int worker_id;$/;"	m	struct:_cpIdelList
+worker_id	./include/cpServer.h	/^        uint16_t worker_id; \/\/指定当前连接在用哪个worker$/;"	m	struct:_cpConnection
+worker_max	./include/cpServer.h	/^        uint32_t worker_max;$/;"	m	struct:_cpGroup
+worker_min	./include/cpServer.h	/^        uint32_t worker_min;$/;"	m	struct:_cpGroup
+worker_num	./include/cpServer.h	/^        uint32_t worker_num;$/;"	m	struct:_cpGroup
+worker_onReceive	./connect_pool.c	/^int worker_onReceive(zval * unser_value)$/;"	f
+workerfd2clientfd_list	./include/cpServer.h	/^        uint32_t *workerfd2clientfd_list; \/\/workerfd和客户端fd的对应关系$/;"	m	struct:_cpServerGS
+workerid2readfd	./connect_pool_client.c	/^static int *workerid2readfd = NULL;$/;"	v	file:
+workerid2writefd	./connect_pool_client.c	/^static int *workerid2writefd = NULL;$/;"	v	file:
+workers	./include/cpServer.h	/^        cpWorker *workers;$/;"	m	struct:_cpGroup
+workers_status	./include/cpServer.h	/^        volatile_int8 *workers_status;$/;"	m	struct:_cpGroup
+working	./include/cpServer.h	/^        int working;$/;"	m	struct:_cpWorkerG

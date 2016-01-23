@@ -39,6 +39,11 @@ extern "C" {
     void cpEpoll_free();
     CPINLINE int cpEpoll_event_set(int fdtype);
 
+    int cpKqueue_add(int epfd, int fd, int fdtype);
+    int cpKqueue_set(int fd, int fdtype);
+    int cpKqueue_del(int epfd, int fd);
+    int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd);
+    void cpKqueue_free();
 
 #ifdef	__cplusplus
 }

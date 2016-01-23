@@ -20,6 +20,7 @@ int cpEpoll_add(int epfd, int fd, int fdtype) {
     int ret;
     bzero(&e, sizeof (struct epoll_event));
 
+    // 这个地方 为毛要传这个啊
     e.data.fd = fd;
     e.events = fdtype;
     ret = epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &e);
