@@ -12,7 +12,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
     int ret;  // 返回值
     int fflags = 0;
     bzero(&e, sizeof (e));
-    cpFd = fd_;
+    cpFd fd_;
     fd_.fd = fd;
     fd_.fdtype = fdtype;
 
@@ -29,7 +29,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
         if (ret < 0) {
             prinft(" add event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
             cpLog(" add event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
-            return CP_ERR;
+            return FAILURE;
         }
     }
 
@@ -39,7 +39,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
         if (ret < 0) {
             prinft(" add event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
             cpLog(" add event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
-            return CP_ERR;
+            return FAILURE;
         }
     }
     /*
@@ -68,7 +68,7 @@ int cpKqueue_del(int epfd, int fd) {
         if (ret < 0) {
             prinft(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
             cpLog(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
-            return CP_ERR;
+            return FAILURE;
         }
    // }
 
@@ -78,7 +78,7 @@ int cpKqueue_del(int epfd, int fd) {
         if (ret < 0) {
             prinft(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
             cpLog(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
-            return CP_ERR;
+            return FAILURE;
         }
     //}
     //close时会自动从kqueue事件中移除
