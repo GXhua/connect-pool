@@ -37,6 +37,9 @@
 #else
 #ifdef HAVE_KQUEUE
 #include <sys/event.h>
+#ifndef SIGRTMIN
+#define SIGRTMIN 33
+#endif
 #endif
 #endif
 

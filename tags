@@ -25,6 +25,7 @@ CP_BACKLOG	./include/cpServer.h	16;"	d
 CP_BUFFER_SIZE	./include/cpNetWork.h	16;"	d
 CP_BUFFER_SIZE	include/cpNetWork.h	16;"	d
 CP_CHECK_RETURN	./php_connect_pool.h	112;"	d
+CP_CHECK_RETURN	php_connect_pool.h	115;"	d
 CP_CLIENTNET_H	./include/cpClientNet.h	9;"	d
 CP_CLIENT_EOF_LEN	./include/cpNetWork.h	25;"	d
 CP_CLIENT_EOF_LEN	include/cpNetWork.h	25;"	d
@@ -37,8 +38,11 @@ CP_CONNECT_RECONNECT	./include/cpServer.h	40;"	d
 CP_CPU_NUM	./include/cpServer.h	15;"	d
 CP_DEF_MAX_READ_LEN	./include/cpServer.h	29;"	d
 CP_EVENTLEN_ADD_TYPE	./php_connect_pool.h	121;"	d
+CP_EVENTLEN_ADD_TYPE	php_connect_pool.h	124;"	d
 CP_EVENTLEN_GET_LEN	./php_connect_pool.h	125;"	d
+CP_EVENTLEN_GET_LEN	php_connect_pool.h	128;"	d
 CP_EVENTLEN_GET_TYPE	./php_connect_pool.h	124;"	d
+CP_EVENTLEN_GET_TYPE	php_connect_pool.h	127;"	d
 CP_EXCEPTION_ARGS	./connect_pool.c	65;"	d	file:
 CP_FALSE	./include/cpServer.h	68;"	d
 CP_FD_NCON	./include/cpServer.h	62;"	d
@@ -49,12 +53,15 @@ CP_FIFO_NAME_LEN	./include/cpFunction.h	26;"	d
 CP_FIFO_NAME_PRE	./include/cpFunction.h	27;"	d
 CP_GET_PID	./connect_pool_client.c	43;"	d	file:
 CP_GROUP_LEN	./php_connect_pool.h	137;"	d
+CP_GROUP_LEN	php_connect_pool.h	140;"	d
 CP_GROUP_NUM	./php_connect_pool.h	138;"	d
+CP_GROUP_NUM	php_connect_pool.h	141;"	d
 CP_HEADER_CON_SUCCESS	./include/cpNetWork.h	26;"	d
 CP_HEADER_CON_SUCCESS	include/cpNetWork.h	26;"	d
 CP_HEADER_ERROR	./include/cpNetWork.h	27;"	d
 CP_HEADER_ERROR	include/cpNetWork.h	27;"	d
 CP_HOST_SIZE	./php_connect_pool.h	98;"	d
+CP_HOST_SIZE	php_connect_pool.h	101;"	d
 CP_IDEL_TIME	./include/cpServer.h	27;"	d
 CP_INTERNAL_ERROR_SEND	./connect_pool.c	43;"	d	file:
 CP_INTERNAL_ERROR_SEND_RETURN	./connect_pool.c	83;"	d	file:
@@ -90,12 +97,17 @@ CP_PING_PRO_LEN	./include/cpServer.h	34;"	d
 CP_PING_SLEEP	./include/cpServer.h	71;"	d
 CP_PIPES_NUM	./include/cpServer.h	17;"	d
 CP_PIPE_MOD	./php_connect_pool.h	134;"	d
+CP_PIPE_MOD	php_connect_pool.h	137;"	d
 CP_PORT_PDO	./include/cpServer.h	18;"	d
 CP_PORT_REDIS	./include/cpServer.h	19;"	d
 CP_PROCESS_MANAGER	./php_connect_pool.h	131;"	d
+CP_PROCESS_MANAGER	php_connect_pool.h	134;"	d
 CP_PROCESS_MASTER	./php_connect_pool.h	129;"	d
+CP_PROCESS_MASTER	php_connect_pool.h	132;"	d
 CP_PROCESS_PING	./php_connect_pool.h	132;"	d
+CP_PROCESS_PING	php_connect_pool.h	135;"	d
 CP_PROCESS_WORKER	./php_connect_pool.h	130;"	d
+CP_PROCESS_WORKER	php_connect_pool.h	133;"	d
 CP_REACTOR_MAXEVENTS	./include/cpNetWork.h	14;"	d
 CP_REACTOR_MAXEVENTS	include/cpNetWork.h	14;"	d
 CP_REACTOR_TIMEO_SEC	./include/cpServer.h	20;"	d
@@ -106,18 +118,26 @@ CP_RELEASE_HEADER	include/cpNetWork.h	29;"	d
 CP_RELEASE_HEADER_LEN	./include/cpNetWork.h	30;"	d
 CP_RELEASE_HEADER_LEN	include/cpNetWork.h	30;"	d
 CP_RES_CLIENT_NAME	./php_connect_pool.h	128;"	d
+CP_RES_CLIENT_NAME	php_connect_pool.h	131;"	d
 CP_RES_SERVER_NAME	./php_connect_pool.h	127;"	d
+CP_RES_SERVER_NAME	php_connect_pool.h	130;"	d
 CP_SEND_EXCEPTION	./connect_pool.c	81;"	d	file:
 CP_SEND_EXCEPTION_ARGS	./connect_pool.c	57;"	d	file:
 CP_SEND_EXCEPTION_RETURN	./connect_pool.c	84;"	d	file:
 CP_SERVER_H	./include/cpServer.h	9;"	d
 CP_SIGEVENT_EXCEPTION	./php_connect_pool.h	119;"	d
+CP_SIGEVENT_EXCEPTION	php_connect_pool.h	122;"	d
 CP_SIGEVENT_PDO	./php_connect_pool.h	120;"	d
+CP_SIGEVENT_PDO	php_connect_pool.h	123;"	d
 CP_SIGEVENT_TURE	./php_connect_pool.h	118;"	d
+CP_SIGEVENT_TURE	php_connect_pool.h	121;"	d
 CP_SIG_EVENT	./php_connect_pool.h	113;"	d
+CP_SIG_EVENT	php_connect_pool.h	116;"	d
 CP_START_SLEEP	./include/cpServer.h	70;"	d
 CP_TCPEVENT_GET	./php_connect_pool.h	115;"	d
+CP_TCPEVENT_GET	php_connect_pool.h	118;"	d
 CP_TCPEVENT_RELEASE	./php_connect_pool.h	116;"	d
+CP_TCPEVENT_RELEASE	php_connect_pool.h	119;"	d
 CP_TCP_KEEPCOUNT	./include/cpServer.h	58;"	d
 CP_TCP_KEEPIDLE	./include/cpServer.h	59;"	d
 CP_TCP_KEEPINTERVAL	./include/cpServer.h	60;"	d
@@ -129,6 +149,7 @@ CP_TOO_MANY_CON_ERR	./include/cpNetWork.h	23;"	d
 CP_TOO_MANY_CON_ERR	include/cpNetWork.h	23;"	d
 CP_TRUE	./include/cpServer.h	67;"	d
 CP_TYPE_SIZE	./php_connect_pool.h	135;"	d
+CP_TYPE_SIZE	php_connect_pool.h	138;"	d
 CP_UNSOCK_BUFSIZE	./include/cpServer.h	48;"	d
 CP_VERSION	./connect_pool.c	41;"	d	file:
 CP_WORKER_BUSY	./include/cpServer.h	52;"	d
@@ -184,11 +205,13 @@ ConProxyG	./connect_pool.c	/^cpServerG ConProxyG;$/;"	v
 ConProxyGS	./connect_pool.c	/^cpServerGS *ConProxyGS;$/;"	v
 ConProxyWG	./connect_pool.c	/^cpWorkerG ConProxyWG;$/;"	v
 EPOLLRDHUP	./php_connect_pool.h	34;"	d
+EPOLLRDHUP	php_connect_pool.h	34;"	d
 EPOLL_CLOSE	./include/cpNetWork.h	19;"	d
 EPOLL_CLOSE	include/cpNetWork.h	19;"	d
 FAILUREOR_MSG_SIZE	./include/cpFunction.h	34;"	d
 G	./include/cpServer.h	/^        cpGroup G[100]; \/\/group TODO extend$/;"	m	struct:_cpServerGS
 MAP_ANONYMOUS	./php_connect_pool.h	44;"	d
+MAP_ANONYMOUS	php_connect_pool.h	47;"	d
 MAX_INI_LENGTH	./include/cpFunction.h	36;"	d
 MAX_TITLE_LENGTH	./include/cpFunction.h	35;"	d
 MSGPACK_BASE_OBJECT	./msgpack/msgpack_class.c	68;"	d	file:
@@ -245,16 +268,23 @@ MSGPACK_VERSION_MINOR	./msgpack/msgpack/version.h	32;"	d
 MSGPACK_VERSION_MINOR	./msgpack/version.h	32;"	d
 MSGPACK_WARNING	./msgpack/msgpack_errors.h	10;"	d
 MasterSend2Client	./cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
+MasterSend2Client	cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
 NEXT_CS	./msgpack/msgpack/unpack_template.h	173;"	d
 NEXT_CS	./msgpack/msgpack/unpack_template.h	411;"	d
 NEXT_CS	./msgpack/unpack_template.h	173;"	d
 NEXT_CS	./msgpack/unpack_template.h	411;"	d
 NO_EPOLLRDHUP	./php_connect_pool.h	35;"	d
+NO_EPOLLRDHUP	php_connect_pool.h	35;"	d
 PHP_CONNECT_POOL_API	./php_connect_pool.h	105;"	d
 PHP_CONNECT_POOL_API	./php_connect_pool.h	107;"	d
 PHP_CONNECT_POOL_API	./php_connect_pool.h	109;"	d
+PHP_CONNECT_POOL_API	php_connect_pool.h	108;"	d
+PHP_CONNECT_POOL_API	php_connect_pool.h	110;"	d
+PHP_CONNECT_POOL_API	php_connect_pool.h	112;"	d
 PHP_CON_PROXY_H	./php_connect_pool.h	20;"	d
+PHP_CON_PROXY_H	php_connect_pool.h	20;"	d
 PHP_FE_END	./php_connect_pool.h	91;"	d
+PHP_FE_END	php_connect_pool.h	94;"	d
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_create)$/;"	f
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_reload)$/;"	f
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_shutdown)$/;"	f
@@ -290,7 +320,9 @@ PUSH_EO_PARAM	./msgpack/msgpack_class.c	41;"	d	file:
 PUSH_PARAM	./msgpack/msgpack_class.c	34;"	d	file:
 PUSH_PARAM	./msgpack/msgpack_class.c	39;"	d	file:
 RecvData	./connect_pool_client.c	/^cpRecvEvent RecvData;$/;"	v
+SIGRTMIN	php_connect_pool.h	41;"	d
 SOCK_NONBLOCK	./php_connect_pool.h	48;"	d
+SOCK_NONBLOCK	php_connect_pool.h	51;"	d
 SWITCH_RANGE	./msgpack/msgpack/unpack_template.h	178;"	d
 SWITCH_RANGE	./msgpack/unpack_template.h	178;"	d
 SWITCH_RANGE_BEGIN	./msgpack/msgpack/unpack_template.h	177;"	d
@@ -348,6 +380,7 @@ ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, set
 ZEND_MINFO_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MINFO_FUNCTION(msgpack)$/;"	f	file:
 ZEND_MINIT_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MINIT_FUNCTION(msgpack)$/;"	f	file:
 ZEND_MOD_END	./php_connect_pool.h	95;"	d
+ZEND_MOD_END	php_connect_pool.h	98;"	d
 ZEND_MSHUTDOWN_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MSHUTDOWN_FUNCTION(msgpack)$/;"	f	file:
 Z_ADDREF_PP	./msgpack/msgpack_unpack.c	12;"	d	file:
 Z_ISREF_P	./msgpack/msgpack_pack.c	34;"	d	file:
@@ -503,6 +536,7 @@ cli_real_recv	./connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *i
 cli_real_send	./connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
 clientPid	./include/cpServer.h	/^        int clientPid;$/;"	m	struct:_cpWorkerG
 client_close	./php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
+client_close	php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
 clock_gettime	./cpFunction.c	/^int clock_gettime(clock_id_t which_clock, struct timespec *t) {$/;"	f
 conf	./include/cpServer.h	/^        cpConfig conf;$/;"	m	struct:_cpServerG
 config	./demon.php	/^$config = array($/;"	v
@@ -513,6 +547,11 @@ connect_pool	./php_connect_pool.h	/^PHP_MINIT_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_RINIT_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_RSHUTDOWN_FUNCTION(connect_pool);$/;"	v
+connect_pool	php_connect_pool.h	/^PHP_MINFO_FUNCTION(connect_pool);$/;"	v
+connect_pool	php_connect_pool.h	/^PHP_MINIT_FUNCTION(connect_pool);$/;"	v
+connect_pool	php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
+connect_pool	php_connect_pool.h	/^PHP_RINIT_FUNCTION(connect_pool);$/;"	v
+connect_pool	php_connect_pool.h	/^PHP_RSHUTDOWN_FUNCTION(connect_pool);$/;"	v
 connect_pool_module_entry	./connect_pool.c	/^zend_module_entry connect_pool_module_entry = {$/;"	v
 connect_pool_perisent	./connect_pool_client.c	/^void* connect_pool_perisent(zval* zres, int port)$/;"	f
 cpClient	./include/cpClientNet.h	/^} cpClient;$/;"	t	typeref:struct:_cpClient
@@ -545,6 +584,7 @@ cpKqueue_free	cpKqueue.c	/^void cpKqueue_free() {$/;"	f
 cpKqueue_set	cpKqueue.c	/^int cpKqueue_set(int fd, int fdtype) {$/;"	f
 cpKqueue_wait	cpKqueue.c	/^int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd) {$/;"	f
 cpListen	./cpServer.c	/^int static cpListen()$/;"	f	file:
+cpListen	cpServer.c	/^int static cpListen()$/;"	f	file:
 cpLog	./include/cpFunction.h	39;"	d
 cpLog_init	./cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
 cpMD5	./cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
@@ -561,12 +601,17 @@ cpPing_worker_loop	./cpPingWorker.c	/^static int cpPing_worker_loop()$/;"	f	file
 cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, siginfo_t *, void *);$/;"	t
 cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
 cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
+cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
+cpReactor_client_receive	cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
 cpReactor_client_release	./cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
+cpReactor_client_release	cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
 cpReactor_error	./cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
 cpReactor_error	cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
 cpReactor_start	./cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
+cpReactor_start	cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
 cpReactor_thread_loop	./cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
+cpReactor_thread_loop	cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
 cpRecvEvent	./connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
 cpServerG	./include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
 cpServerGS	./include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
@@ -585,11 +630,14 @@ cpSettitle	./cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
 cpShareMemory	./include/cpMemory.h	/^    } cpShareMemory;$/;"	t	typeref:struct:_cpShareMemory
 cpSignalFunc	./include/cpFunction.h	/^    typedef void (*cpSignalFunc)(int);$/;"	t
 cpSignalHanlde	./cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
+cpSignalHanlde	cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
 cpSignalInit	./cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
+cpSignalInit	cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
 cpSignalSet	./cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
 cpTcpEvent	./include/cpMemory.h	/^    } cpTcpEvent;$/;"	t	typeref:struct:_cpTcpEvent
 cpThread	./include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
 cpTryGetWorkerId	./cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
+cpTryGetWorkerId	cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
 cpWaitList	./include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
 cpWorker	./include/cpWorker.h	/^    } cpWorker;$/;"	t	typeref:struct:_cpWorker
 cpWorkerG	./include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
@@ -635,6 +683,7 @@ fd	./include/cpWorker.h	/^        int fd;\/\/当前worker服务于哪个fd$/;"	m
 finished	./msgpack/msgpack_class.c	/^    zend_bool finished;$/;"	m	struct:__anon4	file:
 get_attach_buf	./connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
 get_disable_list	./php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
+get_disable_list	php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
 get_readfd	./connect_pool_client.c	/^static int get_readfd(int worker_id)$/;"	f	file:
 get_writefd	./connect_pool_client.c	/^static int get_writefd(int worker_id)$/;"	f	file:
 gid	./include/cpServer.h	/^        int gid; \/\/current worker's group id$/;"	m	struct:_cpWorkerG
@@ -851,6 +900,7 @@ php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon4	fil
 php_only	./msgpack/php_msgpack.h	/^    zend_bool php_only;$/;"	v
 php_pdo_connect_pool_close	./connect_pool_client.c	/^static int php_pdo_connect_pool_close(cpClient *cli)$/;"	f	file:
 phpext_connect_pool_ptr	./php_connect_pool.h	102;"	d
+phpext_connect_pool_ptr	php_connect_pool.h	105;"	d
 phpext_msgpack_ptr	./msgpack/php_msgpack.h	14;"	d
 pid	./include/cpMemory.h	/^        int pid;$/;"	m	struct:_cpWorkerInfo
 pid	./include/cpWorker.h	/^        pid_t pid;$/;"	m	struct:_cpWorker
@@ -862,9 +912,13 @@ ping_pid	./include/cpMemory.h	/^        int ping_pid;$/;"	m	struct:_cpMasterInfo
 ping_workers	./include/cpServer.h	/^        cpWorker *ping_workers;$/;"	m	struct:_cpServerGS
 pipe_fd_write	./include/cpWorker.h	/^        int pipe_fd_write;$/;"	m	struct:_cpWorker
 pool_server_create	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
+pool_server_create	php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
 pool_server_reload	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_reload);$/;"	v
+pool_server_reload	php_connect_pool.h	/^PHP_FUNCTION(pool_server_reload);$/;"	v
 pool_server_shutdown	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_shutdown);$/;"	v
+pool_server_shutdown	php_connect_pool.h	/^PHP_FUNCTION(pool_server_shutdown);$/;"	v
 pool_server_version	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;"	v
+pool_server_version	php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;"	v
 port	./include/cpClientNet.h	/^        int port;$/;"	m	struct:_cpClient
 port	./include/cpServer.h	/^        uint16_t port;$/;"	m	struct:_cpConfig
 pre	./include/cpServer.h	/^        struct _cpWaitList *pre;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
