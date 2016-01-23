@@ -73,10 +73,12 @@ int cpKqueue_del(int epfd, int fd) {
 }
 
 int cpKqueue_set(int fd, int fdtype) {
+    return SUCCESS;
 }
 
 int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd) {
+    return SUCCESS;
 }
-
 void cpKqueue_free() {
+    return SUCCESS;
 }
