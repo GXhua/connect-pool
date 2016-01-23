@@ -54,5 +54,6 @@ extern "C" {
 }
 #endif
 
-#endif	/* NETWORK_H */
+#endif
+/* NETWORK_H */
 
