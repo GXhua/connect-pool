@@ -1,10 +1,10 @@
 
 #include "php_connect_pool.h"
 
-typedef struct cpFd {
+typedef struct _cpFd {
     uint32_t fd;
     uint32_t fdtype;
-};
+} cpFd;
 
 #ifdef HAVE_KQUEUE
 int cpKqueue_add(int epfd, int fd, int fdtype) {
@@ -24,7 +24,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
 
     if (fdtype & EVFILT_READ) {
         EV_SET(&e, fd, EVFILT_READ, EV_ADD, fflags, 0, NULL);
-        memcpy(&e.udata, &fd_, sizeof(cpFd))
+        memcpy(&e.udata, &fd_, sizeof(cpFd));
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
         if (ret < 0) {
             prinft(" add event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);

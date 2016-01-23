@@ -398,6 +398,7 @@ _array	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgpack_pack
 _cpClient	./include/cpClientNet.h	/^typedef struct _cpClient$/;"	s
 _cpConfig	./include/cpServer.h	/^    typedef struct _cpConfig {$/;"	s
 _cpConnection	./include/cpServer.h	/^    typedef struct _cpConnection {$/;"	s
+_cpFd	cpKqueue.c	/^typedef struct _cpFd {$/;"	s	file:
 _cpGroup	./include/cpServer.h	/^    typedef struct _cpGroup {$/;"	s
 _cpIdelList	./include/cpServer.h	/^    typedef struct _cpIdelList {$/;"	s
 _cpMasterInfo	./include/cpMemory.h	/^    typedef struct _cpMasterInfo {\/\/获取连接,master进程返回的信息$/;"	s
@@ -574,7 +575,7 @@ cpEpoll_del	./cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
 cpEpoll_del	cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
 cpEpoll_wait	./cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
 cpEpoll_wait	cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
-cpFd	cpKqueue.c	/^typedef struct cpFd {$/;"	s	file:
+cpFd	cpKqueue.c	/^} cpFd;$/;"	t	typeref:struct:_cpFd	file:
 cpFifoRead	./cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
 cpFifoRead	cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
 cpFind_restart_worker	./cpWorker.c	/^static void cpFind_restart_worker(int pid, sigset_t *block_alarm, int worker_exit_code)$/;"	f	file:
@@ -700,8 +701,8 @@ exceed	./msgpack/php_msgpack.h	/^    int exceed;$/;"	m	struct:_instead_smart
 fd	./include/cpServer.h	/^        int fd; \/\/文件描述符$/;"	m	struct:_cpConnection
 fd	./include/cpServer.h	/^        int fd;$/;"	m	struct:_cpWaitList
 fd	./include/cpWorker.h	/^        int fd;\/\/当前worker服务于哪个fd$/;"	m	struct:_cpWorker
-fd	cpKqueue.c	/^    uint32_t fd;$/;"	m	struct:cpFd	file:
-fdtype	cpKqueue.c	/^    uint32_t fdtype;$/;"	m	struct:cpFd	file:
+fd	cpKqueue.c	/^    uint32_t fd;$/;"	m	struct:_cpFd	file:
+fdtype	cpKqueue.c	/^    uint32_t fdtype;$/;"	m	struct:_cpFd	file:
 finished	./msgpack/msgpack_class.c	/^    zend_bool finished;$/;"	m	struct:__anon4	file:
 get_attach_buf	./connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
 get_disable_list	./php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
