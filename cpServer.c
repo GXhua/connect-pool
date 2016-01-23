@@ -361,7 +361,7 @@ static int cpServer_master_onAccept(int fd)
 #else
 #ifdef HAVE_KQUEUE
         if (cpKqueue_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EVFILT_READ | EVFILT_WRITE) < 0)
-#end
+#endif
         {
             cpLog("[Master]add event fail Errno=%d|FD=%d", errno, conn_fd);
             close(conn_fd);

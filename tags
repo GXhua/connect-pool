@@ -245,7 +245,6 @@ MSGPACK_VERSION_MINOR	./msgpack/msgpack/version.h	32;"	d
 MSGPACK_VERSION_MINOR	./msgpack/version.h	32;"	d
 MSGPACK_WARNING	./msgpack/msgpack_errors.h	10;"	d
 MasterSend2Client	./cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
-MasterSend2Client	cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
 NEXT_CS	./msgpack/msgpack/unpack_template.h	173;"	d
 NEXT_CS	./msgpack/msgpack/unpack_template.h	411;"	d
 NEXT_CS	./msgpack/unpack_template.h	173;"	d
@@ -546,7 +545,6 @@ cpKqueue_free	cpKqueue.c	/^void cpKqueue_free() {$/;"	f
 cpKqueue_set	cpKqueue.c	/^int cpKqueue_set(int fd, int fdtype) {$/;"	f
 cpKqueue_wait	cpKqueue.c	/^int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd) {$/;"	f
 cpListen	./cpServer.c	/^int static cpListen()$/;"	f	file:
-cpListen	cpServer.c	/^int static cpListen()$/;"	f	file:
 cpLog	./include/cpFunction.h	39;"	d
 cpLog_init	./cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
 cpMD5	./cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
@@ -563,17 +561,12 @@ cpPing_worker_loop	./cpPingWorker.c	/^static int cpPing_worker_loop()$/;"	f	file
 cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, siginfo_t *, void *);$/;"	t
 cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
 cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
-cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
-cpReactor_client_receive	cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
 cpReactor_client_release	./cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
-cpReactor_client_release	cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
 cpReactor_error	./cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
 cpReactor_error	cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
 cpReactor_start	./cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
-cpReactor_start	cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
 cpReactor_thread_loop	./cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
-cpReactor_thread_loop	cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
 cpRecvEvent	./connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
 cpServerG	./include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
 cpServerGS	./include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
@@ -592,14 +585,11 @@ cpSettitle	./cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
 cpShareMemory	./include/cpMemory.h	/^    } cpShareMemory;$/;"	t	typeref:struct:_cpShareMemory
 cpSignalFunc	./include/cpFunction.h	/^    typedef void (*cpSignalFunc)(int);$/;"	t
 cpSignalHanlde	./cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
-cpSignalHanlde	cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
 cpSignalInit	./cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
-cpSignalInit	cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
 cpSignalSet	./cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
 cpTcpEvent	./include/cpMemory.h	/^    } cpTcpEvent;$/;"	t	typeref:struct:_cpTcpEvent
 cpThread	./include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
 cpTryGetWorkerId	./cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
-cpTryGetWorkerId	cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
 cpWaitList	./include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
 cpWorker	./include/cpWorker.h	/^    } cpWorker;$/;"	t	typeref:struct:_cpWorker
 cpWorkerG	./include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
