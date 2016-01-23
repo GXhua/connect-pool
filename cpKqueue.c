@@ -90,8 +90,7 @@ int cpKqueue_set(int fd, int fdtype) {
     return SUCCESS;
 }
 
-typedef int (*epoll_wait_handle)(int fd);
-int cpKqueue_wait(epoll_wait_handle*, struct timeval *timeo, int epfd) {
+int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
     return SUCCESS;
 }
 void cpKqueue_free() {
