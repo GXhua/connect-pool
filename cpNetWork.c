@@ -15,6 +15,7 @@
  */
 #include "php_connect_pool.h"
 
+#ifdef HAVE_EPOLL
 int cpEpoll_add(int epfd, int fd, int fdtype) {
     struct epoll_event e;
     int ret;
@@ -146,3 +147,4 @@ int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {
     }
     return 0;
 }
+#endif
