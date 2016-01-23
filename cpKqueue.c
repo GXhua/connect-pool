@@ -1,7 +1,7 @@
 
 #include "php_connect_pool.h"
 
-typedef cpFd {
+typedef struct cpFd {
     uint32_t fd;
     uint32_t fdtype;
 };
