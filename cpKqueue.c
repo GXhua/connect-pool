@@ -90,7 +90,7 @@ int cpKqueue_set(int fd, int fdtype) {
     return SUCCESS;
 }
 
-int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd) {
+int cpKqueue_wait(epoll_wait_handle*, struct timeval *timeo, int epfd) {
     return SUCCESS;
 }
 void cpKqueue_free() {

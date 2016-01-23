@@ -589,7 +589,7 @@ cpKqueue_add	cpKqueue.c	/^int cpKqueue_add(int epfd, int fd, int fdtype) {$/;"	f
 cpKqueue_del	cpKqueue.c	/^int cpKqueue_del(int epfd, int fd) {$/;"	f
 cpKqueue_free	cpKqueue.c	/^void cpKqueue_free() {$/;"	f
 cpKqueue_set	cpKqueue.c	/^int cpKqueue_set(int fd, int fdtype) {$/;"	f
-cpKqueue_wait	cpKqueue.c	/^int cpKqueue_wait(kqueue_wait_handle*, struct timeval *timeo, int epfd) {$/;"	f
+cpKqueue_wait	cpKqueue.c	/^int cpKqueue_wait(epoll_wait_handle*, struct timeval *timeo, int epfd) {$/;"	f
 cpListen	./cpServer.c	/^int static cpListen()$/;"	f	file:
 cpListen	cpServer.c	/^int static cpListen()$/;"	f	file:
 cpLog	./include/cpFunction.h	39;"	d
