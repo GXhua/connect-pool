@@ -62,7 +62,7 @@ int cpKqueue_del(int epfd, int fd) {
     int fflags = 0;
 
     //if (fdtype & EVFILT_READ) {
-        EV_SET(&epfd, fd, EVFILT_READ, EV_DELETE, fflags, 0, NULL);
+        EV_SET(&e, fd, EVFILT_READ, EV_DELETE, fflags, 0, NULL);
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
 
         if (ret < 0) {
