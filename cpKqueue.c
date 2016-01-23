@@ -27,7 +27,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
         memcpy(&e.udata, &fd_, sizeof(cpFd));
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
         if (ret < 0) {
-            prinft(" add event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
+            printf(" add event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
             cpLog(" add event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
             return FAILURE;
         }
@@ -37,7 +37,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
         EV_SET(&e, fd, EVFILT_WRITE, EV_ADD, fflags, 0, NULL);
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
         if (ret < 0) {
-            prinft(" add event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
+            printf(" add event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
             cpLog(" add event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
             return FAILURE;
         }
@@ -66,7 +66,7 @@ int cpKqueue_del(int epfd, int fd) {
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
 
         if (ret < 0) {
-            prinft(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
+            printf(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
             cpLog(" delete event [epfd=%d, fd=%d, type=%d, events=read] failed.\n", epfd, fd, fdtype);
             return FAILURE;
         }
@@ -76,7 +76,7 @@ int cpKqueue_del(int epfd, int fd) {
         EV_SET(&e, fd, EVFILT_WRITE, EV_DELETE, fflags, 0, NULL);
         ret = kevent(epfd, &e, 1, NULL, 0, NULL);
         if (ret < 0) {
-            prinft(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
+            printf(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
             cpLog(" delete event [epfd=%d, fd=%d, type=%d, events=write] failed.\n", epfd, fd, fdtype);
             return FAILURE;
         }
@@ -94,6 +94,6 @@ int cpKqueue_wait(epoll_wait_handle*, struct timeval *timeo, int epfd) {
     return SUCCESS;
 }
 void cpKqueue_free() {
-    return SUCCESS;
+    return ;
 }
 #endif
