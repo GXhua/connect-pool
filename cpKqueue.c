@@ -96,6 +96,7 @@ void cpKqueue_free() {
 
 int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
     int i, n, ret, usec;
+    cpFd fd_;
     if (timeo == NULL)
     {
         usec = CP_MAX_UINT;
@@ -123,21 +124,25 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
             continue;
         }else{
             for (i =0; i < n; n++) {
+                if (events[i].udata) {
+                    memcpy(&fd_, &(events[i].udata), sizeof(fd_));
+                }
+
                 // 包含读事件
                 if (events[i].events & EVFILT_READ) {
-                    ret = handles[EVFILT_READ](events[i].data.fd);
+                    ret = handles[EVFILT_READ](fd_.fd);
                     if (ret < 0)
                     {
-                        cpLog("kqueue [EVFILT_READ] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
+                        cpLog("kqueue [EVFILT_READ] handle failed. fd=%d. Error: %s[%d]", fd_.fd,
                                 strerror(errno), errno);
                     }
                 }
                 else if (events[i].events & EVFILT_WRITE)
                 {
-                    ret = handles[EVFILT_WRITE](events[i].data.fd);
+                    ret = handles[EVFILT_WRITE](fd_.fd);
                     if (ret < 0)
                     {
-                        cpLog("kqueue [EPOLLOUT] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
+                        cpLog("kqueue [EPOLLOUT] handle failed. fd=%d. Error: %s[%d]", fd_.fd,
                                 strerror(errno), errno);
                     }
                 }
