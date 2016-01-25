@@ -95,7 +95,8 @@ void cpKqueue_free() {
 }
 
 int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
-    int i, n, ret, usec;
+    int i, n, ret;
+    //, usec;
     cpFd fd_;
     struct timespec t;
     struct timespec *t_ptr;
