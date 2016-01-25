@@ -108,7 +108,7 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
     else
     {
         t.tv_sec = timeo->tv_sec;
-        t.tv_usec = timeo->tv_usec;
+        t.tv_nsec = timeo->tv_usec;
         t_ptr = &t;
         //usec = timeo->tv_sec * 1000 + timeo->tv_usec / 1000;
     }
