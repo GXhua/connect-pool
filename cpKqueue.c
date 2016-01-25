@@ -119,13 +119,12 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
         n = kevent(epfd, NULL, 0, events, CP_REACTOR_MAXEVENTS, t_ptr);
 
         if (n < 0) {
-            if (cpReactor_error() < 0)
-            {
+            // if (cpReactor_error() < 0) {
                 printf("kevent error \n");
                 cpLog("Epoll[#%d] Error: %s[%d]", fd_.fd, strerror(errno), errno);
                 return FAILURE;
-            }
-            //continue;
+            // }
+            // continue;
         } else if(ret == 0){
             printf("kenvent timeout !\n");
             continue;
