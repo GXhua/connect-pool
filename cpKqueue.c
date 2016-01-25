@@ -97,19 +97,26 @@ void cpKqueue_free() {
 int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
     int i, n, ret, usec;
     cpFd fd_;
+    struct timespec t;
+    struct timespec *t_ptr;
+
     if (timeo == NULL)
     {
-        usec = CP_MAX_UINT;
+        t_ptr = NULL;
+        //usec = CP_MAX_UINT;
     }
     else
     {
-        usec = timeo->tv_sec * 1000 + timeo->tv_usec / 1000;
+        t.tv_sec = timeo->tv_sec;
+        t.tv_usec = timeo->tv_usec;
+        t_ptr = &t;
+        //usec = timeo->tv_sec * 1000 + timeo->tv_usec / 1000;
     }
 
     struct kevent events[CP_REACTOR_MAXEVENTS];
     while(CPGS->running)
     {
-        n = kevent(epfd, NULL, 0, events, CP_REACTOR_MAXEVENTS, usec);
+        n = kevent(epfd, NULL, 0, events, CP_REACTOR_MAXEVENTS, t_ptr);
 
         if (n < 0) {
             if (cpReactor_error() < 0)
