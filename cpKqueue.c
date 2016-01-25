@@ -115,7 +115,7 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
             if (cpReactor_error() < 0)
             {
                 printf("kevent error \n");
-                cpLog("Epoll[#%d] Error: %s[%d]", events[i].data.fd, strerror(errno), errno);
+                cpLog("Epoll[#%d] Error: %s[%d]", fd_.fd, strerror(errno), errno);
                 return FAILURE;
             }
             //continue;
