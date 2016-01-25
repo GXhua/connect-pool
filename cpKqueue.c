@@ -129,7 +129,7 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
                 }
 
                 // 包含读事件
-                if (events[i].events & EVFILT_READ) {
+                if (events[i].filter & EVFILT_READ) {
                     ret = handles[EVFILT_READ](fd_.fd);
                     if (ret < 0)
                     {
@@ -137,7 +137,7 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
                                 strerror(errno), errno);
                     }
                 }
-                else if (events[i].events & EVFILT_WRITE)
+                else if (events[i].filter & EVFILT_WRITE)
                 {
                     ret = handles[EVFILT_WRITE](fd_.fd);
                     if (ret < 0)
