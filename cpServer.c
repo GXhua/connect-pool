@@ -730,7 +730,7 @@ int static cpReactor_start(int sock)
     }
     epoll_wait_handle handles[CP_MAX_EVENT];
     usleep(50000);
-    cpLog("start  success");
+    cpLog("start  success epfd:%d", accept_epfd);
     handles[CP_EVENT_READ] = cpServer_master_onAccept;
 #ifdef HAVE_EPOLL
     return cpEpoll_wait(handles, &timeo, accept_epfd);
