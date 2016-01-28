@@ -162,7 +162,7 @@ static inline int isReactor_event_write(int fdtype)
     return fdtype & CP_EVENT_WRITE;
 }
 
-static nline int isReactor_event_error(int fdtype)
+static inline int isReactor_event_error(int fdtype)
 {
     return fdtype & CP_EVENT_ERROR;
 }

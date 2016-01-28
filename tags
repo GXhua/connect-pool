@@ -736,7 +736,7 @@ int64_t	./msgpack/msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
 int64_t	./msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
 int8_t	./msgpack/msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
 int8_t	./msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
-isReactor_event_error	php_connect_pool.h	/^static nline int isReactor_event_error(int fdtype)$/;"	f
+isReactor_event_error	php_connect_pool.h	/^static inline int isReactor_event_error(int fdtype)$/;"	f
 isReactor_event_read	php_connect_pool.h	/^static inline int isReactor_event_read(int fdtype)$/;"	f
 isReactor_event_write	php_connect_pool.h	/^static inline int isReactor_event_write(int fdtype)$/;"	f
 last_from_id	./include/cpWorker.h	/^        int last_from_id;$/;"	m	struct:_cpWorker

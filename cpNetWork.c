@@ -37,6 +37,7 @@ static inline int cpReactorEpollGetType(int fdtype) {
     }
     return flag;
 }
+
 int cpEpoll_add(int epfd, int fd, int fdtype) {
     struct epoll_event e;
     int ret;
@@ -44,14 +45,8 @@ int cpEpoll_add(int epfd, int fd, int fdtype) {
 
     // 这个地方 为毛要传这个啊
     e.data.fd = fd;
-    if (fdtype & CP_EVENT_READ) {
-        e.events = EPOLLIN;
-    }
+    e.events = cpReactorEpollGetType(fdtype);
 
-    if (fdtype & CP_EVENT_WRITE) {
-        e.events = e.events | EPOLLOUT;
-    }
-    //e.events = fdtype;
     ret = epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &e);
     if (ret < 0)
     {

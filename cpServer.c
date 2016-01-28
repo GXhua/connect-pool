@@ -358,7 +358,8 @@ static int cpServer_master_onAccept(int fd)
             conn->release = CP_FD_RELEASED;
         }
 #ifdef HAVE_EPOLL
-        if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EPOLLIN | EPOLLRDHUP | EPOLLHUP | EPOLLERR | EPOLLPRI) < 0)
+        //if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EPOLLIN | EPOLLRDHUP | EPOLLHUP | EPOLLERR | EPOLLPRI) < 0)
+        if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, CP_EVENT_READ | CP_EVENT_WRITE) < 0)
 #else
 #ifdef HAVE_KQUEUE
         if (cpKqueue_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EVFILT_READ | EVFILT_WRITE) < 0)
