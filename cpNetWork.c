@@ -16,6 +16,27 @@
 #include "php_connect_pool.h"
 
 #ifdef HAVE_EPOLL
+
+/**
+ * 转换成epoll 对应的事件类型
+ */
+static inline int cpReactorEpollGetType(int fdtype) {
+    uint32_t flag = 0;
+
+    if (isReactor_event_read(fdtype))
+    {
+        flag |= EPOLLIN;
+    }
+    if (isReactor_event_write(fdtype))
+    {
+        flag |= EPOLLOUT;
+    }
+    if (isReactor_event_error(fdtype))
+    {
+        flag |= (EPOLLRDHUP | EPOLLHUP | EPOLLERR);
+    }
+    return flag;
+}
 int cpEpoll_add(int epfd, int fd, int fdtype) {
     struct epoll_event e;
     int ret;
@@ -23,7 +44,14 @@ int cpEpoll_add(int epfd, int fd, int fdtype) {
 
     // 这个地方 为毛要传这个啊
     e.data.fd = fd;
-    e.events = fdtype;
+    if (fdtype & CP_EVENT_READ) {
+        e.events = EPOLLIN;
+    }
+
+    if (fdtype & CP_EVENT_WRITE) {
+        e.events = e.events | EPOLLOUT;
+    }
+    //e.events = fdtype;
     ret = epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &e);
     if (ret < 0)
     {

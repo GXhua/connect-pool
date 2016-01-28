@@ -43,6 +43,11 @@ CP_EVENTLEN_GET_LEN	./php_connect_pool.h	125;"	d
 CP_EVENTLEN_GET_LEN	php_connect_pool.h	128;"	d
 CP_EVENTLEN_GET_TYPE	./php_connect_pool.h	124;"	d
 CP_EVENTLEN_GET_TYPE	php_connect_pool.h	127;"	d
+CP_EVENTS	php_connect_pool.h	/^enum CP_EVENTS$/;"	g
+CP_EVENT_DEAULT	php_connect_pool.h	/^    CP_EVENT_DEAULT = 256,$/;"	e	enum:CP_EVENTS
+CP_EVENT_ERROR	php_connect_pool.h	/^    CP_EVENT_ERROR = 1u << 11,$/;"	e	enum:CP_EVENTS
+CP_EVENT_READ	php_connect_pool.h	/^    CP_EVENT_READ = 1u << 9,$/;"	e	enum:CP_EVENTS
+CP_EVENT_WRITE	php_connect_pool.h	/^    CP_EVENT_WRITE = 1u << 10,$/;"	e	enum:CP_EVENTS
 CP_EXCEPTION_ARGS	./connect_pool.c	65;"	d	file:
 CP_FALSE	./include/cpServer.h	68;"	d
 CP_FD_NCON	./include/cpServer.h	62;"	d
@@ -611,6 +616,7 @@ cpPing_worker_loop	./cpPingWorker.c	/^static int cpPing_worker_loop()$/;"	f	file
 cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, siginfo_t *, void *);$/;"	t
 cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
 cpQueueSignalSet	cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
+cpReactorEpollGetType	cpNetWork.c	/^static inline int cpReactorEpollGetType(int fdtype) {$/;"	f	file:
 cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
@@ -720,6 +726,7 @@ idel_time	./include/cpServer.h	/^        uint8_t idel_time;$/;"	m	struct:_cpConf
 illegal_key_insert	./msgpack/php_msgpack.h	/^    zend_bool illegal_key_insert;$/;"	v
 info	./include/cpClientNet.h	/^        cpMasterInfo info;$/;"	m	struct:_cpClient
 ini_file	./include/cpServer.h	/^        char ini_file[MAX_INI_LENGTH];$/;"	m	struct:_cpConfig
+initReactor_fdtype	php_connect_pool.h	/^static inline int initReactor_fdtype(int fdtype)$/;"	f
 instead_smart	./msgpack/php_msgpack.h	/^}instead_smart;$/;"	t	typeref:struct:_instead_smart
 int16_t	./msgpack/msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
 int16_t	./msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
@@ -729,6 +736,9 @@ int64_t	./msgpack/msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
 int64_t	./msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
 int8_t	./msgpack/msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
 int8_t	./msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
+isReactor_event_error	php_connect_pool.h	/^static nline int isReactor_event_error(int fdtype)$/;"	f
+isReactor_event_read	php_connect_pool.h	/^static inline int isReactor_event_read(int fdtype)$/;"	f
+isReactor_event_write	php_connect_pool.h	/^static inline int isReactor_event_write(int fdtype)$/;"	f
 last_from_id	./include/cpWorker.h	/^        int last_from_id;$/;"	m	struct:_cpWorker
 le_cli_connect_pool	./connect_pool.c	/^int le_cli_connect_pool;$/;"	v
 le_cp_server	./connect_pool.c	/^int le_cp_server;$/;"	v
