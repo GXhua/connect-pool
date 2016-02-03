@@ -46,7 +46,6 @@ AC_TRY_COMPILE([#include "$phpincludedir/main/php_config.h"], [
                     connect_pool_client.c \
                     cpFunction.c \
                     cpMemory.c \
-                    cpNetWork.c \
                     cpKqueue.c \
                     cpClientNet.c \
                     cpPingWorker.c \

@@ -12,7 +12,8 @@
 extern "C" {
 #endif
 
-#define CP_CPU_NUM               (int)sysconf(_SC_NPROCESSORS_ONLN)/2==0?1:(int)sysconf(_SC_NPROCESSORS_ONLN)/2
+#define CP_CPU_NUM               1
+//#define CP_CPU_NUM               (int)sysconf(_SC_NPROCESSORS_ONLN)/2==0?1:(int)sysconf(_SC_NPROCESSORS_ONLN)/2
 #define CP_BACKLOG               512
 #define CP_PIPES_NUM             (CP_WORKER_NUM/CP_WRITER_NUM + 1) //每个写线程pipes数组大小
 #define CP_PORT_PDO              6253
@@ -54,7 +55,7 @@ extern "C" {
 #define CP_WORKER_DEL            0
 
 #define CP_ACCEPT_AGAIN          1     //是否循环accept，可以一次性处理完全部的listen队列，用于大量并发连接的场景
-#define CP_ACCEPT_MAX_COUNT      64    //一次循环的最大accept次数
+#define CP_ACCEPT_MAX_COUNT      1    //一次循环的最大accept次数
 #define CP_TCP_KEEPCOUNT         5
 #define CP_TCP_KEEPIDLE          3600 //1小时
 #define CP_TCP_KEEPINTERVAL      60

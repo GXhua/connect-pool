@@ -298,16 +298,22 @@ static int cpServer_master_onAccept(int fd)
     int conn_fd, c_pti = 0, i;
 
     for (i = 0; i < CP_ACCEPT_MAX_COUNT; i++)
-    {
-        //accept得到连接套接字
+    { //accept得到连接套接字 
         conn_fd = accept(fd, (struct sockaddr *) &client_addr, &client_addrlen);
+        if (conn_fd < 0) {
+            cpLog("accept client_fd:[%d] fd: [%d]  %s[%d] CP_ACCEPT_MAX_COUNT:[%d]", conn_fd, fd, strerror(errno), errno, CP_ACCEPT_MAX_COUNT);
+            return 0;
+        }
+
         if (conn_fd < 0)
         {
             switch (errno)
             {
                 case EAGAIN:
+                    cpLog(" EAGAIN:[%d] errno:[%d]", EAGAIN, errno);
                     return SUCCESS;
                 case EINTR:
+                    cpLog(" EINTR:[%d] errno:[%d]", EINTR, errno);
                     continue;
                 default:
                     cpLog("accept fail. Error: %s[%d]", strerror(errno), errno);
@@ -362,7 +368,7 @@ static int cpServer_master_onAccept(int fd)
         if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, CP_EVENT_READ | CP_EVENT_WRITE) < 0)
 #else
 #ifdef HAVE_KQUEUE
-        if (cpKqueue_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EVFILT_READ | EVFILT_WRITE) < 0)
+        if (cpKqueue_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, CP_EVENT_READ | CP_EVENT_WRITE) < 0)
 #endif
 #endif
         {
@@ -650,7 +656,7 @@ close_fd:
     return SUCCESS;
 }
 
-// reactor 线程
+// reactor 读写 线程
 int static cpReactor_thread_loop(int *id)
 {
 
@@ -693,6 +699,7 @@ int static cpReactor_thread_loop(int *id)
 //创建reactor 线程
 int static cpReactor_start(int sock)
 {
+
     int i;
 #ifdef HAVE_EPOLL
     int accept_epfd = epoll_create(512); //这个参数没用
@@ -730,7 +737,6 @@ int static cpReactor_start(int sock)
     }
     epoll_wait_handle handles[CP_MAX_EVENT];
     usleep(50000);
-    cpLog("start  success epfd:%d", accept_epfd);
     handles[CP_EVENT_READ] = cpServer_master_onAccept;
 #ifdef HAVE_EPOLL
     return cpEpoll_wait(handles, &timeo, accept_epfd);

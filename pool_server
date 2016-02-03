@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/bin/env php55
 <?php
 ini_set('memory_limit', '2048M'); //防止扩展有内存泄露，超过10000次请求重启代理进程
 ini_set("display_errors", "On");
@@ -18,6 +18,7 @@ if (($conf_arr = parse_ini_file($conf, true)) === false)//for stop && reload && 
 switch ($cmd) {
     case "start":
         pool_server_create($conf);
+        echo "after pool_server_create \n";
         break;
     case "reload":
         pool_server_reload((int) file_get_contents(PID_PRE . ".pid"));

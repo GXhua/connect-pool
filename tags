@@ -8,10 +8,15 @@ ACS_RAW_VALUE	./msgpack/msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__a
 ACS_RAW_VALUE	./msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon9
 CONPFUNCTION_H	./include/cpFunction.h	9;"	d
 CON_FAIL_MESSAGE	./connect_pool_client.c	27;"	d	file:
+CON_FAIL_MESSAGE	connect_pool_client.c	27;"	d	file:
 CON_FORMART_KEY	./connect_pool_client.c	26;"	d	file:
+CON_FORMART_KEY	connect_pool_client.c	26;"	d	file:
 CPGC	./include/cpServer.h	43;"	d
+CPGC	include/cpServer.h	44;"	d
 CPGL	./include/cpServer.h	44;"	d
+CPGL	include/cpServer.h	45;"	d
 CPGS	./include/cpServer.h	45;"	d
+CPGS	include/cpServer.h	46;"	d
 CPINLINE	./include/cpFunction.h	15;"	d
 CPINLINE	./include/cpFunction.h	17;"	d
 CPINLINE	./include/cpFunction.h	19;"	d
@@ -19,9 +24,13 @@ CPINLINE	./include/cpFunction.h	23;"	d
 CPINLINE	./include/cpFunction.h	24;"	d
 CPPINGWORKER_H	./include/cpPingWorker.h	9;"	d
 CPWG	./include/cpServer.h	46;"	d
+CPWG	include/cpServer.h	47;"	d
 CP_ACCEPT_AGAIN	./include/cpServer.h	56;"	d
+CP_ACCEPT_AGAIN	include/cpServer.h	57;"	d
 CP_ACCEPT_MAX_COUNT	./include/cpServer.h	57;"	d
+CP_ACCEPT_MAX_COUNT	include/cpServer.h	58;"	d
 CP_BACKLOG	./include/cpServer.h	16;"	d
+CP_BACKLOG	include/cpServer.h	17;"	d
 CP_BUFFER_SIZE	./include/cpNetWork.h	16;"	d
 CP_BUFFER_SIZE	include/cpNetWork.h	16;"	d
 CP_CHECK_RETURN	./php_connect_pool.h	112;"	d
@@ -32,11 +41,17 @@ CP_CLIENT_EOF_LEN	include/cpNetWork.h	25;"	d
 CP_CLIENT_EOF_STR	./include/cpNetWork.h	21;"	d
 CP_CLIENT_EOF_STR	include/cpNetWork.h	21;"	d
 CP_CLIENT_SERIALIZE_SEND_MEM	./connect_pool_client.c	/^CPINLINE int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, int worker_id, int max, char *mm_name)$/;"	f
+CP_CLIENT_SERIALIZE_SEND_MEM	connect_pool_client.c	/^CPINLINE int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, int worker_id, int max, char *mm_name)$/;"	f
 CP_CONNECT_NORMAL	./include/cpServer.h	39;"	d
+CP_CONNECT_NORMAL	include/cpServer.h	40;"	d
 CP_CONNECT_PING	./include/cpServer.h	41;"	d
+CP_CONNECT_PING	include/cpServer.h	42;"	d
 CP_CONNECT_RECONNECT	./include/cpServer.h	40;"	d
+CP_CONNECT_RECONNECT	include/cpServer.h	41;"	d
 CP_CPU_NUM	./include/cpServer.h	15;"	d
+CP_CPU_NUM	include/cpServer.h	15;"	d
 CP_DEF_MAX_READ_LEN	./include/cpServer.h	29;"	d
+CP_DEF_MAX_READ_LEN	include/cpServer.h	30;"	d
 CP_EVENTLEN_ADD_TYPE	./php_connect_pool.h	121;"	d
 CP_EVENTLEN_ADD_TYPE	php_connect_pool.h	124;"	d
 CP_EVENTLEN_GET_LEN	./php_connect_pool.h	125;"	d
@@ -49,14 +64,21 @@ CP_EVENT_ERROR	php_connect_pool.h	/^    CP_EVENT_ERROR = 1u << 11,$/;"	e	enum:CP
 CP_EVENT_READ	php_connect_pool.h	/^    CP_EVENT_READ = 1u << 9,$/;"	e	enum:CP_EVENTS
 CP_EVENT_WRITE	php_connect_pool.h	/^    CP_EVENT_WRITE = 1u << 10,$/;"	e	enum:CP_EVENTS
 CP_EXCEPTION_ARGS	./connect_pool.c	65;"	d	file:
+CP_EXCEPTION_ARGS	connect_pool.c	65;"	d	file:
 CP_FALSE	./include/cpServer.h	68;"	d
+CP_FALSE	include/cpServer.h	69;"	d
 CP_FD_NCON	./include/cpServer.h	62;"	d
+CP_FD_NCON	include/cpServer.h	63;"	d
 CP_FD_NRELEASED	./include/cpServer.h	64;"	d
+CP_FD_NRELEASED	include/cpServer.h	65;"	d
 CP_FD_RELEASED	./include/cpServer.h	63;"	d
+CP_FD_RELEASED	include/cpServer.h	64;"	d
 CP_FD_WAITING	./include/cpServer.h	65;"	d
+CP_FD_WAITING	include/cpServer.h	66;"	d
 CP_FIFO_NAME_LEN	./include/cpFunction.h	26;"	d
 CP_FIFO_NAME_PRE	./include/cpFunction.h	27;"	d
 CP_GET_PID	./connect_pool_client.c	43;"	d	file:
+CP_GET_PID	connect_pool_client.c	43;"	d	file:
 CP_GROUP_LEN	./php_connect_pool.h	137;"	d
 CP_GROUP_LEN	php_connect_pool.h	140;"	d
 CP_GROUP_NUM	./php_connect_pool.h	138;"	d
@@ -68,22 +90,33 @@ CP_HEADER_ERROR	include/cpNetWork.h	27;"	d
 CP_HOST_SIZE	./php_connect_pool.h	98;"	d
 CP_HOST_SIZE	php_connect_pool.h	101;"	d
 CP_IDEL_TIME	./include/cpServer.h	27;"	d
+CP_IDEL_TIME	include/cpServer.h	28;"	d
 CP_INTERNAL_ERROR_SEND	./connect_pool.c	43;"	d	file:
+CP_INTERNAL_ERROR_SEND	connect_pool.c	43;"	d	file:
 CP_INTERNAL_ERROR_SEND_RETURN	./connect_pool.c	83;"	d	file:
+CP_INTERNAL_ERROR_SEND_RETURN	connect_pool.c	83;"	d	file:
 CP_INTERNAL_NORMAL_SEND	./connect_pool.c	50;"	d	file:
+CP_INTERNAL_NORMAL_SEND	connect_pool.c	50;"	d	file:
 CP_INTERNAL_NORMAL_SEND_RETURN	./connect_pool.c	82;"	d	file:
+CP_INTERNAL_NORMAL_SEND_RETURN	connect_pool.c	82;"	d	file:
 CP_INTERNAL_SERIALIZE_SEND_MEM	./connect_pool.c	/^CPINLINE int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type)$/;"	f
+CP_INTERNAL_SERIALIZE_SEND_MEM	connect_pool.c	/^CPINLINE int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type)$/;"	f
 CP_LOG_FORMAT	./include/cpFunction.h	33;"	d
 CP_MAX_EVENT	./include/cpNetWork.h	15;"	d
 CP_MAX_EVENT	include/cpNetWork.h	15;"	d
 CP_MAX_FDS	./include/cpServer.h	22;"	d
+CP_MAX_FDS	include/cpServer.h	23;"	d
 CP_MAX_READ_LEN	./include/cpServer.h	30;"	d
+CP_MAX_READ_LEN	include/cpServer.h	31;"	d
 CP_MAX_REQUEST	./include/cpServer.h	24;"	d
+CP_MAX_REQUEST	include/cpServer.h	25;"	d
 CP_MAX_UINT	./include/cpNetWork.h	17;"	d
 CP_MAX_UINT	include/cpNetWork.h	17;"	d
 CP_MAX_WORKER	./include/cpServer.h	25;"	d
+CP_MAX_WORKER	include/cpServer.h	26;"	d
 CP_MEMORY_H	./include/cpMemory.h	9;"	d
 CP_MIN_WORKER	./include/cpServer.h	26;"	d
+CP_MIN_WORKER	include/cpServer.h	27;"	d
 CP_MMAP_NAME_LEN	./include/cpFunction.h	29;"	d
 CP_MMAP_NAME_PRE	./include/cpFunction.h	28;"	d
 CP_MULTI_PROCESS_ERR	./include/cpNetWork.h	24;"	d
@@ -93,18 +126,29 @@ CP_NETWORK_H	include/cpNetWork.h	9;"	d
 CP_PDO_HEADER_STATE	./include/cpNetWork.h	28;"	d
 CP_PDO_HEADER_STATE	include/cpNetWork.h	28;"	d
 CP_PING_DIS_LEN	./include/cpServer.h	33;"	d
+CP_PING_DIS_LEN	include/cpServer.h	34;"	d
 CP_PING_GET_DIS	./include/cpServer.h	37;"	d
+CP_PING_GET_DIS	include/cpServer.h	38;"	d
 CP_PING_GET_PRO	./include/cpServer.h	38;"	d
+CP_PING_GET_PRO	include/cpServer.h	39;"	d
 CP_PING_MD5_LEN	./include/cpServer.h	35;"	d
+CP_PING_MD5_LEN	include/cpServer.h	36;"	d
 CP_PING_MEM_LEN	./include/cpServer.h	32;"	d
+CP_PING_MEM_LEN	include/cpServer.h	33;"	d
 CP_PING_PID_LEN	./include/cpServer.h	36;"	d
+CP_PING_PID_LEN	include/cpServer.h	37;"	d
 CP_PING_PRO_LEN	./include/cpServer.h	34;"	d
+CP_PING_PRO_LEN	include/cpServer.h	35;"	d
 CP_PING_SLEEP	./include/cpServer.h	71;"	d
+CP_PING_SLEEP	include/cpServer.h	72;"	d
 CP_PIPES_NUM	./include/cpServer.h	17;"	d
+CP_PIPES_NUM	include/cpServer.h	18;"	d
 CP_PIPE_MOD	./php_connect_pool.h	134;"	d
 CP_PIPE_MOD	php_connect_pool.h	137;"	d
 CP_PORT_PDO	./include/cpServer.h	18;"	d
+CP_PORT_PDO	include/cpServer.h	19;"	d
 CP_PORT_REDIS	./include/cpServer.h	19;"	d
+CP_PORT_REDIS	include/cpServer.h	20;"	d
 CP_PROCESS_MANAGER	./php_connect_pool.h	131;"	d
 CP_PROCESS_MANAGER	php_connect_pool.h	134;"	d
 CP_PROCESS_MASTER	./php_connect_pool.h	129;"	d
@@ -116,8 +160,11 @@ CP_PROCESS_WORKER	php_connect_pool.h	133;"	d
 CP_REACTOR_MAXEVENTS	./include/cpNetWork.h	14;"	d
 CP_REACTOR_MAXEVENTS	include/cpNetWork.h	14;"	d
 CP_REACTOR_TIMEO_SEC	./include/cpServer.h	20;"	d
+CP_REACTOR_TIMEO_SEC	include/cpServer.h	21;"	d
 CP_REACTOR_TIMEO_USEC	./include/cpServer.h	21;"	d
+CP_REACTOR_TIMEO_USEC	include/cpServer.h	22;"	d
 CP_RECYCLE_NUM	./include/cpServer.h	28;"	d
+CP_RECYCLE_NUM	include/cpServer.h	29;"	d
 CP_RELEASE_HEADER	./include/cpNetWork.h	29;"	d
 CP_RELEASE_HEADER	include/cpNetWork.h	29;"	d
 CP_RELEASE_HEADER_LEN	./include/cpNetWork.h	30;"	d
@@ -127,9 +174,13 @@ CP_RES_CLIENT_NAME	php_connect_pool.h	131;"	d
 CP_RES_SERVER_NAME	./php_connect_pool.h	127;"	d
 CP_RES_SERVER_NAME	php_connect_pool.h	130;"	d
 CP_SEND_EXCEPTION	./connect_pool.c	81;"	d	file:
+CP_SEND_EXCEPTION	connect_pool.c	81;"	d	file:
 CP_SEND_EXCEPTION_ARGS	./connect_pool.c	57;"	d	file:
+CP_SEND_EXCEPTION_ARGS	connect_pool.c	57;"	d	file:
 CP_SEND_EXCEPTION_RETURN	./connect_pool.c	84;"	d	file:
+CP_SEND_EXCEPTION_RETURN	connect_pool.c	84;"	d	file:
 CP_SERVER_H	./include/cpServer.h	9;"	d
+CP_SERVER_H	include/cpServer.h	9;"	d
 CP_SIGEVENT_EXCEPTION	./php_connect_pool.h	119;"	d
 CP_SIGEVENT_EXCEPTION	php_connect_pool.h	122;"	d
 CP_SIGEVENT_PDO	./php_connect_pool.h	120;"	d
@@ -139,30 +190,44 @@ CP_SIGEVENT_TURE	php_connect_pool.h	121;"	d
 CP_SIG_EVENT	./php_connect_pool.h	113;"	d
 CP_SIG_EVENT	php_connect_pool.h	116;"	d
 CP_START_SLEEP	./include/cpServer.h	70;"	d
+CP_START_SLEEP	include/cpServer.h	71;"	d
 CP_TCPEVENT_GET	./php_connect_pool.h	115;"	d
 CP_TCPEVENT_GET	php_connect_pool.h	118;"	d
 CP_TCPEVENT_RELEASE	./php_connect_pool.h	116;"	d
 CP_TCPEVENT_RELEASE	php_connect_pool.h	119;"	d
 CP_TCP_KEEPCOUNT	./include/cpServer.h	58;"	d
+CP_TCP_KEEPCOUNT	include/cpServer.h	59;"	d
 CP_TCP_KEEPIDLE	./include/cpServer.h	59;"	d
+CP_TCP_KEEPIDLE	include/cpServer.h	60;"	d
 CP_TCP_KEEPINTERVAL	./include/cpServer.h	60;"	d
+CP_TCP_KEEPINTERVAL	include/cpServer.h	61;"	d
 CP_TEST_RETURN_FALSE	./connect_pool.c	72;"	d	file:
+CP_TEST_RETURN_FALSE	connect_pool.c	72;"	d	file:
 CP_TEST_RETURN_TRUE	./connect_pool.c	85;"	d	file:
+CP_TEST_RETURN_TRUE	connect_pool.c	85;"	d	file:
 CP_TOO_MANY_CON	./include/cpNetWork.h	22;"	d
 CP_TOO_MANY_CON	include/cpNetWork.h	22;"	d
 CP_TOO_MANY_CON_ERR	./include/cpNetWork.h	23;"	d
 CP_TOO_MANY_CON_ERR	include/cpNetWork.h	23;"	d
 CP_TRUE	./include/cpServer.h	67;"	d
+CP_TRUE	include/cpServer.h	68;"	d
 CP_TYPE_SIZE	./php_connect_pool.h	135;"	d
 CP_TYPE_SIZE	php_connect_pool.h	138;"	d
 CP_UNSOCK_BUFSIZE	./include/cpServer.h	48;"	d
+CP_UNSOCK_BUFSIZE	include/cpServer.h	49;"	d
 CP_VERSION	./connect_pool.c	41;"	d	file:
+CP_VERSION	connect_pool.c	41;"	d	file:
 CP_WORKER_BUSY	./include/cpServer.h	52;"	d
+CP_WORKER_BUSY	include/cpServer.h	53;"	d
 CP_WORKER_DEL	./include/cpServer.h	54;"	d
+CP_WORKER_DEL	include/cpServer.h	55;"	d
 CP_WORKER_DELING	./include/cpServer.h	51;"	d
+CP_WORKER_DELING	include/cpServer.h	52;"	d
 CP_WORKER_H	./include/cpWorker.h	9;"	d
 CP_WORKER_IDLE	./include/cpServer.h	53;"	d
+CP_WORKER_IDLE	include/cpServer.h	54;"	d
 CP_WORKER_RESTART	./include/cpServer.h	50;"	d
+CP_WORKER_RESTART	include/cpServer.h	51;"	d
 CP_WORKER_SENDTO_YIELD	./include/cpWorker.h	14;"	d
 CPid	./include/cpWorker.h	/^        int CPid;\/\/当前worker服务于哪个pid$/;"	m	struct:_cpWorker
 CS_ARRAY_16	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon1
@@ -207,14 +272,18 @@ CT_MAP_VALUE	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__ano
 CT_MAP_VALUE	./msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon10
 ClientPid	./include/cpMemory.h	/^        int ClientPid;$/;"	m	struct:_cpTcpEvent
 ConProxyG	./connect_pool.c	/^cpServerG ConProxyG;$/;"	v
+ConProxyG	connect_pool.c	/^cpServerG ConProxyG;$/;"	v
 ConProxyGS	./connect_pool.c	/^cpServerGS *ConProxyGS;$/;"	v
+ConProxyGS	connect_pool.c	/^cpServerGS *ConProxyGS;$/;"	v
 ConProxyWG	./connect_pool.c	/^cpWorkerG ConProxyWG;$/;"	v
+ConProxyWG	connect_pool.c	/^cpWorkerG ConProxyWG;$/;"	v
 EPOLLRDHUP	./php_connect_pool.h	34;"	d
 EPOLLRDHUP	php_connect_pool.h	34;"	d
 EPOLL_CLOSE	./include/cpNetWork.h	19;"	d
 EPOLL_CLOSE	include/cpNetWork.h	19;"	d
 FAILUREOR_MSG_SIZE	./include/cpFunction.h	34;"	d
 G	./include/cpServer.h	/^        cpGroup G[100]; \/\/group TODO extend$/;"	m	struct:_cpServerGS
+G	include/cpServer.h	/^        cpGroup G[100]; \/\/group TODO extend$/;"	m	struct:_cpServerGS
 MAP_ANONYMOUS	./php_connect_pool.h	44;"	d
 MAP_ANONYMOUS	php_connect_pool.h	47;"	d
 MAX_INI_LENGTH	./include/cpFunction.h	36;"	d
@@ -296,6 +365,12 @@ PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_shutdown)$/;"	f
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_version)$/;"	f
 PHP_FUNCTION	./connect_pool_client.c	/^PHP_FUNCTION(client_close)$/;"	f
 PHP_FUNCTION	./connect_pool_client.c	/^PHP_FUNCTION(get_disable_list)$/;"	f
+PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_create)$/;"	f
+PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_reload)$/;"	f
+PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_shutdown)$/;"	f
+PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_version)$/;"	f
+PHP_FUNCTION	connect_pool_client.c	/^PHP_FUNCTION(client_close)$/;"	f
+PHP_FUNCTION	connect_pool_client.c	/^PHP_FUNCTION(get_disable_list)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __call)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __construct)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __destruct)$/;"	f
@@ -307,14 +382,29 @@ PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __destruct)$
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, connect)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, release)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, select)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __call)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __construct)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __destruct)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, release)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool_PDOStatement, __call)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __call)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __construct)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __destruct)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, connect)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, release)$/;"	f
+PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, select)$/;"	f
 PHP_MINFO_FUNCTION	./connect_pool.c	/^PHP_MINFO_FUNCTION(connect_pool)$/;"	f
+PHP_MINFO_FUNCTION	connect_pool.c	/^PHP_MINFO_FUNCTION(connect_pool)$/;"	f
 PHP_MSGPACK_API	./msgpack/php_msgpack.h	17;"	d
 PHP_MSGPACK_API	./msgpack/php_msgpack.h	19;"	d
 PHP_MSGPACK_API	./msgpack/php_msgpack.h	21;"	d
 PHP_MSGPACK_H	./msgpack/php_msgpack.h	2;"	d
 PHP_MSHUTDOWN_FUNCTION	./connect_pool.c	/^PHP_MSHUTDOWN_FUNCTION(connect_pool)$/;"	f
+PHP_MSHUTDOWN_FUNCTION	connect_pool.c	/^PHP_MSHUTDOWN_FUNCTION(connect_pool)$/;"	f
 PHP_RINIT_FUNCTION	./connect_pool.c	/^PHP_RINIT_FUNCTION(connect_pool)$/;"	f
+PHP_RINIT_FUNCTION	connect_pool.c	/^PHP_RINIT_FUNCTION(connect_pool)$/;"	f
 PHP_RSHUTDOWN_FUNCTION	./connect_pool.c	/^PHP_RSHUTDOWN_FUNCTION(connect_pool)$/;"	f
+PHP_RSHUTDOWN_FUNCTION	connect_pool.c	/^PHP_RSHUTDOWN_FUNCTION(connect_pool)$/;"	f
 PID_FILE_PATH	./include/cpFunction.h	38;"	d
 POP_EO_PARAM	./msgpack/msgpack_class.c	37;"	d	file:
 POP_EO_PARAM	./msgpack/msgpack_class.c	42;"	d	file:
@@ -325,6 +415,7 @@ PUSH_EO_PARAM	./msgpack/msgpack_class.c	41;"	d	file:
 PUSH_PARAM	./msgpack/msgpack_class.c	34;"	d	file:
 PUSH_PARAM	./msgpack/msgpack_class.c	39;"	d	file:
 RecvData	./connect_pool_client.c	/^cpRecvEvent RecvData;$/;"	v
+RecvData	connect_pool_client.c	/^cpRecvEvent RecvData;$/;"	v
 SIGRTMIN	php_connect_pool.h	41;"	d
 SOCK_NONBLOCK	./php_connect_pool.h	48;"	d
 SOCK_NONBLOCK	php_connect_pool.h	51;"	d
@@ -367,9 +458,12 @@ USE_CASE_RANGE	./msgpack/msgpack/unpack_template.h	45;"	d
 USE_CASE_RANGE	./msgpack/unpack_template.h	45;"	d
 VAR_ENTRIES_MAX	./msgpack/msgpack_unpack.c	17;"	d	file:
 WaitList	./include/cpServer.h	/^        cpWaitList *WaitList; \/\/获得失败的wait队列$/;"	m	struct:_cpGroup
+WaitList	include/cpServer.h	/^        cpWaitList *WaitList; \/\/获得失败的wait队列$/;"	m	struct:_cpGroup
 WaitTail	./include/cpServer.h	/^        cpWaitList *WaitTail; \/\/获得失败的wait队列队尾$/;"	m	struct:_cpGroup
+WaitTail	include/cpServer.h	/^        cpWaitList *WaitTail; \/\/获得失败的wait队列队尾$/;"	m	struct:_cpGroup
 ZEND_GET_MODULE	./connect_pool.c	/^ZEND_GET_MODULE(connect_pool)$/;"	f
 ZEND_GET_MODULE	./msgpack/msgpack.c	/^ZEND_GET_MODULE(msgpack)$/;"	f
+ZEND_GET_MODULE	connect_pool.c	/^ZEND_GET_MODULE(connect_pool)$/;"	f
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, __construct)$/;"	f	file:
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, pack)$/;"	f	file:
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, setOption)$/;"	f	file:
@@ -402,20 +496,30 @@ _array	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgp
 _array	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgpack_pack_user x, unsigned int n)$/;"	f
 _cpClient	./include/cpClientNet.h	/^typedef struct _cpClient$/;"	s
 _cpConfig	./include/cpServer.h	/^    typedef struct _cpConfig {$/;"	s
+_cpConfig	include/cpServer.h	/^    typedef struct _cpConfig {$/;"	s
 _cpConnection	./include/cpServer.h	/^    typedef struct _cpConnection {$/;"	s
+_cpConnection	include/cpServer.h	/^    typedef struct _cpConnection {$/;"	s
 _cpFd	cpKqueue.c	/^typedef struct _cpFd {$/;"	s	file:
 _cpGroup	./include/cpServer.h	/^    typedef struct _cpGroup {$/;"	s
+_cpGroup	include/cpServer.h	/^    typedef struct _cpGroup {$/;"	s
 _cpIdelList	./include/cpServer.h	/^    typedef struct _cpIdelList {$/;"	s
+_cpIdelList	include/cpServer.h	/^    typedef struct _cpIdelList {$/;"	s
 _cpMasterInfo	./include/cpMemory.h	/^    typedef struct _cpMasterInfo {\/\/获取连接,master进程返回的信息$/;"	s
 _cpRecvEvent	./connect_pool_client.c	/^typedef struct _cpRecvEvent$/;"	s	file:
+_cpRecvEvent	connect_pool_client.c	/^typedef struct _cpRecvEvent$/;"	s	file:
 _cpServerG	./include/cpServer.h	/^    typedef struct _cpServerG {$/;"	s
+_cpServerG	include/cpServer.h	/^    typedef struct _cpServerG {$/;"	s
 _cpServerGS	./include/cpServer.h	/^    typedef struct _cpServerGS {$/;"	s
+_cpServerGS	include/cpServer.h	/^    typedef struct _cpServerGS {$/;"	s
 _cpShareMemory	./include/cpMemory.h	/^    typedef struct _cpShareMemory {$/;"	s
 _cpTcpEvent	./include/cpMemory.h	/^    typedef struct _cpTcpEvent {$/;"	s
 _cpThread	./include/cpServer.h	/^    typedef struct _cpThread {$/;"	s
+_cpThread	include/cpServer.h	/^    typedef struct _cpThread {$/;"	s
 _cpWaitList	./include/cpServer.h	/^    typedef struct _cpWaitList {$/;"	s
+_cpWaitList	include/cpServer.h	/^    typedef struct _cpWaitList {$/;"	s
 _cpWorker	./include/cpWorker.h	/^    typedef struct _cpWorker {$/;"	s
 _cpWorkerG	./include/cpServer.h	/^    typedef struct _cpWorkerG {$/;"	s
+_cpWorkerG	include/cpServer.h	/^    typedef struct _cpWorkerG {$/;"	s
 _cpWorkerInfo	./include/cpMemory.h	/^    typedef struct _cpWorkerInfo {$/;"	s
 _double	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_double)(msgpack_pack_user x, double d)$/;"	f
 _double	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_double)(msgpack_pack_user x, double d)$/;"	f
@@ -534,22 +638,31 @@ again_fixed_trail_if_zero	./msgpack/msgpack/unpack_template.h	408;"	d
 again_fixed_trail_if_zero	./msgpack/unpack_template.h	137;"	d
 again_fixed_trail_if_zero	./msgpack/unpack_template.h	408;"	d
 backlog	./include/cpServer.h	/^        uint16_t backlog;$/;"	m	struct:_cpConfig
+backlog	include/cpServer.h	/^        uint16_t backlog;$/;"	m	struct:_cpConfig
 buffer	./msgpack/msgpack_class.c	/^    smart_str buffer;$/;"	m	struct:__anon4	file:
 bufpid	./cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
 bufpid	cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
 bufr	./cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
 bufr	cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
 check_need_exchange	./connect_pool_client.c	/^static void check_need_exchange(zval * object, char *cur_type)$/;"	f	file:
+check_need_exchange	connect_pool_client.c	/^static void check_need_exchange(zval * object, char *cur_type)$/;"	f	file:
 cli_real_recv	./connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *info)$/;"	f	file:
+cli_real_recv	connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *info)$/;"	f	file:
 cli_real_send	./connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
+cli_real_send	connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
 clientPid	./include/cpServer.h	/^        int clientPid;$/;"	m	struct:_cpWorkerG
+clientPid	include/cpServer.h	/^        int clientPid;$/;"	m	struct:_cpWorkerG
 client_close	./php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
 client_close	php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
 clock_gettime	./cpFunction.c	/^int clock_gettime(clock_id_t which_clock, struct timespec *t) {$/;"	f
 conf	./include/cpServer.h	/^        cpConfig conf;$/;"	m	struct:_cpServerG
+conf	include/cpServer.h	/^        cpConfig conf;$/;"	m	struct:_cpServerG
 config	./demon.php	/^$config = array($/;"	v
+config	demon.php	/^$config = array($/;"	v
 conlist	./include/cpServer.h	/^        cpConnection *conlist;$/;"	m	struct:_cpServerGS
+conlist	include/cpServer.h	/^        cpConnection *conlist;$/;"	m	struct:_cpServerGS
 connect_count	./include/cpServer.h	/^        uint32_t connect_count;$/;"	m	struct:_cpServerGS
+connect_count	include/cpServer.h	/^        uint32_t connect_count;$/;"	m	struct:_cpServerGS
 connect_pool	./php_connect_pool.h	/^PHP_MINFO_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_MINIT_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
@@ -561,7 +674,9 @@ connect_pool	php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
 connect_pool	php_connect_pool.h	/^PHP_RINIT_FUNCTION(connect_pool);$/;"	v
 connect_pool	php_connect_pool.h	/^PHP_RSHUTDOWN_FUNCTION(connect_pool);$/;"	v
 connect_pool_module_entry	./connect_pool.c	/^zend_module_entry connect_pool_module_entry = {$/;"	v
+connect_pool_module_entry	connect_pool.c	/^zend_module_entry connect_pool_module_entry = {$/;"	v
 connect_pool_perisent	./connect_pool_client.c	/^void* connect_pool_perisent(zval* zres, int port)$/;"	f
+connect_pool_perisent	connect_pool_client.c	/^void* connect_pool_perisent(zval* zres, int port)$/;"	f
 cpClient	./include/cpClientNet.h	/^} cpClient;$/;"	t	typeref:struct:_cpClient
 cpClient_close	./cpClientNet.c	/^int cpClient_close(cpClient *cli)$/;"	f
 cpClient_connect	./cpClientNet.c	/^int cpClient_connect(cpClient *cli, char *host, int port, double timeout, int nonblock)$/;"	f
@@ -569,7 +684,9 @@ cpClient_create	./cpClientNet.c	/^int cpClient_create(cpClient *cli)$/;"	f
 cpClient_recv	./cpClientNet.c	/^int cpClient_recv(cpClient *cli, void *data, int len, int waitall)$/;"	f
 cpClient_send	./cpClientNet.c	/^int cpClient_send(int sock, char *data, int length, int flag)$/;"	f
 cpConfig	./include/cpServer.h	/^    } cpConfig;$/;"	t	typeref:struct:_cpConfig
+cpConfig	include/cpServer.h	/^    } cpConfig;$/;"	t	typeref:struct:_cpConfig
 cpConnection	./include/cpServer.h	/^    } cpConnection;$/;"	t	typeref:struct:_cpConnection
+cpConnection	include/cpServer.h	/^    } cpConnection;$/;"	t	typeref:struct:_cpConnection
 cpCreateFifo	./cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
 cpCreateFifo	cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
 cpCreate_ping_worker_mem	./cpPingWorker.c	/^CPINLINE int cpCreate_ping_worker_mem()$/;"	f
@@ -589,7 +706,9 @@ cpFork_ping_worker	./cpPingWorker.c	/^int cpFork_ping_worker()$/;"	f
 cpGetConfig	./cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
 cpGetConfig	cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
 cpGroup	./include/cpServer.h	/^    } cpGroup;$/;"	t	typeref:struct:_cpGroup
+cpGroup	include/cpServer.h	/^    } cpGroup;$/;"	t	typeref:struct:_cpGroup
 cpIdelList	./include/cpServer.h	/^    } cpIdelList;$/;"	t	typeref:struct:_cpIdelList
+cpIdelList	include/cpServer.h	/^    } cpIdelList;$/;"	t	typeref:struct:_cpIdelList
 cpKqueue_add	cpKqueue.c	/^int cpKqueue_add(int epfd, int fd, int fdtype) {$/;"	f
 cpKqueue_del	cpKqueue.c	/^int cpKqueue_del(int epfd, int fd) {$/;"	f
 cpKqueue_free	cpKqueue.c	/^void cpKqueue_free() {$/;"	f
@@ -609,6 +728,7 @@ cpMasterInfo	./include/cpMemory.h	/^    } cpMasterInfo;$/;"	t	typeref:struct:_cp
 cpNetRead	./cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
 cpNetRead	cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
 cpPid	./connect_pool_client.c	/^static int cpPid = 0;$/;"	v	file:
+cpPid	connect_pool_client.c	/^static int cpPid = 0;$/;"	v	file:
 cpPingClear	./cpPingWorker.c	/^static void cpPingClear(int sig)$/;"	f	file:
 cpPing_add_dislist	./cpPingWorker.c	/^static void cpPing_add_dislist(zval *dis_arr, zval **args, char *data_source)$/;"	f	file:
 cpPing_del_prolist	./cpPingWorker.c	/^static void cpPing_del_prolist(zval *pro_arr, char *data_source)$/;"	f	file:
@@ -617,6 +737,7 @@ cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, sigin
 cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
 cpQueueSignalSet	cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
 cpReactorEpollGetType	cpNetWork.c	/^static inline int cpReactorEpollGetType(int fdtype) {$/;"	f	file:
+cpReactorKqueueGetType	cpKqueue.c	/^static inline int cpReactorKqueueGetType(int fdtype) {$/;"	f	file:
 cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
@@ -630,8 +751,11 @@ cpReactor_start	cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
 cpReactor_thread_loop	./cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
 cpReactor_thread_loop	cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
 cpRecvEvent	./connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
+cpRecvEvent	connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
 cpServerG	./include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
+cpServerG	include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
 cpServerGS	./include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
+cpServerGS	include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
 cpServer_create	./cpServer.c	/^int cpServer_create()$/;"	f
 cpServer_create	cpServer.c	/^int cpServer_create()$/;"	f
 cpServer_init	./cpServer.c	/^void cpServer_init(zval *conf, char *ini_file)$/;"	f
@@ -656,11 +780,14 @@ cpSignalSet	./cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func
 cpSignalSet	cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
 cpTcpEvent	./include/cpMemory.h	/^    } cpTcpEvent;$/;"	t	typeref:struct:_cpTcpEvent
 cpThread	./include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
+cpThread	include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
 cpTryGetWorkerId	./cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
 cpTryGetWorkerId	cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
 cpWaitList	./include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
+cpWaitList	include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
 cpWorker	./include/cpWorker.h	/^    } cpWorker;$/;"	t	typeref:struct:_cpWorker
 cpWorkerG	./include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
+cpWorkerG	include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
 cpWorkerInfo	./include/cpMemory.h	/^    } cpWorkerInfo;$/;"	t	typeref:struct:_cpWorkerInfo
 cpWorker_attach_mem	./cpWorker.c	/^CPINLINE int cpWorker_attach_mem(int worker_id, int group_id)$/;"	f
 cpWorker_do_ping	./cpWorker.c	/^void cpWorker_do_ping()$/;"	f
@@ -669,17 +796,22 @@ cpWorker_manager_loop	./cpWorker.c	/^int cpWorker_manager_loop()$/;"	f
 cpWrite	./cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
 cpWrite	cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
 cp_add_fail_into_mem	./connect_pool.c	/^static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)$/;"	f	file:
+cp_add_fail_into_mem	connect_pool.c	/^static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)$/;"	f	file:
 cp_call_user_function	./connect_pool.c	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f	file:
+cp_call_user_function	connect_pool.c	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f	file:
 cp_create_mmap_file	./cpMemory.c	/^int cp_create_mmap_file(cpShareMemory *object){$/;"	f
 cp_destory_client	./connect_pool.c	/^static void cp_destory_client(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f	file:
+cp_destory_client	connect_pool.c	/^static void cp_destory_client(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f	file:
 cp_error	./cpFunction.c	/^int cp_error;$/;"	v
 cp_error	cpFunction.c	/^int cp_error;$/;"	v
 cp_functions	./connect_pool.c	/^const zend_function_entry cp_functions[] = {$/;"	v
+cp_functions	connect_pool.c	/^const zend_function_entry cp_functions[] = {$/;"	v
 cp_log_fn	./cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
 cp_log_fn	cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
 cp_mmap_calloc	./cpMemory.c	/^void *cp_mmap_calloc(int size)$/;"	f
 cp_mmap_calloc_with_file	./cpMemory.c	/^void* cp_mmap_calloc_with_file(cpShareMemory *object)$/;"	f
 cp_redis_select	./connect_pool.c	/^static int cp_redis_select(zval *new_obj, zval **db)$/;"	f	file:
+cp_redis_select	connect_pool.c	/^static int cp_redis_select(zval *new_obj, zval **db)$/;"	f	file:
 cp_ser_and_setdis	./cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
 cp_ser_and_setdis	cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
 cp_ser_and_setpro	./cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;"	f
@@ -687,45 +819,67 @@ cp_ser_and_setpro	cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;
 cp_serialize	./cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
 cp_serialize	cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
 cp_system_random	./connect_pool_client.c	/^int cp_system_random(int min, int max)$/;"	f
+cp_system_random	connect_pool_client.c	/^int cp_system_random(int min, int max)$/;"	f
 cp_unserialize	./cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
 cp_unserialize	cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
 create_pass_data	./connect_pool_client.c	/^static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_type, zval **ret_data_source)$/;"	f	file:
+create_pass_data	connect_pool_client.c	/^static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_type, zval **ret_data_source)$/;"	f	file:
 daemonize	./include/cpServer.h	/^        uint8_t daemonize;$/;"	m	struct:_cpConfig
+daemonize	include/cpServer.h	/^        uint8_t daemonize;$/;"	m	struct:_cpConfig
 data	./include/cpServer.h	/^        char data[0];$/;"	m	struct:_cpWaitList
 data	./msgpack/msgpack_unpack.c	/^    zval *data[VAR_ENTRIES_MAX];$/;"	m	struct:__anon5	file:
+data	include/cpServer.h	/^        char data[0];$/;"	m	struct:_cpWaitList
 data_source	./include/cpMemory.h	/^        char data_source[100];$/;"	m	struct:_cpTcpEvent
 deps	./msgpack/msgpack_unpack.h	/^    long deps;$/;"	m	struct:__anon7
 dev_random_fd	./connect_pool_client.c	/^static int dev_random_fd = -1;$/;"	v	file:
+dev_random_fd	connect_pool_client.c	/^static int dev_random_fd = -1;$/;"	v	file:
 epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpServerG
 epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpThread
+epfd	include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpServerG
+epfd	include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpThread
 epoll_wait_handle	./include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
 epoll_wait_handle	include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
 error	./msgpack/msgpack_class.c	/^    int error;$/;"	m	struct:__anon4	file:
 error_display	./msgpack/php_msgpack.h	/^    zend_bool error_display;$/;"	v
 event_num	./include/cpServer.h	/^        uint16_t event_num;$/;"	m	struct:_cpThread
+event_num	include/cpServer.h	/^        uint16_t event_num;$/;"	m	struct:_cpThread
 exceed	./msgpack/php_msgpack.h	/^    int exceed;$/;"	m	struct:_instead_smart
 fd	./include/cpServer.h	/^        int fd; \/\/文件描述符$/;"	m	struct:_cpConnection
 fd	./include/cpServer.h	/^        int fd;$/;"	m	struct:_cpWaitList
 fd	./include/cpWorker.h	/^        int fd;\/\/当前worker服务于哪个fd$/;"	m	struct:_cpWorker
 fd	cpKqueue.c	/^    uint32_t fd;$/;"	m	struct:_cpFd	file:
+fd	include/cpServer.h	/^        int fd; \/\/文件描述符$/;"	m	struct:_cpConnection
+fd	include/cpServer.h	/^        int fd;$/;"	m	struct:_cpWaitList
 fdtype	cpKqueue.c	/^    uint32_t fdtype;$/;"	m	struct:_cpFd	file:
 finished	./msgpack/msgpack_class.c	/^    zend_bool finished;$/;"	m	struct:__anon4	file:
 get_attach_buf	./connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
+get_attach_buf	connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
 get_disable_list	./php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
 get_disable_list	php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
 get_readfd	./connect_pool_client.c	/^static int get_readfd(int worker_id)$/;"	f	file:
+get_readfd	connect_pool_client.c	/^static int get_readfd(int worker_id)$/;"	f	file:
 get_writefd	./connect_pool_client.c	/^static int get_writefd(int worker_id)$/;"	f	file:
+get_writefd	connect_pool_client.c	/^static int get_writefd(int worker_id)$/;"	f	file:
 gid	./include/cpServer.h	/^        int gid; \/\/current worker's group id$/;"	m	struct:_cpWorkerG
+gid	include/cpServer.h	/^        int gid; \/\/current worker's group id$/;"	m	struct:_cpWorkerG
 group	./include/cpServer.h	/^        zval* group;$/;"	m	struct:_cpServerGS
+group	include/cpServer.h	/^        zval* group;$/;"	m	struct:_cpServerGS
 group_id	./include/cpServer.h	/^        uint16_t group_id; \/\/指定当前连接在用哪个group$/;"	m	struct:_cpConnection
+group_id	include/cpServer.h	/^        uint16_t group_id; \/\/指定当前连接在用哪个group$/;"	m	struct:_cpConnection
 group_num	./include/cpServer.h	/^        int group_num;$/;"	m	struct:_cpServerGS
+group_num	include/cpServer.h	/^        int group_num;$/;"	m	struct:_cpServerGS
 id	./include/cpServer.h	/^        int id; \/\/0.1.2.3$/;"	m	struct:_cpThread
 id	./include/cpServer.h	/^        int id; \/\/Current Proccess Worker's id 0,1,2,3...n$/;"	m	struct:_cpWorkerG
 id	./include/cpServer.h	/^        int id; \/\/Current worker group  id 0,1,2,3...n$/;"	m	struct:_cpGroup
+id	include/cpServer.h	/^        int id; \/\/0.1.2.3$/;"	m	struct:_cpThread
+id	include/cpServer.h	/^        int id; \/\/Current Proccess Worker's id 0,1,2,3...n$/;"	m	struct:_cpWorkerG
+id	include/cpServer.h	/^        int id; \/\/Current worker group  id 0,1,2,3...n$/;"	m	struct:_cpGroup
 idel_time	./include/cpServer.h	/^        uint8_t idel_time;$/;"	m	struct:_cpConfig
+idel_time	include/cpServer.h	/^        uint8_t idel_time;$/;"	m	struct:_cpConfig
 illegal_key_insert	./msgpack/php_msgpack.h	/^    zend_bool illegal_key_insert;$/;"	v
 info	./include/cpClientNet.h	/^        cpMasterInfo info;$/;"	m	struct:_cpClient
 ini_file	./include/cpServer.h	/^        char ini_file[MAX_INI_LENGTH];$/;"	m	struct:_cpConfig
+ini_file	include/cpServer.h	/^        char ini_file[MAX_INI_LENGTH];$/;"	m	struct:_cpConfig
 initReactor_fdtype	php_connect_pool.h	/^static inline int initReactor_fdtype(int fdtype)$/;"	f
 instead_smart	./msgpack/php_msgpack.h	/^}instead_smart;$/;"	t	typeref:struct:_instead_smart
 int16_t	./msgpack/msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
@@ -741,23 +895,34 @@ isReactor_event_read	php_connect_pool.h	/^static inline int isReactor_event_read
 isReactor_event_write	php_connect_pool.h	/^static inline int isReactor_event_write(int fdtype)$/;"	f
 last_from_id	./include/cpWorker.h	/^        int last_from_id;$/;"	m	struct:_cpWorker
 le_cli_connect_pool	./connect_pool.c	/^int le_cli_connect_pool;$/;"	v
+le_cli_connect_pool	connect_pool.c	/^int le_cli_connect_pool;$/;"	v
 le_cp_server	./connect_pool.c	/^int le_cp_server;$/;"	v
+le_cp_server	connect_pool.c	/^int le_cp_server;$/;"	v
 len	./include/cpMemory.h	/^        int len;$/;"	m	struct:_cpWorkerInfo
 len	./include/cpServer.h	/^        int len;$/;"	m	struct:_cpWaitList
 len	./msgpack/php_msgpack.h	/^    int len;$/;"	m	struct:_instead_smart
+len	include/cpServer.h	/^        int len;$/;"	m	struct:_cpWaitList
 level	./msgpack/php_msgpack.h	/^        unsigned level;$/;"	m	struct:__anon8
 log_file	./include/cpServer.h	/^        char log_file[128]; \/\/日志文件$/;"	m	struct:_cpConfig
+log_file	include/cpServer.h	/^        char log_file[128]; \/\/日志文件$/;"	m	struct:_cpConfig
 manager_pid	./include/cpServer.h	/^        pid_t manager_pid;$/;"	m	struct:_cpServerGS
+manager_pid	include/cpServer.h	/^        pid_t manager_pid;$/;"	m	struct:_cpServerGS
 master_pid	./include/cpServer.h	/^        pid_t master_pid;$/;"	m	struct:_cpServerGS
+master_pid	include/cpServer.h	/^        pid_t master_pid;$/;"	m	struct:_cpServerGS
 max	./include/cpMemory.h	/^        int max;\/\/数据包max$/;"	m	struct:_cpMasterInfo
 max	./msgpack/msgpack/sysdep.h	57;"	d
 max	./msgpack/php_msgpack.h	/^    int max;$/;"	m	struct:_instead_smart
 max	./msgpack/sysdep.h	57;"	d
 max_conn	./include/cpServer.h	/^        int max_conn;$/;"	m	struct:_cpConfig
+max_conn	include/cpServer.h	/^        int max_conn;$/;"	m	struct:_cpConfig
 max_fail_num	./include/cpServer.h	/^        uint16_t max_fail_num;$/;"	m	struct:_cpConfig
+max_fail_num	include/cpServer.h	/^        uint16_t max_fail_num;$/;"	m	struct:_cpConfig
 max_read_len	./include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpConfig
 max_read_len	./include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpWorkerG
+max_read_len	include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpConfig
+max_read_len	include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpWorkerG
 max_request	./include/cpServer.h	/^        int max_request;$/;"	m	struct:_cpConfig
+max_request	include/cpServer.h	/^        int max_request;$/;"	m	struct:_cpConfig
 mem	./include/cpMemory.h	/^        void *mem;$/;"	m	struct:_cpShareMemory
 min	./msgpack/msgpack/sysdep.h	60;"	d
 min	./msgpack/sysdep.h	60;"	d
@@ -895,32 +1060,50 @@ msgpack_var_access	./msgpack/msgpack_unpack.c	/^inline static int msgpack_var_ac
 msgpack_var_add	./msgpack/msgpack_pack.c	/^inline static int msgpack_var_add($/;"	f	file:
 msgpack_var_push	./msgpack/msgpack_unpack.c	/^inline static void msgpack_var_push($/;"	f	file:
 mutex_lock	./include/cpServer.h	/^        pthread_mutex_t *mutex_lock;$/;"	m	struct:_cpGroup
+mutex_lock	include/cpServer.h	/^        pthread_mutex_t *mutex_lock;$/;"	m	struct:_cpGroup
 name	./include/cpServer.h	/^        char name[100]; \/\/group name$/;"	m	struct:_cpGroup
+name	include/cpServer.h	/^        char name[100]; \/\/group name$/;"	m	struct:_cpGroup
 next	./include/cpServer.h	/^        struct _cpIdelList *next;$/;"	m	struct:_cpIdelList	typeref:struct:_cpIdelList::_cpIdelList
 next	./include/cpServer.h	/^        struct _cpWaitList *next;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
 next	./msgpack/msgpack_unpack.c	/^    void *next;$/;"	m	struct:__anon5	file:
+next	include/cpServer.h	/^        struct _cpIdelList *next;$/;"	m	struct:_cpIdelList	typeref:struct:_cpIdelList::_cpIdelList
+next	include/cpServer.h	/^        struct _cpWaitList *next;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
 obj	./demon.php	/^$obj = new PDO('mysql:host=192.168.20.130;dbname=test1', "admin", "admin");$/;"	v
 obj	./demon.php	/^$obj = new Redis();$/;"	v
 obj	./demon.php	/^$obj = new redis_connect_pool();$/;"	v
 obj1	./demon.php	/^$obj1 = new pdo_connect_pool($config);$/;"	v
 obj1	./demon.php	/^$obj1 = new pdo_connect_pool('mysql:host=192.168.20.131;dbname=db1', "admin", "admin");$/;"	v
+obj1	demon.php	/^$obj1 = new pdo_connect_pool($config);$/;"	v
 object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon3	file:
 object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon4	file:
 offset	./msgpack/msgpack_class.c	/^    long offset;$/;"	m	struct:__anon4	file:
 pdo_connect_pool_PDOStatement_ce	./connect_pool.c	/^zend_class_entry pdo_connect_pool_PDOStatement_ce;$/;"	v
+pdo_connect_pool_PDOStatement_ce	connect_pool.c	/^zend_class_entry pdo_connect_pool_PDOStatement_ce;$/;"	v
 pdo_connect_pool_PDOStatement_class_entry_ptr	./connect_pool.c	/^zend_class_entry *pdo_connect_pool_PDOStatement_class_entry_ptr;$/;"	v
+pdo_connect_pool_PDOStatement_class_entry_ptr	connect_pool.c	/^zend_class_entry *pdo_connect_pool_PDOStatement_class_entry_ptr;$/;"	v
 pdo_connect_pool_PDOStatement_methods	./connect_pool.c	/^const zend_function_entry pdo_connect_pool_PDOStatement_methods[] = {$/;"	v
+pdo_connect_pool_PDOStatement_methods	connect_pool.c	/^const zend_function_entry pdo_connect_pool_PDOStatement_methods[] = {$/;"	v
 pdo_connect_pool_ce	./connect_pool.c	/^zend_class_entry pdo_connect_pool_ce;$/;"	v
+pdo_connect_pool_ce	connect_pool.c	/^zend_class_entry pdo_connect_pool_ce;$/;"	v
 pdo_connect_pool_class_entry_ptr	./connect_pool.c	/^zend_class_entry *pdo_connect_pool_class_entry_ptr;$/;"	v
+pdo_connect_pool_class_entry_ptr	connect_pool.c	/^zend_class_entry *pdo_connect_pool_class_entry_ptr;$/;"	v
 pdo_connect_pool_methods	./connect_pool.c	/^const zend_function_entry pdo_connect_pool_methods[] = {$/;"	v
+pdo_connect_pool_methods	connect_pool.c	/^const zend_function_entry pdo_connect_pool_methods[] = {$/;"	v
 pdo_dispatch	./connect_pool.c	/^static void pdo_dispatch(zval * args)$/;"	f	file:
+pdo_dispatch	connect_pool.c	/^static void pdo_dispatch(zval * args)$/;"	f	file:
 pdo_object	./cpWorker.c	/^zval *pdo_object = NULL;$/;"	v
 pdo_object_table	./connect_pool.c	/^static HashTable pdo_object_table;$/;"	v	file:
+pdo_object_table	connect_pool.c	/^static HashTable pdo_object_table;$/;"	v	file:
 pdo_proxy_connect	./connect_pool.c	/^int pdo_proxy_connect(zval *args, int flag)$/;"	f
+pdo_proxy_connect	connect_pool.c	/^int pdo_proxy_connect(zval *args, int flag)$/;"	f
 pdo_proxy_pdo	./connect_pool.c	/^static void pdo_proxy_pdo(zval * args)$/;"	f	file:
+pdo_proxy_pdo	connect_pool.c	/^static void pdo_proxy_pdo(zval * args)$/;"	f	file:
 pdo_proxy_stmt	./connect_pool.c	/^static void pdo_proxy_stmt(zval * args)$/;"	f	file:
+pdo_proxy_stmt	connect_pool.c	/^static void pdo_proxy_stmt(zval * args)$/;"	f	file:
 pdo_stmt	./connect_pool.c	/^static zval* pdo_stmt = NULL;$/;"	v	file:
+pdo_stmt	connect_pool.c	/^static zval* pdo_stmt = NULL;$/;"	v	file:
 php_check_ms	./connect_pool_client.c	/^static char* php_check_ms(char *cmd, zval *z_args, zval* object)$/;"	f	file:
+php_check_ms	connect_pool_client.c	/^static char* php_check_ms(char *cmd, zval *z_args, zval* object)$/;"	f	file:
 php_msgpack_base_free	./msgpack/msgpack_class.c	/^static void php_msgpack_base_free(php_msgpack_base_t *base TSRMLS_DC)$/;"	f	file:
 php_msgpack_base_new	./msgpack/msgpack_class.c	/^static zend_object_value php_msgpack_base_new(zend_class_entry *ce TSRMLS_DC)$/;"	f	file:
 php_msgpack_base_t	./msgpack/msgpack_class.c	/^} php_msgpack_base_t;$/;"	t	typeref:struct:__anon3	file:
@@ -932,6 +1115,7 @@ php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon3	fil
 php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon4	file:
 php_only	./msgpack/php_msgpack.h	/^    zend_bool php_only;$/;"	v
 php_pdo_connect_pool_close	./connect_pool_client.c	/^static int php_pdo_connect_pool_close(cpClient *cli)$/;"	f	file:
+php_pdo_connect_pool_close	connect_pool_client.c	/^static int php_pdo_connect_pool_close(cpClient *cli)$/;"	f	file:
 phpext_connect_pool_ptr	./php_connect_pool.h	102;"	d
 phpext_connect_pool_ptr	php_connect_pool.h	105;"	d
 phpext_msgpack_ptr	./msgpack/php_msgpack.h	14;"	d
@@ -942,9 +1126,12 @@ pid_fn	cpFunction.c	/^FILE *pid_fn = NULL;$/;"	v
 pid_init	./cpFunction.c	/^int pid_init() {$/;"	f
 pid_init	cpFunction.c	/^int pid_init() {$/;"	f
 ping_addr	./connect_pool_client.c	/^static HashTable ping_addr;$/;"	v	file:
+ping_addr	connect_pool_client.c	/^static HashTable ping_addr;$/;"	v	file:
 ping_mem_addr	./include/cpServer.h	/^        void *ping_mem_addr;$/;"	m	struct:_cpServerG
+ping_mem_addr	include/cpServer.h	/^        void *ping_mem_addr;$/;"	m	struct:_cpServerG
 ping_pid	./include/cpMemory.h	/^        int ping_pid;$/;"	m	struct:_cpMasterInfo
 ping_workers	./include/cpServer.h	/^        cpWorker *ping_workers;$/;"	m	struct:_cpServerGS
+ping_workers	include/cpServer.h	/^        cpWorker *ping_workers;$/;"	m	struct:_cpServerGS
 pipe_fd_write	./include/cpWorker.h	/^        int pipe_fd_write;$/;"	m	struct:_cpWorker
 pool_server_create	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
 pool_server_create	php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
@@ -956,10 +1143,15 @@ pool_server_version	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;
 pool_server_version	php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;"	v
 port	./include/cpClientNet.h	/^        int port;$/;"	m	struct:_cpClient
 port	./include/cpServer.h	/^        uint16_t port;$/;"	m	struct:_cpConfig
+port	include/cpServer.h	/^        uint16_t port;$/;"	m	struct:_cpConfig
 pre	./include/cpServer.h	/^        struct _cpWaitList *pre;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
+pre	include/cpServer.h	/^        struct _cpWaitList *pre;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
 process_type	./include/cpServer.h	/^        uint8_t process_type;$/;"	m	struct:_cpServerG
+process_type	include/cpServer.h	/^        uint8_t process_type;$/;"	m	struct:_cpServerG
 pth_id	./include/cpServer.h	/^        uint16_t pth_id; \/\/thread id$/;"	m	struct:_cpConnection
+pth_id	include/cpServer.h	/^        uint16_t pth_id; \/\/thread id$/;"	m	struct:_cpConnection
 ptr_ping_addr	./connect_pool_client.c	/^static HashTable *ptr_ping_addr = NULL;$/;"	v	file:
+ptr_ping_addr	connect_pool_client.c	/^static HashTable *ptr_ping_addr = NULL;$/;"	v	file:
 push_fixed_value	./msgpack/msgpack/unpack_template.h	125;"	d
 push_fixed_value	./msgpack/msgpack/unpack_template.h	405;"	d
 push_fixed_value	./msgpack/unpack_template.h	125;"	d
@@ -973,21 +1165,34 @@ push_variable_value	./msgpack/msgpack/unpack_template.h	406;"	d
 push_variable_value	./msgpack/unpack_template.h	128;"	d
 push_variable_value	./msgpack/unpack_template.h	406;"	d
 reactor_next_i	./include/cpServer.h	/^        uint16_t reactor_next_i;$/;"	m	struct:_cpServerGS
+reactor_next_i	include/cpServer.h	/^        uint16_t reactor_next_i;$/;"	m	struct:_cpServerGS
 reactor_num	./include/cpServer.h	/^        uint16_t reactor_num;$/;"	m	struct:_cpConfig
+reactor_num	include/cpServer.h	/^        uint16_t reactor_num;$/;"	m	struct:_cpConfig
 reactor_threads	./include/cpServer.h	/^        cpThread *reactor_threads;$/;"	m	struct:_cpServerGS
+reactor_threads	include/cpServer.h	/^        cpThread *reactor_threads;$/;"	m	struct:_cpServerGS
 recycle_num	./include/cpServer.h	/^        uint16_t recycle_num;$/;"	m	struct:_cpConfig
+recycle_num	include/cpServer.h	/^        uint16_t recycle_num;$/;"	m	struct:_cpConfig
 redis_connect_pool_ce	./connect_pool.c	/^zend_class_entry redis_connect_pool_ce;$/;"	v
+redis_connect_pool_ce	connect_pool.c	/^zend_class_entry redis_connect_pool_ce;$/;"	v
 redis_connect_pool_class_entry_ptr	./connect_pool.c	/^zend_class_entry *redis_connect_pool_class_entry_ptr;$/;"	v
+redis_connect_pool_class_entry_ptr	connect_pool.c	/^zend_class_entry *redis_connect_pool_class_entry_ptr;$/;"	v
 redis_connect_pool_methods	./connect_pool.c	/^const zend_function_entry redis_connect_pool_methods[] = {$/;"	v
+redis_connect_pool_methods	connect_pool.c	/^const zend_function_entry redis_connect_pool_methods[] = {$/;"	v
 redis_dispatch	./connect_pool.c	/^static void redis_dispatch(zval * args)$/;"	f	file:
+redis_dispatch	connect_pool.c	/^static void redis_dispatch(zval * args)$/;"	f	file:
 redis_object_table	./connect_pool.c	/^static HashTable redis_object_table;$/;"	v	file:
+redis_object_table	connect_pool.c	/^static HashTable redis_object_table;$/;"	v	file:
 redis_proxy_connect	./connect_pool.c	/^int redis_proxy_connect(zval *data_source, zval *args, int flag)$/;"	f
+redis_proxy_connect	connect_pool.c	/^int redis_proxy_connect(zval *data_source, zval *args, int flag)$/;"	f
 release	./include/cpServer.h	/^        uint8_t release; \/\/方式重复release$/;"	m	struct:_cpConnection
+release	include/cpServer.h	/^        uint8_t release; \/\/方式重复release$/;"	m	struct:_cpConnection
 release_worker	./connect_pool_client.c	/^static void release_worker(zval *object)$/;"	f	file:
+release_worker	connect_pool_client.c	/^static void release_worker(zval *object)$/;"	f	file:
 released	./include/cpClientNet.h	/^        int released;$/;"	m	struct:_cpClient
 remote_addr	./include/cpClientNet.h	/^	struct sockaddr_in remote_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
 request	./include/cpWorker.h	/^        int request; \/\/worker request NUM$/;"	m	struct:_cpWorker
 ret_value	./connect_pool_client.c	/^    zval *ret_value;$/;"	m	struct:_cpRecvEvent	file:
+ret_value	connect_pool_client.c	/^    zval *ret_value;$/;"	m	struct:_cpRecvEvent	file:
 retval	./msgpack/msgpack_class.c	/^    zval *retval;$/;"	m	struct:__anon4	file:
 retval	./msgpack/msgpack_unpack.h	/^    zval *retval;$/;"	m	struct:__anon7
 rs	./demon.php	/^$rs = $obj->connect("192.168.20.130");$/;"	v
@@ -995,11 +1200,19 @@ rs	./demon.php	/^$rs = $obj->query("show tables");$/;"	v
 rs	./demon.php	/^$rs = $obj1->exec($sql);\/\/走主库$/;"	v
 rs	./demon.php	/^$rs = $obj1->query("select * from test limit 1");$/;"	v
 rs	./demon.php	/^$rs = $obj1->query("show tables");$/;"	v
+rs	demon.php	/^$rs = $obj1->exec($sql);\/\/走主库$/;"	v
+rs	demon.php	/^$rs = $obj1->query("select * from test limit 1");$/;"	v
+rs	demon.php	/^$rs = $obj1->query("select * from test limit 5");$/;"	v
 running	./include/cpServer.h	/^        int running;$/;"	m	struct:_cpServerGS
 running	./include/cpServer.h	/^        uint8_t running;$/;"	m	struct:_cpServerG
+running	include/cpServer.h	/^        int running;$/;"	m	struct:_cpServerGS
+running	include/cpServer.h	/^        uint8_t running;$/;"	m	struct:_cpServerG
 semid2attbuf	./connect_pool_client.c	/^static void **semid2attbuf = NULL;$/;"	v	file:
+semid2attbuf	connect_pool_client.c	/^static void **semid2attbuf = NULL;$/;"	v	file:
 send_oob2proxy	./connect_pool.c	/^void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f
+send_oob2proxy	connect_pool.c	/^void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f
 ser_fail_hits	./include/cpServer.h	/^        uint16_t ser_fail_hits;$/;"	m	struct:_cpConfig
+ser_fail_hits	include/cpServer.h	/^        uint16_t ser_fail_hits;$/;"	m	struct:_cpConfig
 serialize	./msgpack/php_msgpack.h	/^    } serialize;$/;"	v	typeref:struct:__anon8
 serv_addr	./include/cpClientNet.h	/^        struct sockaddr_in serv_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
 set_pid	./cpFunction.c	/^int set_pid(int pid) {$/;"	f
@@ -1008,6 +1221,7 @@ size	./include/cpMemory.h	/^        int size;$/;"	m	struct:_cpShareMemory
 sm_obj	./include/cpWorker.h	/^        cpShareMemory sm_obj;$/;"	m	struct:_cpWorker
 sock	./include/cpClientNet.h	/^	int sock;$/;"	m	struct:_cpClient
 sql	./demon.php	/^$sql = "insert into `test` (tid) values (5)";$/;"	v
+sql	demon.php	/^$sql = "insert into `test` (tid) values (5)";$/;"	v
 stack	./msgpack/msgpack_unpack.h	/^    long stack[MSGPACK_EMBED_STACK_SIZE];$/;"	m	struct:__anon7
 start_container	./msgpack/msgpack/unpack_template.h	143;"	d
 start_container	./msgpack/msgpack/unpack_template.h	409;"	d
@@ -1042,13 +1256,17 @@ template_callback_uint32	./msgpack/msgpack_unpack.h	97;"	d
 template_callback_uint64	./msgpack/msgpack_unpack.h	99;"	d
 template_callback_uint8	./msgpack/msgpack_unpack.h	93;"	d
 thread_id	./include/cpServer.h	/^        pthread_t thread_id;$/;"	m	struct:_cpThread
+thread_id	include/cpServer.h	/^        pthread_t thread_id;$/;"	m	struct:_cpThread
 timeout	./include/cpClientNet.h	/^	double timeout;$/;"	m	struct:_cpClient
 timeout_sec	./include/cpServer.h	/^        int timeout_sec;$/;"	m	struct:_cpConfig
+timeout_sec	include/cpServer.h	/^        int timeout_sec;$/;"	m	struct:_cpConfig
 timeout_usec	./include/cpServer.h	/^        int timeout_usec;$/;"	m	struct:_cpConfig
+timeout_usec	include/cpServer.h	/^        int timeout_usec;$/;"	m	struct:_cpConfig
 type	./connect_pool_client.c	/^    uint8_t type;$/;"	m	struct:_cpRecvEvent	file:
 type	./include/cpMemory.h	/^        int type;$/;"	m	struct:_cpTcpEvent
 type	./include/cpMemory.h	/^        int type;$/;"	m	struct:_cpWorkerInfo
 type	./msgpack/msgpack_unpack.h	/^    int type;$/;"	m	struct:__anon7
+type	connect_pool_client.c	/^    uint8_t type;$/;"	m	struct:_cpRecvEvent	file:
 uint16_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int16 uint16_t;$/;"	t
 uint16_t	./msgpack/sysdep.h	/^typedef unsigned __int16 uint16_t;$/;"	t
 uint32_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int32 uint32_t;$/;"	t
@@ -1059,24 +1277,40 @@ uint8_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int8 uint8_t;$/;"	t
 uint8_t	./msgpack/sysdep.h	/^typedef unsigned __int8 uint8_t;$/;"	t
 unpack_user	./msgpack/msgpack_unpack.h	76;"	d
 use_wait_queue	./include/cpServer.h	/^        uint8_t use_wait_queue;$/;"	m	struct:_cpConfig
+use_wait_queue	include/cpServer.h	/^        uint8_t use_wait_queue;$/;"	m	struct:_cpConfig
 used_slots	./msgpack/msgpack_unpack.c	/^    long used_slots;$/;"	m	struct:__anon5	file:
 var_entries	./msgpack/msgpack_unpack.c	/^} var_entries;$/;"	t	typeref:struct:__anon5	file:
 var_hash	./msgpack/msgpack_class.c	/^    msgpack_unserialize_data_t var_hash;$/;"	m	struct:__anon4	file:
 var_hash	./msgpack/msgpack_unpack.h	/^    msgpack_unserialize_data_t *var_hash;$/;"	m	struct:__anon7
 var_hash	./msgpack/php_msgpack.h	/^        void *var_hash;$/;"	m	struct:__anon8
 volatile_int8	./include/cpServer.h	/^    typedef volatile int8_t volatile_int8;$/;"	t
+volatile_int8	include/cpServer.h	/^    typedef volatile int8_t volatile_int8;$/;"	t
 wait_in_num	./include/cpServer.h	/^        uint64_t wait_in_num;$/;"	m	struct:_cpServerG
+wait_in_num	include/cpServer.h	/^        uint64_t wait_in_num;$/;"	m	struct:_cpServerG
 wait_out_num	./include/cpServer.h	/^        uint64_t wait_out_num;$/;"	m	struct:_cpServerG
+wait_out_num	include/cpServer.h	/^        uint64_t wait_out_num;$/;"	m	struct:_cpServerG
 worker_id	./include/cpMemory.h	/^        int worker_id;$/;"	m	struct:_cpMasterInfo
 worker_id	./include/cpServer.h	/^        int worker_id;$/;"	m	struct:_cpIdelList
 worker_id	./include/cpServer.h	/^        uint16_t worker_id; \/\/指定当前连接在用哪个worker$/;"	m	struct:_cpConnection
+worker_id	include/cpServer.h	/^        int worker_id;$/;"	m	struct:_cpIdelList
+worker_id	include/cpServer.h	/^        uint16_t worker_id; \/\/指定当前连接在用哪个worker$/;"	m	struct:_cpConnection
 worker_max	./include/cpServer.h	/^        uint32_t worker_max;$/;"	m	struct:_cpGroup
+worker_max	include/cpServer.h	/^        uint32_t worker_max;$/;"	m	struct:_cpGroup
 worker_min	./include/cpServer.h	/^        uint32_t worker_min;$/;"	m	struct:_cpGroup
+worker_min	include/cpServer.h	/^        uint32_t worker_min;$/;"	m	struct:_cpGroup
 worker_num	./include/cpServer.h	/^        uint32_t worker_num;$/;"	m	struct:_cpGroup
+worker_num	include/cpServer.h	/^        uint32_t worker_num;$/;"	m	struct:_cpGroup
 worker_onReceive	./connect_pool.c	/^int worker_onReceive(zval * unser_value)$/;"	f
+worker_onReceive	connect_pool.c	/^int worker_onReceive(zval * unser_value)$/;"	f
 workerfd2clientfd_list	./include/cpServer.h	/^        uint32_t *workerfd2clientfd_list; \/\/workerfd和客户端fd的对应关系$/;"	m	struct:_cpServerGS
+workerfd2clientfd_list	include/cpServer.h	/^        uint32_t *workerfd2clientfd_list; \/\/workerfd和客户端fd的对应关系$/;"	m	struct:_cpServerGS
 workerid2readfd	./connect_pool_client.c	/^static int *workerid2readfd = NULL;$/;"	v	file:
+workerid2readfd	connect_pool_client.c	/^static int *workerid2readfd = NULL;$/;"	v	file:
 workerid2writefd	./connect_pool_client.c	/^static int *workerid2writefd = NULL;$/;"	v	file:
+workerid2writefd	connect_pool_client.c	/^static int *workerid2writefd = NULL;$/;"	v	file:
 workers	./include/cpServer.h	/^        cpWorker *workers;$/;"	m	struct:_cpGroup
+workers	include/cpServer.h	/^        cpWorker *workers;$/;"	m	struct:_cpGroup
 workers_status	./include/cpServer.h	/^        volatile_int8 *workers_status;$/;"	m	struct:_cpGroup
+workers_status	include/cpServer.h	/^        volatile_int8 *workers_status;$/;"	m	struct:_cpGroup
 working	./include/cpServer.h	/^        int working;$/;"	m	struct:_cpWorkerG
+working	include/cpServer.h	/^        int working;$/;"	m	struct:_cpWorkerG

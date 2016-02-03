@@ -226,8 +226,10 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     int ret = 0;
     cpClient *cli = *real_cli;
     cpMasterInfo *info = &cli->info;
+    printf("cli_real_send 1 \n");
     if (cli->released == CP_FD_RELEASED)
     {
+        printf("cli_real_send 2 \n");
         zval **data_source;
         zend_hash_find(Z_ARRVAL_P(send_data), ZEND_STRS("data_source"), (void **) &data_source);
         cpTcpEvent event;
@@ -235,19 +237,23 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
         event.ClientPid = cpPid;
         strcpy(event.data_source, Z_STRVAL_PP(data_source));
         int ret = cpClient_send(cli->sock, (char *) &event, sizeof (event), 0);
+        printf("cli_real_send 3 ret:%d\n", ret);
         if (ret < 0)
         {
             php_error_docref(NULL TSRMLS_CC, E_ERROR, "send failed in GET. Error:%d", errno);
         }
         int n = cpClient_recv(cli, info, sizeof (cpMasterInfo), 1);
+        printf("cli_real_send 4 n:%d\n", n);
         if (info->worker_id == -1)
         {
             zend_throw_exception(NULL, CP_MULTI_PROCESS_ERR, 0 TSRMLS_CC);
+            printf("CP_MULTI_PROCESS_ERR");
             return -1;
         }
         if (info->worker_id == -2)
         {
             zend_throw_exception(NULL, "can not find datasource from pool.ini", 0 TSRMLS_CC);
+            printf("can not find datasource from pool.ini");
             return -1;
         }
         if (n > 0)
@@ -268,12 +274,14 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
             {
                 efree(zres);
                 zend_throw_exception(NULL, CON_FAIL_MESSAGE, 0 TSRMLS_CC);
+                printf("CON_FAIL_MESSAGE");
                 return -1;
             }
             else
             {
                 zend_update_property(ce, this, ZEND_STRL("cli"), zres TSRMLS_CC);
                 *real_cli = cli_retry;
+                printf("send_data");
                 return cli_real_send(&cli_retry, send_data, this, ce);
             }
         }
@@ -284,8 +292,10 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     }
     else
     {
+        printf("cli_real_send 5 \n");
         ret = CP_CLIENT_SERIALIZE_SEND_MEM(send_data, info->worker_id, info->max, info->mmap_name);
     }
+    printf("ret is %d" , ret);
     return ret;
 }
 
@@ -551,10 +561,21 @@ PHP_METHOD(pdo_connect_pool, __call)
         check_need_exchange(getThis(), cur_type);
     }
     pass_data = create_pass_data(cmd, z_args, object, cur_type, &source_zval);
+
+    printf("cmd:%s  cur_type:%s", cmd, cur_type);
+/*
+    php_var_dump(&z_args, 1 TSRMLS_CC); // sql
+    php_var_dump(&object, 1 TSRMLS_CC);
+*/
+    php_var_dump(&pass_data, 1 TSRMLS_CC);
+    php_var_dump(&source_zval, 1 TSRMLS_CC);
+
     int ret = cli_real_send(&cli, pass_data, getThis(), pdo_connect_pool_class_entry_ptr);
+    printf("cli_real_send ret is %d", ret);
+
     if (ret < 0)
     {
-        php_error_docref(NULL TSRMLS_CC, E_ERROR, "cli_real_send faild error Error: %s [%d] ", strerror(errno), errno);
+        php_error_docref(NULL TSRMLS_CC, E_ERROR, "cli_real_send faild error Error: %s [%d] [%d]", strerror(errno), errno, ret);
     }
 
     cli_real_recv(&cli->info);
@@ -583,7 +604,7 @@ PHP_METHOD(pdo_connect_pool, __destruct)
 
 PHP_METHOD(pdo_connect_pool, __construct)
 {
-    //     cpLog_init("/tmp/fpmlog");
+    //     printf_init("/tmp/fpmlog");
     zval *zres, *zval_conf, *data_source, *options = NULL, *master = NULL;
     zval *object = getThis();
     char *username = NULL, *password = NULL;

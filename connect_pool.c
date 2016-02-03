@@ -38,7 +38,7 @@ static void pdo_proxy_pdo(zval *args);
 static void pdo_proxy_stmt(zval *args);
 static void cp_add_fail_into_mem(zval *conf, zval *data_source);
 
-#define CP_VERSION "1.1"
+#define CP_VERSION "1.2"
 
 #define CP_INTERNAL_ERROR_SEND(send_data)\
                                 ({         \
@@ -883,10 +883,7 @@ static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)
 {
 
     return;
-    zval *args;
-    MAKE_STD_ZVAL(args);
-    *args = *o_arg;
-    zval_copy_ctor(args);
+    zval *args; MAKE_STD_ZVAL(args); *args = *o_arg; zval_copy_ctor(args);
     if (!CPGL.ping_mem_addr)
     {
         CPGL.ping_mem_addr = CPGS->ping_workers->sm_obj.mem;
@@ -926,3 +923,4 @@ static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)
     }
     zval_ptr_dtor(&arr);
 }
+

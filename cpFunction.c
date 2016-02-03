@@ -328,7 +328,6 @@ CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {
 
     //    gettimeofday(&end, NULL);
     //    int timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;
-    //    printf("ser time: %d us\n", timeuse);
 }
 
 CPINLINE zval * cp_unserialize(char *data, int len) {

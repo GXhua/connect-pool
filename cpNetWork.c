@@ -99,12 +99,6 @@ int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {
         usec = timeo->tv_sec * 1000 + timeo->tv_usec / 1000;
     }
 
-    //    uint8_t *run;
-    //    if (CPGL.process_type == CP_PROCESS_WORKER) {
-    //        run = &CPGS->workers[CPWG.id].run;
-    //    } else {
-    //        run = &CPGL.running;
-    //    }
     struct epoll_event events[CP_REACTOR_MAXEVENTS];
 
     while (CPGS->running)
@@ -112,22 +106,9 @@ int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {
         n = epoll_wait(epfd, events, CP_REACTOR_MAXEVENTS, usec);
         for (i = 0; i < n; i++)
         {
-            //取出事件
-            //            ev.fd = object->events[i].data.u64;
-            //            ev.type = object->events[i].data.u64 >> pack_size;
-
-            //            if (events[i].events & EPOLLPRI) {
-            //                char buf[1];
-            //                ret = handles[EPOLLPRI](events[i].data.fd);
-            //                recv(events[i].data.fd, buf, 1, MSG_OOB);
-            //                if (ret < 0) {
-            //                    cpLog("epoll [EPOLLPRI] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
-            //                            strerror(errno), errno);
-            //                }
-            //            }
             if (events[i].events & EPOLLIN)
             {
-                ret = handles[EPOLLIN](events[i].data.fd);
+                ret = handles[CP_EVENT_READ](events[i].data.fd);
                 if (ret < 0)
                 {
                     cpLog("epoll [EPOLLIN] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
@@ -136,7 +117,7 @@ int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {
             }
             else if (events[i].events & EPOLLOUT)
             {
-                ret = handles[EPOLLIN](events[i].data.fd);
+                ret = handles[CP_EVENT_WRITE](events[i].data.fd);
                 if (ret < 0)
                 {
                     cpLog("epoll [EPOLLOUT] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,

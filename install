@@ -1,4 +1,6 @@
 #/bin/bash
-phpize
+make clean
+/usr/local/php/bin/phpize
 ./configure --with-php-config=/usr/local/php/bin/php-config
 make
+sudo cp /Users/Ben/self/git/cpmake/modules/connect_pool.so /usr/local/php/lib/php/extensions/no-debug-non-zts-20131226/
