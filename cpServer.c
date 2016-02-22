@@ -363,14 +363,8 @@ static int cpServer_master_onAccept(int fd)
         {//不能在add后做,线程安全,防止添加到reactor后马上就读到数据,这时候下面new_connect还没执行。
             conn->release = CP_FD_RELEASED;
         }
-#ifdef HAVE_EPOLL
-        //if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, EPOLLIN | EPOLLRDHUP | EPOLLHUP | EPOLLERR | EPOLLPRI) < 0)
-        if (cpEpoll_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, CP_EVENT_READ | CP_EVENT_WRITE) < 0)
-#else
-#ifdef HAVE_KQUEUE
-        if (cpKqueue_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, CP_EVENT_READ | CP_EVENT_WRITE) < 0)
-#endif
-#endif
+
+        if (cpReactor_add(CPGS->reactor_threads[c_pti].epfd, conn_fd, CP_EVENT_READ | CP_EVENT_WRITE) < 0 )
         {
             cpLog("[Master]add event fail Errno=%d|FD=%d", errno, conn_fd);
             close(conn_fd);
@@ -566,14 +560,8 @@ static int cpReactor_client_close(int fd)
     cpReactor_client_release(fd);
     cpConnection *conn = &(CPGS->conlist[fd]);
     //关闭连接
-#ifdef HAVE_EPOLL
-    cpEpoll_del(CPGS->reactor_threads[conn->pth_id].epfd, fd);
-#else
-#ifdef HAVE_KQUEUE
-    cpKqueue_del(CPGS->reactor_threads[conn->pth_id].epfd, fd);
+    cpReactor_del(CPGS->reactor_threads[conn->pth_id].epfd, fd);
 
-#endif
-#endif
     (CPGS->reactor_threads[conn->pth_id].event_num <= 0) ? CPGS->reactor_threads[conn->pth_id].event_num = 0 : CPGS->reactor_threads[conn->pth_id].event_num--;
     CPGS->connect_count--;
 
@@ -671,24 +659,11 @@ int static cpReactor_thread_loop(int *id)
     handles[CP_EVENT_READ] = cpReactor_client_receive;
     handles[EPOLL_CLOSE] = cpReactor_client_close;
 
-#ifdef HAVE_EPOLL
-    int epfd = epoll_create(512); //这个参数没用
-    //handles[] = cpReactor_client_release;
 
-//    handles[EPOLLIN] = cpReactor_client_receive;
-//    handles[EPOLLPRI] = cpReactor_client_release;
-//    handles[EPOLL_CLOSE] = cpReactor_client_close;
+    int epfd = cpReactor_create(); //这个参数没用
     CPGS->reactor_threads[*id].epfd = epfd;
-    cpEpoll_wait(handles, &timeo, epfd);
-#else
-#ifdef HAVE_KQUEUE
-    int epfd = kqueue();
-    // EPOLLPRI 有紧急数据可读 kqueue 貌似没有这样的事件类型啊
-    //handles[EPOLLPRI] = cpReactor_client_release;
-    CPGS->reactor_threads[*id].epfd = epfd;
-    cpKqueue_wait(handles, &timeo, epfd);
-#endif
-#endif
+    cpReactor_wait(handles, &timeo, epfd);
+
 
 
 
@@ -702,21 +677,11 @@ int static cpReactor_start(int sock)
 {
 
     int i;
-#ifdef HAVE_EPOLL
-    int accept_epfd = epoll_create(512); //这个参数没用
-    if (cpEpoll_add(accept_epfd, sock, CP_EVENT_READ) < 0)
+    int accept_epfd = cpReactor_create(); //这个参数没用
+    if (cpReactor_add(accept_epfd, sock, CP_EVENT_READ) < 0)
     {
         return FAILURE;
     };
-#else
-#ifdef HAVE_KQUEUE
-    int accept_epfd = kqueue();
-    if (cpKqueue_add(accept_epfd, sock, CP_EVENT_READ) < 0)
-    {
-        return FAILURE;
-    };
-#endif
-#endif
 
     pid_init();
     set_pid(CPGS->master_pid);
@@ -739,14 +704,7 @@ int static cpReactor_start(int sock)
     epoll_wait_handle handles[CP_MAX_EVENT];
     usleep(50000);
     handles[CP_EVENT_READ] = cpServer_master_onAccept;
-#ifdef HAVE_EPOLL
-    return cpEpoll_wait(handles, &timeo, accept_epfd);
-#else
-#ifdef HAVE_KQUEUE
-    return cpKqueue_wait(handles, &timeo, accept_epfd);
-#endif
-#endif
-
+    return cpReactor_wait(handles, &timeo, accept_epfd);
 }
 
 int static cpListen()

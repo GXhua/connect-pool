@@ -117,7 +117,7 @@ int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {
             }
             else if (events[i].events & EPOLLOUT)
             {
-                ret = handles[CP_EVENT_WRITE](events[i].data.fd);
+                ret = handles[CP_EVENT_READ](events[i].data.fd);
                 if (ret < 0)
                 {
                     cpLog("epoll [EPOLLOUT] handle failed. fd=%d. Error: %s[%d]", events[i].data.fd,
