@@ -226,10 +226,16 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     int ret = 0;
     cpClient *cli = *real_cli;
     cpMasterInfo *info = &cli->info;
-    printf("cli_real_send 1 \n");
+#ifdef HAVE_EPOLL
+    printf("epoll cli_real_send 1 \n");
+#else
+#ifdef HAVE_KQUEUE
+    printf("kqueue cli_real_send 1 \n");
+#endif
+#endif
+
     if (cli->released == CP_FD_RELEASED)
     {
-        printf("cli_real_send 2 \n");
         zval **data_source;
         zend_hash_find(Z_ARRVAL_P(send_data), ZEND_STRS("data_source"), (void **) &data_source);
         cpTcpEvent event;
@@ -237,7 +243,7 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
         event.ClientPid = cpPid;
         strcpy(event.data_source, Z_STRVAL_PP(data_source));
         int ret = cpClient_send(cli->sock, (char *) &event, sizeof (event), 0);
-        printf("cli_real_send 3 ret:%d\n", ret);
+        printf("cli_real_send 2 ret:%d\n", ret);
         if (ret < 0)
         {
             php_error_docref(NULL TSRMLS_CC, E_ERROR, "send failed in GET. Error:%d", errno);
@@ -562,16 +568,17 @@ PHP_METHOD(pdo_connect_pool, __call)
     }
     pass_data = create_pass_data(cmd, z_args, object, cur_type, &source_zval);
 
-    printf("cmd:%s  cur_type:%s", cmd, cur_type);
+    //printf("cmd:%s  cur_type:%s", cmd, cur_type);
 /*
     php_var_dump(&z_args, 1 TSRMLS_CC); // sql
     php_var_dump(&object, 1 TSRMLS_CC);
-*/
+
     php_var_dump(&pass_data, 1 TSRMLS_CC);
     php_var_dump(&source_zval, 1 TSRMLS_CC);
+*/
 
     int ret = cli_real_send(&cli, pass_data, getThis(), pdo_connect_pool_class_entry_ptr);
-    printf("cli_real_send ret is %d", ret);
+    //printf("cli_real_send ret is %d", ret);
 
     if (ret < 0)
     {

@@ -588,6 +588,7 @@ static int cpReactor_client_receive(int fd)
     //非ET模式会持续通知
     n = cpNetRead(fd, data, event_size);
 
+    cpLog("read :%d", n);
     cpConnection *conn = &(CPGS->conlist[fd]);
     if (n > 0)
     {

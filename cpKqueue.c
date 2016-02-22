@@ -73,6 +73,7 @@ int cpKqueue_add(int epfd, int fd, int fdtype) {
         }
     }
 
+    cpLog(" add event success.\n");
     // 这步的意义何在???
     memcpy(&e.udata, &fd_, sizeof(cpFd));
     return SUCCESS;
@@ -99,6 +100,7 @@ int cpKqueue_del(int epfd, int fd) {
         }
     //close时会自动从kqueue事件中移除
     ret = close(fd);
+    cpLog(" del event success.\n");
     return SUCCESS;
 }
 
@@ -142,7 +144,7 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
             //cpLog("kenvent timeout 没有事件而已 不算超时吧!\n");
             continue;
         }else{
-            //cpLog("cpKqueue_wait kevent rs is %d  epfd is %d\n", n, epfd);
+            cpLog("cpKqueue_wait kevent rs is %d  epfd is %d\n", n, epfd);
             for (i =0; i < n; i++) {
                 if (events[i].udata) {
                     memcpy(&fd_, &(events[i].udata), sizeof(fd_));
@@ -150,7 +152,7 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
 
                 // 包含读事件
                 if (events[i].filter == EVFILT_READ) {
-                    //cpLog("kqueue [EVFILT_READ] handle test. fd=%d  filter=%d n=%d.", fd_.fd, events[i].filter, n);
+                    cpLog("kqueue [EVFILT_READ] handle test. fd=%d  filter=%d n=%d.", fd_.fd, events[i].filter, n);
 
                     ret = handles[CP_EVENT_READ](fd_.fd);
                     if (ret < 0)
@@ -160,10 +162,10 @@ int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {
                 }
                 else if (events[i].filter == EVFILT_WRITE)
                 {
-                //    cpLog("kqueue [WRITE] handle test. fd=%d. ", fd_.fd );
+                    cpLog("kqueue [WRITE] handle test. fd=%d. ", fd_.fd );
                     //ret = handles[CP_EVENT_WRITE](fd_.fd);
                     ret = handles[CP_EVENT_READ](fd_.fd);
-                 //   cpLog("kqueue [WRITE] handle test. fd=%d. ret=%d", fd_.fd, ret);
+                    cpLog("kqueue [WRITE] handle test. fd=%d. ret=%d", fd_.fd, ret);
                     if (ret < 0)
                     {
                         cpLog("kqueue [EPOLLOUT] handle failed. fd=%d. Error: %s[%d]", fd_.fd, strerror(errno), errno);
