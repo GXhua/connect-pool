@@ -226,13 +226,6 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     int ret = 0;
     cpClient *cli = *real_cli;
     cpMasterInfo *info = &cli->info;
-#ifdef HAVE_EPOLL
-    printf("test epoll cli_real_send 1 \n");
-#else
-#ifdef HAVE_KQUEUE
-    printf("test kqueue cli_real_send 1 \n");
-#endif
-#endif
 
     if (cli->released == CP_FD_RELEASED)
     {
@@ -248,7 +241,6 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
             php_error_docref(NULL TSRMLS_CC, E_ERROR, "send failed in GET. Error:%d", errno);
         }
         int n = cpClient_recv(cli, info, sizeof (cpMasterInfo), 1);
-        printf("recv %d\n", n);
         if (info->worker_id == -1)
         {
             zend_throw_exception(NULL, CP_MULTI_PROCESS_ERR, 0 TSRMLS_CC);
@@ -264,7 +256,7 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
         if (n > 0)
         {
             ret = CP_CLIENT_SERIALIZE_SEND_MEM(send_data, info->worker_id, info->max, info->mmap_name);
-            printf("ret is %d\n",ret);
+        //    printf("ret is %d\n",ret);
             if (ret == SUCCESS)
             {
                 cli->released = CP_FD_NRELEASED;
@@ -287,7 +279,6 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
             {
                 zend_update_property(ce, this, ZEND_STRL("cli"), zres TSRMLS_CC);
                 *real_cli = cli_retry;
-                printf("send_data \n");
                 return cli_real_send(&cli_retry, send_data, this, ce);
             }
         }
@@ -300,7 +291,7 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     {
         ret = CP_CLIENT_SERIALIZE_SEND_MEM(send_data, info->worker_id, info->max, info->mmap_name);
     }
-    printf("ret is %d" , ret);
+    //printf("ret is %d" , ret);
     return ret;
 }
 
