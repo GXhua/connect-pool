@@ -227,10 +227,10 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     cpClient *cli = *real_cli;
     cpMasterInfo *info = &cli->info;
 #ifdef HAVE_EPOLL
-    printf("epoll cli_real_send 1 \n");
+    printf("test epoll cli_real_send 1 \n");
 #else
 #ifdef HAVE_KQUEUE
-    printf("kqueue cli_real_send 1 \n");
+    printf("test kqueue cli_real_send 1 \n");
 #endif
 #endif
 
@@ -243,13 +243,12 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
         event.ClientPid = cpPid;
         strcpy(event.data_source, Z_STRVAL_PP(data_source));
         int ret = cpClient_send(cli->sock, (char *) &event, sizeof (event), 0);
-        printf("cli_real_send 2 ret:%d\n", ret);
         if (ret < 0)
         {
             php_error_docref(NULL TSRMLS_CC, E_ERROR, "send failed in GET. Error:%d", errno);
         }
         int n = cpClient_recv(cli, info, sizeof (cpMasterInfo), 1);
-        printf("cli_real_send 4 n:%d\n", n);
+        printf("recv %d\n", n);
         if (info->worker_id == -1)
         {
             zend_throw_exception(NULL, CP_MULTI_PROCESS_ERR, 0 TSRMLS_CC);
@@ -265,6 +264,7 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
         if (n > 0)
         {
             ret = CP_CLIENT_SERIALIZE_SEND_MEM(send_data, info->worker_id, info->max, info->mmap_name);
+            printf("ret is %d\n",ret);
             if (ret == SUCCESS)
             {
                 cli->released = CP_FD_NRELEASED;
@@ -287,7 +287,7 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
             {
                 zend_update_property(ce, this, ZEND_STRL("cli"), zres TSRMLS_CC);
                 *real_cli = cli_retry;
-                printf("send_data");
+                printf("send_data \n");
                 return cli_real_send(&cli_retry, send_data, this, ce);
             }
         }
@@ -298,7 +298,6 @@ CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zen
     }
     else
     {
-        printf("cli_real_send 5 \n");
         ret = CP_CLIENT_SERIALIZE_SEND_MEM(send_data, info->worker_id, info->max, info->mmap_name);
     }
     printf("ret is %d" , ret);

@@ -661,6 +661,7 @@ int static cpReactor_thread_loop(int *id)
 
 
     int epfd = cpReactor_create(); //这个参数没用
+    cpLog("epfd is %d", epfd);
     CPGS->reactor_threads[*id].epfd = epfd;
     cpReactor_wait(handles, &timeo, epfd);
 
@@ -678,6 +679,8 @@ int static cpReactor_start(int sock)
 
     int i;
     int accept_epfd = cpReactor_create(); //这个参数没用
+    cpLog("accept_epfd is %d", accept_epfd);
+
     if (cpReactor_add(accept_epfd, sock, CP_EVENT_READ) < 0)
     {
         return FAILURE;
