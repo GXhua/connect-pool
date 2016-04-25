@@ -1,7 +1,7 @@
 #ifndef PHP_MSGPACK_H
 #define PHP_MSGPACK_H
 
-#include "ext/standard/php_smart_str.h" /* for smart_str */
+#include <ext/standard/php_smart_str.h> /* for smart_str */
 typedef struct _instead_smart{
     int len;
     int max;
