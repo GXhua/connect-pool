@@ -263,20 +263,20 @@ void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC)
 PHP_FUNCTION(pool_server_create)
 {
     zval *conf = NULL;
-    char *config_file = NULL;
+    zend_string *config_file = NULL;
     int file_len = 0;
     if (strcasecmp("cli", sapi_module.name) != 0)
     {
         php_error_docref(NULL TSRMLS_CC, E_ERROR, "pool_server must run at php_cli environment.");
         RETURN_FALSE;
     }
-    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "s", &config_file, &file_len) == FAILURE)
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "S", &config_file) == FAILURE)
     {
         php_error_docref(NULL TSRMLS_CC, E_ERROR, "config file error");
         RETURN_FALSE;
     }
-    conf = cpGetConfig(config_file);
-    cpServer_init(conf, config_file);
+    conf = cpGetConfig(config_file.val);
+    cpServer_init(conf, config_file.val);
 
     int ret = cpServer_create();
     if (ret < 0)

@@ -34,8 +34,8 @@ void *cp_mmap_calloc(int size)
     {
         return NULL;
     }
-    strncpy(object->mapfile, mapfile, SW_SHM_MMAP_FILE_LEN);
-    object->tmpfd = tmpfd;
+    //strncpy(object->mapfile, mapfile, SW_SHM_MMAP_FILE_LEN);
+    //object->tmpfd = tmpfd;
 #endif
 
     mem = mmap(NULL, size, PROT_READ | PROT_WRITE, flag, tmpfd, 0);

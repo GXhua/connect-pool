@@ -274,17 +274,15 @@ void swSingalNone() {
 }
 
 zval * cpGetConfig(char *filename) {
-    zval fun_name, **args[2], *retval, *file, *section;
-    ZVAL_STRING(&fun_name, "parse_ini_file", 0);
-
-    MAKE_STD_ZVAL(file);
-    ZVAL_STRING(file, filename, 1);
-    MAKE_STD_ZVAL(section);
+    zval fun_name, file, *args[2], *retval, section;
+    ZVAL_STRING(&fun_name, "parse_ini_file");
+    ZVAL_STRING(&file, filename);
     ZVAL_BOOL(section, 1);
+
     args[0] = &file;
     args[1] = &section;
 
-    if (call_user_function_ex(CG(function_table), NULL, &fun_name, &retval, 2, args, 0, NULL TSRMLS_CC) != SUCCESS)
+    if (call_user_function_ex(CG(function_table), NULL, &fun_name, retval, 2, args, 0, NULL TSRMLS_CC) != SUCCESS)
     {
         zval_ptr_dtor(&file);
         zval_ptr_dtor(&section);

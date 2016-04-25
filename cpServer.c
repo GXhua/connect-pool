@@ -104,8 +104,64 @@ void cpServer_init(zval *conf, char *ini_file)
     CPGC.max_fail_num = 2;
 
     strcpy(CPGC.ini_file, ini_file);
-    MAKE_STD_ZVAL(CPGS->group);
+    //MAKE_STD_ZVAL(CPGS->group);
+    CPGS->group = emalloc(sizeof(zval));
     array_init(CPGS->group);
+    zval *config;
+    zend_string *key;
+
+
+    ZEND_HASH_FOREACH_STR_KEY_VAL(CP_Z_ARRVAL_P(conf), key, config)
+    {
+        if (strcmp(key.val, "common") == 0)
+        {//common config
+            cpServer_init_common(config);
+        }
+        else
+        {
+            zval **v;
+            add_assoc_long(CPGS->group, name, group_num);
+            strcpy(CPGS->G[group_num].name, name);
+            if (cp_zend_hash_find(CP_Z_ARRVAL_P(config), ZEND_STRS("pool_min"), (void **) &v) == SUCCESS)
+            {
+                convert_to_long(*v);
+                CPGS->G[group_num].worker_num = CPGS->G[group_num].worker_min = Z_LVAL_PP(v);
+            }
+            if (cp_zend_hash_find(CP_Z_ARRVAL_P(config), ZEND_STRS("pool_max"), (void **) &v) == SUCCESS)
+            {
+                convert_to_long(*v);
+                CPGS->G[group_num].worker_max = Z_LVAL_PP(v);
+            }
+
+            CPGS->G[group_num].workers_status = (volatile_int8*) cp_mmap_calloc(sizeof (volatile_int8) * CP_GROUP_LEN);
+            if (CPGS->G[group_num].workers_status == NULL)
+            {
+                cpLog("alloc for worker_status fail");
+                return;
+            }
+
+            CPGS->G[group_num].workers = (cpWorker*) cp_mmap_calloc(CP_GROUP_LEN * sizeof (cpWorker));
+            if (CPGS->G[group_num].workers == NULL)
+            {
+                cpLog("[Main] calloc[workers] fail");
+                return;
+            }
+
+            pthread_mutexattr_t attr;
+            pthread_mutexattr_init(&attr);
+            pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_SHARED);
+            CPGS->G[group_num].mutex_lock = (pthread_mutex_t*) cp_mmap_calloc(sizeof (pthread_mutex_t));
+            if (pthread_mutex_init(CPGS->G[group_num].mutex_lock, &attr) < 0)
+            {
+                cpLog("pthread_mutex_init error!. Error: %s [%d]", strerror(errno), errno);
+                return;
+            }
+            CPGS->G[group_num].WaitList = CPGS->G[group_num].WaitTail = NULL;
+            CPGS->group_num++;
+            group_num++;
+        }
+    }
+    CP_HASHTABLE_FOREACH_END();
 
     for (zend_hash_internal_pointer_reset(Z_ARRVAL_P(conf)); zend_hash_has_more_elements(Z_ARRVAL_P(conf)) == SUCCESS; zend_hash_move_forward(Z_ARRVAL_P(conf)))
     {
