@@ -28,20 +28,26 @@
 #include "config.h"
 #endif
 
-#ifdef HAVE_EPOLL
+//#ifdef HAVE_EPOLL
 #include <sys/epoll.h> //todo
 #ifndef EPOLLRDHUP
 #define EPOLLRDHUP   0x2000
 #define NO_EPOLLRDHUP
 #endif
+//#endif
+
+#if defined(__GNUC__)
+#if __GNUC__ >= 3
+#define CPINLINE inline __attribute__((always_inline))
 #else
-#ifdef HAVE_KQUEUE
-#include <sys/event.h>
-#ifndef SIGRTMIN
-#define SIGRTMIN 33
+#define CPINLINE inline
 #endif
+#elif defined(_MSC_VER)
+#define CPINLINE __forceinline
+#else
+#define CPINLINE inline
 #endif
-#endif
+
 
 #if defined(MAP_ANON) && !defined(MAP_ANONYMOUS)
 #define MAP_ANONYMOUS MAP_ANON
@@ -68,6 +74,8 @@
 #include <netinet/tcp.h>
 #include <pthread.h>
 
+#include <ext/standard/php_string.h>
+#include "include/php7_wrapper.h"
 #include "cpMemory.h"
 #include "cpFunction.h"
 #include "cpWorker.h"
@@ -76,13 +84,14 @@
 #include "cpClientNet.h"
 #include "cpPingWorker.h"
 
-#include "ext/pdo/php_pdo_driver.h"
-#include "ext/standard/php_smart_str.h"
-#include "ext/standard/php_var.h"
-#include "zend_exceptions.h"
-
+#include <ext/pdo/php_pdo_driver.h>
+#include <ext/standard/php_var.h>
+#include <zend_exceptions.h>
+#if PHP_MAJOR_VERSION < 7
 #include "msgpack/php_msgpack.h"
-
+#else
+#include "msgpack7/php_msgpack.h"
+#endif
 #ifdef ZTS
 #include "TSRM.h"
 #endif
@@ -117,10 +126,20 @@ extern zend_module_entry connect_pool_module_entry;
 
 #define CP_TCPEVENT_GET         1
 #define CP_TCPEVENT_RELEASE     2
+#define CP_TCPEVENT_ADD         3
+#define CP_TCPEVENT_GETFD       4
+#define CP_GET_PID if(cpPid==0)cpPid=getpid()
+
+typedef struct _cpRecvEvent
+{
+    zval *ret_value;
+    uint8_t type;
+} cpRecvEvent;
 
 #define CP_SIGEVENT_TURE         1//01
 #define CP_SIGEVENT_EXCEPTION    2//10
 #define CP_SIGEVENT_PDO          3//11
+#define CP_SIGEVENT_STMT_OBJ     4//11
 #define CP_EVENTLEN_ADD_TYPE(len,__type) \
                                          len  = len <<2;\
                                          len = len | __type;
@@ -137,42 +156,8 @@ extern zend_module_entry connect_pool_module_entry;
 #define CP_PIPE_MOD O_RDWR
 #define CP_TYPE_SIZE sizeof(uint8_t)
 
-#define CP_GROUP_LEN 1000 //
-#define CP_GROUP_NUM 100 //the max group num of proxy process . todo  check it
-
-//-------------------------------Reactor-----add by Ben----------------------------------
-//事件的值
-//CP_EVENT_READ 对应epoll :EPOLLIN   kqueue:EVFILT_READ
-//CP_EVENT_WRITE 对应epoll :EPOLLOUT   kqueue:EVFILT_WRITE
-enum CP_EVENTS
-{
-    CP_EVENT_DEAULT = 256,
-    CP_EVENT_READ = 1u << 9,
-    CP_EVENT_WRITE = 1u << 10,
-    CP_EVENT_ERROR = 1u << 11,
-};
-
-static inline int isReactor_event_read(int fdtype)
-{
-    return (fdtype < CP_EVENT_DEAULT) || (fdtype & CP_EVENT_READ);
-}
-
-static inline int isReactor_event_write(int fdtype)
-{
-    return fdtype & CP_EVENT_WRITE;
-}
-
-static inline int isReactor_event_error(int fdtype)
-{
-    return fdtype & CP_EVENT_ERROR;
-}
-
-static inline int initReactor_fdtype(int fdtype)
-{
-    return fdtype & (~CP_EVENT_READ) & (~CP_EVENT_WRITE) & (~CP_EVENT_ERROR);
-}
-
-//---------------------------------
+//#define CP_GROUP_LEN 1000 //
+//#define CP_GROUP_NUM 100 //the max group num of proxy process . todo  check it
 
 extern int le_cli_connect_pool;
 
@@ -191,9 +176,6 @@ PHP_FUNCTION(pool_server_shutdown);
 PHP_FUNCTION(pool_server_reload);
 PHP_FUNCTION(pool_server_version);
 
-PHP_FUNCTION(get_disable_list);
-
-PHP_FUNCTION(client_close);
 
 
 
@@ -217,15 +199,15 @@ PHP_METHOD(redis_connect_pool, msConfig);
 PHP_METHOD(redis_connect_pool, forceMaster);
 
 
-void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC);
+void send_oob2proxy(zend_resource *rsrc TSRMLS_DC);
 extern void cp_serialize(smart_str *ser_data, zval *array);
 extern zval * cp_unserialize(char *data, int len);
 extern int redis_proxy_connect(zval *data_source, zval *args, int flag);
 extern int pdo_proxy_connect(zval *args, int flag);
 
 int worker_onReceive(zval *data);
-CPINLINE int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type);
-CPINLINE int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, int pid, int max, char *mm_name);
+int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type);
+int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, cpClient *);
 extern cpServerG ConProxyG;
 extern cpServerGS *ConProxyGS;
 extern cpWorkerG ConProxyWG;
