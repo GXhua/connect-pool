@@ -30,17 +30,17 @@ phpize=>./configure=>make install=>echo "extensions=xx/connect_pool.so">php.ini
 step 1 move the pool.ini file to /etc/ and modify it as you need.
 
 step 2 start the pool_server process：
-```./pool_server start
-```support "start" "stop" "restart" "reload"
+```php pool_server start
+```support "start" "stop" "restart"
 
 step 3 modify you php script:
 ```
 <?php
 $db = new PDO(xxxxx);
-=> $db = new pdo_connect_pool(xxxx);//dont use persistent
+=> $db = new pdoProxy(xxxx);//dont use persistent
 
 $redis = new Redis();
-=》$redis = new redis_connect_pool();//dont use pconnect
+=》$redis = new redisProxy();//dont use pconnect
 
 tips:use $db/$redis->release() to release the connection  as early as you can;
 
@@ -81,7 +81,7 @@ $config = array(
     ),
 );
 /***************************"select"和"show"开头的语句 走随机从库***********/
-$obj1 = new pdo_connect_pool($config);
+$obj1 = new pdoProxy($config);
 $rs = $obj1->query("select * from test limit 1");
 var_dump($rs->fetchAll());//走随机从库
 $obj1->release();
@@ -103,7 +103,15 @@ $obj1->release();
 ## 提示
 - pool_server 必须以root用户启动
 - redis不支持pub/sub方法
+- 当你用完一个连接后（例如：fetchAll调用结束），请调用release来马上释放连接到池子里面(如果事务需要在事务commit或者rollback后release)，如果不想改业务代码可以在框架层每次fetch（或者get/set）用完之后调用release方法。
 
 ## contact us
 - http://weibo.com/u/2661945152
 - 83212019@qq.com
+- qq群号 538716391
+
+## quick start
+- fetchAll返回对象的支持
+- foreach stmt对象的支持
+- 自动release连接（太难看情况）
+- 不配置数据源走默认的最大最小连接数

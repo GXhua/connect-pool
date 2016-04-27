@@ -12,8 +12,7 @@
 extern "C" {
 #endif
 
-#define CP_CPU_NUM               1
-//#define CP_CPU_NUM               (int)sysconf(_SC_NPROCESSORS_ONLN)/2==0?1:(int)sysconf(_SC_NPROCESSORS_ONLN)/2
+#define CP_CPU_NUM               (int)sysconf(_SC_NPROCESSORS_ONLN)/2==0?1:(int)sysconf(_SC_NPROCESSORS_ONLN)/2
 #define CP_BACKLOG               512
 #define CP_PIPES_NUM             (CP_WORKER_NUM/CP_WRITER_NUM + 1) //每个写线程pipes数组大小
 #define CP_PORT_PDO              6253
@@ -29,6 +28,11 @@ extern "C" {
 #define CP_RECYCLE_NUM           2
 #define CP_DEF_MAX_READ_LEN      (1024*1024*5)
 #define CP_MAX_READ_LEN          (1024*1024*20)
+#define CP_SOURCE_LEN            200
+#define CP_SERVER_MMAP_FILE      "/tmp/cp_server_mmap_file"
+
+#define CP_GROUP_LEN 1000 //
+#define CP_GROUP_NUM 100 //the max group num of proxy process . todo  check it
 
 #define CP_PING_MEM_LEN          1024*1024
 #define CP_PING_DIS_LEN          409600  //disable list mem
@@ -48,6 +52,7 @@ extern "C" {
 
 #define CP_UNSOCK_BUFSIZE        (4*1024*1024)
 
+#define CP_WORKER_STARTING       5
 #define CP_WORKER_RESTART        4    
 #define CP_WORKER_DELING         3
 #define CP_WORKER_BUSY           2
@@ -55,7 +60,7 @@ extern "C" {
 #define CP_WORKER_DEL            0
 
 #define CP_ACCEPT_AGAIN          1     //是否循环accept，可以一次性处理完全部的listen队列，用于大量并发连接的场景
-#define CP_ACCEPT_MAX_COUNT      1    //一次循环的最大accept次数
+#define CP_ACCEPT_MAX_COUNT      64    //一次循环的最大accept次数
 #define CP_TCP_KEEPCOUNT         5
 #define CP_TCP_KEEPIDLE          3600 //1小时
 #define CP_TCP_KEEPINTERVAL      60
@@ -73,18 +78,34 @@ extern "C" {
 
     typedef volatile int8_t volatile_int8;
 
+//    typedef struct _cpWaitList {
+//        int CPid; // fpm's pid
+//        struct _cpConnection *conn;
+//        struct _cpWaitList *next;
+//        int next_id;
+//        struct _cpWaitList *pre;
+//    } cpWaitList;
+
+    typedef struct _cpConnection {
+        int fd;
+
+        uint16_t group_id; //0 1 2 3 
+        uint16_t worker_id; //1001 1002 2001
+        uint16_t worker_index; // 0 1 2 3
+
+        uint8_t release;
+        uint16_t pth_id;
+
+        int wait_fpm_pid;//等待的fpm pid
+        int next_wait_id;//sever fd
+        int fpm_pid;//连接对应的fpm
+//        struct _cpWaitList WaitList;
+    } cpConnection;
+
     typedef struct _cpIdelList {
         struct _cpIdelList *next;
         int worker_id;
     } cpIdelList;
-
-    typedef struct _cpWaitList {
-        int fd;
-        int len;
-        struct _cpWaitList *next;
-        struct _cpWaitList *pre;
-        char data[0];
-    } cpWaitList;
 
     typedef struct _cpConfig {
         uint16_t backlog;
@@ -133,27 +154,23 @@ extern "C" {
         void *ping_mem_addr;
     } cpServerG;
 
-    typedef struct _cpConnection {
-        int fd; //文件描述符
-        //        struct sockaddr_in addr; //socket的地址
-
-        uint16_t worker_id; //指定当前连接在用哪个worker
-        uint16_t group_id; //指定当前连接在用哪个group
-        uint8_t release; //方式重复release
-        uint16_t pth_id; //thread id
-    } cpConnection;
-
     typedef struct _cpGroup {
         int id; //Current worker group  id 0,1,2,3...n
         uint32_t worker_num;
         uint32_t worker_min;
         uint32_t worker_max;
-        cpWorker *workers;
-        volatile_int8 *workers_status;
-        pthread_mutex_t *mutex_lock;
-        cpWaitList *WaitList; //获得失败的wait队列
-        cpWaitList *WaitTail; //获得失败的wait队列队尾
+        cpWorker workers[CP_GROUP_LEN];
+        volatile_int8 workers_status[CP_GROUP_LEN];
+        pthread_mutex_t mutex_lock;
+        int first_wait_id;//server fd
+        int last_wait_id;//server fd
+//        cpWaitList *WaitList; //获得失败的wait队列
+//        cpWaitList *WaitTail; //获得失败的wait队列队尾
         char name[100]; //group name
+
+        int (*lock)(struct _cpGroup *);
+        int (*unLock)(struct _cpGroup *);
+        int (*tryLock)(struct _cpGroup *);
     } cpGroup;
 
     typedef struct _cpServerGS {
@@ -165,30 +182,39 @@ extern "C" {
         uint16_t reactor_next_i;
         //        uint16_t reactor_round_i;
 
-        cpConnection *conlist;
-        uint32_t *workerfd2clientfd_list; //workerfd和客户端fd的对应关系
+        cpConnection conlist[CP_MAX_FDS];
 
         cpWorker *ping_workers;
 
         cpThread *reactor_threads;
 
         int running;
-        cpGroup G[100]; //group TODO extend
+        cpGroup G[CP_GROUP_NUM]; //group TODO extend
         zval* group;
         int group_num;
+        int max_buffer_len;
     } cpServerGS;
 
     typedef struct _cpWorkerG {
         int id; //Current Proccess Worker's id 0,1,2,3...n
-        int clientPid;
         int gid; //current worker's group id
+        int pid;
         int working;
         uint64_t max_read_len;
+        int pipe_fd_read;
+        int pipe_fd_write;
+        cpWorkerInfo event;
     } cpWorkerG;
 
     void cpServer_init(zval *conf, char *ini_file);
     int cpServer_create();
     int cpServer_start();
+    int cpMutexLock(cpGroup *);
+    int cpMutexUnLock(cpGroup *);
+    int cpMutexTryLock(cpGroup *);
+    void cpServer_try_get_worker(cpConnection *conn, int group_id);
+	int cpPopWaitQueue(cpGroup *G, cpConnection *conn);
+
 
 #ifdef	__cplusplus
 }

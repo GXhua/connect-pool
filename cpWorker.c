@@ -19,47 +19,66 @@
 #include <sys/wait.h>
 zval *pdo_object = NULL;
 
-static int cpWorker_loop(int worker_id, int group_id)
+static void cpWorker_do_stop()
 {
-    CPWG.id = worker_id;
-    CPWG.gid = group_id;
-    cpGroup *G = &CPGS->G[group_id];
-    char fifo_name[CP_FIFO_NAME_LEN] = {0};
-    sprintf(fifo_name, "%s_%d", CP_FIFO_NAME_PRE, group_id * CP_GROUP_LEN + worker_id); //client 2 worker
-    int pipe_fd_read = cpCreateFifo(fifo_name);
-
-    sprintf(fifo_name, "%s_%d_1", CP_FIFO_NAME_PRE, group_id * CP_GROUP_LEN + worker_id); //worker 2 client
-    int pipe_fd_write = cpCreateFifo(fifo_name);
-    G->workers[worker_id].pipe_fd_write = pipe_fd_write;
-    cpShareMemory *sm_obj = &(G->workers[worker_id].sm_obj);
-
-    cpWorkerInfo event;
-    bzero(&event, sizeof (event));
-    int ret, len = 0;
-    int event_len = sizeof (event);
-    cpSettitle(G->name);
-    cpSignalSet(SIGALRM, cpWorker_do_ping, 1, 0);
-    alarm(CP_PING_SLEEP);
-    while (CPGS->running)
-    {
-        zval *ret_value;
-        ALLOC_INIT_ZVAL(ret_value);
-        do
-        {
-            ret = cpFifoRead(pipe_fd_read, &event, event_len);
-            if (ret < 0)
-            {
-                cpLog("fifo read Error: %s [%d]", strerror(errno), errno);
-            }
-        } while (event.pid != G->workers[worker_id].CPid); //有可能有脏数据  读出来
-        CPWG.working = 1;
-        len = event.len;
-        CPWG.clientPid = event.pid;
+    cpGroup *G = &CPGS->G[CPWG.gid];
+    if (G->workers[CPWG.id].pid != CPWG.pid && CPWG.event.pid != 0)//G->workers[CPWG.id].pid IS 0 or new pid
+    {//i am die already
+        int ret = write(CPWG.pipe_fd_read, &CPWG.event, sizeof (cpWorkerInfo)); //write back give the real worker
         if (ret < 0)
         {
             cpLog("fifo read Error: %s [%d]", strerror(errno), errno);
         }
-        php_msgpack_unserialize(ret_value, sm_obj->mem, len);
+    }
+    exit(0);
+}
+
+static void cpWorker_init(int worker_id, int group_id)
+{
+    //标识为worker进程
+    CPGL.process_type = CP_PROCESS_WORKER;
+    cpWorker_attach_mem(worker_id, group_id);
+
+    CPWG.id = worker_id;
+    CPWG.gid = group_id;
+    CPWG.pid = getpid();
+
+    char fifo_name[CP_FIFO_NAME_LEN] = {0};
+    sprintf(fifo_name, "%s_%d", CP_FIFO_NAME_PRE, group_id * CP_GROUP_LEN + worker_id); //client 2 worker
+    CPWG.pipe_fd_read = cpCreateFifo(fifo_name);
+
+    sprintf(fifo_name, "%s_%d_1", CP_FIFO_NAME_PRE, group_id * CP_GROUP_LEN + worker_id); //worker 2 client
+    int pipe_fd_write = cpCreateFifo(fifo_name);
+    CPWG.pipe_fd_write = pipe_fd_write;
+}
+
+static int cpWorker_loop(int worker_id, int group_id)
+{
+    cpWorker_init(worker_id, group_id);
+    cpGroup *G = &CPGS->G[group_id];
+    cpShareMemory *sm_obj = &(G->workers[worker_id].sm_obj);
+    int ret;
+    cpSettitle(G->name);
+    cpSignalSet(SIGALRM, cpWorker_do_ping, 1, 0);
+    cpSignalSet(SIGTERM, cpWorker_do_stop, 1, 0);
+    alarm(CP_PING_SLEEP);
+    while (CPGS->running)
+    {
+        zval *ret_value;
+        CP_ALLOC_INIT_ZVAL(ret_value);
+        bzero(&CPWG.event, sizeof (cpWorkerInfo));
+        ret = cpFifoRead(CPWG.pipe_fd_read, &CPWG.event, sizeof (cpWorkerInfo));
+        if (ret < 0)
+        {
+            cpLog("fifo read Error: %s [%d]", strerror(errno), errno);
+        }
+        if (CPWG.event.pid != G->workers[CPWG.id].CPid)
+        {//pipe数据里面的fpm pid和worker应该服务的pid不一样
+            cpLog("warning: read a wrong event,maybe you restart the pool server,%d,%d,%d", CPWG.event.pid, CPWG.id, G->workers[CPWG.id].CPid);
+            continue;
+        }
+        CPWG.working = 1;
+        php_msgpack_unserialize(ret_value, sm_obj->mem, CPWG.event.len);
         worker_onReceive(ret_value);
         CPWG.working = 0;
     }
@@ -77,9 +96,6 @@ int cpFork_one_worker(int worker_id, int group_id)
     }
     else if (pid == 0)
     {
-        //标识为worker进程
-        CPGL.process_type = CP_PROCESS_WORKER;
-        cpWorker_attach_mem(worker_id, group_id);
         ret = cpWorker_loop(worker_id, group_id);
         exit(ret);
     }
@@ -91,15 +107,21 @@ int cpFork_one_worker(int worker_id, int group_id)
 
 static void cpManagerRecycle(int sig)
 {
-    int i, recycle_num = 0, j;
+    int i, recycle_num, j;
+    cpLog("monitor:start___________________");
     for (j = 0; j < CPGS->group_num; j++)
     {
         cpGroup *G = &CPGS->G[j];
-        if (pthread_mutex_trylock(G->mutex_lock) == 0)
+        recycle_num = 0;
+        cpLog("monitor:the  '%s' have used %d,the max conn num is %d, the min num is %d", G->name, G->worker_num, G->worker_max, G->worker_min);
+        if (G->lock(G) == 0)
         {
-            //                                for (i = CPGS->worker_num - 1; i >= 0; i--) {
-            //                                    cpLog("index is %d,pid is %d,status is %d", i, CPGS->workers[i].pid, CPGS->workers_status[i]);
-            //                                }
+            //                                    for (i = G->worker_num - 1; i >= 0; i--)
+            //                                    {
+            //                                        cpLog("index is %d,pid is %d,status is %d", i, G->workers[i].pid, G->workers_status[i]);
+            //                                    }
+            //                                    cpLog("________________");
+
             for (i = G->worker_num - 1; i >= G->worker_min; i--)
             {
                 if (G->workers_status[i] == CP_WORKER_BUSY)
@@ -131,13 +153,10 @@ static void cpManagerRecycle(int sig)
                     }
                 }
             }
-            if (pthread_mutex_unlock(G->mutex_lock) != 0)
-            {
-                cpLog("pthread_spin_unlock. Error: %s [%d]", strerror(errno), errno);
-            }
+            G->unLock(G);
         }
     }
-
+    cpLog("monitor:end___________________\n");
     alarm(CPGC.idel_time);
 }
 
@@ -172,7 +191,7 @@ static void cpManagerReload(int sig)
     zval *group_conf = NULL, **v;
     group_conf = cpGetConfig(CPGC.ini_file);
     int gid = 0;
-    zval **gid_ptr = NULL;
+    zval *gid_ptr = NULL;
     cpGroup *G = NULL;
     if (!Z_BVAL_P(group_conf))
     {
@@ -180,18 +199,18 @@ static void cpManagerReload(int sig)
     }
     else
     {
-        for (zend_hash_internal_pointer_reset(Z_ARRVAL_P(group_conf)); zend_hash_has_more_elements(Z_ARRVAL_P(group_conf)) == SUCCESS; zend_hash_move_forward(Z_ARRVAL_P(group_conf)))
+        zval *config;
+        char *name;
+        int keytype;
+        uint32_t keylen;
+
+        CP_HASHTABLE_FOREACH_START2(CP_Z_ARRVAL_P(group_conf), name, keylen, keytype, config)
         {
-            zval **config;
-            zend_hash_get_current_data(Z_ARRVAL_P(group_conf), (void**) &config);
-            char *name;
-            uint keylen;
-            zend_hash_get_current_key_ex(Z_ARRVAL_P(group_conf), &name, &keylen, NULL, 0, NULL);
             if (strcmp(name, "common") != 0)
             {
-                if (zend_hash_find(Z_ARRVAL_P(CPGS->group), name, strlen(name) + 1, (void **) &gid_ptr) == SUCCESS)
+                if (cp_zend_hash_find(Z_ARRVAL_P(CPGS->group), name, strlen(name) + 1, (void **) &gid_ptr) == SUCCESS)
                 {
-                    gid = Z_LVAL_PP(gid_ptr);
+                    gid = Z_LVAL_P(gid_ptr);
                     G = &CPGS->G[gid];
                 }
                 else
@@ -199,14 +218,14 @@ static void cpManagerReload(int sig)
                     cpLog("can not add datasource when the server runing,if you want add it please restart");
                     return;
                 }
-                if (pthread_mutex_lock(G->mutex_lock) == 0)
+                if (G->lock(G) == 0)
                 {
-                    if (zend_hash_find(Z_ARRVAL_PP(config), ZEND_STRS("pool_max"), (void **) &v) == SUCCESS)
+                    if (cp_zend_hash_find(Z_ARRVAL_P(config), ZEND_STRS("pool_max"), (void **) &v) == SUCCESS)
                     {
                         convert_to_long(*v);
                         G->worker_max = (int) Z_LVAL_PP(v);
                     }
-                    if (zend_hash_find(Z_ARRVAL_PP(config), ZEND_STRS("pool_min"), (void **) &v) == SUCCESS)
+                    if (cp_zend_hash_find(Z_ARRVAL_P(config), ZEND_STRS("pool_min"), (void **) &v) == SUCCESS)
                     {
                         convert_to_long(*v);
                         int new_min = (int) Z_LVAL_PP(v);
@@ -231,28 +250,25 @@ static void cpManagerReload(int sig)
                         G->worker_min = new_min;
                     }
 
-                    if (pthread_mutex_unlock(G->mutex_lock) != 0)
-                    {
-                        cpLog("pthread_mutex_unlock. Error: %s [%d]", strerror(errno), errno);
-                    }
+                    G->unLock(G);
                 }
             }
             else
             {
-                if (zend_hash_find(Z_ARRVAL_PP(config), ZEND_STRS("recycle_num"), (void **) &v) == SUCCESS)
+                if (cp_zend_hash_find(Z_ARRVAL_P(config), ZEND_STRS("recycle_num"), (void **) &v) == SUCCESS)
                 {
                     convert_to_long(*v);
                     CPGC.recycle_num = (int) Z_LVAL_PP(v);
                 }
-                if (zend_hash_find(Z_ARRVAL_PP(config), ZEND_STRS("idel_time"), (void **) &v) == SUCCESS)
+                if (cp_zend_hash_find(Z_ARRVAL_P(config), ZEND_STRS("idel_time"), (void **) &v) == SUCCESS)
                 {
                     convert_to_long(*v);
                     CPGC.idel_time = (int) Z_LVAL_PP(v);
                 }
             }
         }
-
-        zval_ptr_dtor(&group_conf);
+        CP_HASHTABLE_FOREACH_END();
+        cp_zval_ptr_dtor(&group_conf);
     }
 }
 
@@ -340,7 +356,7 @@ CPINLINE int cpCreate_worker_mem(int worker_id, int group_id)
 {
     cpShareMemory *sm_obj = &(CPGS->G[group_id].workers[worker_id].sm_obj);
     sprintf(sm_obj->mmap_name, "%s_%d", CP_MMAP_NAME_PRE, group_id * CP_GROUP_LEN + worker_id);
-    sm_obj->size = CPGC.max_read_len;
+    sm_obj->size = CPGS->max_buffer_len;
     if (cp_create_mmap_file(sm_obj) < 0)
     {
         return FAILURE;
@@ -364,16 +380,22 @@ void cpWorker_do_ping()
 {
     zval * stmt_value = NULL;
     zval method, **args[1], *sql;
-    ZVAL_STRING(&method, "query", 0);
-    MAKE_STD_ZVAL(sql);
-    ZVAL_STRING(sql, "select 1", 0);
+    CP_ZVAL_STRING(&method, "query", 0);
+    CP_MAKE_STD_ZVAL(sql);
+    CP_ZVAL_STRING(sql, "select 1", 0);
     args[0] = &sql;
-    if (pdo_object != NULL &&  CPWG.working == 0)
+    if (pdo_object != NULL && CPWG.working == 0)
     {
-        call_user_function_ex(NULL, &pdo_object, &method, &stmt_value, 1, args, 0, NULL TSRMLS_CC);
+        cp_call_user_function_ex(NULL, &pdo_object, &method, &stmt_value, 1, args, 0, NULL TSRMLS_CC);
         if (stmt_value)
-            zval_ptr_dtor(&stmt_value);
+            cp_zval_ptr_dtor(&stmt_value);
     }
+#if PHP_MAJOR_VERSION==7
+    zval_ptr_dtor(&method);
+    zval_ptr_dtor(&sql);
+#else
     efree(sql);
+#endif
     alarm(CP_PING_SLEEP);
 }
+

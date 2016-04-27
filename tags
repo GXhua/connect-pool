@@ -4,288 +4,263 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ACS_RAW_VALUE	./msgpack/msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon1
-ACS_RAW_VALUE	./msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon9
+ACS_RAW_VALUE	./msgpack/msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon6
+ACS_RAW_VALUE	./msgpack/unpack_define.h	/^	ACS_RAW_VALUE,$/;"	e	enum:__anon4
+AWK	./Makefile	/^AWK = gawk$/;"	m
+CC	./Makefile	/^CC = cc$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -Wall -pthread -g -O2$/;"	m
+CFLAGS_CLEAN	./Makefile	/^CFLAGS_CLEAN = $(CFLAGS)$/;"	m
+COMMON_FLAGS	./Makefile	/^COMMON_FLAGS = $(DEFS) $(INCLUDES) $(EXTRA_INCLUDES) $(CPPFLAGS) $(PHP_FRAMEWORKPATH)$/;"	m
+COMPILE_DL_CONNECT_POOL	./config.h	5;"	d
+CONFIGURE_COMMAND	./Makefile	/^CONFIGURE_COMMAND = '.\/configure' '--with-php-config=\/usr\/local\/php7\/bin\/php-config'$/;"	m
+CONFIGURE_OPTIONS	./Makefile	/^CONFIGURE_OPTIONS = '--with-php-config=\/usr\/local\/php7\/bin\/php-config'$/;"	m
 CONPFUNCTION_H	./include/cpFunction.h	9;"	d
 CON_FAIL_MESSAGE	./connect_pool_client.c	27;"	d	file:
-CON_FAIL_MESSAGE	connect_pool_client.c	27;"	d	file:
 CON_FORMART_KEY	./connect_pool_client.c	26;"	d	file:
-CON_FORMART_KEY	connect_pool_client.c	26;"	d	file:
-CPGC	./include/cpServer.h	43;"	d
-CPGC	include/cpServer.h	44;"	d
-CPGL	./include/cpServer.h	44;"	d
-CPGL	include/cpServer.h	45;"	d
-CPGS	./include/cpServer.h	45;"	d
-CPGS	include/cpServer.h	46;"	d
+CPGC	./include/cpServer.h	44;"	d
+CPGL	./include/cpServer.h	45;"	d
+CPGS	./include/cpServer.h	46;"	d
 CPINLINE	./include/cpFunction.h	15;"	d
 CPINLINE	./include/cpFunction.h	17;"	d
 CPINLINE	./include/cpFunction.h	19;"	d
 CPINLINE	./include/cpFunction.h	23;"	d
 CPINLINE	./include/cpFunction.h	24;"	d
+CPP	./Makefile	/^CPP = cc -E$/;"	m
+CPPFLAGS	./Makefile	/^CPPFLAGS = -DHAVE_CONFIG_H$/;"	m
 CPPINGWORKER_H	./include/cpPingWorker.h	9;"	d
-CPWG	./include/cpServer.h	46;"	d
-CPWG	include/cpServer.h	47;"	d
-CP_ACCEPT_AGAIN	./include/cpServer.h	56;"	d
-CP_ACCEPT_AGAIN	include/cpServer.h	57;"	d
-CP_ACCEPT_MAX_COUNT	./include/cpServer.h	57;"	d
-CP_ACCEPT_MAX_COUNT	include/cpServer.h	58;"	d
-CP_BACKLOG	./include/cpServer.h	16;"	d
-CP_BACKLOG	include/cpServer.h	17;"	d
+CPWG	./include/cpServer.h	47;"	d
+CP_ACCEPT_AGAIN	./include/cpServer.h	57;"	d
+CP_ACCEPT_MAX_COUNT	./include/cpServer.h	58;"	d
+CP_ALLOC_INIT_ZVAL	./include/php7_wrapper.h	236;"	d
+CP_ALLOC_INIT_ZVAL	./include/php7_wrapper.h	39;"	d
+CP_BACKLOG	./include/cpServer.h	17;"	d
 CP_BUFFER_SIZE	./include/cpNetWork.h	16;"	d
-CP_BUFFER_SIZE	include/cpNetWork.h	16;"	d
-CP_CHECK_RETURN	./php_connect_pool.h	112;"	d
-CP_CHECK_RETURN	php_connect_pool.h	115;"	d
+CP_CHECK_RETURN	./php_connect_pool.h	120;"	d
 CP_CLIENTNET_H	./include/cpClientNet.h	9;"	d
 CP_CLIENT_EOF_LEN	./include/cpNetWork.h	25;"	d
-CP_CLIENT_EOF_LEN	include/cpNetWork.h	25;"	d
 CP_CLIENT_EOF_STR	./include/cpNetWork.h	21;"	d
-CP_CLIENT_EOF_STR	include/cpNetWork.h	21;"	d
 CP_CLIENT_SERIALIZE_SEND_MEM	./connect_pool_client.c	/^CPINLINE int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, int worker_id, int max, char *mm_name)$/;"	f
-CP_CLIENT_SERIALIZE_SEND_MEM	connect_pool_client.c	/^CPINLINE int CP_CLIENT_SERIALIZE_SEND_MEM(zval *ret_value, int worker_id, int max, char *mm_name)$/;"	f
-CP_CONNECT_NORMAL	./include/cpServer.h	39;"	d
-CP_CONNECT_NORMAL	include/cpServer.h	40;"	d
-CP_CONNECT_PING	./include/cpServer.h	41;"	d
-CP_CONNECT_PING	include/cpServer.h	42;"	d
-CP_CONNECT_RECONNECT	./include/cpServer.h	40;"	d
-CP_CONNECT_RECONNECT	include/cpServer.h	41;"	d
+CP_CONNECT_NORMAL	./include/cpServer.h	40;"	d
+CP_CONNECT_PING	./include/cpServer.h	42;"	d
+CP_CONNECT_RECONNECT	./include/cpServer.h	41;"	d
 CP_CPU_NUM	./include/cpServer.h	15;"	d
-CP_CPU_NUM	include/cpServer.h	15;"	d
-CP_DEF_MAX_READ_LEN	./include/cpServer.h	29;"	d
-CP_DEF_MAX_READ_LEN	include/cpServer.h	30;"	d
-CP_EVENTLEN_ADD_TYPE	./php_connect_pool.h	121;"	d
-CP_EVENTLEN_ADD_TYPE	php_connect_pool.h	124;"	d
-CP_EVENTLEN_GET_LEN	./php_connect_pool.h	125;"	d
-CP_EVENTLEN_GET_LEN	php_connect_pool.h	128;"	d
-CP_EVENTLEN_GET_TYPE	./php_connect_pool.h	124;"	d
-CP_EVENTLEN_GET_TYPE	php_connect_pool.h	127;"	d
-CP_EVENTS	php_connect_pool.h	/^enum CP_EVENTS$/;"	g
-CP_EVENT_DEAULT	php_connect_pool.h	/^    CP_EVENT_DEAULT = 256,$/;"	e	enum:CP_EVENTS
-CP_EVENT_ERROR	php_connect_pool.h	/^    CP_EVENT_ERROR = 1u << 11,$/;"	e	enum:CP_EVENTS
-CP_EVENT_READ	php_connect_pool.h	/^    CP_EVENT_READ = 1u << 9,$/;"	e	enum:CP_EVENTS
-CP_EVENT_WRITE	php_connect_pool.h	/^    CP_EVENT_WRITE = 1u << 10,$/;"	e	enum:CP_EVENTS
-CP_EXCEPTION_ARGS	./connect_pool.c	65;"	d	file:
-CP_EXCEPTION_ARGS	connect_pool.c	65;"	d	file:
-CP_FALSE	./include/cpServer.h	68;"	d
-CP_FALSE	include/cpServer.h	69;"	d
-CP_FD_NCON	./include/cpServer.h	62;"	d
-CP_FD_NCON	include/cpServer.h	63;"	d
-CP_FD_NRELEASED	./include/cpServer.h	64;"	d
-CP_FD_NRELEASED	include/cpServer.h	65;"	d
-CP_FD_RELEASED	./include/cpServer.h	63;"	d
-CP_FD_RELEASED	include/cpServer.h	64;"	d
-CP_FD_WAITING	./include/cpServer.h	65;"	d
-CP_FD_WAITING	include/cpServer.h	66;"	d
+CP_DEF_MAX_READ_LEN	./include/cpServer.h	30;"	d
+CP_EVENTLEN_ADD_TYPE	./php_connect_pool.h	129;"	d
+CP_EVENTLEN_GET_LEN	./php_connect_pool.h	133;"	d
+CP_EVENTLEN_GET_TYPE	./php_connect_pool.h	132;"	d
+CP_EVENTS	./php_connect_pool.h	/^enum CP_EVENTS$/;"	g
+CP_EVENT_DEAULT	./php_connect_pool.h	/^    CP_EVENT_DEAULT = 256,$/;"	e	enum:CP_EVENTS
+CP_EVENT_ERROR	./php_connect_pool.h	/^    CP_EVENT_ERROR = 1u << 11,$/;"	e	enum:CP_EVENTS
+CP_EVENT_READ	./php_connect_pool.h	/^    CP_EVENT_READ = 1u << 9,$/;"	e	enum:CP_EVENTS
+CP_EVENT_WRITE	./php_connect_pool.h	/^    CP_EVENT_WRITE = 1u << 10,$/;"	e	enum:CP_EVENTS
+CP_EXCEPTION_ARGS	./include/php7_wrapper.h	399;"	d
+CP_FALSE	./include/cpServer.h	69;"	d
+CP_FD_NCON	./include/cpServer.h	63;"	d
+CP_FD_NRELEASED	./include/cpServer.h	65;"	d
+CP_FD_RELEASED	./include/cpServer.h	64;"	d
+CP_FD_WAITING	./include/cpServer.h	66;"	d
 CP_FIFO_NAME_LEN	./include/cpFunction.h	26;"	d
 CP_FIFO_NAME_PRE	./include/cpFunction.h	27;"	d
 CP_GET_PID	./connect_pool_client.c	43;"	d	file:
-CP_GET_PID	connect_pool_client.c	43;"	d	file:
-CP_GROUP_LEN	./php_connect_pool.h	137;"	d
-CP_GROUP_LEN	php_connect_pool.h	140;"	d
-CP_GROUP_NUM	./php_connect_pool.h	138;"	d
-CP_GROUP_NUM	php_connect_pool.h	141;"	d
+CP_GROUP_LEN	./php_connect_pool.h	145;"	d
+CP_GROUP_NUM	./php_connect_pool.h	146;"	d
+CP_HASHTABLE_FOREACH_END	./include/php7_wrapper.h	182;"	d
+CP_HASHTABLE_FOREACH_END	./include/php7_wrapper.h	90;"	d
+CP_HASHTABLE_FOREACH_START	./include/php7_wrapper.h	177;"	d
+CP_HASHTABLE_FOREACH_START	./include/php7_wrapper.h	64;"	d
+CP_HASHTABLE_FOREACH_START2	./include/php7_wrapper.h	178;"	d
+CP_HASHTABLE_FOREACH_START2	./include/php7_wrapper.h	78;"	d
 CP_HEADER_CON_SUCCESS	./include/cpNetWork.h	26;"	d
-CP_HEADER_CON_SUCCESS	include/cpNetWork.h	26;"	d
 CP_HEADER_ERROR	./include/cpNetWork.h	27;"	d
-CP_HEADER_ERROR	include/cpNetWork.h	27;"	d
-CP_HOST_SIZE	./php_connect_pool.h	98;"	d
-CP_HOST_SIZE	php_connect_pool.h	101;"	d
-CP_IDEL_TIME	./include/cpServer.h	27;"	d
-CP_IDEL_TIME	include/cpServer.h	28;"	d
-CP_INTERNAL_ERROR_SEND	./connect_pool.c	43;"	d	file:
-CP_INTERNAL_ERROR_SEND	connect_pool.c	43;"	d	file:
-CP_INTERNAL_ERROR_SEND_RETURN	./connect_pool.c	83;"	d	file:
-CP_INTERNAL_ERROR_SEND_RETURN	connect_pool.c	83;"	d	file:
-CP_INTERNAL_NORMAL_SEND	./connect_pool.c	50;"	d	file:
-CP_INTERNAL_NORMAL_SEND	connect_pool.c	50;"	d	file:
-CP_INTERNAL_NORMAL_SEND_RETURN	./connect_pool.c	82;"	d	file:
-CP_INTERNAL_NORMAL_SEND_RETURN	connect_pool.c	82;"	d	file:
+CP_HOST_SIZE	./php_connect_pool.h	106;"	d
+CP_IDEL_TIME	./include/cpServer.h	28;"	d
+CP_INTERNAL_ERROR_SEND	./connect_pool.c	44;"	d	file:
+CP_INTERNAL_ERROR_SEND_RETURN	./connect_pool.c	71;"	d	file:
+CP_INTERNAL_NORMAL_SEND	./connect_pool.c	51;"	d	file:
+CP_INTERNAL_NORMAL_SEND_RETURN	./connect_pool.c	70;"	d	file:
 CP_INTERNAL_SERIALIZE_SEND_MEM	./connect_pool.c	/^CPINLINE int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type)$/;"	f
-CP_INTERNAL_SERIALIZE_SEND_MEM	connect_pool.c	/^CPINLINE int CP_INTERNAL_SERIALIZE_SEND_MEM(zval *ret_value, uint8_t __type)$/;"	f
 CP_LOG_FORMAT	./include/cpFunction.h	33;"	d
+CP_MAKE_STD_ZVAL	./include/php7_wrapper.h	229;"	d
+CP_MAKE_STD_ZVAL	./include/php7_wrapper.h	38;"	d
 CP_MAX_EVENT	./include/cpNetWork.h	15;"	d
-CP_MAX_EVENT	include/cpNetWork.h	15;"	d
-CP_MAX_FDS	./include/cpServer.h	22;"	d
-CP_MAX_FDS	include/cpServer.h	23;"	d
-CP_MAX_READ_LEN	./include/cpServer.h	30;"	d
-CP_MAX_READ_LEN	include/cpServer.h	31;"	d
-CP_MAX_REQUEST	./include/cpServer.h	24;"	d
-CP_MAX_REQUEST	include/cpServer.h	25;"	d
+CP_MAX_FDS	./include/cpServer.h	23;"	d
+CP_MAX_READ_LEN	./include/cpServer.h	31;"	d
+CP_MAX_REQUEST	./include/cpServer.h	25;"	d
 CP_MAX_UINT	./include/cpNetWork.h	17;"	d
-CP_MAX_UINT	include/cpNetWork.h	17;"	d
-CP_MAX_WORKER	./include/cpServer.h	25;"	d
-CP_MAX_WORKER	include/cpServer.h	26;"	d
+CP_MAX_WORKER	./include/cpServer.h	26;"	d
 CP_MEMORY_H	./include/cpMemory.h	9;"	d
-CP_MIN_WORKER	./include/cpServer.h	26;"	d
-CP_MIN_WORKER	include/cpServer.h	27;"	d
+CP_MIN_WORKER	./include/cpServer.h	27;"	d
 CP_MMAP_NAME_LEN	./include/cpFunction.h	29;"	d
 CP_MMAP_NAME_PRE	./include/cpFunction.h	28;"	d
 CP_MULTI_PROCESS_ERR	./include/cpNetWork.h	24;"	d
-CP_MULTI_PROCESS_ERR	include/cpNetWork.h	24;"	d
 CP_NETWORK_H	./include/cpNetWork.h	9;"	d
-CP_NETWORK_H	include/cpNetWork.h	9;"	d
 CP_PDO_HEADER_STATE	./include/cpNetWork.h	28;"	d
-CP_PDO_HEADER_STATE	include/cpNetWork.h	28;"	d
-CP_PING_DIS_LEN	./include/cpServer.h	33;"	d
-CP_PING_DIS_LEN	include/cpServer.h	34;"	d
-CP_PING_GET_DIS	./include/cpServer.h	37;"	d
-CP_PING_GET_DIS	include/cpServer.h	38;"	d
-CP_PING_GET_PRO	./include/cpServer.h	38;"	d
-CP_PING_GET_PRO	include/cpServer.h	39;"	d
-CP_PING_MD5_LEN	./include/cpServer.h	35;"	d
-CP_PING_MD5_LEN	include/cpServer.h	36;"	d
-CP_PING_MEM_LEN	./include/cpServer.h	32;"	d
-CP_PING_MEM_LEN	include/cpServer.h	33;"	d
-CP_PING_PID_LEN	./include/cpServer.h	36;"	d
-CP_PING_PID_LEN	include/cpServer.h	37;"	d
-CP_PING_PRO_LEN	./include/cpServer.h	34;"	d
-CP_PING_PRO_LEN	include/cpServer.h	35;"	d
-CP_PING_SLEEP	./include/cpServer.h	71;"	d
-CP_PING_SLEEP	include/cpServer.h	72;"	d
-CP_PIPES_NUM	./include/cpServer.h	17;"	d
-CP_PIPES_NUM	include/cpServer.h	18;"	d
-CP_PIPE_MOD	./php_connect_pool.h	134;"	d
-CP_PIPE_MOD	php_connect_pool.h	137;"	d
-CP_PORT_PDO	./include/cpServer.h	18;"	d
-CP_PORT_PDO	include/cpServer.h	19;"	d
-CP_PORT_REDIS	./include/cpServer.h	19;"	d
-CP_PORT_REDIS	include/cpServer.h	20;"	d
-CP_PROCESS_MANAGER	./php_connect_pool.h	131;"	d
-CP_PROCESS_MANAGER	php_connect_pool.h	134;"	d
-CP_PROCESS_MASTER	./php_connect_pool.h	129;"	d
-CP_PROCESS_MASTER	php_connect_pool.h	132;"	d
-CP_PROCESS_PING	./php_connect_pool.h	132;"	d
-CP_PROCESS_PING	php_connect_pool.h	135;"	d
-CP_PROCESS_WORKER	./php_connect_pool.h	130;"	d
-CP_PROCESS_WORKER	php_connect_pool.h	133;"	d
+CP_PING_DIS_LEN	./include/cpServer.h	34;"	d
+CP_PING_GET_DIS	./include/cpServer.h	38;"	d
+CP_PING_GET_PRO	./include/cpServer.h	39;"	d
+CP_PING_MD5_LEN	./include/cpServer.h	36;"	d
+CP_PING_MEM_LEN	./include/cpServer.h	33;"	d
+CP_PING_PID_LEN	./include/cpServer.h	37;"	d
+CP_PING_PRO_LEN	./include/cpServer.h	35;"	d
+CP_PING_SLEEP	./include/cpServer.h	72;"	d
+CP_PIPES_NUM	./include/cpServer.h	18;"	d
+CP_PIPE_MOD	./php_connect_pool.h	142;"	d
+CP_PORT_PDO	./include/cpServer.h	19;"	d
+CP_PORT_REDIS	./include/cpServer.h	20;"	d
+CP_PROCESS_MANAGER	./php_connect_pool.h	139;"	d
+CP_PROCESS_MASTER	./php_connect_pool.h	137;"	d
+CP_PROCESS_PING	./php_connect_pool.h	140;"	d
+CP_PROCESS_WORKER	./php_connect_pool.h	138;"	d
 CP_REACTOR_MAXEVENTS	./include/cpNetWork.h	14;"	d
-CP_REACTOR_MAXEVENTS	include/cpNetWork.h	14;"	d
-CP_REACTOR_TIMEO_SEC	./include/cpServer.h	20;"	d
-CP_REACTOR_TIMEO_SEC	include/cpServer.h	21;"	d
-CP_REACTOR_TIMEO_USEC	./include/cpServer.h	21;"	d
-CP_REACTOR_TIMEO_USEC	include/cpServer.h	22;"	d
-CP_RECYCLE_NUM	./include/cpServer.h	28;"	d
-CP_RECYCLE_NUM	include/cpServer.h	29;"	d
+CP_REACTOR_TIMEO_SEC	./include/cpServer.h	21;"	d
+CP_REACTOR_TIMEO_USEC	./include/cpServer.h	22;"	d
+CP_RECYCLE_NUM	./include/cpServer.h	29;"	d
 CP_RELEASE_HEADER	./include/cpNetWork.h	29;"	d
-CP_RELEASE_HEADER	include/cpNetWork.h	29;"	d
 CP_RELEASE_HEADER_LEN	./include/cpNetWork.h	30;"	d
-CP_RELEASE_HEADER_LEN	include/cpNetWork.h	30;"	d
-CP_RES_CLIENT_NAME	./php_connect_pool.h	128;"	d
-CP_RES_CLIENT_NAME	php_connect_pool.h	131;"	d
-CP_RES_SERVER_NAME	./php_connect_pool.h	127;"	d
-CP_RES_SERVER_NAME	php_connect_pool.h	130;"	d
-CP_SEND_EXCEPTION	./connect_pool.c	81;"	d	file:
-CP_SEND_EXCEPTION	connect_pool.c	81;"	d	file:
-CP_SEND_EXCEPTION_ARGS	./connect_pool.c	57;"	d	file:
-CP_SEND_EXCEPTION_ARGS	connect_pool.c	57;"	d	file:
-CP_SEND_EXCEPTION_RETURN	./connect_pool.c	84;"	d	file:
-CP_SEND_EXCEPTION_RETURN	connect_pool.c	84;"	d	file:
+CP_RES_CLIENT_NAME	./php_connect_pool.h	136;"	d
+CP_RES_SERVER_NAME	./php_connect_pool.h	135;"	d
+CP_RETURN_STRING	./include/php7_wrapper.h	10;"	d
+CP_RETURN_STRING	./include/php7_wrapper.h	241;"	d
+CP_RETURN_STRINGL	./include/php7_wrapper.h	231;"	d
+CP_RETURN_STRINGL	./include/php7_wrapper.h	56;"	d
+CP_RETVAL_STRINGL	./include/php7_wrapper.h	153;"	d
+CP_RETVAL_STRINGL	./include/php7_wrapper.h	40;"	d
+CP_SEND_EXCEPTION	./connect_pool.c	69;"	d	file:
+CP_SEND_EXCEPTION_ARGS	./include/php7_wrapper.h	142;"	d
+CP_SEND_EXCEPTION_ARGS	./include/php7_wrapper.h	407;"	d
+CP_SEND_EXCEPTION_RETURN	./connect_pool.c	72;"	d	file:
 CP_SERVER_H	./include/cpServer.h	9;"	d
-CP_SERVER_H	include/cpServer.h	9;"	d
-CP_SIGEVENT_EXCEPTION	./php_connect_pool.h	119;"	d
-CP_SIGEVENT_EXCEPTION	php_connect_pool.h	122;"	d
-CP_SIGEVENT_PDO	./php_connect_pool.h	120;"	d
-CP_SIGEVENT_PDO	php_connect_pool.h	123;"	d
-CP_SIGEVENT_TURE	./php_connect_pool.h	118;"	d
-CP_SIGEVENT_TURE	php_connect_pool.h	121;"	d
-CP_SIG_EVENT	./php_connect_pool.h	113;"	d
-CP_SIG_EVENT	php_connect_pool.h	116;"	d
-CP_START_SLEEP	./include/cpServer.h	70;"	d
-CP_START_SLEEP	include/cpServer.h	71;"	d
-CP_TCPEVENT_GET	./php_connect_pool.h	115;"	d
-CP_TCPEVENT_GET	php_connect_pool.h	118;"	d
-CP_TCPEVENT_RELEASE	./php_connect_pool.h	116;"	d
-CP_TCPEVENT_RELEASE	php_connect_pool.h	119;"	d
-CP_TCP_KEEPCOUNT	./include/cpServer.h	58;"	d
-CP_TCP_KEEPCOUNT	include/cpServer.h	59;"	d
-CP_TCP_KEEPIDLE	./include/cpServer.h	59;"	d
-CP_TCP_KEEPIDLE	include/cpServer.h	60;"	d
-CP_TCP_KEEPINTERVAL	./include/cpServer.h	60;"	d
-CP_TCP_KEEPINTERVAL	include/cpServer.h	61;"	d
-CP_TEST_RETURN_FALSE	./connect_pool.c	72;"	d	file:
-CP_TEST_RETURN_FALSE	connect_pool.c	72;"	d	file:
-CP_TEST_RETURN_TRUE	./connect_pool.c	85;"	d	file:
-CP_TEST_RETURN_TRUE	connect_pool.c	85;"	d	file:
+CP_SIGEVENT_EXCEPTION	./php_connect_pool.h	127;"	d
+CP_SIGEVENT_PDO	./php_connect_pool.h	128;"	d
+CP_SIGEVENT_TURE	./php_connect_pool.h	126;"	d
+CP_SIG_EVENT	./php_connect_pool.h	121;"	d
+CP_START_SLEEP	./include/cpServer.h	71;"	d
+CP_TCPEVENT_GET	./php_connect_pool.h	123;"	d
+CP_TCPEVENT_RELEASE	./php_connect_pool.h	124;"	d
+CP_TCP_KEEPCOUNT	./include/cpServer.h	59;"	d
+CP_TCP_KEEPIDLE	./include/cpServer.h	60;"	d
+CP_TCP_KEEPINTERVAL	./include/cpServer.h	61;"	d
+CP_TEST_RETURN_FALSE	./connect_pool.c	60;"	d	file:
+CP_TEST_RETURN_TRUE	./connect_pool.c	73;"	d	file:
 CP_TOO_MANY_CON	./include/cpNetWork.h	22;"	d
-CP_TOO_MANY_CON	include/cpNetWork.h	22;"	d
 CP_TOO_MANY_CON_ERR	./include/cpNetWork.h	23;"	d
-CP_TOO_MANY_CON_ERR	include/cpNetWork.h	23;"	d
-CP_TRUE	./include/cpServer.h	67;"	d
-CP_TRUE	include/cpServer.h	68;"	d
-CP_TYPE_SIZE	./php_connect_pool.h	135;"	d
-CP_TYPE_SIZE	php_connect_pool.h	138;"	d
-CP_UNSOCK_BUFSIZE	./include/cpServer.h	48;"	d
-CP_UNSOCK_BUFSIZE	include/cpServer.h	49;"	d
-CP_VERSION	./connect_pool.c	41;"	d	file:
-CP_VERSION	connect_pool.c	41;"	d	file:
-CP_WORKER_BUSY	./include/cpServer.h	52;"	d
-CP_WORKER_BUSY	include/cpServer.h	53;"	d
-CP_WORKER_DEL	./include/cpServer.h	54;"	d
-CP_WORKER_DEL	include/cpServer.h	55;"	d
-CP_WORKER_DELING	./include/cpServer.h	51;"	d
-CP_WORKER_DELING	include/cpServer.h	52;"	d
+CP_TRUE	./include/cpServer.h	68;"	d
+CP_TYPE_SIZE	./php_connect_pool.h	143;"	d
+CP_UNSOCK_BUFSIZE	./include/cpServer.h	49;"	d
+CP_VERSION	./connect_pool.c	42;"	d	file:
+CP_WORKER_BUSY	./include/cpServer.h	53;"	d
+CP_WORKER_DEL	./include/cpServer.h	55;"	d
+CP_WORKER_DELING	./include/cpServer.h	52;"	d
 CP_WORKER_H	./include/cpWorker.h	9;"	d
-CP_WORKER_IDLE	./include/cpServer.h	53;"	d
-CP_WORKER_IDLE	include/cpServer.h	54;"	d
-CP_WORKER_RESTART	./include/cpServer.h	50;"	d
-CP_WORKER_RESTART	include/cpServer.h	51;"	d
+CP_WORKER_IDLE	./include/cpServer.h	54;"	d
+CP_WORKER_RESTART	./include/cpServer.h	51;"	d
 CP_WORKER_SENDTO_YIELD	./include/cpWorker.h	14;"	d
+CP_ZEND_FETCH_RESOURCE	./include/php7_wrapper.h	36;"	d
+CP_ZEND_FETCH_RESOURCE_NO_RETURN	./include/php7_wrapper.h	237;"	d
+CP_ZEND_FETCH_RESOURCE_NO_RETURN	./include/php7_wrapper.h	35;"	d
+CP_ZEND_REGISTER_RESOURCE	./include/php7_wrapper.h	239;"	d
+CP_ZEND_REGISTER_RESOURCE	./include/php7_wrapper.h	37;"	d
+CP_ZVAL_STRING	./include/php7_wrapper.h	251;"	d
+CP_ZVAL_STRING	./include/php7_wrapper.h	33;"	d
+CP_ZVAL_STRINGL	./include/php7_wrapper.h	250;"	d
+CP_ZVAL_STRINGL	./include/php7_wrapper.h	34;"	d
+CP_Z_ARRVAL_P	./include/php7_wrapper.h	11;"	d
+CP_Z_ARRVAL_P	./include/php7_wrapper.h	175;"	d
+CP_Z_TYPE_P	./include/php7_wrapper.h	/^static inline int CP_Z_TYPE_P(zval *z)$/;"	f
+CP_Z_TYPE_P	./include/php7_wrapper.h	185;"	d
+CP_Z_TYPE_PP	./include/php7_wrapper.h	141;"	d
+CP_Z_TYPE_PP	./include/php7_wrapper.h	186;"	d
 CPid	./include/cpWorker.h	/^        int CPid;\/\/当前worker服务于哪个pid$/;"	m	struct:_cpWorker
-CS_ARRAY_16	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon1
-CS_ARRAY_16	./msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon9
-CS_ARRAY_32	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_32          = 0x1d,$/;"	e	enum:__anon1
-CS_ARRAY_32	./msgpack/unpack_define.h	/^	CS_ARRAY_32          = 0x1d,$/;"	e	enum:__anon9
-CS_DOUBLE	./msgpack/msgpack/unpack_define.h	/^	CS_DOUBLE            = 0x0b,$/;"	e	enum:__anon1
-CS_DOUBLE	./msgpack/unpack_define.h	/^	CS_DOUBLE            = 0x0b,$/;"	e	enum:__anon9
-CS_FLOAT	./msgpack/msgpack/unpack_define.h	/^	CS_FLOAT             = 0x0a,$/;"	e	enum:__anon1
-CS_FLOAT	./msgpack/unpack_define.h	/^	CS_FLOAT             = 0x0a,$/;"	e	enum:__anon9
-CS_HEADER	./msgpack/msgpack/unpack_define.h	/^	CS_HEADER            = 0x00,  \/\/ nil$/;"	e	enum:__anon1
-CS_HEADER	./msgpack/unpack_define.h	/^	CS_HEADER            = 0x00,  \/\/ nil$/;"	e	enum:__anon9
-CS_INT_16	./msgpack/msgpack/unpack_define.h	/^	CS_INT_16            = 0x11,$/;"	e	enum:__anon1
-CS_INT_16	./msgpack/unpack_define.h	/^	CS_INT_16            = 0x11,$/;"	e	enum:__anon9
-CS_INT_32	./msgpack/msgpack/unpack_define.h	/^	CS_INT_32            = 0x12,$/;"	e	enum:__anon1
-CS_INT_32	./msgpack/unpack_define.h	/^	CS_INT_32            = 0x12,$/;"	e	enum:__anon9
-CS_INT_64	./msgpack/msgpack/unpack_define.h	/^	CS_INT_64            = 0x13,$/;"	e	enum:__anon1
-CS_INT_64	./msgpack/unpack_define.h	/^	CS_INT_64            = 0x13,$/;"	e	enum:__anon9
-CS_INT_8	./msgpack/msgpack/unpack_define.h	/^	CS_INT_8             = 0x10,$/;"	e	enum:__anon1
-CS_INT_8	./msgpack/unpack_define.h	/^	CS_INT_8             = 0x10,$/;"	e	enum:__anon9
-CS_MAP_16	./msgpack/msgpack/unpack_define.h	/^	CS_MAP_16            = 0x1e,$/;"	e	enum:__anon1
-CS_MAP_16	./msgpack/unpack_define.h	/^	CS_MAP_16            = 0x1e,$/;"	e	enum:__anon9
-CS_MAP_32	./msgpack/msgpack/unpack_define.h	/^	CS_MAP_32            = 0x1f,$/;"	e	enum:__anon1
-CS_MAP_32	./msgpack/unpack_define.h	/^	CS_MAP_32            = 0x1f,$/;"	e	enum:__anon9
-CS_RAW_16	./msgpack/msgpack/unpack_define.h	/^	CS_RAW_16            = 0x1a,$/;"	e	enum:__anon1
-CS_RAW_16	./msgpack/unpack_define.h	/^	CS_RAW_16            = 0x1a,$/;"	e	enum:__anon9
-CS_RAW_32	./msgpack/msgpack/unpack_define.h	/^	CS_RAW_32            = 0x1b,$/;"	e	enum:__anon1
-CS_RAW_32	./msgpack/unpack_define.h	/^	CS_RAW_32            = 0x1b,$/;"	e	enum:__anon9
-CS_UINT_16	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_16           = 0x0d,$/;"	e	enum:__anon1
-CS_UINT_16	./msgpack/unpack_define.h	/^	CS_UINT_16           = 0x0d,$/;"	e	enum:__anon9
-CS_UINT_32	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_32           = 0x0e,$/;"	e	enum:__anon1
-CS_UINT_32	./msgpack/unpack_define.h	/^	CS_UINT_32           = 0x0e,$/;"	e	enum:__anon9
-CS_UINT_64	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_64           = 0x0f,$/;"	e	enum:__anon1
-CS_UINT_64	./msgpack/unpack_define.h	/^	CS_UINT_64           = 0x0f,$/;"	e	enum:__anon9
-CS_UINT_8	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_8            = 0x0c,$/;"	e	enum:__anon1
-CS_UINT_8	./msgpack/unpack_define.h	/^	CS_UINT_8            = 0x0c,$/;"	e	enum:__anon9
-CT_ARRAY_ITEM	./msgpack/msgpack/unpack_define.h	/^	CT_ARRAY_ITEM,$/;"	e	enum:__anon2
-CT_ARRAY_ITEM	./msgpack/unpack_define.h	/^	CT_ARRAY_ITEM,$/;"	e	enum:__anon10
-CT_MAP_KEY	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_KEY,$/;"	e	enum:__anon2
-CT_MAP_KEY	./msgpack/unpack_define.h	/^	CT_MAP_KEY,$/;"	e	enum:__anon10
-CT_MAP_VALUE	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon2
-CT_MAP_VALUE	./msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon10
+CS_ARRAY_16	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon6
+CS_ARRAY_16	./msgpack/unpack_define.h	/^	CS_ARRAY_16          = 0x1c,$/;"	e	enum:__anon4
+CS_ARRAY_32	./msgpack/msgpack/unpack_define.h	/^	CS_ARRAY_32          = 0x1d,$/;"	e	enum:__anon6
+CS_ARRAY_32	./msgpack/unpack_define.h	/^	CS_ARRAY_32          = 0x1d,$/;"	e	enum:__anon4
+CS_DOUBLE	./msgpack/msgpack/unpack_define.h	/^	CS_DOUBLE            = 0x0b,$/;"	e	enum:__anon6
+CS_DOUBLE	./msgpack/unpack_define.h	/^	CS_DOUBLE            = 0x0b,$/;"	e	enum:__anon4
+CS_FLOAT	./msgpack/msgpack/unpack_define.h	/^	CS_FLOAT             = 0x0a,$/;"	e	enum:__anon6
+CS_FLOAT	./msgpack/unpack_define.h	/^	CS_FLOAT             = 0x0a,$/;"	e	enum:__anon4
+CS_HEADER	./msgpack/msgpack/unpack_define.h	/^	CS_HEADER            = 0x00,  \/\/ nil$/;"	e	enum:__anon6
+CS_HEADER	./msgpack/unpack_define.h	/^	CS_HEADER            = 0x00,  \/\/ nil$/;"	e	enum:__anon4
+CS_INT_16	./msgpack/msgpack/unpack_define.h	/^	CS_INT_16            = 0x11,$/;"	e	enum:__anon6
+CS_INT_16	./msgpack/unpack_define.h	/^	CS_INT_16            = 0x11,$/;"	e	enum:__anon4
+CS_INT_32	./msgpack/msgpack/unpack_define.h	/^	CS_INT_32            = 0x12,$/;"	e	enum:__anon6
+CS_INT_32	./msgpack/unpack_define.h	/^	CS_INT_32            = 0x12,$/;"	e	enum:__anon4
+CS_INT_64	./msgpack/msgpack/unpack_define.h	/^	CS_INT_64            = 0x13,$/;"	e	enum:__anon6
+CS_INT_64	./msgpack/unpack_define.h	/^	CS_INT_64            = 0x13,$/;"	e	enum:__anon4
+CS_INT_8	./msgpack/msgpack/unpack_define.h	/^	CS_INT_8             = 0x10,$/;"	e	enum:__anon6
+CS_INT_8	./msgpack/unpack_define.h	/^	CS_INT_8             = 0x10,$/;"	e	enum:__anon4
+CS_MAP_16	./msgpack/msgpack/unpack_define.h	/^	CS_MAP_16            = 0x1e,$/;"	e	enum:__anon6
+CS_MAP_16	./msgpack/unpack_define.h	/^	CS_MAP_16            = 0x1e,$/;"	e	enum:__anon4
+CS_MAP_32	./msgpack/msgpack/unpack_define.h	/^	CS_MAP_32            = 0x1f,$/;"	e	enum:__anon6
+CS_MAP_32	./msgpack/unpack_define.h	/^	CS_MAP_32            = 0x1f,$/;"	e	enum:__anon4
+CS_RAW_16	./msgpack/msgpack/unpack_define.h	/^	CS_RAW_16            = 0x1a,$/;"	e	enum:__anon6
+CS_RAW_16	./msgpack/unpack_define.h	/^	CS_RAW_16            = 0x1a,$/;"	e	enum:__anon4
+CS_RAW_32	./msgpack/msgpack/unpack_define.h	/^	CS_RAW_32            = 0x1b,$/;"	e	enum:__anon6
+CS_RAW_32	./msgpack/unpack_define.h	/^	CS_RAW_32            = 0x1b,$/;"	e	enum:__anon4
+CS_UINT_16	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_16           = 0x0d,$/;"	e	enum:__anon6
+CS_UINT_16	./msgpack/unpack_define.h	/^	CS_UINT_16           = 0x0d,$/;"	e	enum:__anon4
+CS_UINT_32	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_32           = 0x0e,$/;"	e	enum:__anon6
+CS_UINT_32	./msgpack/unpack_define.h	/^	CS_UINT_32           = 0x0e,$/;"	e	enum:__anon4
+CS_UINT_64	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_64           = 0x0f,$/;"	e	enum:__anon6
+CS_UINT_64	./msgpack/unpack_define.h	/^	CS_UINT_64           = 0x0f,$/;"	e	enum:__anon4
+CS_UINT_8	./msgpack/msgpack/unpack_define.h	/^	CS_UINT_8            = 0x0c,$/;"	e	enum:__anon6
+CS_UINT_8	./msgpack/unpack_define.h	/^	CS_UINT_8            = 0x0c,$/;"	e	enum:__anon4
+CT_ARRAY_ITEM	./msgpack/msgpack/unpack_define.h	/^	CT_ARRAY_ITEM,$/;"	e	enum:__anon7
+CT_ARRAY_ITEM	./msgpack/unpack_define.h	/^	CT_ARRAY_ITEM,$/;"	e	enum:__anon5
+CT_MAP_KEY	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_KEY,$/;"	e	enum:__anon7
+CT_MAP_KEY	./msgpack/unpack_define.h	/^	CT_MAP_KEY,$/;"	e	enum:__anon5
+CT_MAP_VALUE	./msgpack/msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon7
+CT_MAP_VALUE	./msgpack/unpack_define.h	/^	CT_MAP_VALUE,$/;"	e	enum:__anon5
+CUR_DIR	./run-tests.php	/^$CUR_DIR = getcwd();$/;"	v
+CXX	./Makefile	/^CXX =$/;"	m
+CXXFLAGS	./Makefile	/^CXXFLAGS =$/;"	m
+CXXFLAGS_CLEAN	./Makefile	/^CXXFLAGS_CLEAN = $(CXXFLAGS)$/;"	m
 ClientPid	./include/cpMemory.h	/^        int ClientPid;$/;"	m	struct:_cpTcpEvent
 ConProxyG	./connect_pool.c	/^cpServerG ConProxyG;$/;"	v
-ConProxyG	connect_pool.c	/^cpServerG ConProxyG;$/;"	v
 ConProxyGS	./connect_pool.c	/^cpServerGS *ConProxyGS;$/;"	v
-ConProxyGS	connect_pool.c	/^cpServerGS *ConProxyGS;$/;"	v
 ConProxyWG	./connect_pool.c	/^cpWorkerG ConProxyWG;$/;"	v
-ConProxyWG	connect_pool.c	/^cpWorkerG ConProxyWG;$/;"	v
+DEFS	./Makefile	/^DEFS = -DPHP_ATOM_INC -I$(top_builddir)\/include -I$(top_builddir)\/main -I$(top_srcdir)$/;"	m
+DETAILED	./run-tests.php	/^					$DETAILED = true;$/;"	v
+DETAILED	./run-tests.php	/^	$DETAILED = 0;$/;"	v
+DETAILED	./run-tests.php	/^	$DETAILED = getenv('TEST_PHP_DETAILED');$/;"	v
+EGREP	./Makefile	/^EGREP = \/bin\/grep -E$/;"	m
 EPOLLRDHUP	./php_connect_pool.h	34;"	d
-EPOLLRDHUP	php_connect_pool.h	34;"	d
 EPOLL_CLOSE	./include/cpNetWork.h	19;"	d
-EPOLL_CLOSE	include/cpNetWork.h	19;"	d
+EXTENSION_DIR	./Makefile	/^EXTENSION_DIR = \/usr\/local\/php7\/lib\/php\/extensions\/no-debug-non-zts-20151012$/;"	m
+EXTRA_LDFLAGS	./Makefile	/^EXTRA_LDFLAGS =$/;"	m
+EXTRA_LIBS	./Makefile	/^EXTRA_LIBS =$/;"	m
+EXT_POOL_PHP7_WRAPPER_H_	./include/php7_wrapper.h	6;"	d
 FAILUREOR_MSG_SIZE	./include/cpFunction.h	34;"	d
+FILE_BINARY	./run-tests.php	/^		define('FILE_BINARY', 0);$/;"	d
 G	./include/cpServer.h	/^        cpGroup G[100]; \/\/group TODO extend$/;"	m	struct:_cpServerGS
-G	include/cpServer.h	/^        cpGroup G[100]; \/\/group TODO extend$/;"	m	struct:_cpServerGS
-MAP_ANONYMOUS	./php_connect_pool.h	44;"	d
-MAP_ANONYMOUS	php_connect_pool.h	47;"	d
+HASH_KEY_NON_EXISTENT	./include/php7_wrapper.h	75;"	d
+HAVE_DLFCN_H	./config.h	8;"	d
+HAVE_EPOLL	./config.h	11;"	d
+HAVE_INTTYPES_H	./config.h	14;"	d
+HAVE_MEMORY_H	./config.h	20;"	d
+HAVE_STDINT_H	./config.h	23;"	d
+HAVE_STDLIB_H	./config.h	26;"	d
+HAVE_STRINGS_H	./config.h	29;"	d
+HAVE_STRING_H	./config.h	32;"	d
+HAVE_SYS_STAT_H	./config.h	35;"	d
+HAVE_SYS_TYPES_H	./config.h	38;"	d
+HAVE_UNISTD_H	./config.h	41;"	d
+INCLUDES	./Makefile	/^INCLUDES = -I\/usr\/local\/php7\/include\/php -I\/usr\/local\/php7\/include\/php\/main -I\/usr\/local\/php7\/include\/php\/TSRM -I\/usr\/local\/php7\/include\/php\/Zend -I\/usr\/local\/php7\/include\/php\/ext -I\/usr\/local\/php7\/include\/php\/ext\/date\/lib -I\/root\/cp\/include$/;"	m
+INSTALL	./Makefile	/^INSTALL = $(top_srcdir)\/build\/shtool install -c$/;"	m
+INSTALL_DATA	./Makefile	/^INSTALL_DATA = $(INSTALL) -m 644$/;"	m
+INSTALL_HEADERS	./Makefile	/^INSTALL_HEADERS =$/;"	m
+IN_REDIRECT	./run-tests.php	/^			$IN_REDIRECT = false;$/;"	v
+IN_REDIRECT	./run-tests.php	/^		$IN_REDIRECT = eval($section_text['REDIRECTTEST']);$/;"	v
+IS_TRUE	./include/php7_wrapper.h	12;"	d
+IS_TRUE	./include/php7_wrapper.h	139;"	d
+JUNIT	./run-tests.php	/^		$JUNIT = FALSE;$/;"	v
+JUNIT	./run-tests.php	/^		$JUNIT = array($/;"	v
+JUNIT	./run-tests.php	/^	$JUNIT = getenv('TEST_PHP_JUNIT');$/;"	v
+LDFLAGS	./Makefile	/^LDFLAGS = -lpthread$/;"	m
+LFLAGS	./Makefile	/^LFLAGS =$/;"	m
+LIBTOOL	./Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LICENSE	./cpWorker.c	/^  | that is bundled with this package in the file LICENSE, and is        |$/;"	v
+MAP_ANONYMOUS	./php_connect_pool.h	47;"	d
 MAX_INI_LENGTH	./include/cpFunction.h	36;"	d
 MAX_TITLE_LENGTH	./include/cpFunction.h	35;"	d
 MSGPACK_BASE_OBJECT	./msgpack/msgpack_class.c	68;"	d	file:
@@ -321,13 +296,13 @@ MSGPACK_SERIALIZE_TYPE_REFERENCE	./msgpack/msgpack_pack.h	/^    MSGPACK_SERIALIZ
 MSGPACK_SYSDEP_H__	./msgpack/msgpack/sysdep.h	19;"	d
 MSGPACK_SYSDEP_H__	./msgpack/sysdep.h	19;"	d
 MSGPACK_UNPACKER_OBJECT	./msgpack/msgpack_class.c	72;"	d	file:
-MSGPACK_UNPACK_CONTINUE	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_CONTINUE    =  0,$/;"	e	enum:__anon6
+MSGPACK_UNPACK_CONTINUE	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_CONTINUE    =  0,$/;"	e	enum:__anon9
 MSGPACK_UNPACK_DEFINE_H__	./msgpack/msgpack/unpack_define.h	19;"	d
 MSGPACK_UNPACK_DEFINE_H__	./msgpack/unpack_define.h	19;"	d
-MSGPACK_UNPACK_EXTRA_BYTES	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_EXTRA_BYTES =  1,$/;"	e	enum:__anon6
+MSGPACK_UNPACK_EXTRA_BYTES	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_EXTRA_BYTES =  1,$/;"	e	enum:__anon9
 MSGPACK_UNPACK_H	./msgpack/msgpack_unpack.h	3;"	d
-MSGPACK_UNPACK_PARSE_ERROR	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_PARSE_ERROR = -1,$/;"	e	enum:__anon6
-MSGPACK_UNPACK_SUCCESS	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_SUCCESS     =  2,$/;"	e	enum:__anon6
+MSGPACK_UNPACK_PARSE_ERROR	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_PARSE_ERROR = -1,$/;"	e	enum:__anon9
+MSGPACK_UNPACK_SUCCESS	./msgpack/msgpack_unpack.h	/^    MSGPACK_UNPACK_SUCCESS     =  2,$/;"	e	enum:__anon9
 MSGPACK_UNSERIALIZE_ALLOC_STACK	./msgpack/msgpack_unpack.c	26;"	d	file:
 MSGPACK_UNSERIALIZE_ALLOC_VALUE	./msgpack/msgpack_unpack.c	35;"	d	file:
 MSGPACK_UNSERIALIZE_FINISH_ITEM	./msgpack/msgpack_unpack.c	44;"	d	file:
@@ -342,35 +317,31 @@ MSGPACK_VERSION_MINOR	./msgpack/msgpack/version.h	32;"	d
 MSGPACK_VERSION_MINOR	./msgpack/version.h	32;"	d
 MSGPACK_WARNING	./msgpack/msgpack_errors.h	10;"	d
 MasterSend2Client	./cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
-MasterSend2Client	cpServer.c	/^CPINLINE static int MasterSend2Client(int fd, int worker_id, int CPid, int group_id)$/;"	f	file:
 NEXT_CS	./msgpack/msgpack/unpack_template.h	173;"	d
 NEXT_CS	./msgpack/msgpack/unpack_template.h	411;"	d
 NEXT_CS	./msgpack/unpack_template.h	173;"	d
 NEXT_CS	./msgpack/unpack_template.h	411;"	d
 NO_EPOLLRDHUP	./php_connect_pool.h	35;"	d
-NO_EPOLLRDHUP	php_connect_pool.h	35;"	d
-PHP_CONNECT_POOL_API	./php_connect_pool.h	105;"	d
-PHP_CONNECT_POOL_API	./php_connect_pool.h	107;"	d
-PHP_CONNECT_POOL_API	./php_connect_pool.h	109;"	d
-PHP_CONNECT_POOL_API	php_connect_pool.h	108;"	d
-PHP_CONNECT_POOL_API	php_connect_pool.h	110;"	d
-PHP_CONNECT_POOL_API	php_connect_pool.h	112;"	d
+PACKAGE_BUGREPORT	./config.h	47;"	d
+PACKAGE_NAME	./config.h	50;"	d
+PACKAGE_STRING	./config.h	53;"	d
+PACKAGE_TARNAME	./config.h	56;"	d
+PACKAGE_VERSION	./config.h	59;"	d
+PHP_CONNECT_POOL_API	./php_connect_pool.h	113;"	d
+PHP_CONNECT_POOL_API	./php_connect_pool.h	115;"	d
+PHP_CONNECT_POOL_API	./php_connect_pool.h	117;"	d
 PHP_CON_PROXY_H	./php_connect_pool.h	20;"	d
-PHP_CON_PROXY_H	php_connect_pool.h	20;"	d
-PHP_FE_END	./php_connect_pool.h	91;"	d
-PHP_FE_END	php_connect_pool.h	94;"	d
+PHP_DEPRECATED_DIRECTIVES_REGEX	./Makefile	/^PHP_DEPRECATED_DIRECTIVES_REGEX = '^(magic_quotes_(gpc|runtime|sybase)?|(zend_)?extension(_debug)?(_ts)?)[\\t\\ ]*='$/;"	m
+PHP_EXECUTABLE	./Makefile	/^PHP_EXECUTABLE = \/usr\/local\/php7\/bin\/php$/;"	m
+PHP_FAILED_TESTS	./run-tests.php	/^$PHP_FAILED_TESTS = array('BORKED' => array(), 'FAILED' => array(), 'WARNED' => array(), 'LEAKED' => array(), 'XFAILED' => array());$/;"	v
+PHP_FE_END	./php_connect_pool.h	99;"	d
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_create)$/;"	f
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_reload)$/;"	f
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_shutdown)$/;"	f
 PHP_FUNCTION	./connect_pool.c	/^PHP_FUNCTION(pool_server_version)$/;"	f
 PHP_FUNCTION	./connect_pool_client.c	/^PHP_FUNCTION(client_close)$/;"	f
 PHP_FUNCTION	./connect_pool_client.c	/^PHP_FUNCTION(get_disable_list)$/;"	f
-PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_create)$/;"	f
-PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_reload)$/;"	f
-PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_shutdown)$/;"	f
-PHP_FUNCTION	connect_pool.c	/^PHP_FUNCTION(pool_server_version)$/;"	f
-PHP_FUNCTION	connect_pool_client.c	/^PHP_FUNCTION(client_close)$/;"	f
-PHP_FUNCTION	connect_pool_client.c	/^PHP_FUNCTION(get_disable_list)$/;"	f
+PHP_MAJOR_VERSION	./run-tests.php	/^	define("PHP_MAJOR_VERSION", $major);$/;"	d
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __call)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __construct)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __destruct)$/;"	f
@@ -382,30 +353,24 @@ PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __destruct)$
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, connect)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, release)$/;"	f
 PHP_METHOD	./connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, select)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __call)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __construct)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, __destruct)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool, release)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(pdo_connect_pool_PDOStatement, __call)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __call)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __construct)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, __destruct)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, connect)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, release)$/;"	f
-PHP_METHOD	connect_pool_client.c	/^PHP_METHOD(redis_connect_pool, select)$/;"	f
 PHP_MINFO_FUNCTION	./connect_pool.c	/^PHP_MINFO_FUNCTION(connect_pool)$/;"	f
-PHP_MINFO_FUNCTION	connect_pool.c	/^PHP_MINFO_FUNCTION(connect_pool)$/;"	f
+PHP_MINIT_FUNCTION	./connect_pool.c	/^PHP_MINIT_FUNCTION(connect_pool)$/;"	f
+PHP_MODULES	./Makefile	/^PHP_MODULES = $(phplibdir)\/connect_pool.la$/;"	m
 PHP_MSGPACK_API	./msgpack/php_msgpack.h	17;"	d
 PHP_MSGPACK_API	./msgpack/php_msgpack.h	19;"	d
 PHP_MSGPACK_API	./msgpack/php_msgpack.h	21;"	d
 PHP_MSGPACK_H	./msgpack/php_msgpack.h	2;"	d
 PHP_MSHUTDOWN_FUNCTION	./connect_pool.c	/^PHP_MSHUTDOWN_FUNCTION(connect_pool)$/;"	f
-PHP_MSHUTDOWN_FUNCTION	connect_pool.c	/^PHP_MSHUTDOWN_FUNCTION(connect_pool)$/;"	f
+PHP_PECL_EXTENSION	./Makefile	/^PHP_PECL_EXTENSION = connect_pool$/;"	m
+PHP_QA_EMAIL	./run-tests.php	/^define('PHP_QA_EMAIL', 'qa-reports@lists.php.net');$/;"	d
 PHP_RINIT_FUNCTION	./connect_pool.c	/^PHP_RINIT_FUNCTION(connect_pool)$/;"	f
-PHP_RINIT_FUNCTION	connect_pool.c	/^PHP_RINIT_FUNCTION(connect_pool)$/;"	f
 PHP_RSHUTDOWN_FUNCTION	./connect_pool.c	/^PHP_RSHUTDOWN_FUNCTION(connect_pool)$/;"	f
-PHP_RSHUTDOWN_FUNCTION	connect_pool.c	/^PHP_RSHUTDOWN_FUNCTION(connect_pool)$/;"	f
+PHP_TEST_SETTINGS	./Makefile	/^PHP_TEST_SETTINGS = -d 'open_basedir=' -d 'output_buffering=0' -d 'memory_limit=-1'$/;"	m
+PHP_TEST_SHARED_EXTENSIONS	./Makefile	/^PHP_TEST_SHARED_EXTENSIONS =  ` \\$/;"	m
+PHP_VERSION_ID	./run-tests.php	/^	define("PHP_VERSION_ID", "{$major}0{$minor}$bug");$/;"	d
+PHP_ZEND_EX	./Makefile	/^PHP_ZEND_EX =$/;"	m
 PID_FILE_PATH	./include/cpFunction.h	38;"	d
+PID_PRE	./pool_server	/^define("PID_PRE", "\/var\/run\/con_pool_");$/;"	d
 POP_EO_PARAM	./msgpack/msgpack_class.c	37;"	d	file:
 POP_EO_PARAM	./msgpack/msgpack_class.c	42;"	d	file:
 POP_PARAM	./msgpack/msgpack_class.c	35;"	d	file:
@@ -414,11 +379,21 @@ PUSH_EO_PARAM	./msgpack/msgpack_class.c	36;"	d	file:
 PUSH_EO_PARAM	./msgpack/msgpack_class.c	41;"	d	file:
 PUSH_PARAM	./msgpack/msgpack_class.c	34;"	d	file:
 PUSH_PARAM	./msgpack/msgpack_class.c	39;"	d	file:
+QA_REPORTS_PAGE	./run-tests.php	/^define('QA_REPORTS_PAGE', 'http:\/\/qa.php.net\/reports');$/;"	d
+QA_SUBMISSION_PAGE	./run-tests.php	/^define('QA_SUBMISSION_PAGE', 'http:\/\/qa.php.net\/buildtest-process.php');$/;"	d
+RE2C	./Makefile	/^RE2C = exit 0;$/;"	m
 RecvData	./connect_pool_client.c	/^cpRecvEvent RecvData;$/;"	v
-RecvData	connect_pool_client.c	/^cpRecvEvent RecvData;$/;"	v
-SIGRTMIN	php_connect_pool.h	41;"	d
-SOCK_NONBLOCK	./php_connect_pool.h	48;"	d
-SOCK_NONBLOCK	php_connect_pool.h	51;"	d
+SED	./Makefile	/^SED = \/bin\/sed$/;"	m
+SHARED_LIBTOOL	./Makefile	/^SHARED_LIBTOOL =$/;"	m
+SHELL	./Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHLIB_DL_SUFFIX_NAME	./Makefile	/^SHLIB_DL_SUFFIX_NAME = so$/;"	m
+SHLIB_SUFFIX_NAME	./Makefile	/^SHLIB_SUFFIX_NAME = so$/;"	m
+SHOW_ONLY_GROUPS	./run-tests.php	/^					$SHOW_ONLY_GROUPS = explode(",", $argv[++$i]);;$/;"	v
+SHOW_ONLY_GROUPS	./run-tests.php	/^	$SHOW_ONLY_GROUPS = array();$/;"	v
+SHOW_ONLY_GROUPS	./run-tests.php	/^	$SHOW_ONLY_GROUPS = explode(",", getenv('SHOW_ONLY_GROUPS'));$/;"	v
+SIGRTMIN	./php_connect_pool.h	41;"	d
+SOCK_NONBLOCK	./php_connect_pool.h	51;"	d
+STDC_HEADERS	./config.h	62;"	d
 SWITCH_RANGE	./msgpack/msgpack/unpack_template.h	178;"	d
 SWITCH_RANGE	./msgpack/unpack_template.h	178;"	d
 SWITCH_RANGE_BEGIN	./msgpack/msgpack/unpack_template.h	177;"	d
@@ -454,16 +429,16 @@ TAKE8_8	./msgpack/msgpack/pack_template.h	753;"	d
 TAKE8_8	./msgpack/pack_template.h	20;"	d
 TAKE8_8	./msgpack/pack_template.h	25;"	d
 TAKE8_8	./msgpack/pack_template.h	753;"	d
+TESTED_PHP_VERSION	./run-tests.php	/^	define('TESTED_PHP_VERSION', `$php -n -r "echo PHP_VERSION;"`);$/;"	d
+TRAVIS_CI	./run-tests.php	/^define('TRAVIS_CI' , (bool) getenv('TRAVIS'));$/;"	d
 USE_CASE_RANGE	./msgpack/msgpack/unpack_template.h	45;"	d
 USE_CASE_RANGE	./msgpack/unpack_template.h	45;"	d
 VAR_ENTRIES_MAX	./msgpack/msgpack_unpack.c	17;"	d	file:
 WaitList	./include/cpServer.h	/^        cpWaitList *WaitList; \/\/获得失败的wait队列$/;"	m	struct:_cpGroup
-WaitList	include/cpServer.h	/^        cpWaitList *WaitList; \/\/获得失败的wait队列$/;"	m	struct:_cpGroup
 WaitTail	./include/cpServer.h	/^        cpWaitList *WaitTail; \/\/获得失败的wait队列队尾$/;"	m	struct:_cpGroup
-WaitTail	include/cpServer.h	/^        cpWaitList *WaitTail; \/\/获得失败的wait队列队尾$/;"	m	struct:_cpGroup
+ZEND_EXT_TYPE	./Makefile	/^ZEND_EXT_TYPE = zend_extension$/;"	m
 ZEND_GET_MODULE	./connect_pool.c	/^ZEND_GET_MODULE(connect_pool)$/;"	f
 ZEND_GET_MODULE	./msgpack/msgpack.c	/^ZEND_GET_MODULE(msgpack)$/;"	f
-ZEND_GET_MODULE	connect_pool.c	/^ZEND_GET_MODULE(connect_pool)$/;"	f
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, __construct)$/;"	f	file:
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, pack)$/;"	f	file:
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack, setOption)$/;"	f	file:
@@ -478,48 +453,44 @@ ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, res
 ZEND_METHOD	./msgpack/msgpack_class.c	/^static ZEND_METHOD(msgpack_unpacker, setOption)$/;"	f	file:
 ZEND_MINFO_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MINFO_FUNCTION(msgpack)$/;"	f	file:
 ZEND_MINIT_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MINIT_FUNCTION(msgpack)$/;"	f	file:
-ZEND_MOD_END	./php_connect_pool.h	95;"	d
-ZEND_MOD_END	php_connect_pool.h	98;"	d
+ZEND_MOD_END	./php_connect_pool.h	103;"	d
 ZEND_MSHUTDOWN_FUNCTION	./msgpack/msgpack.c	/^static ZEND_MSHUTDOWN_FUNCTION(msgpack)$/;"	f	file:
+ZEND_SET_SYMBOL	./include/php7_wrapper.h	154;"	d
 Z_ADDREF_PP	./msgpack/msgpack_unpack.c	12;"	d	file:
+Z_ARRVAL_PP	./include/php7_wrapper.h	184;"	d
+Z_BVAL_P	./include/php7_wrapper.h	/^static inline int Z_BVAL_P(zval *v)$/;"	f
 Z_ISREF_P	./msgpack/msgpack_pack.c	34;"	d	file:
+Z_LVAL_PP	./include/php7_wrapper.h	189;"	d
 Z_REFCOUNT_P	./msgpack/msgpack_convert.c	9;"	d	file:
 Z_SET_ISREF_P	./msgpack/msgpack_convert.c	10;"	d	file:
 Z_SET_ISREF_PP	./msgpack/msgpack_unpack.c	13;"	d	file:
+Z_STRLEN_PP	./include/php7_wrapper.h	188;"	d
+Z_STRVAL_PP	./include/php7_wrapper.h	187;"	d
 Z_UNSET_ISREF_P	./msgpack/msgpack_convert.c	11;"	d	file:
 Z_UNSET_ISREF_PP	./msgpack/msgpack_unpack.c	14;"	d	file:
 __BIG_ENDIAN__	./msgpack/msgpack/sysdep.h	72;"	d
 __BIG_ENDIAN__	./msgpack/sysdep.h	72;"	d
+__DIR__	./run-tests.php	/^	define('__DIR__', realpath(dirname(__FILE__)));$/;"	d
 __LITTLE_ENDIAN__	./msgpack/msgpack/sysdep.h	70;"	d
 __LITTLE_ENDIAN__	./msgpack/sysdep.h	70;"	d
 _array	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgpack_pack_user x, unsigned int n)$/;"	f
 _array	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_array)(msgpack_pack_user x, unsigned int n)$/;"	f
 _cpClient	./include/cpClientNet.h	/^typedef struct _cpClient$/;"	s
 _cpConfig	./include/cpServer.h	/^    typedef struct _cpConfig {$/;"	s
-_cpConfig	include/cpServer.h	/^    typedef struct _cpConfig {$/;"	s
 _cpConnection	./include/cpServer.h	/^    typedef struct _cpConnection {$/;"	s
-_cpConnection	include/cpServer.h	/^    typedef struct _cpConnection {$/;"	s
-_cpFd	cpKqueue.c	/^typedef struct _cpFd {$/;"	s	file:
+_cpFd	./cpKqueue.c	/^typedef struct _cpFd {$/;"	s	file:
 _cpGroup	./include/cpServer.h	/^    typedef struct _cpGroup {$/;"	s
-_cpGroup	include/cpServer.h	/^    typedef struct _cpGroup {$/;"	s
 _cpIdelList	./include/cpServer.h	/^    typedef struct _cpIdelList {$/;"	s
-_cpIdelList	include/cpServer.h	/^    typedef struct _cpIdelList {$/;"	s
 _cpMasterInfo	./include/cpMemory.h	/^    typedef struct _cpMasterInfo {\/\/获取连接,master进程返回的信息$/;"	s
 _cpRecvEvent	./connect_pool_client.c	/^typedef struct _cpRecvEvent$/;"	s	file:
-_cpRecvEvent	connect_pool_client.c	/^typedef struct _cpRecvEvent$/;"	s	file:
 _cpServerG	./include/cpServer.h	/^    typedef struct _cpServerG {$/;"	s
-_cpServerG	include/cpServer.h	/^    typedef struct _cpServerG {$/;"	s
 _cpServerGS	./include/cpServer.h	/^    typedef struct _cpServerGS {$/;"	s
-_cpServerGS	include/cpServer.h	/^    typedef struct _cpServerGS {$/;"	s
 _cpShareMemory	./include/cpMemory.h	/^    typedef struct _cpShareMemory {$/;"	s
 _cpTcpEvent	./include/cpMemory.h	/^    typedef struct _cpTcpEvent {$/;"	s
 _cpThread	./include/cpServer.h	/^    typedef struct _cpThread {$/;"	s
-_cpThread	include/cpServer.h	/^    typedef struct _cpThread {$/;"	s
 _cpWaitList	./include/cpServer.h	/^    typedef struct _cpWaitList {$/;"	s
-_cpWaitList	include/cpServer.h	/^    typedef struct _cpWaitList {$/;"	s
 _cpWorker	./include/cpWorker.h	/^    typedef struct _cpWorker {$/;"	s
 _cpWorkerG	./include/cpServer.h	/^    typedef struct _cpWorkerG {$/;"	s
-_cpWorkerG	include/cpServer.h	/^    typedef struct _cpWorkerG {$/;"	s
 _cpWorkerInfo	./include/cpMemory.h	/^    typedef struct _cpWorkerInfo {$/;"	s
 _double	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func(_double)(msgpack_pack_user x, double d)$/;"	f
 _double	./msgpack/pack_template.h	/^msgpack_pack_inline_func(_double)(msgpack_pack_user x, double d)$/;"	f
@@ -628,6 +599,7 @@ _unsigned_long_long	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func
 _unsigned_long_long	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_long_long)(msgpack_pack_user x, unsigned long long d)$/;"	f
 _unsigned_short	./msgpack/msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_short)(msgpack_pack_user x, unsigned short d)$/;"	f
 _unsigned_short	./msgpack/pack_template.h	/^msgpack_pack_inline_func_cint(_unsigned_short)(msgpack_pack_user x, unsigned short d)$/;"	f
+a	./run-tests.php	/^	$a = test_name($a);$/;"	v
 addr	./msgpack/php_msgpack.h	/^    void *addr;$/;"	m	struct:_instead_smart
 again_fixed_trail	./msgpack/msgpack/unpack_template.h	133;"	d
 again_fixed_trail	./msgpack/msgpack/unpack_template.h	407;"	d
@@ -637,46 +609,84 @@ again_fixed_trail_if_zero	./msgpack/msgpack/unpack_template.h	137;"	d
 again_fixed_trail_if_zero	./msgpack/msgpack/unpack_template.h	408;"	d
 again_fixed_trail_if_zero	./msgpack/unpack_template.h	137;"	d
 again_fixed_trail_if_zero	./msgpack/unpack_template.h	408;"	d
+all_targets	./Makefile	/^all_targets = $(PHP_MODULES) $(PHP_ZEND_EX)$/;"	m
+argc	./run-tests.php	/^	$argc = count($argv);$/;"	v
+args	./run-tests.php	/^	$args = isset($section_text['ARGS']) ? ' -- ' . $section_text['ARGS'] : '';$/;"	v
+argv	./run-tests.php	/^		$argv = array(__FILE__);$/;"	v
+argv	./run-tests.php	/^	$argv = array_merge($argv, explode(' ', getenv('TEST_PHP_ARGS')));$/;"	v
+as_func_failure	./configure	/^as_func_failure () {$/;"	f
+as_func_ret_failure	./configure	/^as_func_ret_failure () {$/;"	f
+as_func_ret_success	./configure	/^as_func_ret_success () {$/;"	f
+as_func_success	./configure	/^as_func_success () {$/;"	f
+autoconf	./run-tests.php	/^					$autoconf = shell_exec('autoconf --version');$/;"	v
+autoconf	./run-tests.php	/^					$autoconf = shell_exec(getenv('PHP_AUTOCONF') . ' --version');$/;"	v
+b	./run-tests.php	/^	$b = test_name($b);$/;"	v
 backlog	./include/cpServer.h	/^        uint16_t backlog;$/;"	m	struct:_cpConfig
-backlog	include/cpServer.h	/^        uint16_t backlog;$/;"	m	struct:_cpConfig
-buffer	./msgpack/msgpack_class.c	/^    smart_str buffer;$/;"	m	struct:__anon4	file:
+bin_env	./run-tests.php	/^	$bin_env = array();$/;"	v
+bork_info	./run-tests.php	/^						$bork_info = "could not load --" . $key . "-- " . dirname($file) . '\/' . trim($section_text[$key]);$/;"	v
+bork_info	./run-tests.php	/^				$bork_info = "Can't redirect a test from within a redirected test";$/;"	v
+bork_info	./run-tests.php	/^				$bork_info = "duplicated $section section";$/;"	v
+bork_info	./run-tests.php	/^				$bork_info = "missing section --EXPECT--, --EXPECTF-- or --EXPECTREGEX--";$/;"	v
+bork_info	./run-tests.php	/^				$bork_info = "missing section --FILE--";$/;"	v
+bork_info	./run-tests.php	/^			$bork_info = "Redirect info must contain exactly one TEST string to be used as redirect directory.";$/;"	v
+bork_info	./run-tests.php	/^			$bork_info = "cannot read test";$/;"	v
+bork_info	./run-tests.php	/^		$bork_info = "Redirected test did not contain redirection info";$/;"	v
+bork_info	./run-tests.php	/^		$bork_info = "empty test [$file]";$/;"	v
+bork_info	./run-tests.php	/^		$bork_info = "tests must start with --TEST-- [$file]";$/;"	v
+bork_info	./run-tests.php	/^	$bork_info = '';$/;"	v
+borked	./run-tests.php	/^						$borked = true;$/;"	v
+borked	./run-tests.php	/^				$borked    = true;$/;"	v
+borked	./run-tests.php	/^				$borked = false;$/;"	v
+borked	./run-tests.php	/^				$borked = true;$/;"	v
+borked	./run-tests.php	/^			$borked = true;$/;"	v
+borked	./run-tests.php	/^		$borked = true;$/;"	v
+borked	./run-tests.php	/^	$borked = false;$/;"	v
+buffer	./msgpack/msgpack_class.c	/^    cp_smart_str buffer;$/;"	m	struct:__anon3	file:
 bufpid	./cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
-bufpid	cpFunction.c	/^static char bufpid[SW_PID_BUFFER_SIZE];$/;"	v	file:
 bufr	./cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
-bufr	cpFunction.c	/^static char bufr[SW_LOG_BUFFER_SIZE];$/;"	v	file:
+bug	./run-tests.php	/^		$bug = "0$bug";$/;"	v
+bug	./run-tests.php	/^	$bug = (int)$bug; \/\/ Many distros make up their own versions$/;"	v
+builddir	./Makefile	/^builddir = \/root\/cp$/;"	m
+c1	./run-tests.php	/^			$c1 = @count_array_diff($ar1, $ar2, $is_reg, $w, $idx1+1, $idx2, $cnt1, $cnt2, 10);$/;"	v
+c2	./run-tests.php	/^			$c2 = @count_array_diff($ar1, $ar2, $is_reg, $w, $idx1, $idx2+1, $cnt1,  $cnt2, 10);$/;"	v
+cc_status	./run-tests.php	/^				$cc_status = 0;$/;"	v
+cfg	./run-tests.php	/^$cfg = array();$/;"	v
+cfgfiles	./run-tests.php	/^$cfgfiles = array('skip', 'php', 'clean', 'out', 'diff', 'exp');$/;"	v
+cfgtypes	./run-tests.php	/^$cfgtypes = array('show', 'keep');$/;"	v
 check_need_exchange	./connect_pool_client.c	/^static void check_need_exchange(zval * object, char *cur_type)$/;"	f	file:
-check_need_exchange	connect_pool_client.c	/^static void check_need_exchange(zval * object, char *cur_type)$/;"	f	file:
+clean_params	./run-tests.php	/^				$clean_params = array();$/;"	v
 cli_real_recv	./connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *info)$/;"	f	file:
-cli_real_recv	connect_pool_client.c	/^static int cli_real_recv(cpMasterInfo *info)$/;"	f	file:
 cli_real_send	./connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
-cli_real_send	connect_pool_client.c	/^CPINLINE int cli_real_send(cpClient **real_cli, zval *send_data, zval *this, zend_class_entry *ce)$/;"	f
 clientPid	./include/cpServer.h	/^        int clientPid;$/;"	m	struct:_cpWorkerG
-clientPid	include/cpServer.h	/^        int clientPid;$/;"	m	struct:_cpWorkerG
 client_close	./php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
-client_close	php_connect_pool.h	/^PHP_FUNCTION(client_close);$/;"	v
-clock_gettime	./cpFunction.c	/^int clock_gettime(clock_id_t which_clock, struct timespec *t) {$/;"	f
+cmd	./pool_server	/^$cmd = $argv[1];$/;"	v
+cmd	./run-tests.php	/^			$cmd = "valgrind -q --tool=memcheck --trace-children=yes --vex-iropt-precise-memory-exns=yes --log-file-exactly=$memcheck_filename $cmd";$/;"	v
+cmd	./run-tests.php	/^			$cmd = "valgrind -q --tool=memcheck --trace-children=yes --vex-iropt-precise-memory-exns=yes --log-file=$memcheck_filename $cmd";$/;"	v
+cmd	./run-tests.php	/^			$cmd = "valgrind -q --tool=memcheck --trace-children=yes --vex-iropt-register-updates=allregs-at-mem-access --log-file=$memcheck_filename $cmd";$/;"	v
+cmd	./run-tests.php	/^		$cmd = "$php $pass_options $ini_settings -f \\"$test_file\\" $args 2>&1";$/;"	v
+cmd	./run-tests.php	/^		$cmd = "$php $pass_options $ini_settings -f \\"$test_file\\" 2>&1 < \\"$tmp_post\\"";$/;"	v
+code	./run-tests.php	/^	$code = proc_close($proc);$/;"	v
+comp_line	./run-tests.php	/^function comp_line($l1, $l2, $is_reg)$/;"	f
+compiler	./run-tests.php	/^						$compiler = shell_exec(getenv('CC') . " $flag 2>&1");$/;"	v
+compression	./run-tests.php	/^$compression = 0;$/;"	v
+compute_summary	./run-tests.php	/^function compute_summary()$/;"	f
 conf	./include/cpServer.h	/^        cpConfig conf;$/;"	m	struct:_cpServerG
-conf	include/cpServer.h	/^        cpConfig conf;$/;"	m	struct:_cpServerG
+conf	./pool_server	/^$conf = "\/etc\/pool.ini"; \/\/pool_server的配置文件$/;"	v
+conf_passed	./run-tests.php	/^					$conf_passed = $argv[++$i];$/;"	v
+conf_passed	./run-tests.php	/^$conf_passed = null;$/;"	v
 config	./demon.php	/^$config = array($/;"	v
-config	demon.php	/^$config = array($/;"	v
 conlist	./include/cpServer.h	/^        cpConnection *conlist;$/;"	m	struct:_cpServerGS
-conlist	include/cpServer.h	/^        cpConnection *conlist;$/;"	m	struct:_cpServerGS
 connect_count	./include/cpServer.h	/^        uint32_t connect_count;$/;"	m	struct:_cpServerGS
-connect_count	include/cpServer.h	/^        uint32_t connect_count;$/;"	m	struct:_cpServerGS
 connect_pool	./php_connect_pool.h	/^PHP_MINFO_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_MINIT_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_RINIT_FUNCTION(connect_pool);$/;"	v
 connect_pool	./php_connect_pool.h	/^PHP_RSHUTDOWN_FUNCTION(connect_pool);$/;"	v
-connect_pool	php_connect_pool.h	/^PHP_MINFO_FUNCTION(connect_pool);$/;"	v
-connect_pool	php_connect_pool.h	/^PHP_MINIT_FUNCTION(connect_pool);$/;"	v
-connect_pool	php_connect_pool.h	/^PHP_MSHUTDOWN_FUNCTION(connect_pool);$/;"	v
-connect_pool	php_connect_pool.h	/^PHP_RINIT_FUNCTION(connect_pool);$/;"	v
-connect_pool	php_connect_pool.h	/^PHP_RSHUTDOWN_FUNCTION(connect_pool);$/;"	v
 connect_pool_module_entry	./connect_pool.c	/^zend_module_entry connect_pool_module_entry = {$/;"	v
-connect_pool_module_entry	connect_pool.c	/^zend_module_entry connect_pool_module_entry = {$/;"	v
 connect_pool_perisent	./connect_pool_client.c	/^void* connect_pool_perisent(zval* zres, int port)$/;"	f
-connect_pool_perisent	connect_pool_client.c	/^void* connect_pool_perisent(zval* zres, int port)$/;"	f
+content_length	./run-tests.php	/^		$content_length = strlen($post);$/;"	v
+copy_file	./run-tests.php	/^		$copy_file     = $temp_dir . DIRECTORY_SEPARATOR . basename(is_array($file) ? $file[1] : $file) . '.phps';$/;"	v
+count_array_diff	./run-tests.php	/^function count_array_diff($ar1, $ar2, $is_reg, $w, $idx1, $idx2, $cnt1, $cnt2, $steps)$/;"	f
 cpClient	./include/cpClientNet.h	/^} cpClient;$/;"	t	typeref:struct:_cpClient
 cpClient_close	./cpClientNet.c	/^int cpClient_close(cpClient *cli)$/;"	f
 cpClient_connect	./cpClientNet.c	/^int cpClient_connect(cpClient *cli, char *host, int port, double timeout, int nonblock)$/;"	f
@@ -684,203 +694,293 @@ cpClient_create	./cpClientNet.c	/^int cpClient_create(cpClient *cli)$/;"	f
 cpClient_recv	./cpClientNet.c	/^int cpClient_recv(cpClient *cli, void *data, int len, int waitall)$/;"	f
 cpClient_send	./cpClientNet.c	/^int cpClient_send(int sock, char *data, int length, int flag)$/;"	f
 cpConfig	./include/cpServer.h	/^    } cpConfig;$/;"	t	typeref:struct:_cpConfig
-cpConfig	include/cpServer.h	/^    } cpConfig;$/;"	t	typeref:struct:_cpConfig
 cpConnection	./include/cpServer.h	/^    } cpConnection;$/;"	t	typeref:struct:_cpConnection
-cpConnection	include/cpServer.h	/^    } cpConnection;$/;"	t	typeref:struct:_cpConnection
 cpCreateFifo	./cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
-cpCreateFifo	cpFunction.c	/^CPINLINE int cpCreateFifo(char *file) {$/;"	f
 cpCreate_ping_worker_mem	./cpPingWorker.c	/^CPINLINE int cpCreate_ping_worker_mem()$/;"	f
 cpCreate_worker_mem	./cpWorker.c	/^CPINLINE int cpCreate_worker_mem(int worker_id, int group_id)$/;"	f
 cpEpoll_add	./cpNetWork.c	/^int cpEpoll_add(int epfd, int fd, int fdtype) {$/;"	f
-cpEpoll_add	cpNetWork.c	/^int cpEpoll_add(int epfd, int fd, int fdtype) {$/;"	f
 cpEpoll_del	./cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
-cpEpoll_del	cpNetWork.c	/^int cpEpoll_del(int epfd, int fd) {$/;"	f
 cpEpoll_wait	./cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
-cpEpoll_wait	cpNetWork.c	/^int cpEpoll_wait(epoll_wait_handle *handles, struct timeval *timeo, int epfd) {$/;"	f
-cpFd	cpKqueue.c	/^} cpFd;$/;"	t	typeref:struct:_cpFd	file:
+cpFd	./cpKqueue.c	/^} cpFd;$/;"	t	typeref:struct:_cpFd	file:
 cpFifoRead	./cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
-cpFifoRead	cpFunction.c	/^CPINLINE int cpFifoRead(int pipe_fd_read, void *buf, int len) {$/;"	f
 cpFind_restart_worker	./cpWorker.c	/^static void cpFind_restart_worker(int pid, sigset_t *block_alarm, int worker_exit_code)$/;"	f	file:
 cpFork_one_worker	./cpWorker.c	/^int cpFork_one_worker(int worker_id, int group_id)$/;"	f
 cpFork_ping_worker	./cpPingWorker.c	/^int cpFork_ping_worker()$/;"	f
 cpGetConfig	./cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
-cpGetConfig	cpFunction.c	/^zval * cpGetConfig(char *filename) {$/;"	f
 cpGroup	./include/cpServer.h	/^    } cpGroup;$/;"	t	typeref:struct:_cpGroup
-cpGroup	include/cpServer.h	/^    } cpGroup;$/;"	t	typeref:struct:_cpGroup
 cpIdelList	./include/cpServer.h	/^    } cpIdelList;$/;"	t	typeref:struct:_cpIdelList
-cpIdelList	include/cpServer.h	/^    } cpIdelList;$/;"	t	typeref:struct:_cpIdelList
-cpKqueue_add	cpKqueue.c	/^int cpKqueue_add(int epfd, int fd, int fdtype) {$/;"	f
-cpKqueue_del	cpKqueue.c	/^int cpKqueue_del(int epfd, int fd) {$/;"	f
-cpKqueue_free	cpKqueue.c	/^void cpKqueue_free() {$/;"	f
-cpKqueue_set	cpKqueue.c	/^int cpKqueue_set(int fd, int fdtype) {$/;"	f
-cpKqueue_wait	cpKqueue.c	/^int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {$/;"	f
+cpKqueue_add	./cpKqueue.c	/^int cpKqueue_add(int epfd, int fd, int fdtype) {$/;"	f
+cpKqueue_del	./cpKqueue.c	/^int cpKqueue_del(int epfd, int fd) {$/;"	f
+cpKqueue_free	./cpKqueue.c	/^void cpKqueue_free() {$/;"	f
+cpKqueue_set	./cpKqueue.c	/^int cpKqueue_set(int fd, int fdtype) {$/;"	f
+cpKqueue_wait	./cpKqueue.c	/^int cpKqueue_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {$/;"	f
 cpListen	./cpServer.c	/^int static cpListen()$/;"	f	file:
-cpListen	cpServer.c	/^int static cpListen()$/;"	f	file:
 cpLog	./include/cpFunction.h	39;"	d
 cpLog_init	./cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
-cpLog_init	cpFunction.c	/^int cpLog_init(char *logfile) {$/;"	f
 cpMD5	./cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
-cpMD5	cpFunction.c	/^CPINLINE zval * cpMD5(zval *arr) {\/\/pass in array , out md5 zval$/;"	f
 cpManagerAdd	./cpWorker.c	/^static void cpManagerAdd(int sig)$/;"	f	file:
 cpManagerRecycle	./cpWorker.c	/^static void cpManagerRecycle(int sig)$/;"	f	file:
 cpManagerReload	./cpWorker.c	/^static void cpManagerReload(int sig)$/;"	f	file:
 cpMasterInfo	./include/cpMemory.h	/^    } cpMasterInfo;$/;"	t	typeref:struct:_cpMasterInfo
 cpNetRead	./cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
-cpNetRead	cpFunction.c	/^CPINLINE int cpNetRead(int fd, void *buf, int len) {$/;"	f
 cpPid	./connect_pool_client.c	/^static int cpPid = 0;$/;"	v	file:
-cpPid	connect_pool_client.c	/^static int cpPid = 0;$/;"	v	file:
 cpPingClear	./cpPingWorker.c	/^static void cpPingClear(int sig)$/;"	f	file:
 cpPing_add_dislist	./cpPingWorker.c	/^static void cpPing_add_dislist(zval *dis_arr, zval **args, char *data_source)$/;"	f	file:
 cpPing_del_prolist	./cpPingWorker.c	/^static void cpPing_del_prolist(zval *pro_arr, char *data_source)$/;"	f	file:
 cpPing_worker_loop	./cpPingWorker.c	/^static int cpPing_worker_loop()$/;"	f	file:
 cpQueueFunc	./include/cpFunction.h	/^    typedef void (*cpQueueFunc) (int, siginfo_t *, void *);$/;"	t
 cpQueueSignalSet	./cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
-cpQueueSignalSet	cpFunction.c	/^int cpQueueSignalSet(int sig, cpQueueFunc func) {$/;"	f
-cpReactorEpollGetType	cpNetWork.c	/^static inline int cpReactorEpollGetType(int fdtype) {$/;"	f	file:
-cpReactorKqueueGetType	cpKqueue.c	/^static inline int cpReactorKqueueGetType(int fdtype) {$/;"	f	file:
+cpReactorEpollGetType	./cpNetWork.c	/^static inline int cpReactorEpollGetType(int fdtype) {$/;"	f	file:
+cpReactorKqueueGetType	./cpKqueue.c	/^static inline int cpReactorKqueueGetType(int fdtype) {$/;"	f	file:
+cpReactor_add	./cpReactorBase.c	/^int cpReactor_add(int epfd, int fd, int fdtype) {$/;"	f
 cpReactor_client_close	./cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
-cpReactor_client_close	cpServer.c	/^static int cpReactor_client_close(int fd)$/;"	f	file:
 cpReactor_client_receive	./cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
-cpReactor_client_receive	cpServer.c	/^static int cpReactor_client_receive(int fd)$/;"	f	file:
 cpReactor_client_release	./cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
-cpReactor_client_release	cpServer.c	/^static int cpReactor_client_release(int fd)$/;"	f	file:
+cpReactor_create	./cpReactorBase.c	/^int cpReactor_create() {$/;"	f
+cpReactor_del	./cpReactorBase.c	/^int cpReactor_del(int epfd, int fd) {$/;"	f
 cpReactor_error	./cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
-cpReactor_error	cpNetWork.c	/^CPINLINE int cpReactor_error() {$/;"	f
+cpReactor_free	./cpReactorBase.c	/^void cpReactor_free() {$/;"	f
+cpReactor_set	./cpReactorBase.c	/^int cpReactor_set(int fd, int fdtype) {$/;"	f
 cpReactor_start	./cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
-cpReactor_start	cpServer.c	/^int static cpReactor_start(int sock)$/;"	f	file:
 cpReactor_thread_loop	./cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
-cpReactor_thread_loop	cpServer.c	/^int static cpReactor_thread_loop(int *id)$/;"	f	file:
+cpReactor_wait	./cpReactorBase.c	/^int cpReactor_wait(epoll_wait_handle* handles, struct timeval *timeo, int epfd) {$/;"	f
 cpRecvEvent	./connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
-cpRecvEvent	connect_pool_client.c	/^} cpRecvEvent;$/;"	t	typeref:struct:_cpRecvEvent	file:
 cpServerG	./include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
-cpServerG	include/cpServer.h	/^    } cpServerG;$/;"	t	typeref:struct:_cpServerG
 cpServerGS	./include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
-cpServerGS	include/cpServer.h	/^    } cpServerGS;$/;"	t	typeref:struct:_cpServerGS
 cpServer_create	./cpServer.c	/^int cpServer_create()$/;"	f
-cpServer_create	cpServer.c	/^int cpServer_create()$/;"	f
 cpServer_init	./cpServer.c	/^void cpServer_init(zval *conf, char *ini_file)$/;"	f
-cpServer_init	cpServer.c	/^void cpServer_init(zval *conf, char *ini_file)$/;"	f
 cpServer_init_common	./cpServer.c	/^void cpServer_init_common(zval *conf)$/;"	f
-cpServer_init_common	cpServer.c	/^void cpServer_init_common(zval *conf)$/;"	f
 cpServer_master_onAccept	./cpServer.c	/^static int cpServer_master_onAccept(int fd)$/;"	f	file:
-cpServer_master_onAccept	cpServer.c	/^static int cpServer_master_onAccept(int fd)$/;"	f	file:
 cpServer_start	./cpServer.c	/^int cpServer_start()$/;"	f
-cpServer_start	cpServer.c	/^int cpServer_start()$/;"	f
 cpSetTimeout	./cpFunction.c	/^CPINLINE int cpSetTimeout(int sock, double timeout) {$/;"	f
-cpSetTimeout	cpFunction.c	/^CPINLINE int cpSetTimeout(int sock, double timeout) {$/;"	f
 cpSettitle	./cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
-cpSettitle	cpFunction.c	/^void cpSettitle(char *title_name) {$/;"	f
 cpShareMemory	./include/cpMemory.h	/^    } cpShareMemory;$/;"	t	typeref:struct:_cpShareMemory
 cpSignalFunc	./include/cpFunction.h	/^    typedef void (*cpSignalFunc)(int);$/;"	t
 cpSignalHanlde	./cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
-cpSignalHanlde	cpServer.c	/^static void cpSignalHanlde(int sig)$/;"	f	file:
 cpSignalInit	./cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
-cpSignalInit	cpServer.c	/^void static cpSignalInit(void)$/;"	f	file:
 cpSignalSet	./cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
-cpSignalSet	cpFunction.c	/^cpSignalFunc cpSignalSet(int sig, cpSignalFunc func, int restart, int mask) {$/;"	f
 cpTcpEvent	./include/cpMemory.h	/^    } cpTcpEvent;$/;"	t	typeref:struct:_cpTcpEvent
 cpThread	./include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
-cpThread	include/cpServer.h	/^    } cpThread;$/;"	t	typeref:struct:_cpThread
 cpTryGetWorkerId	./cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
-cpTryGetWorkerId	cpServer.c	/^static void cpTryGetWorkerId(cpConnection *conn, char * data, int fd, int len, int group_id)$/;"	f	file:
 cpWaitList	./include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
-cpWaitList	include/cpServer.h	/^    } cpWaitList;$/;"	t	typeref:struct:_cpWaitList
 cpWorker	./include/cpWorker.h	/^    } cpWorker;$/;"	t	typeref:struct:_cpWorker
 cpWorkerG	./include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
-cpWorkerG	include/cpServer.h	/^    } cpWorkerG;$/;"	t	typeref:struct:_cpWorkerG
 cpWorkerInfo	./include/cpMemory.h	/^    } cpWorkerInfo;$/;"	t	typeref:struct:_cpWorkerInfo
 cpWorker_attach_mem	./cpWorker.c	/^CPINLINE int cpWorker_attach_mem(int worker_id, int group_id)$/;"	f
 cpWorker_do_ping	./cpWorker.c	/^void cpWorker_do_ping()$/;"	f
 cpWorker_loop	./cpWorker.c	/^static int cpWorker_loop(int worker_id, int group_id)$/;"	f	file:
 cpWorker_manager_loop	./cpWorker.c	/^int cpWorker_manager_loop()$/;"	f
 cpWrite	./cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
-cpWrite	cpFunction.c	/^CPINLINE int cpWrite(int fd, void *buf, int count) {$/;"	f
+cp_add_assoc_string	./include/php7_wrapper.h	13;"	d
+cp_add_assoc_string	./include/php7_wrapper.h	242;"	d
+cp_add_assoc_stringl	./include/php7_wrapper.h	168;"	d
+cp_add_assoc_stringl	./include/php7_wrapper.h	50;"	d
+cp_add_assoc_stringl_ex	./include/php7_wrapper.h	/^static inline int cp_add_assoc_stringl_ex(zval *arg, const char *key, size_t key_len, char *str, size_t length,int duplicate)$/;"	f
+cp_add_assoc_stringl_ex	./include/php7_wrapper.h	49;"	d
 cp_add_fail_into_mem	./connect_pool.c	/^static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)$/;"	f	file:
-cp_add_fail_into_mem	connect_pool.c	/^static void cp_add_fail_into_mem(zval *o_arg, zval * data_source)$/;"	f	file:
-cp_call_user_function	./connect_pool.c	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f	file:
-cp_call_user_function	connect_pool.c	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f	file:
+cp_call_user_function	./include/php7_wrapper.h	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval * args)$/;"	f
+cp_call_user_function	./include/php7_wrapper.h	/^static int cp_call_user_function(zval **object, zval *fun, zval **ret_value, zval *args)$/;"	f
+cp_call_user_function_ex	./include/php7_wrapper.h	217;"	d
+cp_call_user_function_ex	./include/php7_wrapper.h	48;"	d
 cp_create_mmap_file	./cpMemory.c	/^int cp_create_mmap_file(cpShareMemory *object){$/;"	f
-cp_destory_client	./connect_pool.c	/^static void cp_destory_client(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f	file:
-cp_destory_client	connect_pool.c	/^static void cp_destory_client(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f	file:
+cp_destory_client	./connect_pool.c	/^static void cp_destory_client(zend_resource *rsrc TSRMLS_DC)$/;"	f	file:
 cp_error	./cpFunction.c	/^int cp_error;$/;"	v
-cp_error	cpFunction.c	/^int cp_error;$/;"	v
+cp_explode	./include/php7_wrapper.h	/^static void cp_explode(zval *delim, zval *desc, zval *ex_arr, zend_long limit)$/;"	f
 cp_functions	./connect_pool.c	/^const zend_function_entry cp_functions[] = {$/;"	v
-cp_functions	connect_pool.c	/^const zend_function_entry cp_functions[] = {$/;"	v
 cp_log_fn	./cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
-cp_log_fn	cpFunction.c	/^FILE *cp_log_fn = NULL;$/;"	v
 cp_mmap_calloc	./cpMemory.c	/^void *cp_mmap_calloc(int size)$/;"	f
 cp_mmap_calloc_with_file	./cpMemory.c	/^void* cp_mmap_calloc_with_file(cpShareMemory *object)$/;"	f
+cp_php_format_date	./include/php7_wrapper.h	/^static inline char* cp_php_format_date(char *format, size_t format_len, time_t ts, int localtime)$/;"	f
+cp_php_format_date	./include/php7_wrapper.h	54;"	d
+cp_php_url_encode	./include/php7_wrapper.h	/^static inline char* cp_php_url_encode(char *value, size_t value_len, int* exten)$/;"	f
+cp_php_url_encode	./include/php7_wrapper.h	55;"	d
+cp_php_var_serialize	./include/php7_wrapper.h	138;"	d
+cp_php_var_serialize	./include/php7_wrapper.h	151;"	d
+cp_php_var_unserialize	./include/php7_wrapper.h	226;"	d
+cp_php_var_unserialize	./include/php7_wrapper.h	42;"	d
 cp_redis_select	./connect_pool.c	/^static int cp_redis_select(zval *new_obj, zval **db)$/;"	f	file:
-cp_redis_select	connect_pool.c	/^static int cp_redis_select(zval *new_obj, zval **db)$/;"	f	file:
 cp_ser_and_setdis	./cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
-cp_ser_and_setdis	cpFunction.c	/^CPINLINE void cp_ser_and_setdis(zval *arr) {$/;"	f
 cp_ser_and_setpro	./cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;"	f
-cp_ser_and_setpro	cpFunction.c	/^CPINLINE void cp_ser_and_setpro(zval *arr) {$/;"	f
-cp_serialize	./cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
-cp_serialize	cpFunction.c	/^CPINLINE void cp_serialize(smart_str *ser_data, zval *array) {$/;"	f
+cp_serialize	./cpFunction.c	/^CPINLINE void cp_serialize(cp_smart_str *ser_data, zval *array) {$/;"	f
+cp_smart_str	./include/php7_wrapper.h	252;"	d
+cp_smart_str	./include/php7_wrapper.h	41;"	d
+cp_strndup	./include/php7_wrapper.h	190;"	d
+cp_strndup	./include/php7_wrapper.h	53;"	d
 cp_system_random	./connect_pool_client.c	/^int cp_system_random(int min, int max)$/;"	f
-cp_system_random	connect_pool_client.c	/^int cp_system_random(int min, int max)$/;"	f
 cp_unserialize	./cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
-cp_unserialize	cpFunction.c	/^CPINLINE zval * cp_unserialize(char *data, int len) {$/;"	f
+cp_zend_call_method_with_0_params	./include/php7_wrapper.h	246;"	d
+cp_zend_call_method_with_0_params	./include/php7_wrapper.h	59;"	d
+cp_zend_call_method_with_1_params	./include/php7_wrapper.h	247;"	d
+cp_zend_call_method_with_1_params	./include/php7_wrapper.h	60;"	d
+cp_zend_call_method_with_2_params	./include/php7_wrapper.h	61;"	d
+cp_zend_hash_add	./include/php7_wrapper.h	/^static inline int cp_zend_hash_add(HashTable *ht, char *k, int len,void *pData,int datasize,void **pDest)$/;"	f
+cp_zend_hash_add	./include/php7_wrapper.h	44;"	d
+cp_zend_hash_copy	./include/php7_wrapper.h	243;"	d
+cp_zend_hash_copy	./include/php7_wrapper.h	46;"	d
+cp_zend_hash_del	./include/php7_wrapper.h	/^static inline int cp_zend_hash_del(HashTable *ht, char *k, int len)$/;"	f
+cp_zend_hash_del	./include/php7_wrapper.h	30;"	d
+cp_zend_hash_exists	./include/php7_wrapper.h	/^static inline int cp_zend_hash_exists(HashTable *ht, char *k, int len)$/;"	f
+cp_zend_hash_exists	./include/php7_wrapper.h	47;"	d
+cp_zend_hash_find	./include/php7_wrapper.h	/^static inline int cp_zend_hash_find(HashTable *ht, char *k, int len, void **v)$/;"	f
+cp_zend_hash_get_current_key	./include/php7_wrapper.h	/^static inline int cp_zend_hash_get_current_key( HashTable *ht, char **key, uint32_t *keylen, ulong *num)$/;"	f
+cp_zend_hash_get_current_key	./include/php7_wrapper.h	92;"	d
+cp_zend_hash_index_find	./include/php7_wrapper.h	/^static inline int cp_zend_hash_index_find(HashTable *ht, zend_ulong h, void **v)$/;"	f
+cp_zend_hash_index_find	./include/php7_wrapper.h	32;"	d
+cp_zend_hash_index_update	./include/php7_wrapper.h	/^static inline int cp_zend_hash_index_update(HashTable *ht, int key,void *pData,int datasize,void **pDest)$/;"	f
+cp_zend_hash_index_update	./include/php7_wrapper.h	45;"	d
+cp_zend_hash_update	./include/php7_wrapper.h	/^static inline int cp_zend_hash_update(HashTable *ht, char *k, int len ,void * val,int size,void *ptr)$/;"	f
+cp_zend_hash_update	./include/php7_wrapper.h	31;"	d
+cp_zend_is_callable	./include/php7_wrapper.h	/^static inline int cp_zend_is_callable(zval *cb, int a, char **name)$/;"	f
+cp_zend_is_callable	./include/php7_wrapper.h	43;"	d
+cp_zend_read_property	./include/php7_wrapper.h	/^static inline zval* cp_zend_read_property(zend_class_entry *class_ptr, zval *obj, char *s, int len, int silent)$/;"	f
+cp_zend_read_property	./include/php7_wrapper.h	91;"	d
+cp_zend_register_internal_class_ex	./include/php7_wrapper.h	244;"	d
+cp_zend_register_internal_class_ex	./include/php7_wrapper.h	57;"	d
+cp_zval_add_ref	./include/php7_wrapper.h	215;"	d
+cp_zval_add_ref	./include/php7_wrapper.h	52;"	d
+cp_zval_ptr_dtor	./include/php7_wrapper.h	216;"	d
+cp_zval_ptr_dtor	./include/php7_wrapper.h	51;"	d
 create_pass_data	./connect_pool_client.c	/^static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_type, zval **ret_data_source)$/;"	f	file:
-create_pass_data	connect_pool_client.c	/^static zval* create_pass_data(char* cmd, zval* z_args, zval* object, char* cur_type, zval **ret_data_source)$/;"	f	file:
+cwd	./run-tests.php	/^$cwd = getcwd();$/;"	v
 daemonize	./include/cpServer.h	/^        uint8_t daemonize;$/;"	m	struct:_cpConfig
-daemonize	include/cpServer.h	/^        uint8_t daemonize;$/;"	m	struct:_cpConfig
 data	./include/cpServer.h	/^        char data[0];$/;"	m	struct:_cpWaitList
-data	./msgpack/msgpack_unpack.c	/^    zval *data[VAR_ENTRIES_MAX];$/;"	m	struct:__anon5	file:
-data	include/cpServer.h	/^        char data[0];$/;"	m	struct:_cpWaitList
+data	./msgpack/msgpack_unpack.c	/^    zval *data[VAR_ENTRIES_MAX];$/;"	m	struct:__anon1	file:
+data	./run-tests.php	/^	$data = "php_test_data=" . urlencode(base64_encode(str_replace("\\00", '[0x0]', $data)));$/;"	v
+data	./run-tests.php	/^	$data = '';$/;"	v
+data_length	./run-tests.php	/^	$data_length = strlen($data);$/;"	v
 data_source	./include/cpMemory.h	/^        char data_source[100];$/;"	m	struct:_cpTcpEvent
-deps	./msgpack/msgpack_unpack.h	/^    long deps;$/;"	m	struct:__anon7
+deps	./msgpack/msgpack_unpack.h	/^    long deps;$/;"	m	struct:__anon10
 dev_random_fd	./connect_pool_client.c	/^static int dev_random_fd = -1;$/;"	v	file:
-dev_random_fd	connect_pool_client.c	/^static int dev_random_fd = -1;$/;"	v	file:
+diff	./run-tests.php	/^			$diff = "# original source file: $shortname\\n" . $diff;$/;"	v
+diff	./run-tests.php	/^			$diff = "&nbsp;";$/;"	v
+diff	./run-tests.php	/^			$diff = "<a href='$url'>diff<\/a>";$/;"	v
+diff	./run-tests.php	/^		$diff = generate_diff($wanted, $wanted_re, $output);$/;"	v
+diff	./run-tests.php	/^	$diff = array();$/;"	v
+diff	./run-tests.php	/^	$diff = empty($diff) ? '' : preg_replace('\/\\e\/', '<esc>', $diff);$/;"	v
+diff	./run-tests.php	/^	$diff = generate_array_diff($r, $o, !is_null($wanted_re), $w);$/;"	v
+diff_filename	./run-tests.php	/^	$diff_filename     = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'diff';$/;"	v
+dsn	./normal.php	/^$dsn = "mysql:host=192.168.1.19;dbname=mz_gay_group;charset=utf8";$/;"	v
+e	./run-tests.php	/^			$e = explode('=', trim($e), 2);$/;"	v
+e	./run-tests.php	/^		$e = null;$/;"	v
+end	./run-tests.php	/^						$end = $start = $length;$/;"	v
+end	./run-tests.php	/^					$end = strpos($wanted_re, $r, $start+2);$/;"	v
+end_time	./run-tests.php	/^		$end_time = time();$/;"	v
+end_time	./run-tests.php	/^$end_time = time();$/;"	v
+env	./run-tests.php	/^function system_with_timeout($commandline, $env = null, $stdin = null)$/;"	v
+environment	./run-tests.php	/^$environment = isset($_ENV) ? $_ENV : array();$/;"	v
 epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpServerG
 epfd	./include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpThread
-epfd	include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpServerG
-epfd	include/cpServer.h	/^        int epfd;$/;"	m	struct:_cpThread
 epoll_wait_handle	./include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
-epoll_wait_handle	include/cpNetWork.h	/^    typedef int (*epoll_wait_handle)(int fd);$/;"	t
-error	./msgpack/msgpack_class.c	/^    int error;$/;"	m	struct:__anon4	file:
+eq	./run-tests.php	/^			$eq = @count_array_diff($ar1, $ar2, $is_reg, $w, $idx1, $ofs2, $cnt1, $cnt2, $st);$/;"	v
+eq	./run-tests.php	/^			$eq = @count_array_diff($ar1, $ar2, $is_reg, $w, $ofs1, $idx2, $cnt1, $cnt2, $st);$/;"	v
+eq1	./run-tests.php	/^				$eq1 = $eq;$/;"	v
+eq1	./run-tests.php	/^		$eq1 = 0;$/;"	v
+eq2	./run-tests.php	/^				$eq2 = $eq;$/;"	v
+eq2	./run-tests.php	/^		$eq2 = 0;$/;"	v
+equal	./run-tests.php	/^	$equal = 0;$/;"	v
+error	./msgpack/msgpack_class.c	/^    int error;$/;"	m	struct:__anon3	file:
+error	./run-tests.php	/^function error($message)$/;"	f
 error_display	./msgpack/php_msgpack.h	/^    zend_bool error_display;$/;"	v
+error_report	./run-tests.php	/^function error_report($testname, $logname, $tested)$/;"	f
+escaped_details	./run-tests.php	/^	$escaped_details = htmlspecialchars($details, ENT_QUOTES, 'UTF-8');$/;"	v
+escaped_details	./run-tests.php	/^	$escaped_details = preg_replace_callback('\/[\\0-\\x08\\x0B\\x0C\\x0E-\\x1F]\/', function ($c) {$/;"	v
+escaped_message	./run-tests.php	/^	$escaped_message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');$/;"	v
+escaped_test_name	./run-tests.php	/^    $escaped_test_name = basename($file_name) . ' - ' . htmlspecialchars($test_name, ENT_QUOTES);$/;"	v
 event_num	./include/cpServer.h	/^        uint16_t event_num;$/;"	m	struct:_cpThread
-event_num	include/cpServer.h	/^        uint16_t event_num;$/;"	m	struct:_cpThread
 exceed	./msgpack/php_msgpack.h	/^    int exceed;$/;"	m	struct:_instead_smart
+exec_prefix	./Makefile	/^exec_prefix = $(prefix)$/;"	m
+exp_filename	./run-tests.php	/^	$exp_filename      = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'exp';$/;"	v
+ext	./run-tests.php	/^	foreach($info_params_ex as $ext => $ini_overwrites_ex) {$/;"	v
+ext_dir	./run-tests.php	/^		$ext_dir=`$php -r 'echo ini_get("extension_dir");'`;$/;"	v
+extensions	./run-tests.php	/^		$extensions = preg_split("\/[\\n\\r]+\/", trim($section_text['EXTENSIONS']));$/;"	v
+extra	./run-tests.php	/^				$extra = "skipif";$/;"	v
+extra	./run-tests.php	/^				$extra = substr(PHP_OS, 0, 3) !== "WIN" ?$/;"	v
+extra	./run-tests.php	/^			$extra = "&nbsp;";$/;"	v
+extra	./run-tests.php	/^			$extra = "<a href='$url'>$extra<\/a>";$/;"	v
+extra	./run-tests.php	/^			$extra = substr(PHP_OS, 0, 3) !== "WIN" ?$/;"	v
+extra	./run-tests.php	/^function show_result($result, $tested, $tested_file, $extra = '', $temp_filenames = null)$/;"	v
+exts_skipped	./run-tests.php	/^$exts_skipped = 0;$/;"	v
+exts_tested	./run-tests.php	/^$exts_tested = count($exts_to_test);$/;"	v
+exts_to_test	./run-tests.php	/^	$exts_to_test = explode(',',`$php $pass_options $info_params $no_file_cache "$info_file"`);$/;"	v
+exts_to_test	./run-tests.php	/^$exts_to_test = array();$/;"	v
+failed_headers	./run-tests.php	/^				$failed_headers = true;$/;"	v
+failed_headers	./run-tests.php	/^	$failed_headers = false;$/;"	v
+failed_test_summary	./run-tests.php	/^	$failed_test_summary = '';$/;"	v
+failed_tests_data	./run-tests.php	/^			$failed_tests_data = '';$/;"	v
+failed_tests_file	./run-tests.php	/^					$failed_tests_file = fopen($argv[++$i], 'a+t');$/;"	v
+failed_tests_file	./run-tests.php	/^					$failed_tests_file = fopen($argv[++$i], 'w+t');$/;"	v
+failed_tests_file	./run-tests.php	/^$failed_tests_file= false;$/;"	v
+fd	./cpKqueue.c	/^    uint32_t fd;$/;"	m	struct:_cpFd	file:
 fd	./include/cpServer.h	/^        int fd; \/\/文件描述符$/;"	m	struct:_cpConnection
 fd	./include/cpServer.h	/^        int fd;$/;"	m	struct:_cpWaitList
 fd	./include/cpWorker.h	/^        int fd;\/\/当前worker服务于哪个fd$/;"	m	struct:_cpWorker
-fd	cpKqueue.c	/^    uint32_t fd;$/;"	m	struct:_cpFd	file:
-fd	include/cpServer.h	/^        int fd; \/\/文件描述符$/;"	m	struct:_cpConnection
-fd	include/cpServer.h	/^        int fd;$/;"	m	struct:_cpWaitList
-fdtype	cpKqueue.c	/^    uint32_t fdtype;$/;"	m	struct:_cpFd	file:
-finished	./msgpack/msgpack_class.c	/^    zend_bool finished;$/;"	m	struct:__anon4	file:
+fdtype	./cpKqueue.c	/^    uint32_t fdtype;$/;"	m	struct:_cpFd	file:
+file	./run-tests.php	/^			$file = $org_file[0];$/;"	v
+file	./run-tests.php	/^		$file = $file[0];$/;"	v
+filename_copy	./run-tests.php	/^function save_text($filename, $text, $filename_copy = null)$/;"	v
+find_files	./run-tests.php	/^function find_files($dir, $is_ext_dir = false, $ignore = false)$/;"	f
+finished	./msgpack/msgpack_class.c	/^    zend_bool finished;$/;"	m	struct:__anon3	file:
+flags	./run-tests.php	/^				$flags = array('-v', '-V', '--version');$/;"	v
+fp	./run-tests.php	/^		$fp = fopen("php:\/\/stdin", "r+");$/;"	v
+fp	./run-tests.php	/^	$fp = fopen($file, "rb") or error("Cannot open test file: $file");$/;"	v
+fs	./run-tests.php	/^	$fs = fsockopen($host, $port, $errno, $errstr, 10);$/;"	v
+func_extract_an_archive	./libtool	/^func_extract_an_archive ()$/;"	f
+func_extract_an_archive	./ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	./libtool	/^func_extract_archives ()$/;"	f
+func_extract_archives	./ltmain.sh	/^func_extract_archives ()$/;"	f
+func_infer_tag	./libtool	/^func_infer_tag ()$/;"	f
+func_infer_tag	./ltmain.sh	/^func_infer_tag ()$/;"	f
+func_mktempdir	./libtool	/^func_mktempdir ()$/;"	f
+func_mktempdir	./ltmain.sh	/^func_mktempdir ()$/;"	f
+func_win32_libid	./libtool	/^func_win32_libid ()$/;"	f
+func_win32_libid	./ltmain.sh	/^func_win32_libid ()$/;"	f
+generate_array_diff	./run-tests.php	/^function generate_array_diff($ar1, $ar2, $is_reg, $w)$/;"	f
+generate_diff	./run-tests.php	/^function generate_diff($wanted, $wanted_re, $output)$/;"	f
 get_attach_buf	./connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
-get_attach_buf	connect_pool_client.c	/^static void* get_attach_buf(int worker_id, int max, char *mm_name)$/;"	f	file:
 get_disable_list	./php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
-get_disable_list	php_connect_pool.h	/^PHP_FUNCTION(get_disable_list);$/;"	v
 get_readfd	./connect_pool_client.c	/^static int get_readfd(int worker_id)$/;"	f	file:
-get_readfd	connect_pool_client.c	/^static int get_readfd(int worker_id)$/;"	f	file:
+get_summary	./run-tests.php	/^function get_summary($show_ext_summary, $show_html)$/;"	f
 get_writefd	./connect_pool_client.c	/^static int get_writefd(int worker_id)$/;"	f	file:
-get_writefd	connect_pool_client.c	/^static int get_writefd(int worker_id)$/;"	f	file:
 gid	./include/cpServer.h	/^        int gid; \/\/current worker's group id$/;"	m	struct:_cpWorkerG
-gid	include/cpServer.h	/^        int gid; \/\/current worker's group id$/;"	m	struct:_cpWorkerG
 group	./include/cpServer.h	/^        zval* group;$/;"	m	struct:_cpServerGS
-group	include/cpServer.h	/^        zval* group;$/;"	m	struct:_cpServerGS
 group_id	./include/cpServer.h	/^        uint16_t group_id; \/\/指定当前连接在用哪个group$/;"	m	struct:_cpConnection
-group_id	include/cpServer.h	/^        uint16_t group_id; \/\/指定当前连接在用哪个group$/;"	m	struct:_cpConnection
 group_num	./include/cpServer.h	/^        int group_num;$/;"	m	struct:_cpServerGS
-group_num	include/cpServer.h	/^        int group_num;$/;"	m	struct:_cpServerGS
+headers	./run-tests.php	/^				$headers = $org_headers[$k];$/;"	v
+headers	./run-tests.php	/^		$headers = array();$/;"	v
+headers	./run-tests.php	/^	$headers = "";$/;"	v
+host	./run-tests.php	/^		$host = $proxy['host'];$/;"	v
+host	./run-tests.php	/^		$host = $url_bits['host'];$/;"	v
+html_file	./run-tests.php	/^					$html_file = fopen($argv[++$i], 'wt');$/;"	v
+html_file	./run-tests.php	/^$html_file = null;$/;"	v
+html_output	./run-tests.php	/^					$html_output = is_resource($html_file);$/;"	v
+html_output	./run-tests.php	/^$html_output = false;$/;"	v
 id	./include/cpServer.h	/^        int id; \/\/0.1.2.3$/;"	m	struct:_cpThread
 id	./include/cpServer.h	/^        int id; \/\/Current Proccess Worker's id 0,1,2,3...n$/;"	m	struct:_cpWorkerG
 id	./include/cpServer.h	/^        int id; \/\/Current worker group  id 0,1,2,3...n$/;"	m	struct:_cpGroup
-id	include/cpServer.h	/^        int id; \/\/0.1.2.3$/;"	m	struct:_cpThread
-id	include/cpServer.h	/^        int id; \/\/Current Proccess Worker's id 0,1,2,3...n$/;"	m	struct:_cpWorkerG
-id	include/cpServer.h	/^        int id; \/\/Current worker group  id 0,1,2,3...n$/;"	m	struct:_cpGroup
 idel_time	./include/cpServer.h	/^        uint8_t idel_time;$/;"	m	struct:_cpConfig
-idel_time	include/cpServer.h	/^        uint8_t idel_time;$/;"	m	struct:_cpConfig
+idx1	./run-tests.php	/^	$idx1 = 0; $ofs1 = 0; $cnt1 = @count($ar1);$/;"	v
+idx2	./run-tests.php	/^	$idx2 = 0; $ofs2 = 0; $cnt2 = @count($ar2);$/;"	v
+ignored_by_ext	./run-tests.php	/^$ignored_by_ext = 0;$/;"	v
 illegal_key_insert	./msgpack/php_msgpack.h	/^    zend_bool illegal_key_insert;$/;"	v
+index	./run-tests.php	/^			$index = "# $name[1]: $name[0]";$/;"	v
+index	./run-tests.php	/^			$index = "# $redir_tested: $name";$/;"	v
+index	./run-tests.php	/^			$index = $name;$/;"	v
 info	./include/cpClientNet.h	/^        cpMasterInfo info;$/;"	m	struct:_cpClient
+info	./run-tests.php	/^					$info = " (info: $m[1])";$/;"	v
+info	./run-tests.php	/^					$info = " (warn: $m[1])";$/;"	v
+info	./run-tests.php	/^					$info = " (warn: XFAIL section but test passes)";$/;"	v
+info	./run-tests.php	/^			$info = '  XFAIL REASON: ' . rtrim($section_text['XFAIL']);$/;"	v
+info	./run-tests.php	/^	$info = '';$/;"	v
+info_file	./run-tests.php	/^	$info_file = __DIR__ . '\/run-test-info.php';$/;"	v
+info_params	./run-tests.php	/^	$info_params = array();$/;"	v
+info_params_ex	./run-tests.php	/^	$info_params_ex = array($/;"	v
 ini_file	./include/cpServer.h	/^        char ini_file[MAX_INI_LENGTH];$/;"	m	struct:_cpConfig
-ini_file	include/cpServer.h	/^        char ini_file[MAX_INI_LENGTH];$/;"	m	struct:_cpConfig
-initReactor_fdtype	php_connect_pool.h	/^static inline int initReactor_fdtype(int fdtype)$/;"	f
+ini_overwrites	./run-tests.php	/^			$ini_overwrites = array_merge($ini_overwrites, $ini_overwrites_ex);$/;"	v
+ini_overwrites	./run-tests.php	/^$ini_overwrites = array($/;"	v
+ini_settings	./run-tests.php	/^	$ini_settings = $settings;$/;"	v
+ini_settings	./run-tests.php	/^	$ini_settings = array();$/;"	v
+initReactor_fdtype	./php_connect_pool.h	/^static inline int initReactor_fdtype(int fdtype)$/;"	f
+install_targets	./Makefile	/^install_targets = install-modules install-headers$/;"	m
 instead_smart	./msgpack/php_msgpack.h	/^}instead_smart;$/;"	t	typeref:struct:_instead_smart
 int16_t	./msgpack/msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
 int16_t	./msgpack/sysdep.h	/^typedef __int16 int16_t;$/;"	t
@@ -890,50 +990,104 @@ int64_t	./msgpack/msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
 int64_t	./msgpack/sysdep.h	/^typedef __int64 int64_t;$/;"	t
 int8_t	./msgpack/msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
 int8_t	./msgpack/sysdep.h	/^typedef __int8 int8_t;$/;"	t
-isReactor_event_error	php_connect_pool.h	/^static inline int isReactor_event_error(int fdtype)$/;"	f
-isReactor_event_read	php_connect_pool.h	/^static inline int isReactor_event_read(int fdtype)$/;"	f
-isReactor_event_write	php_connect_pool.h	/^static inline int isReactor_event_write(int fdtype)$/;"	f
+isReactor_event_error	./php_connect_pool.h	/^static inline int isReactor_event_error(int fdtype)$/;"	f
+isReactor_event_read	./php_connect_pool.h	/^static inline int isReactor_event_read(int fdtype)$/;"	f
+isReactor_event_write	./php_connect_pool.h	/^static inline int isReactor_event_write(int fdtype)$/;"	f
+is_ext_dir	./run-tests.php	/^function find_files($dir, $is_ext_dir = false, $ignore = false)$/;"	v
+is_switch	./run-tests.php	/^								$is_switch = false;$/;"	v
+is_switch	./run-tests.php	/^				$is_switch = true;$/;"	v
+is_switch	./run-tests.php	/^			$is_switch = true;$/;"	v
+is_switch	./run-tests.php	/^		$is_switch = false;$/;"	v
+junit_enabled	./run-tests.php	/^function junit_enabled() {$/;"	f
+junit_finish_timer	./run-tests.php	/^function junit_finish_timer($file_name) {$/;"	f
+junit_get_suite_xml	./run-tests.php	/^function junit_get_suite_xml($suite_name = '') {$/;"	f
+junit_get_suitename_for	./run-tests.php	/^function junit_get_suitename_for($file_name) {$/;"	f
+junit_get_timer	./run-tests.php	/^function junit_get_timer($file_name) {$/;"	f
+junit_init	./run-tests.php	/^function junit_init() {$/;"	f
+junit_init_suite	./run-tests.php	/^function junit_init_suite($suite_name) {$/;"	f
+junit_mark_test_as	./run-tests.php	/^function junit_mark_test_as($type, $file_name, $test_name, $time = null, $message = '', $details = '') {$/;"	f
+junit_path_to_classname	./run-tests.php	/^function junit_path_to_classname($file_name) {$/;"	f
+junit_save_xml	./run-tests.php	/^function junit_save_xml() {$/;"	f
+junit_start_timer	./run-tests.php	/^function junit_start_timer($file_name) {$/;"	f
+junit_suite_record	./run-tests.php	/^function junit_suite_record($suite, $param, $value = 1) {$/;"	f
+just_save_results	./run-tests.php	/^					$just_save_results = true;$/;"	v
+just_save_results	./run-tests.php	/^		$just_save_results = (strtolower($user_input[0]) == 's');$/;"	v
+just_save_results	./run-tests.php	/^$just_save_results = false;$/;"	v
+k	./run-tests.php	/^		foreach($want as $k => $v) {$/;"	v
+k1	./run-tests.php	/^			$k1 = next($old1) ? key($old1) : null;$/;"	v
+k1	./run-tests.php	/^		} else if ($k2 == $l2 + 1 || $k1 === null) {$/;"	v
+k1	./run-tests.php	/^	reset($old1); $k1 = key($old1); $l1 = -2;$/;"	v
+k2	./run-tests.php	/^			$k2 = next($old2) ? key($old2) : null;$/;"	v
+k2	./run-tests.php	/^		if ($k1 == $l1 + 1 || $k2 === null) {$/;"	v
+k2	./run-tests.php	/^	reset($old2); $k2 = key($old2); $l2 = -2;$/;"	v
+key	./run-tests.php	/^				$key = $prefix . '_EXTERNAL';$/;"	v
+key	./run-tests.php	/^	foreach((array)$env as $key => $value) {$/;"	v
+key	./run-tests.php	/^foreach ($exts_to_test as $key => $val) {$/;"	v
+l1	./run-tests.php	/^			$l1 = $k1;$/;"	v
+l2	./run-tests.php	/^			$l2 = $k2;$/;"	v
+last	./run-tests.php	/^				$last = 1;$/;"	v
+last	./run-tests.php	/^				$last = 2;$/;"	v
 last_from_id	./include/cpWorker.h	/^        int last_from_id;$/;"	m	struct:_cpWorker
+ldd	./run-tests.php	/^				$ldd = shell_exec("ldd $php 2>\/dev\/null");$/;"	v
+ldd	./run-tests.php	/^			$ldd = $autoconf = $sys_libtool = $libtool = $compiler = 'N\/A';$/;"	v
 le_cli_connect_pool	./connect_pool.c	/^int le_cli_connect_pool;$/;"	v
-le_cli_connect_pool	connect_pool.c	/^int le_cli_connect_pool;$/;"	v
 le_cp_server	./connect_pool.c	/^int le_cp_server;$/;"	v
-le_cp_server	connect_pool.c	/^int le_cp_server;$/;"	v
+leak_check	./run-tests.php	/^					$leak_check = true;$/;"	v
+leak_check	./run-tests.php	/^$leak_check = false;$/;"	v
+leaked	./run-tests.php	/^		$leaked = filesize($memcheck_filename) > 0;$/;"	v
+leaked	./run-tests.php	/^	$leaked = false;$/;"	v
 len	./include/cpMemory.h	/^        int len;$/;"	m	struct:_cpWorkerInfo
 len	./include/cpServer.h	/^        int len;$/;"	m	struct:_cpWaitList
 len	./msgpack/php_msgpack.h	/^    int len;$/;"	m	struct:_instead_smart
-len	include/cpServer.h	/^        int len;$/;"	m	struct:_cpWaitList
+len	./run-tests.php	/^				$len = strlen($value);$/;"	v
+length	./run-tests.php	/^			$length = strlen($wanted_re);$/;"	v
 level	./msgpack/php_msgpack.h	/^        unsigned level;$/;"	m	struct:__anon8
+libdir	./Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libtool	./run-tests.php	/^				$libtool = shell_exec($CUR_DIR . '\/libtool --version');$/;"	v
+line	./run-tests.php	/^				$line = explode(':', $line, 2);$/;"	v
+line	./run-tests.php	/^			$line = fread($pipes[1], 8192);$/;"	v
+line	./run-tests.php	/^		$line = fgets($fp);$/;"	v
+line_length	./run-tests.php	/^	$line_length = strlen($str);$/;"	v
+lines	./run-tests.php	/^		$lines = preg_split("\/[\\n\\r]+\/", $section_text['EXPECTHEADERS']);$/;"	v
+loaded	./run-tests.php	/^		$loaded = explode(",", `$php -n -r 'echo join(",", get_loaded_extensions());'`);$/;"	v
 log_file	./include/cpServer.h	/^        char log_file[128]; \/\/日志文件$/;"	m	struct:_cpConfig
-log_file	include/cpServer.h	/^        char log_file[128]; \/\/日志文件$/;"	m	struct:_cpConfig
+log_filename	./run-tests.php	/^	$log_filename      = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'log';$/;"	v
+log_format	./run-tests.php	/^	$log_format = 'LEODS';$/;"	v
+log_format	./run-tests.php	/^	$log_format = strtoupper(getenv('TEST_PHP_LOG_FORMAT'));$/;"	v
+logname	./run-tests.php	/^	$logname  = realpath($logname);$/;"	v
+mail_qa_team	./run-tests.php	/^function mail_qa_team($data, $compression, $status = false)$/;"	f
+main	./config.guess	/^		main()$/;"	f
+main	./config.guess	/^	main ()$/;"	f
+main_file_name	./run-tests.php	/^	$main_file_name = basename($file,'phpt');$/;"	v
 manager_pid	./include/cpServer.h	/^        pid_t manager_pid;$/;"	m	struct:_cpServerGS
-manager_pid	include/cpServer.h	/^        pid_t manager_pid;$/;"	m	struct:_cpServerGS
 master_pid	./include/cpServer.h	/^        pid_t master_pid;$/;"	m	struct:_cpServerGS
-master_pid	include/cpServer.h	/^        pid_t master_pid;$/;"	m	struct:_cpServerGS
+matches	./run-tests.php	/^							$matches = array();$/;"	v
 max	./include/cpMemory.h	/^        int max;\/\/数据包max$/;"	m	struct:_cpMasterInfo
 max	./msgpack/msgpack/sysdep.h	57;"	d
 max	./msgpack/php_msgpack.h	/^    int max;$/;"	m	struct:_instead_smart
 max	./msgpack/sysdep.h	57;"	d
 max_conn	./include/cpServer.h	/^        int max_conn;$/;"	m	struct:_cpConfig
-max_conn	include/cpServer.h	/^        int max_conn;$/;"	m	struct:_cpConfig
 max_fail_num	./include/cpServer.h	/^        uint16_t max_fail_num;$/;"	m	struct:_cpConfig
-max_fail_num	include/cpServer.h	/^        uint16_t max_fail_num;$/;"	m	struct:_cpConfig
 max_read_len	./include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpConfig
 max_read_len	./include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpWorkerG
-max_read_len	include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpConfig
-max_read_len	include/cpServer.h	/^        uint64_t max_read_len;$/;"	m	struct:_cpWorkerG
 max_request	./include/cpServer.h	/^        int max_request;$/;"	m	struct:_cpConfig
-max_request	include/cpServer.h	/^        int max_request;$/;"	m	struct:_cpConfig
 mem	./include/cpMemory.h	/^        void *mem;$/;"	m	struct:_cpShareMemory
+mem	./run-tests.php	/^			$mem = "&nbsp;";$/;"	v
+mem	./run-tests.php	/^			$mem = "<a href='$url'>leaks<\/a>";$/;"	v
+memcheck_filename	./run-tests.php	/^	$memcheck_filename = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'mem';$/;"	v
+message	./run-tests.php	/^				$message = !empty($m[1]) ? $m[1] : '';$/;"	v
+message	./run-tests.php	/^		$message = "ext\/zlib required";$/;"	v
 min	./msgpack/msgpack/sysdep.h	60;"	d
 min	./msgpack/sysdep.h	60;"	d
+mkinstalldirs	./Makefile	/^mkinstalldirs = $(top_srcdir)\/build\/shtool mkdir -p$/;"	m
 mmap_name	./include/cpMemory.h	/^        char mmap_name[CP_MMAP_NAME_LEN];$/;"	m	struct:_cpMasterInfo
 mmap_name	./include/cpMemory.h	/^        char mmap_name[CP_MMAP_NAME_LEN];$/;"	m	struct:_cpShareMemory
-mp	./msgpack/msgpack_class.c	/^    msgpack_unpack_t mp;$/;"	m	struct:__anon4	file:
+mp	./msgpack/msgpack_class.c	/^    msgpack_unpack_t mp;$/;"	m	struct:__anon3	file:
 msgpack_base_methods	./msgpack/msgpack_class.c	/^static zend_function_entry msgpack_base_methods[] = {$/;"	v	file:
 msgpack_ce	./msgpack/msgpack_class.c	/^static zend_class_entry *msgpack_ce = NULL;$/;"	v	file:
 msgpack_check_ht_is_map	./msgpack/msgpack_pack.c	/^inline static int msgpack_check_ht_is_map(zval *array) $/;"	f	file:
-msgpack_container_type	./msgpack/msgpack/unpack_define.h	/^} msgpack_container_type;$/;"	t	typeref:enum:__anon2
-msgpack_container_type	./msgpack/unpack_define.h	/^} msgpack_container_type;$/;"	t	typeref:enum:__anon10
+msgpack_container_type	./msgpack/msgpack/unpack_define.h	/^} msgpack_container_type;$/;"	t	typeref:enum:__anon7
+msgpack_container_type	./msgpack/unpack_define.h	/^} msgpack_container_type;$/;"	t	typeref:enum:__anon5
 msgpack_convert_array	./msgpack/msgpack_convert.c	/^int msgpack_convert_array(zval *return_value, zval *tpl, zval **value)$/;"	f
 msgpack_convert_long_to_properties	./msgpack/msgpack_convert.c	/^inline int msgpack_convert_long_to_properties($/;"	f
 msgpack_convert_object	./msgpack/msgpack_convert.c	/^int msgpack_convert_object(zval *return_value, zval *tpl, zval **value)$/;"	f
@@ -1014,9 +1168,9 @@ msgpack_unpack_func	./msgpack/unpack_template.h	398;"	d
 msgpack_unpack_object	./msgpack/msgpack/unpack_template.h	401;"	d
 msgpack_unpack_object	./msgpack/msgpack_unpack.h	75;"	d
 msgpack_unpack_object	./msgpack/unpack_template.h	401;"	d
-msgpack_unpack_return	./msgpack/msgpack_unpack.h	/^} msgpack_unpack_return;$/;"	t	typeref:enum:__anon6
-msgpack_unpack_state	./msgpack/msgpack/unpack_define.h	/^} msgpack_unpack_state;$/;"	t	typeref:enum:__anon1
-msgpack_unpack_state	./msgpack/unpack_define.h	/^} msgpack_unpack_state;$/;"	t	typeref:enum:__anon9
+msgpack_unpack_return	./msgpack/msgpack_unpack.h	/^} msgpack_unpack_return;$/;"	t	typeref:enum:__anon9
+msgpack_unpack_state	./msgpack/msgpack/unpack_define.h	/^} msgpack_unpack_state;$/;"	t	typeref:enum:__anon6
+msgpack_unpack_state	./msgpack/unpack_define.h	/^} msgpack_unpack_state;$/;"	t	typeref:enum:__anon4
 msgpack_unpack_struct	./msgpack/msgpack/unpack_template.h	400;"	d
 msgpack_unpack_struct	./msgpack/msgpack_unpack.h	71;"	d
 msgpack_unpack_struct	./msgpack/unpack_template.h	400;"	d
@@ -1035,7 +1189,7 @@ msgpack_unpacker_methods	./msgpack/msgpack_class.c	/^static zend_function_entry 
 msgpack_unserialize_array	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_array($/;"	f
 msgpack_unserialize_array_item	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_array_item($/;"	f
 msgpack_unserialize_class	./msgpack/msgpack_unpack.c	/^inline static zend_class_entry* msgpack_unserialize_class($/;"	f	file:
-msgpack_unserialize_data	./msgpack/msgpack_unpack.h	/^} msgpack_unserialize_data;$/;"	t	typeref:struct:__anon7
+msgpack_unserialize_data	./msgpack/msgpack_unpack.h	/^} msgpack_unserialize_data;$/;"	t	typeref:struct:__anon10
 msgpack_unserialize_data_t	./msgpack/msgpack_unpack.h	/^typedef struct php_unserialize_data msgpack_unserialize_data_t;$/;"	t	typeref:struct:php_unserialize_data
 msgpack_unserialize_double	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_double($/;"	f
 msgpack_unserialize_false	./msgpack/msgpack_unpack.c	/^int msgpack_unserialize_false(msgpack_unserialize_data *unpack, zval **obj)$/;"	f
@@ -1060,98 +1214,157 @@ msgpack_var_access	./msgpack/msgpack_unpack.c	/^inline static int msgpack_var_ac
 msgpack_var_add	./msgpack/msgpack_pack.c	/^inline static int msgpack_var_add($/;"	f	file:
 msgpack_var_push	./msgpack/msgpack_unpack.c	/^inline static void msgpack_var_push($/;"	f	file:
 mutex_lock	./include/cpServer.h	/^        pthread_mutex_t *mutex_lock;$/;"	m	struct:_cpGroup
-mutex_lock	include/cpServer.h	/^        pthread_mutex_t *mutex_lock;$/;"	m	struct:_cpGroup
+n	./run-tests.php	/^		$n = @stream_select($r, $w, $e, $timeout);$/;"	v
+n_total	./run-tests.php	/^	$n_total = count($test_results);$/;"	v
 name	./include/cpServer.h	/^        char name[100]; \/\/group name$/;"	m	struct:_cpGroup
-name	include/cpServer.h	/^        char name[100]; \/\/group name$/;"	m	struct:_cpGroup
+name	./run-tests.php	/^				$name = $name[0];$/;"	v
+name	./run-tests.php	/^			$name = trim($setting[0]);$/;"	v
+name	./run-tests.php	/^	foreach($ini_settings as $name => $value) {$/;"	v
 next	./include/cpServer.h	/^        struct _cpIdelList *next;$/;"	m	struct:_cpIdelList	typeref:struct:_cpIdelList::_cpIdelList
 next	./include/cpServer.h	/^        struct _cpWaitList *next;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
-next	./msgpack/msgpack_unpack.c	/^    void *next;$/;"	m	struct:__anon5	file:
-next	include/cpServer.h	/^        struct _cpIdelList *next;$/;"	m	struct:_cpIdelList	typeref:struct:_cpIdelList::_cpIdelList
-next	include/cpServer.h	/^        struct _cpWaitList *next;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
-obj	./demon.php	/^$obj = new PDO('mysql:host=192.168.20.130;dbname=test1', "admin", "admin");$/;"	v
-obj	./demon.php	/^$obj = new Redis();$/;"	v
-obj	./demon.php	/^$obj = new redis_connect_pool();$/;"	v
+next	./msgpack/msgpack_unpack.c	/^    void *next;$/;"	m	struct:__anon1	file:
+no_clean	./run-tests.php	/^					$no_clean = true;$/;"	v
+no_clean	./run-tests.php	/^$no_clean = false;$/;"	v
+no_file_cache	./run-tests.php	/^$no_file_cache = '-d opcache.file_cache= -d opcache.file_cache_only=0';$/;"	v
+o	./run-tests.php	/^	$o = explode("\\n", $output);$/;"	v
+o	./run-tests.php	/^	$o = opendir($dir) or error("cannot open directory: $dir");$/;"	v
 obj1	./demon.php	/^$obj1 = new pdo_connect_pool($config);$/;"	v
-obj1	./demon.php	/^$obj1 = new pdo_connect_pool('mysql:host=192.168.20.131;dbname=db1', "admin", "admin");$/;"	v
-obj1	demon.php	/^$obj1 = new pdo_connect_pool($config);$/;"	v
+object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon2	file:
 object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon3	file:
-object	./msgpack/msgpack_class.c	/^    zend_object object;$/;"	m	struct:__anon4	file:
-offset	./msgpack/msgpack_class.c	/^    long offset;$/;"	m	struct:__anon4	file:
+offset	./msgpack/msgpack_class.c	/^    long offset;$/;"	m	struct:__anon3	file:
+old1	./run-tests.php	/^	$old1 = array();$/;"	v
+old2	./run-tests.php	/^	$old2 = array();$/;"	v
+old_php	./run-tests.php	/^				$old_php = $php;$/;"	v
+old_php	./run-tests.php	/^			$old_php = $php;$/;"	v
+optionals	./run-tests.php	/^$optionals = array('tests', 'ext', 'Zend', 'sapi');$/;"	v
+org_file	./run-tests.php	/^	$org_file = $file;$/;"	v
+org_headers	./run-tests.php	/^		$org_headers = $headers;$/;"	v
+out	./run-tests.php	/^	$out = system_with_timeout($cmd, $env, isset($section_text['STDIN']) ? $section_text['STDIN'] : null);$/;"	v
+output	./run-tests.php	/^			$output = system_with_timeout("$extra $php $pass_options -q $ini_settings $no_file_cache -d display_errors=0 \\"$test_skipif\\"", $env);$/;"	v
+output	./run-tests.php	/^		$output = $output_headers . "\\n--HEADERS--\\n" . $output;$/;"	v
+output	./run-tests.php	/^		$output = trim($match[2]);$/;"	v
+output	./run-tests.php	/^	$output = preg_replace("\/\\r\\n\/", "\\n", trim($out));$/;"	v
+output_file	./run-tests.php	/^					$output_file = $argv[++$i];$/;"	v
+output_file	./run-tests.php	/^	$output_file = 'compress.zlib:\/\/' . $output_file . '.gz';$/;"	v
+output_file	./run-tests.php	/^$output_file = $CUR_DIR . '\/php_test_results_' . date('Ymd_Hi') . '.txt';$/;"	v
+output_filename	./run-tests.php	/^	$output_filename   = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'out';$/;"	v
+output_headers	./run-tests.php	/^		$output_headers = array();$/;"	v
+output_headers	./run-tests.php	/^		$output_headers = join("\\n", $output_headers);$/;"	v
+output_type	./run-tests.php	/^		$output_type = $type . 'ED';$/;"	v
+output_type	./run-tests.php	/^		$output_type = $type[0] . 'ED';$/;"	v
+pass	./normal.php	/^$pass = "1qa2ws3ed";$/;"	v
+pass_option_n	./run-tests.php	/^					$pass_option_n = true;$/;"	v
+pass_option_n	./run-tests.php	/^$pass_option_n = false;$/;"	v
+pass_options	./run-tests.php	/^$pass_options = '';$/;"	v
+passed	./run-tests.php	/^			$passed = true;$/;"	v
+passed	./run-tests.php	/^		$passed = false;$/;"	v
+passed	./run-tests.php	/^	$passed = false;$/;"	v
+path	./run-tests.php	/^		$path = $url_bits['host'].$url_bits['path'];$/;"	v
+path	./run-tests.php	/^		$path = $url_bits['path'];$/;"	v
+pattern_match	./run-tests.php	/^					$pattern_match = glob($argv[$i] . '.phpt');$/;"	v
+pattern_match	./run-tests.php	/^					$pattern_match = glob($argv[$i]);$/;"	v
+pdo	./normal.php	/^$pdo = new PDO($dsn, $user, $pass);$/;"	v
 pdo_connect_pool_PDOStatement_ce	./connect_pool.c	/^zend_class_entry pdo_connect_pool_PDOStatement_ce;$/;"	v
-pdo_connect_pool_PDOStatement_ce	connect_pool.c	/^zend_class_entry pdo_connect_pool_PDOStatement_ce;$/;"	v
 pdo_connect_pool_PDOStatement_class_entry_ptr	./connect_pool.c	/^zend_class_entry *pdo_connect_pool_PDOStatement_class_entry_ptr;$/;"	v
-pdo_connect_pool_PDOStatement_class_entry_ptr	connect_pool.c	/^zend_class_entry *pdo_connect_pool_PDOStatement_class_entry_ptr;$/;"	v
 pdo_connect_pool_PDOStatement_methods	./connect_pool.c	/^const zend_function_entry pdo_connect_pool_PDOStatement_methods[] = {$/;"	v
-pdo_connect_pool_PDOStatement_methods	connect_pool.c	/^const zend_function_entry pdo_connect_pool_PDOStatement_methods[] = {$/;"	v
 pdo_connect_pool_ce	./connect_pool.c	/^zend_class_entry pdo_connect_pool_ce;$/;"	v
-pdo_connect_pool_ce	connect_pool.c	/^zend_class_entry pdo_connect_pool_ce;$/;"	v
 pdo_connect_pool_class_entry_ptr	./connect_pool.c	/^zend_class_entry *pdo_connect_pool_class_entry_ptr;$/;"	v
-pdo_connect_pool_class_entry_ptr	connect_pool.c	/^zend_class_entry *pdo_connect_pool_class_entry_ptr;$/;"	v
 pdo_connect_pool_methods	./connect_pool.c	/^const zend_function_entry pdo_connect_pool_methods[] = {$/;"	v
-pdo_connect_pool_methods	connect_pool.c	/^const zend_function_entry pdo_connect_pool_methods[] = {$/;"	v
 pdo_dispatch	./connect_pool.c	/^static void pdo_dispatch(zval * args)$/;"	f	file:
-pdo_dispatch	connect_pool.c	/^static void pdo_dispatch(zval * args)$/;"	f	file:
-pdo_object	./cpWorker.c	/^zval *pdo_object = NULL;$/;"	v
 pdo_object_table	./connect_pool.c	/^static HashTable pdo_object_table;$/;"	v	file:
-pdo_object_table	connect_pool.c	/^static HashTable pdo_object_table;$/;"	v	file:
 pdo_proxy_connect	./connect_pool.c	/^int pdo_proxy_connect(zval *args, int flag)$/;"	f
-pdo_proxy_connect	connect_pool.c	/^int pdo_proxy_connect(zval *args, int flag)$/;"	f
 pdo_proxy_pdo	./connect_pool.c	/^static void pdo_proxy_pdo(zval * args)$/;"	f	file:
-pdo_proxy_pdo	connect_pool.c	/^static void pdo_proxy_pdo(zval * args)$/;"	f	file:
 pdo_proxy_stmt	./connect_pool.c	/^static void pdo_proxy_stmt(zval * args)$/;"	f	file:
-pdo_proxy_stmt	connect_pool.c	/^static void pdo_proxy_stmt(zval * args)$/;"	f	file:
 pdo_stmt	./connect_pool.c	/^static zval* pdo_stmt = NULL;$/;"	v	file:
-pdo_stmt	connect_pool.c	/^static zval* pdo_stmt = NULL;$/;"	v	file:
+percent_results	./run-tests.php	/^	$percent_results = array();$/;"	v
+php	./run-tests.php	/^						$php = PHP_BINARY;$/;"	v
+php	./run-tests.php	/^					$php = $argv[++$i];$/;"	v
+php	./run-tests.php	/^					$php = $old_php;$/;"	v
+php	./run-tests.php	/^				$php = $old_php;$/;"	v
+php	./run-tests.php	/^				$php = realpath(".\/sapi\/cgi\/php-cgi") . ' -C ';$/;"	v
+php	./run-tests.php	/^				$php = realpath(".\/sapi\/phpdbg\/phpdbg") . ' -qIb ';$/;"	v
+php	./run-tests.php	/^				$php = realpath(dirname($php) . "\/..\/..\/sapi\/cgi\/php-cgi") . ' -C ';$/;"	v
+php	./run-tests.php	/^				$php = realpath(dirname($php) . "\/..\/..\/sapi\/phpdbg\/phpdbg") . ' -qIb ';$/;"	v
+php	./run-tests.php	/^				$php = realpath(dirname($php) . "\/php-cgi") . ' -C ';$/;"	v
+php	./run-tests.php	/^				$php = realpath(dirname($php) . "\/phpdbg") . ' -qIb ';$/;"	v
+php	./run-tests.php	/^			$php = $php_cgi . ' -C ';$/;"	v
+php	./run-tests.php	/^			$php = $phpdbg . ' -qIb';$/;"	v
+php	./run-tests.php	/^			$php = realpath(dirname($php) . "\/php-cgi.exe") . ' -C ';$/;"	v
+php	./run-tests.php	/^			$php = realpath(dirname($php) . "\/phpdbg.exe") . ' -qIb ';$/;"	v
+php	./run-tests.php	/^		$php = $cwd . '\/sapi\/cli\/php';$/;"	v
+php	./run-tests.php	/^		$php = $old_php;$/;"	v
+php	./run-tests.php	/^	$php = getenv('TEST_PHP_EXECUTABLE');$/;"	v
+php	./run-tests.php	/^$php = null;$/;"	v
+php_cgi	./run-tests.php	/^				$php_cgi = null;$/;"	v
+php_cgi	./run-tests.php	/^			$php_cgi = $cwd . '\/sapi\/cgi\/php-cgi';$/;"	v
+php_cgi	./run-tests.php	/^		$php_cgi = $cwd . '\/sapi\/cgi\/php-cgi';$/;"	v
+php_cgi	./run-tests.php	/^		$php_cgi = $env['TEST_PHP_CGI_EXECUTABLE'];$/;"	v
+php_cgi	./run-tests.php	/^	$php_cgi = getenv('TEST_PHP_CGI_EXECUTABLE');$/;"	v
+php_cgi	./run-tests.php	/^$php_cgi = null;$/;"	v
+php_cgi_info	./run-tests.php	/^		$php_cgi_info = "$php_info_sep\\nPHP         : $php_cgi $php_info_cgi$php_info_sep";$/;"	v
+php_cgi_info	./run-tests.php	/^		$php_cgi_info = '';$/;"	v
 php_check_ms	./connect_pool_client.c	/^static char* php_check_ms(char *cmd, zval *z_args, zval* object)$/;"	f	file:
-php_check_ms	connect_pool_client.c	/^static char* php_check_ms(char *cmd, zval *z_args, zval* object)$/;"	f	file:
+php_info	./run-tests.php	/^	$php_info = '<?php echo "$/;"	v
+php_info	./run-tests.php	/^	$php_info = `$php $pass_options $info_params $no_file_cache "$info_file"`;$/;"	v
+php_info_cgi	./run-tests.php	/^		$php_info_cgi = `$php_cgi $pass_options $info_params $no_file_cache -q "$info_file"`;$/;"	v
+php_info_sep	./run-tests.php	/^		$php_info_sep = "\\n---------------------------------------------------------------------";$/;"	v
 php_msgpack_base_free	./msgpack/msgpack_class.c	/^static void php_msgpack_base_free(php_msgpack_base_t *base TSRMLS_DC)$/;"	f	file:
 php_msgpack_base_new	./msgpack/msgpack_class.c	/^static zend_object_value php_msgpack_base_new(zend_class_entry *ce TSRMLS_DC)$/;"	f	file:
-php_msgpack_base_t	./msgpack/msgpack_class.c	/^} php_msgpack_base_t;$/;"	t	typeref:struct:__anon3	file:
+php_msgpack_base_t	./msgpack/msgpack_class.c	/^} php_msgpack_base_t;$/;"	t	typeref:struct:__anon2	file:
 php_msgpack_unpacker_free	./msgpack/msgpack_class.c	/^static void php_msgpack_unpacker_free($/;"	f	file:
 php_msgpack_unpacker_new	./msgpack/msgpack_class.c	/^static zend_object_value php_msgpack_unpacker_new($/;"	f	file:
-php_msgpack_unpacker_t	./msgpack/msgpack_class.c	/^} php_msgpack_unpacker_t;$/;"	t	typeref:struct:__anon4	file:
+php_msgpack_unpacker_t	./msgpack/msgpack_class.c	/^} php_msgpack_unpacker_t;$/;"	t	typeref:struct:__anon3	file:
 php_msgpack_unserialize	./msgpack/msgpack.c	/^PHP_MSGPACK_API void php_msgpack_unserialize($/;"	f
+php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon2	file:
 php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon3	file:
-php_only	./msgpack/msgpack_class.c	/^    long php_only;$/;"	m	struct:__anon4	file:
 php_only	./msgpack/php_msgpack.h	/^    zend_bool php_only;$/;"	v
 php_pdo_connect_pool_close	./connect_pool_client.c	/^static int php_pdo_connect_pool_close(cpClient *cli)$/;"	f	file:
-php_pdo_connect_pool_close	connect_pool_client.c	/^static int php_pdo_connect_pool_close(cpClient *cli)$/;"	f	file:
-phpext_connect_pool_ptr	./php_connect_pool.h	102;"	d
-phpext_connect_pool_ptr	php_connect_pool.h	105;"	d
+php_version	./run-tests.php	/^	$php_version = urlencode(TESTED_PHP_VERSION);$/;"	v
+phpdbg	./run-tests.php	/^				$phpdbg = null;$/;"	v
+phpdbg	./run-tests.php	/^			$phpdbg = $cwd . '\/sapi\/phpdbg\/phpdbg';$/;"	v
+phpdbg	./run-tests.php	/^		$phpdbg = $cwd . '\/sapi\/phpdbg\/phpdbg';$/;"	v
+phpdbg	./run-tests.php	/^		$phpdbg = $env['TEST_PHPDBG_EXECUTABLE'];$/;"	v
+phpdbg	./run-tests.php	/^	$phpdbg = getenv('TEST_PHPDBG_EXECUTABLE');$/;"	v
+phpdbg	./run-tests.php	/^$phpdbg = null;$/;"	v
+phpdbg_info	./run-tests.php	/^		$phpdbg_info = "$php_info_sep\\nPHP         : $phpdbg $phpdbg_info$php_info_sep";$/;"	v
+phpdbg_info	./run-tests.php	/^		$phpdbg_info = '';$/;"	v
+phpdbg_info	./run-tests.php	/^		$phpdbg_info = `$phpdbg $pass_options $info_params $no_file_cache -qrr "$info_file"`;$/;"	v
+phpext_connect_pool_ptr	./php_connect_pool.h	110;"	d
 phpext_msgpack_ptr	./msgpack/php_msgpack.h	14;"	d
+phpincludedir	./Makefile	/^phpincludedir = \/usr\/local\/php7\/include\/php$/;"	m
+phplibdir	./Makefile	/^phplibdir = \/root\/cp\/modules$/;"	m
 pid	./include/cpMemory.h	/^        int pid;$/;"	m	struct:_cpWorkerInfo
 pid	./include/cpWorker.h	/^        pid_t pid;$/;"	m	struct:_cpWorker
 pid_fn	./cpFunction.c	/^FILE *pid_fn = NULL;$/;"	v
-pid_fn	cpFunction.c	/^FILE *pid_fn = NULL;$/;"	v
 pid_init	./cpFunction.c	/^int pid_init() {$/;"	f
-pid_init	cpFunction.c	/^int pid_init() {$/;"	f
 ping_addr	./connect_pool_client.c	/^static HashTable ping_addr;$/;"	v	file:
-ping_addr	connect_pool_client.c	/^static HashTable ping_addr;$/;"	v	file:
 ping_mem_addr	./include/cpServer.h	/^        void *ping_mem_addr;$/;"	m	struct:_cpServerG
-ping_mem_addr	include/cpServer.h	/^        void *ping_mem_addr;$/;"	m	struct:_cpServerG
 ping_pid	./include/cpMemory.h	/^        int ping_pid;$/;"	m	struct:_cpMasterInfo
 ping_workers	./include/cpServer.h	/^        cpWorker *ping_workers;$/;"	m	struct:_cpServerGS
-ping_workers	include/cpServer.h	/^        cpWorker *ping_workers;$/;"	m	struct:_cpServerGS
 pipe_fd_write	./include/cpWorker.h	/^        int pipe_fd_write;$/;"	m	struct:_cpWorker
 pool_server_create	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
-pool_server_create	php_connect_pool.h	/^PHP_FUNCTION(pool_server_create);$/;"	v
 pool_server_reload	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_reload);$/;"	v
-pool_server_reload	php_connect_pool.h	/^PHP_FUNCTION(pool_server_reload);$/;"	v
 pool_server_shutdown	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_shutdown);$/;"	v
-pool_server_shutdown	php_connect_pool.h	/^PHP_FUNCTION(pool_server_shutdown);$/;"	v
 pool_server_version	./php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;"	v
-pool_server_version	php_connect_pool.h	/^PHP_FUNCTION(pool_server_version);$/;"	v
 port	./include/cpClientNet.h	/^        int port;$/;"	m	struct:_cpClient
 port	./include/cpServer.h	/^        uint16_t port;$/;"	m	struct:_cpConfig
-port	include/cpServer.h	/^        uint16_t port;$/;"	m	struct:_cpConfig
+port	./run-tests.php	/^		$port = $proxy['port'];$/;"	v
+port	./run-tests.php	/^		$port = empty($url_bits['port']) ? 80 : $port = $url_bits['port'];$/;"	v
+post	./run-tests.php	/^		$post = gzcompress($post, 9);$/;"	v
+post	./run-tests.php	/^		$post = gzencode($post, 9, FORCE_GZIP);$/;"	v
+post	./run-tests.php	/^		$post = trim($section_text['DEFLATE_POST']);$/;"	v
+post	./run-tests.php	/^		$post = trim($section_text['GZIP_POST']);$/;"	v
+post	./run-tests.php	/^		$post = trim($section_text['POST']);$/;"	v
+post	./run-tests.php	/^		$post = trim($section_text['POST_RAW']);$/;"	v
+post	./run-tests.php	/^		$post = trim($section_text['PUT']);$/;"	v
 pre	./include/cpServer.h	/^        struct _cpWaitList *pre;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
-pre	include/cpServer.h	/^        struct _cpWaitList *pre;$/;"	m	struct:_cpWaitList	typeref:struct:_cpWaitList::_cpWaitList
+prefix	./Makefile	/^prefix = \/usr\/local\/php7$/;"	m
+proc	./run-tests.php	/^	$proc = proc_open($commandline, array($/;"	v
 process_type	./include/cpServer.h	/^        uint8_t process_type;$/;"	m	struct:_cpServerG
-process_type	include/cpServer.h	/^        uint8_t process_type;$/;"	m	struct:_cpServerG
+prototypes	./configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+proxy	./run-tests.php	/^		$proxy = parse_url($proxy);$/;"	v
 pth_id	./include/cpServer.h	/^        uint16_t pth_id; \/\/thread id$/;"	m	struct:_cpConnection
-pth_id	include/cpServer.h	/^        uint16_t pth_id; \/\/thread id$/;"	m	struct:_cpConnection
 ptr_ping_addr	./connect_pool_client.c	/^static HashTable *ptr_ping_addr = NULL;$/;"	v	file:
-ptr_ping_addr	connect_pool_client.c	/^static HashTable *ptr_ping_addr = NULL;$/;"	v	file:
 push_fixed_value	./msgpack/msgpack/unpack_template.h	125;"	d
 push_fixed_value	./msgpack/msgpack/unpack_template.h	405;"	d
 push_fixed_value	./msgpack/unpack_template.h	125;"	d
@@ -1164,78 +1377,150 @@ push_variable_value	./msgpack/msgpack/unpack_template.h	128;"	d
 push_variable_value	./msgpack/msgpack/unpack_template.h	406;"	d
 push_variable_value	./msgpack/unpack_template.h	128;"	d
 push_variable_value	./msgpack/unpack_template.h	406;"	d
+query_string	./run-tests.php	/^		$query_string = '';$/;"	v
+query_string	./run-tests.php	/^		$query_string = trim($section_text['GET']);$/;"	v
+r	./run-tests.php	/^			$r = "%r";$/;"	v
+r	./run-tests.php	/^		$r = $pipes;$/;"	v
+r	./run-tests.php	/^	$r = is_null($wanted_re) ? $w : explode("\\n", $wanted_re);$/;"	v
+raw_lines	./run-tests.php	/^		$raw_lines = explode("\\n", $post);$/;"	v
 reactor_next_i	./include/cpServer.h	/^        uint16_t reactor_next_i;$/;"	m	struct:_cpServerGS
-reactor_next_i	include/cpServer.h	/^        uint16_t reactor_next_i;$/;"	m	struct:_cpServerGS
 reactor_num	./include/cpServer.h	/^        uint16_t reactor_num;$/;"	m	struct:_cpConfig
-reactor_num	include/cpServer.h	/^        uint16_t reactor_num;$/;"	m	struct:_cpConfig
 reactor_threads	./include/cpServer.h	/^        cpThread *reactor_threads;$/;"	m	struct:_cpServerGS
-reactor_threads	include/cpServer.h	/^        cpThread *reactor_threads;$/;"	m	struct:_cpServerGS
 recycle_num	./include/cpServer.h	/^        uint16_t recycle_num;$/;"	m	struct:_cpConfig
-recycle_num	include/cpServer.h	/^        uint16_t recycle_num;$/;"	m	struct:_cpConfig
+redir_tested	./run-tests.php	/^function run_all_tests($test_files, $env, $redir_tested = null)$/;"	v
+redir_tests	./run-tests.php	/^$redir_tests = array();$/;"	v
+redirenv	./run-tests.php	/^			$redirenv = array_merge($environment, $IN_REDIRECT['ENV']);$/;"	v
 redis_connect_pool_ce	./connect_pool.c	/^zend_class_entry redis_connect_pool_ce;$/;"	v
-redis_connect_pool_ce	connect_pool.c	/^zend_class_entry redis_connect_pool_ce;$/;"	v
 redis_connect_pool_class_entry_ptr	./connect_pool.c	/^zend_class_entry *redis_connect_pool_class_entry_ptr;$/;"	v
-redis_connect_pool_class_entry_ptr	connect_pool.c	/^zend_class_entry *redis_connect_pool_class_entry_ptr;$/;"	v
 redis_connect_pool_methods	./connect_pool.c	/^const zend_function_entry redis_connect_pool_methods[] = {$/;"	v
-redis_connect_pool_methods	connect_pool.c	/^const zend_function_entry redis_connect_pool_methods[] = {$/;"	v
 redis_dispatch	./connect_pool.c	/^static void redis_dispatch(zval * args)$/;"	f	file:
-redis_dispatch	connect_pool.c	/^static void redis_dispatch(zval * args)$/;"	f	file:
 redis_object_table	./connect_pool.c	/^static HashTable redis_object_table;$/;"	v	file:
-redis_object_table	connect_pool.c	/^static HashTable redis_object_table;$/;"	v	file:
 redis_proxy_connect	./connect_pool.c	/^int redis_proxy_connect(zval *data_source, zval *args, int flag)$/;"	f
-redis_proxy_connect	connect_pool.c	/^int redis_proxy_connect(zval *data_source, zval *args, int flag)$/;"	f
 release	./include/cpServer.h	/^        uint8_t release; \/\/方式重复release$/;"	m	struct:_cpConnection
-release	include/cpServer.h	/^        uint8_t release; \/\/方式重复release$/;"	m	struct:_cpConnection
 release_worker	./connect_pool_client.c	/^static void release_worker(zval *object)$/;"	f	file:
-release_worker	connect_pool_client.c	/^static void release_worker(zval *object)$/;"	f	file:
 released	./include/cpClientNet.h	/^        int released;$/;"	m	struct:_cpClient
 remote_addr	./include/cpClientNet.h	/^	struct sockaddr_in remote_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
+repeat	./run-tests.php	/^						$repeat = true;$/;"	v
+repeat	./run-tests.php	/^			$repeat = false;$/;"	v
+repeat	./run-tests.php	/^		$repeat = substr($argv[$i],0,1) == '-';$/;"	v
+replace_count	./run-tests.php	/^					$replace_count = 0;$/;"	v
 request	./include/cpWorker.h	/^        int request; \/\/worker request NUM$/;"	m	struct:_cpWorker
+request	./run-tests.php	/^		$request = '';$/;"	v
+result	./run-tests.php	/^			if ($failed_tests_file && ($result == 'XFAILED' || $result == 'FAILED' || $result == 'WARNED' || $result == 'LEAKED')) {$/;"	v
+result	./run-tests.php	/^		$result = run_test($php, $name, $env);$/;"	v
+result	./run-tests.php	/^    $result = sprintf($/;"	v
 ret_value	./connect_pool_client.c	/^    zval *ret_value;$/;"	m	struct:_cpRecvEvent	file:
-ret_value	connect_pool_client.c	/^    zval *ret_value;$/;"	m	struct:_cpRecvEvent	file:
-retval	./msgpack/msgpack_class.c	/^    zval *retval;$/;"	m	struct:__anon4	file:
-retval	./msgpack/msgpack_unpack.h	/^    zval *retval;$/;"	m	struct:__anon7
-rs	./demon.php	/^$rs = $obj->connect("192.168.20.130");$/;"	v
-rs	./demon.php	/^$rs = $obj->query("show tables");$/;"	v
+retval	./msgpack/msgpack_class.c	/^    zval *retval;$/;"	m	struct:__anon3	file:
+retval	./msgpack/msgpack_unpack.h	/^    zval *retval;$/;"	m	struct:__anon10
+rh	./run-tests.php	/^		$rh = preg_split("\/[\\n\\r]+\/", $match[1]);$/;"	v
 rs	./demon.php	/^$rs = $obj1->exec($sql);\/\/走主库$/;"	v
 rs	./demon.php	/^$rs = $obj1->query("select * from test limit 1");$/;"	v
-rs	./demon.php	/^$rs = $obj1->query("show tables");$/;"	v
-rs	demon.php	/^$rs = $obj1->exec($sql);\/\/走主库$/;"	v
-rs	demon.php	/^$rs = $obj1->query("select * from test limit 1");$/;"	v
-rs	demon.php	/^$rs = $obj1->query("select * from test limit 5");$/;"	v
+rs	./normal.php	/^$rs = $pdo->query($sql);$/;"	v
+rs	./normal.php	/^$rs = $rs->fetchAll();$/;"	v
+run_all_tests	./run-tests.php	/^function run_all_tests($test_files, $env, $redir_tested = null)$/;"	f
+run_test	./run-tests.php	/^function run_test($php, $file, $env)$/;"	f
 running	./include/cpServer.h	/^        int running;$/;"	m	struct:_cpServerGS
 running	./include/cpServer.h	/^        uint8_t running;$/;"	m	struct:_cpServerG
-running	include/cpServer.h	/^        int running;$/;"	m	struct:_cpServerGS
-running	include/cpServer.h	/^        uint8_t running;$/;"	m	struct:_cpServerG
+save_or_mail_results	./run-tests.php	/^function save_or_mail_results()$/;"	f
+save_text	./run-tests.php	/^function save_text($filename, $text, $filename_copy = null)$/;"	f
+secdone	./run-tests.php	/^			$secdone = false;$/;"	v
+secdone	./run-tests.php	/^			$secdone = true;$/;"	v
+secdone	./run-tests.php	/^	$secdone = false;$/;"	v
+secfile	./run-tests.php	/^			$secfile = $section == 'FILE' || $section == 'FILEEOF' || $section == 'FILE_EXTERNAL';$/;"	v
+secfile	./run-tests.php	/^	$secfile = false;$/;"	v
+section	./run-tests.php	/^			$section = $r[1];$/;"	v
+section	./run-tests.php	/^			$section = strtoupper($file);$/;"	v
+section	./run-tests.php	/^	$section = 'TEST';$/;"	v
+section	./run-tests.php	/^function show_file_block($file, $block, $section = null)$/;"	v
+section_text	./run-tests.php	/^	$section_text = array('TEST' => '');$/;"	v
 semid2attbuf	./connect_pool_client.c	/^static void **semid2attbuf = NULL;$/;"	v	file:
-semid2attbuf	connect_pool_client.c	/^static void **semid2attbuf = NULL;$/;"	v	file:
-send_oob2proxy	./connect_pool.c	/^void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f
-send_oob2proxy	connect_pool.c	/^void send_oob2proxy(zend_rsrc_list_entry *rsrc TSRMLS_DC)$/;"	f
+sep	./run-tests.php	/^			$sep = "\\n" . str_repeat('=', 80) . "\\n";$/;"	v
 ser_fail_hits	./include/cpServer.h	/^        uint16_t ser_fail_hits;$/;"	m	struct:_cpConfig
-ser_fail_hits	include/cpServer.h	/^        uint16_t ser_fail_hits;$/;"	m	struct:_cpConfig
 serialize	./msgpack/php_msgpack.h	/^    } serialize;$/;"	v	typeref:struct:__anon8
 serv_addr	./include/cpClientNet.h	/^        struct sockaddr_in serv_addr;$/;"	m	struct:_cpClient	typeref:struct:_cpClient::sockaddr_in
 set_pid	./cpFunction.c	/^int set_pid(int pid) {$/;"	f
-set_pid	cpFunction.c	/^int set_pid(int pid) {$/;"	f
+setting	./run-tests.php	/^			$setting = explode("=", $setting, 2);$/;"	v
+settings	./run-tests.php	/^	$settings = '';$/;"	v
+settings2array	./run-tests.php	/^function settings2array($settings, &$ini_settings)$/;"	f
+settings2params	./run-tests.php	/^function settings2params(&$ini_settings)$/;"	f
+sh_filename	./run-tests.php	/^	$sh_filename       = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'sh';$/;"	v
+shared_objects_connect_pool	./Makefile	/^shared_objects_connect_pool = connect_pool.lo cpServer.lo cpWorker.lo connect_pool_client.lo cpFunction.lo cpMemory.lo cpKqueue.lo cpNetWork.lo cpReactorBase.lo cpClientNet.lo cpPingWorker.lo msgpack\/msgpack.lo msgpack\/msgpack_pack.lo msgpack\/msgpack_unpack.lo msgpack\/msgpack_convert.lo$/;"	m
+shortname	./run-tests.php	/^	$shortname = str_replace($cwd . '\/', '', $file);$/;"	v
+show_end	./run-tests.php	/^function show_end($end_time)$/;"	f
+show_file_block	./run-tests.php	/^function show_file_block($file, $block, $section = null)$/;"	f
+show_redirect_ends	./run-tests.php	/^function show_redirect_ends($tests, $tested, $tested_file)$/;"	f
+show_redirect_start	./run-tests.php	/^function show_redirect_start($tests, $tested, $tested_file)$/;"	f
+show_result	./run-tests.php	/^function show_result($result, $tested, $tested_file, $extra = '', $temp_filenames = null)$/;"	f
+show_start	./run-tests.php	/^function show_start($start_time)$/;"	f
+show_summary	./run-tests.php	/^function show_summary()$/;"	f
+show_test	./run-tests.php	/^function show_test($test_idx, $shortname)$/;"	f
+shtool_exit	./build/shtool	/^shtool_exit () {$/;"	f
 size	./include/cpMemory.h	/^        int size;$/;"	m	struct:_cpShareMemory
+skip_ext	./run-tests.php	/^			$skip_ext = ($is_ext_dir && !in_array(strtolower($name), $exts_to_test));$/;"	v
 sm_obj	./include/cpWorker.h	/^        cpShareMemory sm_obj;$/;"	m	struct:_cpWorker
 sock	./include/cpClientNet.h	/^	int sock;$/;"	m	struct:_cpClient
 sql	./demon.php	/^$sql = "insert into `test` (tid) values (5)";$/;"	v
-sql	demon.php	/^$sql = "insert into `test` (tid) values (5)";$/;"	v
-stack	./msgpack/msgpack_unpack.h	/^    long stack[MSGPACK_EMBED_STACK_SIZE];$/;"	m	struct:__anon7
+sql	./normal.php	/^$sql = "select * from test limit 5";$/;"	v
+srcdir	./Makefile	/^srcdir = \/root\/cp$/;"	m
+st	./run-tests.php	/^		$st = $steps \/ 2;$/;"	v
+st	./run-tests.php	/^		$st = $steps;$/;"	v
+stack	./msgpack/msgpack_unpack.h	/^    long stack[MSGPACK_EMBED_STACK_SIZE];$/;"	m	struct:__anon10
+start	./run-tests.php	/^					$start = $end = $length;$/;"	v
+start	./run-tests.php	/^				$start = strpos($wanted_re, $r, $startOffset);$/;"	v
+start	./run-tests.php	/^	$start = $JUNIT['files'][$file_name]['start'];$/;"	v
+startOffset	./run-tests.php	/^				$startOffset = $end + 2;$/;"	v
+startOffset	./run-tests.php	/^			$startOffset = 0;$/;"	v
 start_container	./msgpack/msgpack/unpack_template.h	143;"	d
 start_container	./msgpack/msgpack/unpack_template.h	409;"	d
 start_container	./msgpack/unpack_template.h	143;"	d
 start_container	./msgpack/unpack_template.h	409;"	d
+start_time	./run-tests.php	/^		$start_time = time();$/;"	v
+start_time	./run-tests.php	/^$start_time = time();$/;"	v
+started	./run-tests.php	/^			$started = true;$/;"	v
+started	./run-tests.php	/^		$started = false;$/;"	v
+stat	./run-tests.php	/^	$stat = proc_get_status($proc);$/;"	v
+status	./run-tests.php	/^				$status = "failed";$/;"	v
+status	./run-tests.php	/^				$status = "success";$/;"	v
+status	./run-tests.php	/^function mail_qa_team($data, $compression, $status = false)$/;"	v
+str	./run-tests.php	/^	$str = "TEST $test_idx\/$test_cnt [$shortname]\\r";$/;"	v
+suite	./run-tests.php	/^		$suite = junit_get_suitename_for($file_name);$/;"	v
+suite	./run-tests.php	/^	$suite = $suite_name ? $JUNIT['suites'][$suite_name] : $JUNIT;$/;"	v
+suite	./run-tests.php	/^	$suite = junit_get_suitename_for($file_name);$/;"	v
+sum_results	./run-tests.php	/^	$sum_results = array($/;"	v
+summary	./run-tests.php	/^	$summary = '';$/;"	v
 swClient_inet_addr	./cpClientNet.c	/^static int swClient_inet_addr(struct sockaddr_in *sin, char *string)$/;"	f	file:
 swLog_free	./cpFunction.c	/^void swLog_free(void) {$/;"	f
-swLog_free	cpFunction.c	/^void swLog_free(void) {$/;"	f
 swSetBlock	./cpFunction.c	/^CPINLINE void swSetBlock(int sock) {$/;"	f
-swSetBlock	cpFunction.c	/^CPINLINE void swSetBlock(int sock) {$/;"	f
 swSetNonBlock	./cpFunction.c	/^CPINLINE void swSetNonBlock(int sock) {$/;"	f
-swSetNonBlock	cpFunction.c	/^CPINLINE void swSetNonBlock(int sock) {$/;"	f
 swSingalNone	./cpFunction.c	/^void swSingalNone() {$/;"	f
-swSingalNone	cpFunction.c	/^void swSingalNone() {$/;"	f
+sw_zend_call_method_with_2_params	./include/php7_wrapper.h	249;"	d
+switch	./run-tests.php	/^					$switch = $argv[$i];$/;"	v
+switch	./run-tests.php	/^				$switch = substr($argv[$i],1,1);$/;"	v
+switch	./run-tests.php	/^		$switch = substr($argv[$i],1,1);$/;"	v
+sys_libtool	./run-tests.php	/^					$sys_libtool = shell_exec(str_replace("\\n", "", $sys_libtool_path) . ' --version');$/;"	v
+sys_libtool_path	./run-tests.php	/^				$sys_libtool_path = shell_exec(__DIR__ . '\/build\/shtool path glibtool libtool');$/;"	v
+system_with_timeout	./run-tests.php	/^function system_with_timeout($commandline, $env = null, $stdin = null)$/;"	f
+ta	./run-tests.php	/^	$ta = strpos($a, "{$cwd}\/tests") === 0 ? 1 + (strpos($a, "{$cwd}\/tests\/run-test") === 0 ? 1 : 0) : 0;$/;"	v
+tb	./run-tests.php	/^	$tb = strpos($b, "{$cwd}\/tests") === 0 ? 1 + (strpos($b, "{$cwd}\/tests\/run-test") === 0 ? 1 : 0) : 0;$/;"	v
+temp	./run-tests.php	/^					$temp = $temp . '(' . substr($wanted_re, $start+2, ($end - $start-2)). ')';$/;"	v
+temp	./run-tests.php	/^				$temp = $temp . preg_quote(substr($wanted_re, $startOffset, ($start - $startOffset)),  '\/');$/;"	v
+temp	./run-tests.php	/^			$temp = "";$/;"	v
+temp	./run-tests.php	/^		$temp = array_intersect(array('XFAIL', 'FAIL', 'WARN'), $type);$/;"	v
+temp_clean	./run-tests.php	/^	$temp_clean        = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'clean.php';$/;"	v
+temp_dir	./run-tests.php	/^		$temp_dir = $test_dir = $IN_REDIRECT['dir'];$/;"	v
+temp_dir	./run-tests.php	/^		$temp_dir = $test_dir = realpath(dirname($file));$/;"	v
+temp_dir	./run-tests.php	/^		$temp_dir = str_replace($temp_source, $temp_target, $temp_dir);$/;"	v
+temp_file	./run-tests.php	/^	$temp_file         = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'php';$/;"	v
+temp_filenames	./run-tests.php	/^		$temp_filenames = array($/;"	v
+temp_filenames	./run-tests.php	/^	$temp_filenames = null;$/;"	v
+temp_skipif	./run-tests.php	/^	$temp_skipif       = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'skip.php';$/;"	v
+temp_source	./run-tests.php	/^					$temp_source = $argv[++$i];$/;"	v
+temp_source	./run-tests.php	/^$temp_source = null;$/;"	v
+temp_target	./run-tests.php	/^					$temp_target = $argv[++$i];$/;"	v
+temp_target	./run-tests.php	/^$temp_target = null;$/;"	v
+temp_urlbase	./run-tests.php	/^						$temp_urlbase = $temp_target;$/;"	v
+temp_urlbase	./run-tests.php	/^					$temp_urlbase = $argv[++$i];$/;"	v
+temp_urlbase	./run-tests.php	/^$temp_urlbase = null;$/;"	v
 template_callback_array	./msgpack/msgpack_unpack.h	121;"	d
 template_callback_array_item	./msgpack/msgpack_unpack.h	123;"	d
 template_callback_double	./msgpack/msgpack_unpack.h	111;"	d
@@ -1255,18 +1540,49 @@ template_callback_uint16	./msgpack/msgpack_unpack.h	95;"	d
 template_callback_uint32	./msgpack/msgpack_unpack.h	97;"	d
 template_callback_uint64	./msgpack/msgpack_unpack.h	99;"	d
 template_callback_uint8	./msgpack/msgpack_unpack.h	93;"	d
+test_clean	./run-tests.php	/^	$test_clean        = $test_dir . DIRECTORY_SEPARATOR . $main_file_name . 'clean.php';$/;"	v
+test_cnt	./run-tests.php	/^	$test_cnt = count($test_files);$/;"	v
+test_cnt	./run-tests.php	/^$test_cnt = count($test_files);$/;"	v
+test_dirs	./run-tests.php	/^$test_dirs = array();$/;"	v
+test_file	./run-tests.php	/^		$test_file = $temp_file = "";$/;"	v
+test_file	./run-tests.php	/^	$test_file         = $test_dir . DIRECTORY_SEPARATOR . $main_file_name . 'php';$/;"	v
+test_files	./run-tests.php	/^					$test_files = array_merge($test_files, $pattern_match);$/;"	v
+test_files	./run-tests.php	/^		$test_files = array();$/;"	v
+test_files	./run-tests.php	/^	$test_files = array_merge($test_files, $redir_tests);$/;"	v
+test_files	./run-tests.php	/^	$test_files = array_unique($test_files);$/;"	v
+test_files	./run-tests.php	/^$test_files = array();$/;"	v
+test_files	./run-tests.php	/^$test_files = array_unique($test_files);$/;"	v
+test_idx	./run-tests.php	/^		$test_idx = 0;$/;"	v
+test_idx	./run-tests.php	/^$test_idx = 0;$/;"	v
+test_list	./run-tests.php	/^					$test_list = file($argv[++$i]);$/;"	v
+test_name	./run-tests.php	/^function test_name($name)$/;"	f
+test_results	./run-tests.php	/^$test_results = array();$/;"	v
+test_skipif	./run-tests.php	/^	$test_skipif       = $test_dir . DIRECTORY_SEPARATOR . $main_file_name . 'skip.php';$/;"	v
+test_sort	./run-tests.php	/^function test_sort($a, $b)$/;"	f
+tested	./run-tests.php	/^			$tested = "<a href='$url'>$tested<\/a>";$/;"	v
+tested	./run-tests.php	/^		$tested = $IN_REDIRECT['prefix'] . ' ' . trim($section_text['TEST']);$/;"	v
+tested	./run-tests.php	/^	$tested = trim($section_text['TEST']);$/;"	v
+tested_file	./run-tests.php	/^		$tested_file = $tmp_relative_file;$/;"	v
+tested_file	./run-tests.php	/^	$tested_file = $shortname;$/;"	v
+testfile	./run-tests.php	/^				$testfile = realpath("{$dir}\/{$name}");$/;"	v
+testfile	./run-tests.php	/^			$testfile = realpath($argv[$i]);$/;"	v
+testname	./run-tests.php	/^	$testname = realpath($testname);$/;"	v
 thread_id	./include/cpServer.h	/^        pthread_t thread_id;$/;"	m	struct:_cpThread
-thread_id	include/cpServer.h	/^        pthread_t thread_id;$/;"	m	struct:_cpThread
+time	./run-tests.php	/^	$time = null !== $time ? $time : junit_get_timer($file_name);$/;"	v
+time	./run-tests.php	/^function junit_mark_test_as($type, $file_name, $test_name, $time = null, $message = '', $details = '') {$/;"	v
 timeout	./include/cpClientNet.h	/^	double timeout;$/;"	m	struct:_cpClient
+timeout	./run-tests.php	/^	$timeout = $leak_check ? 300 : (isset($env['TEST_TIMEOUT']) ? $env['TEST_TIMEOUT'] : 60);$/;"	v
 timeout_sec	./include/cpServer.h	/^        int timeout_sec;$/;"	m	struct:_cpConfig
-timeout_sec	include/cpServer.h	/^        int timeout_sec;$/;"	m	struct:_cpConfig
 timeout_usec	./include/cpServer.h	/^        int timeout_usec;$/;"	m	struct:_cpConfig
-timeout_usec	include/cpServer.h	/^        int timeout_usec;$/;"	m	struct:_cpConfig
+tmp_post	./run-tests.php	/^	$tmp_post          = $temp_dir . DIRECTORY_SEPARATOR . uniqid('\/phpt.');$/;"	v
+tmp_relative_file	./run-tests.php	/^	$tmp_relative_file = str_replace(__DIR__ . DIRECTORY_SEPARATOR, '', $test_file) . 't';$/;"	v
+top_builddir	./Makefile	/^top_builddir = \/root\/cp$/;"	m
+top_srcdir	./Makefile	/^top_srcdir = \/root\/cp$/;"	m
 type	./connect_pool_client.c	/^    uint8_t type;$/;"	m	struct:_cpRecvEvent	file:
 type	./include/cpMemory.h	/^        int type;$/;"	m	struct:_cpTcpEvent
 type	./include/cpMemory.h	/^        int type;$/;"	m	struct:_cpWorkerInfo
-type	./msgpack/msgpack_unpack.h	/^    int type;$/;"	m	struct:__anon7
-type	connect_pool_client.c	/^    uint8_t type;$/;"	m	struct:_cpRecvEvent	file:
+type	./msgpack/msgpack_unpack.h	/^    int type;$/;"	m	struct:__anon10
+type	./run-tests.php	/^		$type = reset($temp);$/;"	v
 uint16_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int16 uint16_t;$/;"	t
 uint16_t	./msgpack/sysdep.h	/^typedef unsigned __int16 uint16_t;$/;"	t
 uint32_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int32 uint32_t;$/;"	t
@@ -1276,41 +1592,92 @@ uint64_t	./msgpack/sysdep.h	/^typedef unsigned __int64 uint64_t;$/;"	t
 uint8_t	./msgpack/msgpack/sysdep.h	/^typedef unsigned __int8 uint8_t;$/;"	t
 uint8_t	./msgpack/sysdep.h	/^typedef unsigned __int8 uint8_t;$/;"	t
 unpack_user	./msgpack/msgpack_unpack.h	76;"	d
+url	./run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['diff']);$/;"	v
+url	./run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['file']);$/;"	v
+url	./run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['mem']);$/;"	v
+url	./run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['skip']);$/;"	v
+url_bits	./run-tests.php	/^	$url_bits = parse_url(QA_SUBMISSION_PAGE);$/;"	v
 use_wait_queue	./include/cpServer.h	/^        uint8_t use_wait_queue;$/;"	m	struct:_cpConfig
-use_wait_queue	include/cpServer.h	/^        uint8_t use_wait_queue;$/;"	m	struct:_cpConfig
-used_slots	./msgpack/msgpack_unpack.c	/^    long used_slots;$/;"	m	struct:__anon5	file:
-var_entries	./msgpack/msgpack_unpack.c	/^} var_entries;$/;"	t	typeref:struct:__anon5	file:
-var_hash	./msgpack/msgpack_class.c	/^    msgpack_unserialize_data_t var_hash;$/;"	m	struct:__anon4	file:
-var_hash	./msgpack/msgpack_unpack.h	/^    msgpack_unserialize_data_t *var_hash;$/;"	m	struct:__anon7
+used_slots	./msgpack/msgpack_unpack.c	/^    long used_slots;$/;"	m	struct:__anon1	file:
+user	./normal.php	/^$user = "public_user";$/;"	v
+user_email	./run-tests.php	/^				$user_email = 'travis at php dot net';$/;"	v
+user_email	./run-tests.php	/^				$user_email = str_replace("@", " at ", str_replace(".", " dot ", $user_email));$/;"	v
+user_email	./run-tests.php	/^				$user_email = trim(fgets($fp, 1024));$/;"	v
+user_input	./run-tests.php	/^				$user_input = 's';$/;"	v
+user_input	./run-tests.php	/^		$user_input = fgets($fp, 10);$/;"	v
+user_tests	./run-tests.php	/^	$user_tests = array();$/;"	v
+user_tests	./run-tests.php	/^	$user_tests = explode (',', getenv('TEST_PHP_USER'));$/;"	v
+util_lower	./build/shtool	/^util_lower () {$/;"	f
+util_upper	./build/shtool	/^util_upper () {$/;"	f
+val	./run-tests.php	/^				$val = addslashes($val);$/;"	v
+valgrind_cmd	./run-tests.php	/^					$valgrind_cmd = "valgrind --version";$/;"	v
+valgrind_header	./run-tests.php	/^						$valgrind_header = trim($valgrind_header);$/;"	v
+valgrind_header	./run-tests.php	/^					$valgrind_header = system_with_timeout($valgrind_cmd, $environment);$/;"	v
+valgrind_header	./run-tests.php	/^$valgrind_header = '';$/;"	v
+valgrind_version	./run-tests.php	/^						$valgrind_version = preg_replace("\/valgrind-(\\d+)\\.(\\d+)\\.(\\d+)([.\\w_-]+)?(\\s+)\/", '$1.$2.$3', $valgrind_header, 1, $replace_count);$/;"	v
+valgrind_version	./run-tests.php	/^$valgrind_version = 0;$/;"	v
+value	./run-tests.php	/^				$value = addslashes($value);$/;"	v
+value	./run-tests.php	/^			$value = trim($setting[1]);$/;"	v
+value	./run-tests.php	/^function junit_suite_record($suite, $param, $value = 1) {$/;"	v
+var_entries	./msgpack/msgpack_unpack.c	/^} var_entries;$/;"	t	typeref:struct:__anon1	file:
+var_hash	./msgpack/msgpack_class.c	/^    msgpack_unserialize_data_t var_hash;$/;"	m	struct:__anon3	file:
+var_hash	./msgpack/msgpack_unpack.h	/^    msgpack_unserialize_data_t *var_hash;$/;"	m	struct:__anon10
 var_hash	./msgpack/php_msgpack.h	/^        void *var_hash;$/;"	m	struct:__anon8
+verify_config	./run-tests.php	/^function verify_config()$/;"	f
 volatile_int8	./include/cpServer.h	/^    typedef volatile int8_t volatile_int8;$/;"	t
-volatile_int8	include/cpServer.h	/^    typedef volatile int8_t volatile_int8;$/;"	t
+w	./run-tests.php	/^		$w = null;$/;"	v
+w	./run-tests.php	/^	$w = explode("\\n", $wanted);$/;"	v
 wait_in_num	./include/cpServer.h	/^        uint64_t wait_in_num;$/;"	m	struct:_cpServerG
-wait_in_num	include/cpServer.h	/^        uint64_t wait_in_num;$/;"	m	struct:_cpServerG
 wait_out_num	./include/cpServer.h	/^        uint64_t wait_out_num;$/;"	m	struct:_cpServerG
-wait_out_num	include/cpServer.h	/^        uint64_t wait_out_num;$/;"	m	struct:_cpServerG
+want	./run-tests.php	/^		$want = array();$/;"	v
+wanted	./run-tests.php	/^			$wanted = trim($section_text['EXPECTF']);$/;"	v
+wanted	./run-tests.php	/^			$wanted = trim($section_text['EXPECTREGEX']);$/;"	v
+wanted	./run-tests.php	/^		$wanted = $wanted_headers . "\\n--HEADERS--\\n" . $wanted;$/;"	v
+wanted	./run-tests.php	/^		$wanted = preg_replace('\/\\r\\n\/',"\\n", $wanted);$/;"	v
+wanted	./run-tests.php	/^		$wanted = trim($section_text['EXPECT']);$/;"	v
+wanted_headers	./run-tests.php	/^		$wanted_headers = array();$/;"	v
+wanted_headers	./run-tests.php	/^		$wanted_headers = join("\\n", $wanted_headers);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = $temp;$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = preg_quote($wanted_headers . "\\n--HEADERS--\\n", '\/') . $wanted_re;$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace($/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%A', '.*', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%S', '[^\\r\\n]*', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%a', '.+', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%c', '.', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%d', '\\d+', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%e', '\\\\' . DIRECTORY_SEPARATOR, $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%f', '[+-]?\\.?\\d+\\.?\\d*(?:[Ee][+-]?\\d+)?', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%i', '[+-]?\\d+', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%s', '[^\\r\\n]+', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%w', '\\s*', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^			$wanted_re = str_replace('%x', '[0-9a-fA-F]+', $wanted_re);$/;"	v
+wanted_re	./run-tests.php	/^		$wanted_re = null;$/;"	v
+wanted_re	./run-tests.php	/^		$wanted_re = preg_replace('\/\\r\\n\/', "\\n", $wanted);$/;"	v
+warn	./run-tests.php	/^					$warn = true; \/* only if there is a reason *\/$/;"	v
+warn	./run-tests.php	/^					$warn = true;$/;"	v
+warn	./run-tests.php	/^	$warn = false;$/;"	v
 worker_id	./include/cpMemory.h	/^        int worker_id;$/;"	m	struct:_cpMasterInfo
 worker_id	./include/cpServer.h	/^        int worker_id;$/;"	m	struct:_cpIdelList
 worker_id	./include/cpServer.h	/^        uint16_t worker_id; \/\/指定当前连接在用哪个worker$/;"	m	struct:_cpConnection
-worker_id	include/cpServer.h	/^        int worker_id;$/;"	m	struct:_cpIdelList
-worker_id	include/cpServer.h	/^        uint16_t worker_id; \/\/指定当前连接在用哪个worker$/;"	m	struct:_cpConnection
 worker_max	./include/cpServer.h	/^        uint32_t worker_max;$/;"	m	struct:_cpGroup
-worker_max	include/cpServer.h	/^        uint32_t worker_max;$/;"	m	struct:_cpGroup
 worker_min	./include/cpServer.h	/^        uint32_t worker_min;$/;"	m	struct:_cpGroup
-worker_min	include/cpServer.h	/^        uint32_t worker_min;$/;"	m	struct:_cpGroup
 worker_num	./include/cpServer.h	/^        uint32_t worker_num;$/;"	m	struct:_cpGroup
-worker_num	include/cpServer.h	/^        uint32_t worker_num;$/;"	m	struct:_cpGroup
 worker_onReceive	./connect_pool.c	/^int worker_onReceive(zval * unser_value)$/;"	f
-worker_onReceive	connect_pool.c	/^int worker_onReceive(zval * unser_value)$/;"	f
 workerfd2clientfd_list	./include/cpServer.h	/^        uint32_t *workerfd2clientfd_list; \/\/workerfd和客户端fd的对应关系$/;"	m	struct:_cpServerGS
-workerfd2clientfd_list	include/cpServer.h	/^        uint32_t *workerfd2clientfd_list; \/\/workerfd和客户端fd的对应关系$/;"	m	struct:_cpServerGS
 workerid2readfd	./connect_pool_client.c	/^static int *workerid2readfd = NULL;$/;"	v	file:
-workerid2readfd	connect_pool_client.c	/^static int *workerid2readfd = NULL;$/;"	v	file:
 workerid2writefd	./connect_pool_client.c	/^static int *workerid2writefd = NULL;$/;"	v	file:
-workerid2writefd	connect_pool_client.c	/^static int *workerid2writefd = NULL;$/;"	v	file:
 workers	./include/cpServer.h	/^        cpWorker *workers;$/;"	m	struct:_cpGroup
-workers	include/cpServer.h	/^        cpWorker *workers;$/;"	m	struct:_cpGroup
 workers_status	./include/cpServer.h	/^        volatile_int8 *workers_status;$/;"	m	struct:_cpGroup
-workers_status	include/cpServer.h	/^        volatile_int8 *workers_status;$/;"	m	struct:_cpGroup
 working	./include/cpServer.h	/^        int working;$/;"	m	struct:_cpWorkerG
-working	include/cpServer.h	/^        int working;$/;"	m	struct:_cpWorkerG
+write_information	./run-tests.php	/^function write_information($show_html)$/;"	f
+x_failed	./run-tests.php	/^		$x_failed = (100.0 * $sum_results['FAILED']) \/ $x_total;$/;"	v
+x_leaked	./run-tests.php	/^		$x_leaked = (100.0 * $sum_results['LEAKED']) \/ $x_total;$/;"	v
+x_passed	./run-tests.php	/^		$x_passed = (100.0 * $sum_results['PASSED']) \/ $x_total;$/;"	v
+x_total	./run-tests.php	/^	$x_total = $n_total - $sum_results['SKIPPED'] - $sum_results['BORKED'];$/;"	v
+x_warned	./run-tests.php	/^		$x_warned = $x_failed = $x_passed = $x_leaked = $x_xfailed = 0;$/;"	v
+x_warned	./run-tests.php	/^		$x_warned = (100.0 * $sum_results['WARNED']) \/ $x_total;$/;"	v
+x_xfailed	./run-tests.php	/^		$x_xfailed = (100.0 * $sum_results['XFAILED']) \/ $x_total;$/;"	v
+xml	./run-tests.php	/^	$xml = '<?xml version="1.0" encoding="UTF-8"?>'. PHP_EOL .$/;"	v
+zend_resource	./include/php7_wrapper.h	/^typedef zend_rsrc_list_entry zend_resource;$/;"	t
+zend_size_t	./include/php7_wrapper.h	/^typedef int zend_size_t;$/;"	t
+zend_size_t	./include/php7_wrapper.h	/^typedef size_t zend_size_t;$/;"	t
