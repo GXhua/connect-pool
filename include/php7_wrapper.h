@@ -383,7 +383,9 @@ static CPINLINE int cp_internal_call_user_function(zval *object, zval *fun, zval
         zval phpng_retval;
         *ret_value = &phpng_retval;
     }
-    if (cp_zend_hash_find(CP_Z_ARRVAL_P(args), ZEND_STRS("args"), (void **) &m_args) == SUCCESS) {
+    if (args == NULL) {
+        return call_user_function_ex(NULL, object, fun, *ret_value, 0, NULL, 0, NULL TSRMLS_CC);
+    } else if(cp_zend_hash_find(CP_Z_ARRVAL_P(args), ZEND_STRS("args"), (void **) &m_args) == SUCCESS) {
         int i = 0;
         zval *val;
         CP_HASHTABLE_FOREACH_START(CP_Z_ARRVAL_P(m_args), val)
