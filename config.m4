@@ -40,6 +40,8 @@ AC_TRY_COMPILE([#include "$phpincludedir/main/php_config.h"], [
     CFLAGS="-Wall -pthread $CFLAGS"
     LDFLAGS="$LDFLAGS -lpthread"
 
+    AC_CHECK_LIB(pcre, pcre_compile, AC_DEFINE(HAVE_PCRE, 0, [have pcre]))
+
   PHP_NEW_EXTENSION(connect_pool, connect_pool.c cpServer.c cpWorker.c \
                     connect_pool_client.c \
                     cpFunction.c \

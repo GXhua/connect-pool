@@ -115,10 +115,14 @@ static PHP_METHOD(pdo_connect_pool_PDOStatement, rewind)
     CP_MAKE_STD_ZVAL(pos);
     ZVAL_LONG(pos, 0);
     CP_ZVAL_STRING(method_ptr, "fetchAll", 0);
-    cp_internal_call_user_function(object, method_ptr, &ret_value, NULL);
+    //cp_internal_call_user_function(object, method_ptr, &ret_value, NULL);
+    if (cp_call_user_function_ex(EG(function_table), &object, method_ptr, &ret_value, 0, NULL, 0, NULL TSRMLS_CC) == FAILURE)
+    {
+        return ;
+    }
+        zend_update_property(ce, object, "pos", sizeof("pos") -1, pos TSRMLS_CC);
+        zend_update_property(ce, object, "rs", sizeof("rs") - 1, ret_value TSRMLS_CC);
 
-    zend_update_property(ce, object, "pos", sizeof("pos") -1, pos TSRMLS_CC);
-    zend_update_property(ce, object, "rs", sizeof("rs") - 1, ret_value TSRMLS_CC);
 }
 
 static PHP_METHOD(pdo_connect_pool_PDOStatement, current)
