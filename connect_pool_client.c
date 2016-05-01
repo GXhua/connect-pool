@@ -737,6 +737,7 @@ PHP_METHOD(pdo_connect_pool_PDOStatement, __call)
     cp_zval_ptr_dtor(&pass_data);
 }
 
+
 PHP_METHOD(pdo_connect_pool, __call)
 {
     zval *z_args, *pass_data, *object, *zres, *source_zval, *use_ms;
@@ -758,6 +759,7 @@ PHP_METHOD(pdo_connect_pool, __call)
         cur_type = php_check_ms(cmd, z_args, object);
         check_need_exchange(getThis(), cur_type);
     }
+
     pass_data = create_pass_data(cmd, z_args, object, cur_type, &source_zval);
 
     cpClient *cli;
@@ -782,12 +784,15 @@ PHP_METHOD(pdo_connect_pool, __call)
     if (RecvData.type == CP_SIGEVENT_PDO)
     {//返回一个模拟pdo类
         object_init_ex(return_value, pdo_connect_pool_PDOStatement_class_entry_ptr);
+        //zend_print_zval_r(return_value,0);
         zend_update_property(pdo_connect_pool_PDOStatement_class_entry_ptr, return_value, ZEND_STRL("cli"), zres TSRMLS_CC);
         zend_update_property(pdo_connect_pool_PDOStatement_class_entry_ptr, return_value, ZEND_STRL("data_source"), source_zval TSRMLS_CC); //标示这个连接的真实目标
+
         cp_zval_ptr_dtor(&RecvData.ret_value);
     }
     else if (RecvData.type == CP_SIGEVENT_EXCEPTION)
     {
+        printf(" exception\n");
         zend_throw_exception(NULL, Z_STRVAL_P(RecvData.ret_value), 0 TSRMLS_CC);
         RETVAL_BOOL(0);
     }
