@@ -5,7 +5,7 @@
 提供连接池，读写分离，负载均衡，慢查询日志，大数据块日志等功能
 
 ## 要求
-
+(目前项目正常维护中，请先不要使用)
 - PHP 5.3 + (no zts)
 - linux 2.6+
 - pdo and redis extension install
