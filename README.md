@@ -17,6 +17,7 @@
 2. `docker build -t php-cp .`
 
 
+
 ## 技术特性:
 
 - 提供了release方法，在每次fetch数据后(redis的get set) 调用，将连接放回到池子里面，避免其他耗时操作导致的db层连接数过高问题。
