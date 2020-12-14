@@ -498,7 +498,7 @@ try_again:
                 }
                 break;
             }
-                //object propterty table is this type
+                //object property table is this type
             case IS_INDIRECT:
                 data = Z_INDIRECT_P(data);
                 ((SBucketType*) (buffer->buffer + p))->data_type = Z_TYPE_P(data);
